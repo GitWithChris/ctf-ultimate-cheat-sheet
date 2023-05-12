@@ -58,5 +58,3 @@ with open("extracted_contents.txt", "w") as file:
     for content in content_list:
         file.write(content + "\n")
 
-
-# TestTest
