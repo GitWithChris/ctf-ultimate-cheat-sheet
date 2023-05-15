@@ -17,7 +17,8 @@ Url welche herangezogen wird als Variable speichern
 f'' kennzeichnet den String als einen formatierten String, d.h. im String können nachträglich Änderungen vorgenommen werden
 """
 # url = f'https://resources.infosecinstitute.com/topic/{ctf_name}-ctf-walkthrough-part-1/'
-main_url = f'https://resources.infosecinstitute.com/topic/{ctf_name}-ctf-walkthrough/'
+#main_url = f'https://resources.infosecinstitute.com/topic/{ctf_name}-ctf-walkthrough/'
+main_url = f'https://resources.infosecinstitute.com/topic/empire-breakout-vulnhub-ctf-walkthrough/'
 
 
 
@@ -56,10 +57,10 @@ for link in links:                          # jeder link steht für eine Challen
     tags = challenge_soup.find_all(string=lambda text: bool(text and "<< " in text and " >>" in text))
     content_list.extend([tag.strip("<< >>").strip() for tag in tags])
     
-    # Speichern des Inhalts in einer Datei
-    with open("all_extracted_contents.txt", "w") as file:
-        file.write(challenge_name + "\n\n")
-        file.write("\n".join(content_list) + "\n\n\n")
+# Speichern des Inhalts in einer Datei
+with open("all_extracted_contents.txt", "w") as file:
+    file.write(challenge_name + "\n\n")
+    file.write("\n".join(content_list) + "\n\n\n")
 
 
 
