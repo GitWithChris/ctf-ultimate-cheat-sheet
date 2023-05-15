@@ -24,7 +24,7 @@ main_url = f'https://resources.infosecinstitute.com/topic/empire-breakout-vulnhu
 
 # HTML der Webseite abrufen lassen
 main_page = requests.get(main_url)            # sendet einen html request an die angegebene url
-html_content_main = main_page.text                 # gibt den Inhalt der Antwort als text aus und weist diese der Variablen html_content zu
+html_content_main = main_page.text            # gibt den Inhalt der Antwort als text aus und weist diese der Variablen html_content zu
 
 
 
