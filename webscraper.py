@@ -52,12 +52,12 @@ for link in links:                          # jeder link steht für eine Challen
     challenge_soup = BeautifulSoup(challenge_response.content, "html.parser")       # HTML-Inhalte parsen und soup erstellen
     
     # Extrahieren des HTML-Inhalts der Challenge-Seite und abspeichern dieser in tags
-    tags = challenge_soup.find_all(string=lambda text: text and "<< " in text and " >>" in text)
-    # ggf so: tags = challenge_soup.find_all(string=lambda text: bool(text and "<< " in text and " >>" in text))
+    # tags = challenge_soup.find_all(string=lambda text: text and "<< " in text and " >>" in text)
+    tags = challenge_soup.find_all(string=lambda text: bool(text and "<< " in text and " >>" in text))
     content_list.extend([tag.strip("<< >>").strip() for tag in tags])
     
     # Speichern des Inhalts in einer Datei
-    with open("all_extracted_contents.txt", "a") as file:
+    with open("all_extracted_contents.txt", "w") as file:
         file.write(challenge_name + "\n\n")
         file.write("\n".join(content_list) + "\n\n\n")
 
