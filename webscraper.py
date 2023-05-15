@@ -43,6 +43,7 @@ content_list = []
 
 
 
+
 # Schleife über die gefundenen Links
 for link in links:                          # jeder link steht für eine Challenge
     challenge_name = link.text.strip()      # aktueller Link wird extrahiert, um den Challenge Namen zu bekommen
@@ -56,12 +57,23 @@ for link in links:                          # jeder link steht für eine Challen
     # tags = challenge_soup.find_all(string=lambda text: text and "<< " in text and " >>" in text)
     tags = challenge_soup.find_all(string=lambda text: bool(text and "<< " in text and " >>" in text))
     content_list.extend([tag.strip("<< >>").strip() for tag in tags])
-    
-# Speichern des Inhalts in einer Datei
-with open("all_extracted_contents.txt", "w") as file:
-    file.write(challenge_name + "\n\n")
+
+
+
+with open("all_extracted_contents.txt", "a") as file:
+    # file.write(challenge_name + "\n\n")
     file.write("\n".join(content_list) + "\n\n\n")
 
+
+    
+
+
+"""
+# Speichern des Inhalts in einer Datei
+with open("all_extracted_contents.txt", "a") as file:
+    file.write(challenge_name + "\n\n")
+    file.write("\n".join(content_list) + "\n\n\n")
+"""
 
 
 
