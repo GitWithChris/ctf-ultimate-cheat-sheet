@@ -48,4 +48,4 @@ for link in links:
 with open("extracted_commands_infosecinstitute.txt", "w") as file:
     file.write("\n".join(relevant_information))
 
-print("Relevant information extracted and saved to 'extracted_commands'")
+print("Relevant information extracted and saved to 'extracted_commands_infosecinstitute'")
