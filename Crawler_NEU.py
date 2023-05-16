@@ -45,7 +45,7 @@ for link in links:
     relevant_information.append('\n\n')
 
 # Save the relevant information to the text file
-with open("extracted_commands.txt", "w") as file:
+with open("extracted_commands_infosecinstitute.txt", "w") as file:
     file.write("\n".join(relevant_information))
 
 print("Relevant information extracted and saved to 'extracted_commands'")
