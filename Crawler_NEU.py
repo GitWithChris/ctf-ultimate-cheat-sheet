@@ -22,11 +22,18 @@ relevant_information = []       # leere Liste initialisieren
 # Challenge-Counter
 challenge_counter = 0
 
+# Unique challenges only
+extracted_challenges = set()    # Set() = Ungeordnete Sammlung von einzigartigen Elementen --> Vermeiden von URL Duplikaten, jede URL wird nur einmal herangezogen
+
 # Iterate over the links and extract the relevant information from the challenge webpages
 for link in links:      
     challenge_url = link['href']                        # pro Iteration wird die aktuelle URL aus der Liste in eine Variable gespeichert
     challenge_name = challenge_url.split('/')[-2]       # Challenge Name wird extrahiert, indem man die URL am '/' aufsplitted und die Inhalte ab dem zweitletzten '/' nimmt ([-2])
     
+    # Duplicate Check
+    if (challenge_url, challenge_name) in extracted_challenges:     # falls Challenge_URL und Challenge_name schon im set geführt werden -->
+        continue                                                    # --> Überspringen des Loops. Andernfalls wird die Schleife fortgesetzt
+
     # Send a request to the challenge webpage
     challenge_page = requests.get(challenge_url)
     html_content_challenge = challenge_page.text
@@ -50,6 +57,9 @@ for link in links:
 
     # Increment Challenge-Counter
     challenge_counter += 1
+
+    # Add the challenge to the set of extracted challenges
+    extracted_challenges.add((challenge_url, challenge_name))       # pro Iteration: aktuelle Challenge in set mit aufnehmen
 
 # Save the relevant information to the text file
 with open("extracted_commands_infosecinstitute.txt", "w") as file:      # Öffnen / Anlegen einer Txt-Datei
