@@ -1217,3 +1217,4 @@ stegcracker .get.jpg /usr/share/wordlists/rockyou.txt
 steghide –extract -sf .get.jpg
 
 
+Number of Challenges Extracted: 60
