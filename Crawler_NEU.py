@@ -19,7 +19,6 @@ links = soup.select("a[href^='https://resources.infosecinstitute.com/topic/']") 
 # List to store the extracted relevant information
 relevant_information = []       # leere Liste initialisieren
 
-
 # Iterate over the links and extract the relevant information from the challenge webpages
 for link in links:      
     challenge_url = link['href']                        # pro Iteration wird die aktuelle URL aus der Liste in eine Variable gespeichert
@@ -45,7 +44,6 @@ for link in links:
     
     # Add a separator between challenge contents
     relevant_information.append('\n\n')
-
 
 # Save the relevant information to the text file
 with open("extracted_commands_infosecinstitute.txt", "w") as file:      # Öffnen / Anlegen einer Txt-Datei
