@@ -67,4 +67,3 @@ with open("extracted_commands_infosecinstitute.txt", "w") as file:      # Öffne
     file.write(f"Number of Challenges Extracted: {challenge_counter}")  # Append the challenge counter to the end of the file
 
 print("Relevant information extracted and saved to 'extracted_commands_infosecinstitute'")      # Konsolenmeldung, um Ende des Durchlaufes zu Visualisieren
-
