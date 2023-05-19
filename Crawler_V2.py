@@ -55,14 +55,15 @@ for page_num in range(num_pages):
         # Find all text nodes that contain '<<' and '>>'
         relevant_tags = soup_challenge.find_all(string=re.compile(r'<<.*?>>'))
 
-        # Extract the comments from the tags
-        comments = [re.search(r'<<(.*?)>>', tag).group(1).strip() for tag in relevant_tags]
+        # Extract the commands from the tags
+        commands = [re.search(r'<<(.*?)>>', tag).group(1).strip() for tag in relevant_tags]
 
-        # Append the challenge information and comments to the list
+        # Append the challenge information and commands to the list
         extracted_information.append(f"Challenge Name: {challenge_name}")
         extracted_information.append(f"Challenge URL: {challenge_url}")
-        extracted_information.extend(comments)
-        extracted_information.append('\n')
+        extracted_information.append("")
+        extracted_information.extend(commands)
+        extracted_information.append('\n\n')
 
         # Add the challenge URL and name to the set of unique challenges
         unique_challenges.add((challenge_url, challenge_name))
