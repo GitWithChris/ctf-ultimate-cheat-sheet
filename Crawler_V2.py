@@ -3,73 +3,87 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-# Setting the main URL
+# Set the main URL
 main_url = 'https://resources.infosecinstitute.com/topics/capture-the-flag/'
 
-# Send a request to the main webpage
-main_page = requests.get(main_url)
-html_content_main = main_page.text
+# Number of pages to scrape (including the main URL)
+num_pages = 27
 
-# Create a BeautifulSoup object to parse the HTML content
-soup = BeautifulSoup(html_content_main, "html.parser")
+# List to store the extracted information
+extracted_information = []
 
-# Find all the links on the webpage that start with the specified URL
-links = soup.select("a[href^='https://resources.infosecinstitute.com/topics/capture-the-flag/']")
+# Set to store unique challenges
+unique_challenges = set()
 
-# List to store the extracted relevant information
-relevant_information = []
-
-# Challenge counter
+# Counter for the total number of challenges
 challenge_counter = 0
 
-# Unique challenges only
-extracted_challenges = set()
+# Iterate over each page
+for page_num in range(num_pages):
+    # Set the URL for the current page
+    if page_num == 0:
+        page_url = main_url
+    else:
+        page_url = main_url + f'page/{page_num}/'
 
-# Iterate over the links and extract the relevant information from the challenge webpages
-for link in links:
-    challenge_url = link['href']
-    challenge_name = challenge_url.split('/')[-2]
+    # Send a request to the page
+    page = requests.get(page_url)
+    html_content = page.text
 
-    # Duplicate check
-    if (challenge_url, challenge_name) in extracted_challenges:
-        continue
+    # Create a BeautifulSoup object to parse the HTML content
+    soup = BeautifulSoup(html_content, "html.parser")
 
-    # Send a request to the challenge webpage
-    challenge_page = requests.get(challenge_url)
-    html_content_challenge = challenge_page.text
+    # Find all the links to individual challenges on the page
+    links = soup.select("a[href^='https://resources.infosecinstitute.com/topic/']")
 
-    # Create a BeautifulSoup object to parse the HTML content of the challenge webpage
-    soup_challenge = BeautifulSoup(html_content_challenge, "html.parser")
+    # Iterate over the links and extract information from each challenge page
+    for link in links:
+        challenge_url = link['href']
+        challenge_name = challenge_url.split('/')[-2]
 
-    # Find all text nodes that contain '<<' and '>>'
-    relevant_tags = soup_challenge.find_all(string=re.compile(r'<<.*?>>'))
+        # Check if the challenge has already been processed
+        if (challenge_url, challenge_name) in unique_challenges:
+            continue
 
-    # Append the challenge name and URL as a header
-    relevant_information.append(f"Challenge Name: {challenge_name}\n")
-    relevant_information.append(f"Challenge URL: {challenge_url}\n")
+        # Send a request to the challenge page
+        challenge_page = requests.get(challenge_url)
+        html_content_challenge = challenge_page.text
 
-    # Extract the relevant information from the tags and append to the list
-    for tag in relevant_tags:
-        relevant_information.append(re.search(r'<<(.*?)>>', tag).group(1).strip())
+        # Create a BeautifulSoup object to parse the HTML content of the challenge page
+        soup_challenge = BeautifulSoup(html_content_challenge, "html.parser")
 
-    # Add a separator between challenge contents
-    relevant_information.append('\n\n')
+        # Find all text nodes that contain '<<' and '>>'
+        relevant_tags = soup_challenge.find_all(string=re.compile(r'<<.*?>>'))
 
-    # Increment challenge counter
-    challenge_counter += 1
+        # Extract the comments from the tags
+        comments = [re.search(r'<<(.*?)>>', tag).group(1).strip() for tag in relevant_tags]
 
-    # Add the challenge to the set of extracted challenges
-    extracted_challenges.add((challenge_url, challenge_name))
+        # Append the challenge information and comments to the list
+        extracted_information.append(f"Challenge Name: {challenge_name}")
+        extracted_information.append(f"Challenge URL: {challenge_url}")
+        extracted_information.extend(comments)
+        extracted_information.append('\n')
 
-# Create the directory if it doesn't exist
-output_directory = "output"
-if not os.path.exists(output_directory):
-    os.makedirs(output_directory)
+        # Add the challenge URL and name to the set of unique challenges
+        unique_challenges.add((challenge_url, challenge_name))
 
-# Save the relevant information to the text file
-output_file = os.path.join(output_directory, "extracted_commands_capturetheflag.txt")
+        # Increment the challenge counter
+        challenge_counter += 1
+
+        # Print progress indicators
+        print(f"Processing Challenge {challenge_counter} on Page {page_num+1}/{num_pages}")
+
+# Get the directory path of the current Python script
+script_directory = os.path.dirname(os.path.abspath(__file__))
+
+# Set the output file path
+output_file = os.path.join(script_directory, "extracted_commands_infosecinstitute_V2.txt")
+
+# Insert the challenge counter at the beginning of the extracted information
+extracted_information.insert(0, f"Total Challenges: {challenge_counter}\n\n")
+
+# Save the extracted information to a text file
 with open(output_file, "w") as file:
-    file.write("\n".join(relevant_information))
-    file.write(f"Number of Challenges Extracted: {challenge_counter}")
+    file.write("\n".join(extracted_information))
 
-print(f"Relevant information extracted and saved to '{output_file}'")
+print(f"Extracted information saved to '{output_file}'")
