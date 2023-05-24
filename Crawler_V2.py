@@ -46,6 +46,12 @@ for page_num in range(num_pages):
         if (challenge_url, challenge_name) in unique_challenges:        # falls Challenge_URL und Challenge_name schon im set geführt werden -->
             continue                                                    # --> Überspringen des Loops. Andernfalls wird die Schleife fortgesetzt
 
+        # Check if the URL meets the filtering criteria
+        if 'walkthrough' not in challenge_url:                          # URL muss 'walkthrough' enthalten
+            continue
+        if 'ctf' not in challenge_url and 'capture-the-flag' not in challenge_url:      # zusätzlich muss die URL entweder 'ctf' oder 'capture-the-flag' enthalten
+            continue                                                    
+
         # Send a request to the challenge page
         challenge_page = requests.get(challenge_url)
         html_content_challenge = challenge_page.text

