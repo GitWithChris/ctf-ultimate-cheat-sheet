@@ -1,4 +1,4 @@
-Total Challenges: 260
+Total Challenges: 257
 
 
 Challenge Name: the-planets-earth-ctf-walkthrough-part-1
@@ -1366,12 +1366,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-wal
 
 Challenge Name: hack-the-box-htb-walkthrough-blunder
 Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-blunder/
-
-
-
-
-Challenge Name: capture-the-flag-a-walkthrough-of-suncsrs-tre
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-walkthrough-of-suncsrs-tre/
 
 
 
@@ -2760,12 +2754,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/jis-ctf-vulnupload-w
 
 
 
-Challenge Name: vulnhub-machines-walkthrough-series-fristileaks
-Challenge URL: https://resources.infosecinstitute.com/topic/vulnhub-machines-walkthrough-series-fristileaks/
-
-
-
-
 Challenge Name: usv-2017-part-2-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-2-ctf-walkthrough/
 
@@ -2822,12 +2810,6 @@ Challenge URL: https://resources.infosecinstitute.com/topic/mobile-ctf-challenge
 
 Challenge Name: depth-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/depth-1-ctf-walkthrough/
-
-
-
-
-Challenge Name: zico2-1-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/zico2-1-walkthrough/
 
 
 
