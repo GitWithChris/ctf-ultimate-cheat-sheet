@@ -63,7 +63,7 @@ for strong_tag in strong_tags:
 
     # Extract the relevant information based on the URL pattern
     if 'hackthebox' in url or 'tryhackme' in url:
-        relevant_tags = soup_challenge.select("div.enlighter-raw")
+        relevant_tags = soup_challenge.select("div.enlighter-raw, pre.EnlighterJSRAW")
         commands = [tag.text.strip() for tag in relevant_tags] if relevant_tags else []
     elif 'vulnhub-walkthrough' in url or 'hack-the-box' in url or 'ctf-challenge' in url:
         relevant_tags = soup_challenge.find_all("pre", class_="lang:default decode:true")
@@ -72,8 +72,8 @@ for strong_tag in strong_tags:
         commands = []
 
     # Skip writing to the text file if no commands are extracted
-    #if not commands:
-     #   continue
+    if not commands:
+        continue
 
     # Append the challenge information and commands to the list
     extracted_information.append(f"Challenge URL: {url}")

