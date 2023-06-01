@@ -1,0 +1,36 @@
+Crawler - Infosecinstitute
+
+URL: https://resources.infosecinstitute.com/topics/capture-the-flag/
+
+Notizen:
+	•	Extraction-Tag in der HTML: Command stehen zwischen den Zeichen ‘<< ‘ und ‘ >>‘
+	•	Verhinderung von Duplikaten, indem:
+	⁃	jeder individuelle Challenge Name und
+	⁃	jede individuelle Challenge URL in eine Liste geschrieben werden (falls diese bisher noch nicht vorhanden sind)
+	⁃	—> Nur unique Challenges werden für die Extraktion herangezogen
+	•	Filterkriterien, um nur CTF-Challenges von den Webseiten zu extrahieren:
+	⁃	URL muss ‘walkthrough‘ enthalten
+	⁃	URL muss zusätzlich entweder ‘ctf‘ oder ‘capture-the-flag‘ enthalten
+	⁃	—> Nur CTF Challenges werden für die Extraktion betrachtet
+
+
+
+
+
+
+Crawler - Hackingarticles
+
+URL: https://www.hackingarticles.in/ctf-challenges-walkthrough/
+
+Notizen:
+	•	Sicherstellen, dass nur relevante Information/Webseiten in der Extraktion betrachtet werden:
+	⁃	Betrachtete Webseiten URL enthalten:
+	⁃	‘hackthebox‘
+	⁃	‘tryhackme‘
+	⁃	‘vulnhub-walkthrough‘
+	⁃	‘hack-the-box‘
+	⁃	‘ctf-challenge‘
+	•	Commands sind je nach URL unterschiedlich in HTML gekennzeichnet
+	⁃	Vergleiche hierfür Python-Script
+	⁃	Für HackTheBox und TryHackMe —> relevanten Informationen sind in ‘<span> - Element‘ enthalten
+	⁃	Für Vulnhub-Walkthrough, Hack-the-Box und CTF-Challenge —> relevanten Informationen sind in einer ‘pre class‘ enthalten 
