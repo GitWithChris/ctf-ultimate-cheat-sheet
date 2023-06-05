@@ -1,16 +1,16 @@
 import os
 import re
 
-# Function to compare the first 5 letters of two strings
+# Function to compare the string preceding the first space of two strings
 def compare_strings(string1, string2):
-    return string1[:5] == string2[:5]
+    return string1.split(' ')[0] == string2
 
 # Name of the input files (wildcard for user input)
 input_file_name = 'extracted_commands_infosecinstitute.txt'
 linux_commands_file_name = 'linux_commands.txt'
 
 # Percentage wildcard for matching strings
-match_percentage = 80  # You can change this value
+match_percentage = 10  # You can change this value
 
 # Get the current directory
 current_dir = os.getcwd()
@@ -53,7 +53,7 @@ for line in input_lines:
         # Strip the command of leading/trailing whitespaces
         command = command.strip()
         
-        # Compare the first 5 letters of the current line and command
+        # Compare the string preceding the first space of the current line and command
         if compare_strings(line, command):
             match_found = True
             break
