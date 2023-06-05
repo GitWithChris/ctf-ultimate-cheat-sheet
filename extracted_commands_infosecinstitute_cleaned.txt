@@ -1311,12 +1311,17 @@ Challenge URL: https://resources.infosecinstitute.com/topic/victim-1-vulnhub-ctf
 Challenge Name: mumbai-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/mumbai-vulnhub-ctf-walkthrough/
 
+netdiscover
+nmap -p- -sV 192.168.1.2
+docker run -it -v /root:mnt/ignite ubuntu
 
 
 
 Challenge Name: my-tomcat-host-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/my-tomcat-host-ctf-walkthrough/
 
+netdiscover
+id
 
 
 
@@ -1336,6 +1341,7 @@ Challenge Name: hacknos-player-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/hacknos-player-1-ctf-walkthrough/
 
 dirb
+sudo -l
 
 
 
@@ -1350,6 +1356,8 @@ Challenge URL: https://resources.infosecinstitute.com/topic/dmv-1-vulnhub-captur
 
 nc -lvp 1234
 ls -a
+cat >> pass.txt
+john pass.txt
 cat clean.sh
 nc -lvp 4444
 
