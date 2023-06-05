@@ -2,7 +2,7 @@ import difflib
 import os
 
 # Replace 'input_file.txt' with the actual file name
-input_file = 'extracted_commands_infosecinstitute.txt'
+input_file = './extracted_commands_infosecinstitute.txt'
 
 # Create a new file name with '_cleaned' appended
 output_file = input_file.replace('.txt', '_cleaned.txt')
@@ -43,7 +43,10 @@ try:
             # Check if the line starts with an exception keyword
             if line.startswith('Challenge Name'):
                 file_out.write(line.replace('Total Challenges', 'Total Challenges pre cleaning'))
-                total_challenges_pre_cleaning = int(line.split()[-1])
+                try:
+                    total_challenges_pre_cleaning = int(line.split()[-1])
+                except ValueError:
+                    total_challenges_pre_cleaning = 0
                 continue
             elif line.startswith('Challenge URL'):
                 file_out.write(line)
