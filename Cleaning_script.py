@@ -1,15 +1,14 @@
 import difflib
-import subprocess
+import os
 
 # Replace 'input_file.txt' with the actual file name
-input_file = 'input_file.txt'
+input_file = 'extracted_commands_infosecinstitute.txt'
 
 # Create a new file name with '_cleaned' appended
 output_file = input_file.replace('.txt', '_cleaned.txt')
 
-# Execute compgen -c command to get the Linux commands
-command_output = subprocess.check_output(['compgen', '-c'])
-linux_commands = command_output.decode().splitlines()
+# Get a list of commands from the /bin directory
+bin_commands = os.listdir('/bin')
 
 # Define the similarity threshold for fuzzy matching
 similarity_threshold = 0.5
@@ -44,8 +43,8 @@ with open(input_file, 'r') as file_in, open(output_file, 'w') as file_out:
             file_out.write(line)
             continue
         
-        # Check if the line contains a command based on similarity with the Linux commands
-        if any(check_similarity(line, command) >= similarity_threshold for command in linux_commands):
+        # Check if the line contains a command based on similarity with the available commands
+        if any(check_similarity(line, command) >= similarity_threshold for command in bin_commands):
             # Write the line to the output file
             file_out.write(line)
             extracted_lines.append(line)
