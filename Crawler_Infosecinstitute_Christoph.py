@@ -73,6 +73,16 @@ for page_num in range(num_pages):
             # Extract the relevant information from the <em> tags
             commands = [em_tag.text.strip() for em_tag in em_tags]
 
+        # Check if the commands list is still empty
+        if not commands:
+            # Find all <strong> tags in the HTML
+            strong_tags = soup_challenge.find_all('strong')
+
+            # Iterate over the <strong> tags and extract relevant information
+            for strong_tag in strong_tags:
+                if strong_tag.text.startswith('Command used:'):
+                    commands.append(strong_tag.text.replace('Command used:', '').strip())
+
         # Append the challenge information and commands to the list
         extracted_information.append(f"Challenge Name: {challenge_name}")
         extracted_information.append(f"Challenge URL: {challenge_url}")

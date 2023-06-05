@@ -1299,6 +1299,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-w
 Challenge Name: so-simple-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/so-simple-1-ctf-walkthrough/
 
+nano simple.txt
 
 
 
@@ -1329,48 +1330,97 @@ On Koken CMS Library, select your file and put the mouse on “Download File” 
 Challenge Name: my-cmsms-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/my-cmsms-1-vulnhub-ctf-walkthrough/
 
+nmap -p- -sV 192.168.1.101
+mysql -h 192.168.1.101 -u root -p
+select username,email,password from cms_users;
+
+ls -la
+cat .htpasswd
+su armour
+sudo -l
+
 
 
 
 Challenge Name: cybersploit-2-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/cybersploit-2-vulnhub-ctf-walkthrough/
 
+cat flag.txt
 
 
 
 Challenge Name: cybersploit-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/cybersploit-1-vulnhub-ctf-walkthrough/
 
+nmap 192.168.1.30 -p- -sV
+cat flag2.txt
+cat finalflag.txt
 
 
 
 Challenge Name: photographer-1-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/photographer-1-ctf-walkthrough-part-1/
 
+netdiscover
+nmap 192.168.1.26 -p- -sV
+dirb
+smbclient -I 192.168.1.26 -L -N
+
+cat mailsent.txt
+dirb
 
 
 
 Challenge Name: djinn-1-vulnhub-ctf-walkthrough-part-2
 Challenge URL: https://resources.infosecinstitute.com/topic/djinn-1-vulnhub-ctf-walkthrough-part-2/
 
+cat cred.txt
+sudo -l
+genie-h
+
+sudo -u root /root/lago
+
+strings .pyc
+wget 192.168.1.53:9765/.pyc
+file .pyc
+apt-get install python3
+apt-get install python3-pip
+pip3 install uncompyle6
+uncompyle6 .pyc
+sudo /root/lago
 
 
 
 Challenge Name: typo-1-vulnhub-ctf-walkthrough-part-2
 Challenge URL: https://resources.infosecinstitute.com/topic/typo-1-vulnhub-ctf-walkthrough-part-2/
 
+nc -lvp 1234
+find / -type f -perm -u=s 2>/dev/null
+strings /usr/local/bin/apache2-restart
 
 
 
 Challenge Name: typo-vulnhub-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/typo-vulnhub-ctf-walkthrough-part-1/
 
+nmap -p- -sV 192.168.1.103
+dirb http://192.168.1.103
 
 
 
 Challenge Name: source-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/source-1-vulnhub-ctf-walkthrough/
 
+netdiscover
+nmap -sV 192.168.1.22
+
+msfconsole
+search “Webmin”
+
+
+
+id
+cat /root/root.txt
 
 
 
@@ -1384,17 +1434,23 @@ Challenge URL: https://resources.infosecinstitute.com/topic/pwned-1-vulnhub-ctf-
 Challenge Name: zion-1-2-vulnhub-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/zion-1-2-vulnhub-ctf-walkthrough-part-1/
 
+nmap -p- -sV 192.168.1.4
+dirb http://192.168.1.4
+cewl http://192.168.1.4/
+cat >> key
 
 
 
 Challenge Name: sunset-decoy-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/sunset-decoy-vulnhub-ctf-walkthrough/
 
+/usr/bin/cat user.txt
 
 
 
 Challenge Name: victim-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/victim-1-vulnhub-ctf-walkthrough/
+
 
 
 
@@ -1426,6 +1482,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-w
 Challenge Name: hacknos-player-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/hacknos-player-1-ctf-walkthrough/
 
+dirb
 
 
 
@@ -1440,6 +1497,10 @@ For all these machines, I have used Oracle VirtualBox to run the downloaded mach
 Challenge Name: dmv-1-vulnhub-capture-the-flag-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/dmv-1-vulnhub-capture-the-flag-ctf-walkthrough/
 
+nc -lvp 1234
+ls -a
+cat clean.sh
+nc -lvp 4444
 
 
 
