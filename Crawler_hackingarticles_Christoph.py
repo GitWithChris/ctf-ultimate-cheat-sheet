@@ -36,8 +36,9 @@ for strong_tag in strong_tags:
     if a_tag is None:
         continue
 
-    # Find the URL of the challenge
+    # Find the URL and name of the challenge
     url = a_tag['href']
+    challenge_name = url.split('/')[-2].replace('-', ' ').title()
 
     # Check if the URL meets the filtering criteria
     if 'hackthebox' not in url and 'tryhackme' not in url and 'vulnhub-walkthrough' not in url and 'hack-the-box' not in url and 'ctf-challenge' not in url:
@@ -76,9 +77,12 @@ for strong_tag in strong_tags:
         continue
 
     # Append the challenge information and commands to the list
+    extracted_information.append(f"Challenge Name: {challenge_name}")
     extracted_information.append(f"Challenge URL: {url}")
+    extracted_information.append('')
     extracted_information.extend(commands)
-    extracted_information.append('\n\n')
+    extracted_information.append('\n')
+    extracted_information.append('\n')
 
     # Increment the challenge counter
     challenge_counter += 1
@@ -90,6 +94,9 @@ for strong_tag in strong_tags:
 output_file = "extracted_commands_hackingarticles.txt"
 script_directory = os.path.dirname(os.path.abspath(__file__))
 output_path = os.path.join(script_directory, output_file)
+
+# Add the total number of regarded challenges to the beginning of the file
+extracted_information.insert(0, f"Total Challenges: {challenge_counter}\n")
 
 with open(output_path, "w") as file:
     file.write("\n".join(extracted_information))
