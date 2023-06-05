@@ -1438,6 +1438,7 @@ nmap -p- -sV 192.168.1.4
 dirb http://192.168.1.4
 cewl http://192.168.1.4/
 cat >> key
+Commands used:
 
 
 
@@ -1458,12 +1459,19 @@ Challenge URL: https://resources.infosecinstitute.com/topic/victim-1-vulnhub-ctf
 Challenge Name: mumbai-vulnhub-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/mumbai-vulnhub-ctf-walkthrough/
 
+netdiscover
+nmap -p- -sV 192.168.1.2
+wpscan  –url  http://192.168.1.2/wordpress
+docker run -it -v /root:mnt/ignite ubuntu
 
 
 
 Challenge Name: my-tomcat-host-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/my-tomcat-host-ctf-walkthrough/
 
+netdiscover
+namp 192.168.1.9 -p- -sV
+id
 
 
 
@@ -1483,6 +1491,7 @@ Challenge Name: hacknos-player-1-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/hacknos-player-1-ctf-walkthrough/
 
 dirb
+sudo -l
 
 
 
@@ -1497,8 +1506,13 @@ For all these machines, I have used Oracle VirtualBox to run the downloaded mach
 Challenge Name: dmv-1-vulnhub-capture-the-flag-ctf-walkthrough
 Challenge URL: https://resources.infosecinstitute.com/topic/dmv-1-vulnhub-capture-the-flag-ctf-walkthrough/
 
+URL: https://github.com/ytdl-org/youtube-dl
+Payload used:
 nc -lvp 1234
 ls -a
+Commands used:
+cat >> pass.txt
+john pass.txt
 cat clean.sh
 nc -lvp 4444
 
