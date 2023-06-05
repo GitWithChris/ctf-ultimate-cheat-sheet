@@ -14,12 +14,15 @@ match_percentage = 80  # You can change this value
 
 # Get the current directory
 current_dir = os.getcwd()
+print(f'Current directory: {current_dir}')
 
 # Construct the input file path
 input_file_path = os.path.join(current_dir, input_file_name)
+print(f'Input file path: {input_file_path}')
 
 # Construct the Linux commands file path
 commands_file_path = os.path.join(current_dir, linux_commands_file_name)
+print(f'Linux commands file path: {commands_file_path}')
 
 # Read the input file
 with open(input_file_path, 'r') as input_file:
