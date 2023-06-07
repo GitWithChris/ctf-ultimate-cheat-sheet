@@ -51,4 +51,9 @@ Cleaner
 
 Notizen:
 	•	Funktionsweise:
+		- Cleaner vergleicht die extrahierten Commands mit der Syntax aller Linux Commands
+		- Linux Commands wurden aus Online-Datenbank gewonnen
+		- es werden der erste Part des Command-Strings abgeglichen (max. bis erster Leerschritt)
+		- Überschneidung der Inhalte: Vergleich aller strings der extrahierten Commands mit den Linux Commands
+		--> bei Übereinstimmung: Command übernehmen, andernfalls entfernen
 	
