@@ -30,5 +30,32 @@ with open(input_file1, 'r') as file1, open(input_file2, 'r') as file2, open(outp
 
     output.write('\n')
 
-# Console output to indicate compilation is done
-print("Compilation is done. The combined contents have been written to", output_file)
+# Check the generated file for faulty entries and remove them
+with open(output_file, 'r') as file:
+    lines = file.readlines()
+
+with open(output_file, 'w') as file:
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith('Challenge Name'):
+            # Check if it is a faulty entry
+            if (
+                i + 5 < len(lines) and
+                lines[i+1].startswith('Challenge URL') and
+                lines[i+2] == '\n' and
+                lines[i+3] == '\n' and
+                lines[i+4] == '\n' and
+                lines[i+5].strip() == ''
+            ):
+                # Skip over the faulty entry (delete Challenge Name and Challenge URL)
+                i += 6
+            else:
+                file.write(line)
+                i += 1
+        else:
+            file.write(line)
+            i += 1
+
+# Console output to indicate compilation and validation are done
+print("Compilation and validation are done. The combined and validated contents have been written to", output_file)
