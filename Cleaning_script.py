@@ -6,7 +6,7 @@ def compare_strings(string1, string2):
     return string1.split(' ')[0] == string2
 
 # Name of the input files (wildcard for user input)
-input_file_name = 'extracted_commands_infosecinstitute.txt'      # Input-File = Extrahierten Commands
+input_file_name = 'extracted_commands_hackingarticles.txt'      # Input-File = Extrahierten Commands
 linux_commands_file_name = 'linux_commands.txt'                 # Linux-Command Collection for Comparison
 
 # Percentage wildcard for matching strings
@@ -42,6 +42,7 @@ for line in input_lines:
     
     # Skip lines starting with 'Challenge Name' and 'Challenge URL'
     if line.startswith('Challenge Name') or line.startswith('Challenge URL') or line == '':
+        cleaned_lines.append(line)
         continue
     
     # Flag to check if any match is found
