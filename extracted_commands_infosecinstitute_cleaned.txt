@@ -1,5 +1,3 @@
-Total number of challenges: 0
-
 
 
 Challenge Name: the-planets-earth-ctf-walkthrough-part-1

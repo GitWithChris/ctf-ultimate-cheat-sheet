@@ -34,7 +34,6 @@ with open(commands_file_path, 'r') as commands_file:
 
 # Initialize the cleaned lines list
 cleaned_lines = []
-challenge_names = set()  # Set to store unique challenge names
 
 # Loop through each line of the input file
 for line in input_lines:
@@ -45,11 +44,6 @@ for line in input_lines:
     if line.startswith('Challenge Name') or line.startswith('Challenge URL') or line == '':
         cleaned_lines.append(line)
         continue
-    
-    # Extract the challenge name
-    challenge_name = re.search(r'Challenge Name:(.*)', line)
-    if challenge_name:
-        challenge_names.add(challenge_name.group(1).strip())
     
     # Flag to check if any match is found
     match_found = False
@@ -76,8 +70,6 @@ cleaned_file_path = os.path.join(current_dir, cleaned_file_name)
 
 # Write the cleaned lines to the output file
 with open(cleaned_file_path, 'w') as cleaned_file:
-    # Write the total number of challenges at the beginning of the file
-    cleaned_file.write(f'Total number of challenges: {len(challenge_names)}\n\n')
     cleaned_file.write('\n'.join(cleaned_lines))
 
 print(f'Cleaned file "{cleaned_file_name}" has been generated.')
