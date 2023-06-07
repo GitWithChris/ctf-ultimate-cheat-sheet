@@ -12,7 +12,7 @@ def group_similar_lines(lines):
     group_names = []
 
     for line in lines:
-        if line.strip() == '' or line.strip() == 'echo $$':
+        if line.strip() == '' or line.strip() == 'echo $$' or line.startswith('Challenge'):
             continue
         added = False
         for i, group in enumerate(groups):
