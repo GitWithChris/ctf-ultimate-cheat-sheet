@@ -1,3 +1,5 @@
+Total number of challenges: 8334
+
 
 Challenge Name: Blackfield Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/blackfield-hackthebox-walkthrough/
