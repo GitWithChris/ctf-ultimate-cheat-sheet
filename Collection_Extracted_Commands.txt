@@ -9886,5 +9886,5 @@ cat /etc/passwd
 
 
 
-Number of entries in extracted_commands_infosecinstitute_cleaned.txt: 102
-Number of entries in extracted_commands_hackingarticles_cleaned.txt: 377
+Number of entries from extracted_commands_infosecinstitute_cleaned.txt: 102
+Number of entries from extracted_commands_hackingarticles_cleaned.txt: 377
