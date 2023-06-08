@@ -91,8 +91,8 @@ while i < len(lines):
 # Append the counts of remaining entries to the output file
 with open(output_file, 'a') as file:
     file.write('\n')
-    file.write(f'Number of entries in {input_file1_name}: {num_entries_file1_remaining}\n')
-    file.write(f'Number of entries in {input_file2_name}: {num_entries_file2_remaining}\n')
+    file.write(f'Number of entries from {input_file1_name}: {num_entries_file1_remaining}\n')
+    file.write(f'Number of entries from {input_file2_name}: {num_entries_file2_remaining}\n')
 
 # Console output to indicate compilation and validation are done
 print("Compilation and validation are done. The combined and validated contents have been written to", output_file)
