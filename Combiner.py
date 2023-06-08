@@ -97,5 +97,22 @@ with open(output_file, 'a') as file:
 
 # Console output to indicate compilation and validation are done
 print("Compilation and validation are done. The combined and validated contents have been written to", output_file)
-print("Number of entries in", input_file1_name, ":", num_entries_file1_remaining)
-print("Number of entries in", input_file2_name, ":", num_entries_file2_remaining)
+print("Complete Command List generated.")
+
+# Collect commands from the generated file
+commands = []
+with open(output_file, 'r') as file:
+    for line in file:
+        line = line.strip()
+        if not line.startswith(('===', 'Challenge Name', 'Challenge URL', 'Summary', 'Number of')) and line != '':
+            commands.append(line)
+
+# Append the commands summarization to the output file
+with open(output_file, 'a') as file:
+    file.write('\n\nSummarization of all Commands used:\n')
+    for command in commands:
+        file.write(command + '\n')
+
+# Console output for the commands summarization
+print('Commands Summarization done')
+
