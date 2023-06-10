@@ -1543,11 +1543,6 @@ ls -a
 
 
 
-
-
-
-
-
 === extracted_commands_hackingarticles_cleaned.txt ===
 
 
@@ -9886,9 +9881,10 @@ cat /etc/passwd
 
 
 
-Summary:
+Summary of Website Content:
 Number of entries from extracted_commands_infosecinstitute_cleaned.txt: 102
 Number of entries from extracted_commands_hackingarticles_cleaned.txt: 377
+
 
 
 Summarization of all Commands used:
@@ -23093,3 +23089,207 @@ sudo
 ls
 cat
 cat
+
+
+Frequency of unique commands:
+netdiscover: 175
+nmap: 443
+echo: 176
+cat: 842
+enum4linux: 10
+nc: 199
+uname: 61
+find: 108
+getcap: 10
+ls: 641
+tar: 12
+su: 126
+gcc: 47
+ssh: 219
+sudo: 279
+john: 70
+pkttyagent: 1
+pkexec: 1
+id: 136
+ftp: 50
+steghide: 18
+set: 215
+less: 2
+tail: 15
+exit: 8
+chmod: 144
+ffuf: 5
+export: 43
+unzip: 25
+zip2john: 2
+cd: 717
+file: 22
+hydra: 46
+python: 204
+wget: 126
+mv: 21
+sqlmap: 67
+git: 35
+vi: 2
+cp: 32
+arp-scan: 3
+ps: 8
+dig: 3
+msfconsole: 11
+dirb: 152
+vim: 3
+apt-get: 10
+import: 14
+fping: 1
+pip3: 5
+which: 8
+openssl: 29
+redis-cli: 5
+mysql: 18
+ln: 7
+wpscan: 37
+crunch: 24
+rm: 13
+docker: 13
+ifconfig: 7
+strings: 24
+base64: 3
+wfuzz: 10
+nano: 53
+smbclient: 53
+cewl: 13
+gem: 4
+mkdir: 24
+ip: 3
+timeout: 2
+tcpdump: 11
+perl: 1
+if: 2
+sh: 6
+objdump: 1
+php: 9
+rpcclient: 2
+evil-winrm: 17
+expose: 1
+unix2dos: 1
+searchsploit: 67
+gunzip: 2
+telnet: 15
+exec: 1
+msfvenom: 59
+screen: 3
+chown: 2
+curl: 61
+snmpwalk: 5
+ssh-keygen: 11
+net: 7
+fcrackzip: 10
+netstat: 13
+pwd: 11
+powershell: 1
+apt: 6
+chisel: 1
+smbmap: 6
+zip: 3
+certutil: 1
+while: 1
+sed: 6
+exiftool: 10
+hashcat: 8
+ldapsearch: 1
+type: 20
+gobuster: 10
+bash: 25
+adb: 4
+whoami: 31
+go: 1
+nikto: 10
+mount: 15
+xfreerdp: 1
+sqlitebrowser: 1
+doas: 3
+svn: 3
+gdbus: 2
+ss: 1
+mysqldump: 3
+smbpasswd: 1
+pass: 2
+volatility: 2
+socat: 4
+tmux: 2
+tftp: 7
+head: 2
+locate: 2
+cpulimit: 4
+lsb_release: 10
+aircrack-ng: 4
+nohup: 1
+scp: 10
+stty: 1
+stegsnow: 1
+base32: 3
+umask: 1
+logout: 2
+touch: 10
+lftp: 1
+apk: 2
+kill: 1
+nice: 1
+run-parts: 1
+dir: 10
+netcat: 1
+lxc: 18
+msfpc: 1
+wireshark: 1
+genie: 2
+for: 5
+print: 3
+ldd: 3
+readelf: 4
+from: 1
+lynx: 1
+make: 1
+host: 1
+xxd: 2
+gpg: 6
+groupadd: 1
+useradd: 1
+drush: 1
+mkfifo: 1
+ncat: 2
+bzip2: 2
+gzip: 1
+wc: 2
+gdb: 6
+r: 2
+crontab: 1
+clear: 1
+7z: 2
+ltrace: 1
+ldconfig: 1
+where: 1
+sftp: 1
+tac: 1
+sockstat: 1
+vncviewer: 1
+g++: 1
+date: 1
+cc: 1
+mawk: 1
+grep: 2
+fdisk: 2
+groups: 1
+df: 1
+debugfs: 1
+more: 3
+keepass2: 2
+nslookup: 1
+psql: 1
+iptables: 1
+fls: 2
+swaks: 1
+foremost: 1
+unrar: 2
+chkrootkit: 1
+medusa: 1
+Total amount of unique commands: 200

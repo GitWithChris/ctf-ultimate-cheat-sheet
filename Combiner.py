@@ -22,7 +22,7 @@ with open(input_file1, 'r') as file1, open(input_file2, 'r') as file2, open(outp
             num_entries_file1 += 1
 
     output.write('\n')
-    output.write('\n' * 10)  # Add 10 lines of space between input files
+    output.write('\n' * 5)  # Add 10 lines of space between input files
 
     # Write the name of the second input file
     output.write('=== ' + input_file2_name + ' ===\n\n')
@@ -91,9 +91,10 @@ while i < len(lines):
 # Append the counts of remaining entries to the output file
 with open(output_file, 'a') as file:
     file.write('\n')
-    file.write(f'Summary:\n')
+    file.write(f'Summary of Website Content:\n')
     file.write(f'Number of entries from {input_file1_name}: {num_entries_file1_remaining}\n')
     file.write(f'Number of entries from {input_file2_name}: {num_entries_file2_remaining}\n')
+    file.write('\n')
 
 # Console output to indicate compilation and validation are done
 print("Compilation and validation are done. The combined and validated contents have been written to", output_file)
@@ -117,7 +118,7 @@ with open(output_file, 'a') as file:
 print('Commands Summarization done')
 
 
-# Additional tasks
+# Unique Commands Cleaning 
 
 # Read the content of the original file after 'Summarization of all Commands used:' and store it in a list
 original_commands = []
@@ -163,3 +164,25 @@ with open(output_file, 'a') as file:
 # Console output for the matched commands
 print('Complete cleaned list of all commands added to the output file.')
 
+# Additional task: Frequency of unique commands
+command_counts = {}
+for command in extracted_commands:
+    if command in command_counts:
+        command_counts[command] += 1
+    else:
+        command_counts[command] = 1
+
+# Append the command frequencies to the original file
+with open(output_file, 'a') as file:
+    file.write('\n\nFrequency of unique commands:\n')
+    for command, count in command_counts.items():
+        file.write(f'{command}: {count}\n')
+
+# Count the total number of unique commands
+total_unique_commands = len(command_counts)
+
+# Append the total count to the original file
+with open(output_file, 'a') as file:
+    file.write(f'Total amount of unique commands: {total_unique_commands}')
+
+print('Frequency of unique commands added to the output file.')
