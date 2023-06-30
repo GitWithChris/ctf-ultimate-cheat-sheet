@@ -40,6 +40,8 @@ Notizen:
 		⁃	Vergleiche hierfür Python-Script
 		⁃	Für HackTheBox und TryHackMe —> relevanten Informationen sind in ‘<span> - Element‘ enthalten
 		⁃	Für Vulnhub-Walkthrough, Hack-the-Box und CTF-Challenge —> relevanten Informationen sind in einer ‘pre class‘ enthalten 
+<div class="enlighter-code">...</div>
+<pre class="lang:default decode:true">nmap -A 192.168.1.101</pre>
 
 
 
