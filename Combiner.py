@@ -118,7 +118,7 @@ with open(output_file, 'a') as file:
 print('Commands Summarization done')
 
 
-# Unique Commands Cleaning 
+# Unique Commands Cleaning
 
 # Read the content of the original file after 'Summarization of all Commands used:' and store it in a list
 original_commands = []
@@ -173,7 +173,7 @@ for command in extracted_commands:
         command_counts[command] = 1
 
 # Append the command frequencies to the original file
-with open(output_file, 'a') as file:
+with open(output_file,'a') as file:
     file.write('\n\nFrequency of unique commands:\n')
     for command, count in command_counts.items():
         file.write(f'{command}: {count}\n')
@@ -186,3 +186,45 @@ with open(output_file, 'a') as file:
     file.write(f'Total amount of unique commands: {total_unique_commands}')
 
 print('Frequency of unique commands added to the output file.')
+
+# Search for the line that starts with 'Frequency of unique commands:' in the output file
+with open(output_file, 'r') as file:
+    lines = file.readlines()
+
+start_index = None
+for i, line in enumerate(lines):
+    if line.startswith('Frequency of unique commands:'):
+        start_index = i + 1
+        break
+
+# Store the string prior to ':' of each line in a list until reaching the line starting with 'Total amount'
+entry_list = []
+for line in lines[start_index:]:
+    if line.startswith('Total amount'):
+        break
+    entry = line.split(':')[0].strip()
+    entry_list.append(entry)
+
+# Process each entry in the list
+for entry in entry_list:
+    counter = 0
+    found_entry = False
+    i = 0
+
+    # Find matching lines in the file and increment the counter
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith('Challenge Name'):
+            found_entry = False
+        elif not found_entry and line.strip() != '':
+            line_split = line.split()
+            if len(line_split) > 0 and line_split[0] == entry:
+                counter += 1
+                found_entry = True
+        i += 1
+
+    # Append the counter and entry to the bottom of the generated text file
+    with open(output_file, 'a') as file:
+        file.write(f'{entry}: {counter}\n')
+
+print('Count of commands added to the output file.')
