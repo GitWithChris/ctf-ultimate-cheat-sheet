@@ -23294,6 +23294,8 @@ chkrootkit: 1
 medusa: 1
 Total amount of unique commands: 200
 
+
+Command Utilization across Challenges (in how many Challenges a Command was used)
 netdiscover: 175
 nmap: 404
 echo: 118
