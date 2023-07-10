@@ -23369,7 +23369,7 @@ timeout: 3
 tcpdump: 9
 perl: 2
 if: 3
-sh: 4
+sh: 133
 objdump: 2
 php: 8
 rpcclient: 3
@@ -23385,7 +23385,7 @@ screen: 3
 chown: 3
 curl: 33
 snmpwalk: 5
-ssh-keygen: 12
+ssh-keygen: 8
 net: 6
 fcrackzip: 11
 netstat: 14
